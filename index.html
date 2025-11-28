@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Red Life Adventures - Tabletop story fuel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="home" data-page="home">
+  <div class="page-overlay">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="site-brand">
+          <div class="site-brand-logo">
+            <img src="assets/img/ui/logo.png" alt="Red Life Adventures logo">
+          </div>
+          <div class="site-brand-text">
+            <div class="site-brand-title">Red Life Adventures</div>
+            <div class="site-brand-subtitle">Story hooks, ready to run</div>
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="collection.html?category=location">Locations</a>
+          <a href="collection.html?category=npc">NPCs</a>
+          <a href="collection.html?category=spell">Spells</a>
+          <a href="collection.html?category=hook">Story hooks</a>
+          <a class="primary" href="#latest">Latest additions</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-inner">
+      <section class="hero">
+        <div>
+          <h1 class="hero-main-title">
+            Drop-in fuel for your <span>table</span>
+          </h1>
+          <p class="hero-tagline">
+            Locations, NPCs, hooks, oddities, spells and more. Built to be dropped into a campaign in minutes, not hours.
+          </p>
+          <div class="hero-meta">
+            <div class="hero-pill">System agnostic by default</div>
+            <div class="hero-pill">Written for DMs and players</div>
+            <div class="hero-pill">Updated frequently</div>
+          </div>
+        </div>
+        <aside class="hero-secondary">
+          <h2>How to use this site</h2>
+          <p>
+            Browse by collection on the map below or jump straight into the latest additions.
+            Each entry is a single page with a clear structure: overview, table-ready details, and variants.
+          </p>
+          <p>
+            You can mix entries into long running campaigns or use them as prompts for one shots.
+          </p>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Collections</h2>
+          <p class="section-subtitle">Categories update themselves as new content is added.</p>
+        </div>
+        <div class="card-grid" data-collections-grid>
+          <!-- filled by JS from content-index.json -->
+        </div>
+      </section>
+
+      <section id="latest" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Latest entries</h2>
+          <p class="section-subtitle">New pages are highlighted when they first arrive.</p>
+        </div>
+        <div class="card-grid" data-latest-grid>
+          <!-- filled by JS -->
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div>Red Life Adventures - ongoing project for table-ready RPG content.</div>
+        <div>Content and layout subject to change as the world grows.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

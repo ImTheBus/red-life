@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Red Life Adventures - Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="collection" data-page="collection">
+  <div class="page-overlay">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="site-brand">
+          <div class="site-brand-logo">
+            <img src="assets/img/ui/logo.png" alt="Red Life Adventures logo">
+          </div>
+          <div class="site-brand-text">
+            <div class="site-brand-title">Red Life Adventures</div>
+            <div class="site-brand-subtitle">Story hooks, ready to run</div>
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a class="primary" href="#">Current collection</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-inner">
+      <header class="section">
+        <div class="section-header">
+          <h1 class="hero-main-title" style="font-size:1.4rem;">
+            <span data-collection-title>Collection</span>
+          </h1>
+        </div>
+        <p class="hero-tagline" data-collection-intro>
+          Loading collection details.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="filter-bar">
+          <div class="filter-search">
+            <input type="text" placeholder="Search by title or summary" data-filter-search>
+          </div>
+          <div class="filter-badges" data-filter-badges>
+            <!-- tags populated by JS -->
+          </div>
+        </div>
+        <div class="card-grid" data-collection-list>
+          <!-- cards populated by JS -->
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div><a href="index.html" style="color:inherit; text-decoration:none;">Back to map and all collections</a></div>
+        <div>Filters only change what you see here, nothing is deleted.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

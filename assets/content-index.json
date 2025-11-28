@@ -1,0 +1,32 @@
+[
+  {
+    "id": "old-stone-bridge",
+    "title": "The Old Stone Bridge",
+    "category": "location",
+    "image": "assets/img/content/old-stone-bridge.jpg",
+    "summary": "A crumbling bridge watched by something beneath the river.",
+    "url": "content/old-stone-bridge.html",
+    "tags": ["travel", "haunted", "low-level"],
+    "createdAt": "2025-11-25"
+  },
+  {
+    "id": "wandering-cartographer",
+    "title": "The Wandering Cartographer",
+    "category": "npc",
+    "image": "assets/img/content/wandering-cartographer.jpg",
+    "summary": "A half-truth map seller who has been everywhere except home.",
+    "url": "content/wandering-cartographer.html",
+    "tags": ["npc", "merchant"],
+    "createdAt": "2025-11-26"
+  },
+  {
+    "id": "ember-kiss",
+    "title": "Ember Kiss",
+    "category": "spell",
+    "image": "assets/img/content/ember-kiss.jpg",
+    "summary": "A lingering fire charm that marks a target for burning luck.",
+    "url": "content/ember-kiss.html",
+    "tags": ["spell", "fire", "utility"],
+    "createdAt": "2025-11-24"
+  }
+]
