@@ -2,87 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Red Life Adventures - Tabletop story fuel</title>
+  <title>Red Life Adventures - Map Mockup</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/styles.css">
+
+  <style>
+    :root {
+      --bg-dark: #05070c;
+      --bg-panel: rgba(10, 12, 18, 0.96);
+      --border-soft: rgba(255, 255, 255, 0.15);
+      --accent: #e4a94c;
+      --text-main: #f4f5f7;
+      --text-muted: #a3adc2;
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.85);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151b24, #05070c 60%, #020308);
+      color: var(--text-main);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    header {
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-soft);
+      background: rgba(3, 5, 10, 0.96);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    header span {
+      color: var(--accent);
+    }
+
+    header nav {
+      display: flex;
+      gap: 8px;
+      font-size: 0.8rem;
+    }
+
+    header nav a {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    header nav a:hover {
+      border-color: var(--border-soft);
+      color: var(--text-main);
+      background: rgba(11, 15, 24, 0.96);
+    }
+
+    main {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .map-shell {
+      width: 100%;
+      max-width: 1200px;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      background: radial-gradient(circle at 20% 0, #1a242f, #05070c 70%);
+    }
+
+    .map-shell object {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      max-width: 1200px;
+      text-align: left;
+    }
+
+    footer {
+      padding: 10px 16px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-soft);
+      background: rgba(3, 5, 10, 0.96);
+    }
+  </style>
 </head>
-<body class="home" data-page="home">
-  <div class="page-overlay">
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a href="index.html" class="site-brand">
-          <div class="site-brand-logo">
-            <img src="assets/img/ui/logo.png" alt="Red Life Adventures logo">
-          </div>
-          <div class="site-brand-text">
-            <div class="site-brand-title">Red Life Adventures</div>
-            <div class="site-brand-subtitle">Story hooks, ready to run</div>
-          </div>
-        </a>
-        <nav class="site-nav">
-          <a href="collection.html?category=location">Locations</a>
-          <a href="collection.html?category=npc">NPCs</a>
-          <a href="collection.html?category=spell">Spells</a>
-          <a href="collection.html?category=hook">Story hooks</a>
-          <a class="primary" href="#latest">Latest additions</a>
-        </nav>
-      </div>
+<body>
+  <div class="page">
+    <header>
+      <h1>Red Life <span>Adventures</span></h1>
+      <nav>
+        <a href="collection.html?category=locations">Locations</a>
+        <a href="collection.html?category=npcs">NPCs</a>
+        <a href="collection.html?category=characters">Characters</a>
+        <a href="collection.html?category=hooks">Story Hooks</a>
+      </nav>
     </header>
 
-    <main class="page-inner">
-      <section class="hero">
-        <div>
-          <h1 class="hero-main-title">
-            Drop-in fuel for your <span>table</span>
-          </h1>
-          <p class="hero-tagline">
-            Locations, NPCs, hooks, oddities, spells and more. Built to be dropped into a campaign in minutes, not hours.
-          </p>
-          <div class="hero-meta">
-            <div class="hero-pill">System agnostic by default</div>
-            <div class="hero-pill">Written for DMs and players</div>
-            <div class="hero-pill">Updated frequently</div>
-          </div>
-        </div>
-        <aside class="hero-secondary">
-          <h2>How to use this site</h2>
-          <p>
-            Browse by collection on the map below or jump straight into the latest additions.
-            Each entry is a single page with a clear structure: overview, table-ready details, and variants.
-          </p>
-          <p>
-            You can mix entries into long running campaigns or use them as prompts for one shots.
-          </p>
-        </aside>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">Collections</h2>
-          <p class="section-subtitle">Categories update themselves as new content is added.</p>
-        </div>
-        <div class="card-grid" data-collections-grid>
-          <!-- filled by JS from content-index.json -->
-        </div>
-      </section>
-
-      <section id="latest" class="section">
-        <div class="section-header">
-          <h2 class="section-title">Latest entries</h2>
-          <p class="section-subtitle">New pages are highlighted when they first arrive.</p>
-        </div>
-        <div class="card-grid" data-latest-grid>
-          <!-- filled by JS -->
-        </div>
-      </section>
-
-      <footer class="site-footer">
-        <div>Red Life Adventures - ongoing project for table-ready RPG content.</div>
-        <div>Content and layout subject to change as the world grows.</div>
-      </footer>
+    <main>
+      <div class="map-shell">
+        <!-- update data="map.svg" to match your actual filename if needed -->
+        <object id="world-map" type="image/svg+xml" data="map.svg"></object>
+      </div>
+      <div class="hint">
+        Hover over the coloured regions on the map. They should highlight.
+        Clicking a region will navigate to the corresponding collection.html page using a category based on the state id.
+      </div>
     </main>
+
+    <footer>
+      This is a mockup: state1, state2, state3, state4 are still the raw Azgaar states, just wired up with hover and click.
+    </footer>
   </div>
 
-  <script src="assets/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mapObject = document.getElementById("world-map");
+      if (!mapObject) return;
+
+      // Map state ids to your intended collection categories
+      // You can change these without touching the SVG
+      const stateToCategory = {
+        state1: "locations",
+        state2: "npcs",
+        state3: "characters",
+        state4: "hooks"
+      };
+
+      mapObject.addEventListener("load", () => {
+        const svg = mapObject.contentDocument;
+        if (!svg) {
+          console.error("Could not access SVG content");
+          return;
+        }
+
+        // Select the four states that Azgaar exported
+        const states = Object.keys(stateToCategory);
+
+        states.forEach(stateId => {
+          const el = svg.getElementById(stateId);
+          if (!el) return;
+
+          // Save original style so we can restore it
+          const originalStroke = el.getAttribute("stroke") || "";
+          const originalStrokeWidth = el.getAttribute("stroke-width") || "";
+          const originalOpacity = el.getAttribute("fill-opacity") || "";
+
+          el.style.cursor = "pointer";
+
+          el.addEventListener("mouseenter", () => {
+            el.setAttribute("stroke", "#ffd37a");
+            el.setAttribute("stroke-width", "3");
+            el.setAttribute("fill-opacity", "1");
+          });
+
+          el.addEventListener("mouseleave", () => {
+            if (originalStroke) {
+              el.setAttribute("stroke", originalStroke);
+            } else {
+              el.removeAttribute("stroke");
+            }
+            if (originalStrokeWidth) {
+              el.setAttribute("stroke-width", originalStrokeWidth);
+            } else {
+              el.removeAttribute("stroke-width");
+            }
+            if (originalOpacity) {
+              el.setAttribute("fill-opacity", originalOpacity);
+            } else {
+              el.removeAttribute("fill-opacity");
+            }
+          });
+
+          el.addEventListener("click", () => {
+            const category = stateToCategory[stateId];
+            if (!category) return;
+            window.location.href = `collection.html?category=${encodeURIComponent(category)}`;
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
