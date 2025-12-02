@@ -1,5 +1,8 @@
+/* File: assets/styles.css  •  Date: 2025-12-02  •  Version: v0.4 */
+
 :root {
-  --bg-dark: #05070c;
+  /* Sea-coloured background to avoid black borders */
+  --bg-dark: #3f555b;
   --text-main: #f5f5f5;
   --accent: #f7d57a;
 }
@@ -23,7 +26,7 @@ body {
 
 body.landing {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #1a222e, var(--bg-dark) 70%);
+  background: var(--bg-dark);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   display: flex;
@@ -45,23 +48,22 @@ body.landing {
 .map-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1500px;
-  max-height: calc(100vh - 70px);
+  max-width: 1600px;
+  /* leave room for footer note */
+  height: calc(100vh - 45px);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-/* Center SVG and keep full height when possible */
-
+/* Let the map use full height and stay centred */
 .map-object {
-  max-width: 100%;
-  max-height: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border: none;
+  object-fit: contain;
 }
 
 /* COMING SOON overlay */
@@ -75,7 +77,7 @@ body.landing {
   justify-content: center;
   text-align: center;
   background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
-  pointer-events: none; /* map remains clickable */
+  pointer-events: none; /* map remains clickable underneath */
 }
 
 .coming-soon-main {
@@ -119,7 +121,7 @@ body.landing {
 /* Footer note */
 
 .footer-note {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 0.8rem;
   color: rgba(245, 245, 245, 0.7);
   text-align: center;
@@ -134,11 +136,11 @@ body.landing {
   text-decoration: underline;
 }
 
-/* Generic page styling (if you keep collection.html) */
+/* Generic page styling for collection.html (kept for later) */
 
 body.page {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #1a222e, var(--bg-dark) 70%);
+  background: radial-gradient(circle at top, #1a222e, #05070c 70%);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   display: flex;
@@ -192,6 +194,6 @@ body.page {
   }
 
   .map-wrapper {
-    max-height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
   }
 }
