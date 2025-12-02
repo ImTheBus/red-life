@@ -6,24 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- Nordic-ish display font, similar feel to Valhalica -->
+  <!-- Nordic-ish display font, similar to Valhalica -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 </head>
 <body class="landing">
-  <div class="map-wrapper">
-    <!-- Map SVG; keep the filename/path if yours differs -->
-    <object
-      id="world-map"
-      type="image/svg+xml"
-      data="assets/map.svg"
-      class="map-object">
-    </object>
+  <div class="layout">
+    <div class="map-wrapper">
+      <!-- Map SVG -->
+      <object
+        id="world-map"
+        type="image/svg+xml"
+        data="assets/map.svg"
+        class="map-object">
+      </object>
 
-    <!-- Overlay text -->
-    <div class="coming-soon">
-      <div class="coming-soon-main">COMING SOON</div>
-      <div class="coming-soon-sub">Red Life Adventures</div>
+      <!-- Overlay text -->
+      <div class="coming-soon">
+        <div class="coming-soon-main">COMING SOON</div>
+        <div class="coming-soon-sub">Red Life Adventures</div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Being built in the spare time by
+      <a href="https://rougvie.com" target="_blank" rel="noopener noreferrer">rougvie.com</a>
     </div>
   </div>
 
