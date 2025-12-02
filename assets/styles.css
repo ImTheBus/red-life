@@ -19,25 +19,47 @@ body {
   height: 100%;
 }
 
-/* Fullscreen map */
+/* Overall layout */
 
 body.landing {
-  height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(circle at top, #1a222e, var(--bg-dark) 70%);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
+
+.layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px 18px;
+}
+
+/* Map area */
 
 .map-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  max-width: 1500px;
+  max-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
+/* Center SVG and keep full height when possible */
+
 .map-object {
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   border: none;
 }
@@ -52,8 +74,8 @@ body.landing {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.45) 100%);
-  pointer-events: none; /* map stays clickable beneath */
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none; /* map remains clickable */
 }
 
 .coming-soon-main {
@@ -94,7 +116,25 @@ body.landing {
   }
 }
 
-/* Generic page styling for collection.html */
+/* Footer note */
+
+.footer-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.7);
+  text-align: center;
+}
+
+.footer-note a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+}
+
+/* Generic page styling (if you keep collection.html) */
 
 body.page {
   min-height: 100vh;
@@ -149,5 +189,9 @@ body.page {
 
   .coming-soon-sub {
     letter-spacing: 0.18em;
+  }
+
+  .map-wrapper {
+    max-height: calc(100vh - 80px);
   }
 }
