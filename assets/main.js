@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mapObject = document.getElementById("world-map");
   if (!mapObject) return;
 
-  // Map Azgaar state ids to your category slugs
-  // Adjust these slugs later to match your real collection names / URLs
+  // Map state ids from map.svg to category slugs
   const stateToCategory = {
     state1: "locations",
     state2: "items",
@@ -33,13 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
       const originalStroke = el.getAttribute("stroke") || "";
       const originalStrokeWidth = el.getAttribute("stroke-width") || "";
       const originalOpacity = el.getAttribute("fill-opacity") || "";
+      const originalFilter = el.style.filter || "";
+      const originalTransform = el.style.transform || "";
+      const originalTransformOrigin = el.style.transformOrigin || "";
 
+      // Make interaction feel smooth
+      el.style.transition = "transform 0.18s ease-out, filter 0.18s ease-out, stroke 0.18s ease-out";
       el.style.cursor = "pointer";
 
       el.addEventListener("mouseenter", () => {
         el.setAttribute("stroke", "#ffd37a");
         el.setAttribute("stroke-width", "3");
         el.setAttribute("fill-opacity", "1");
+
+        // Glow + gentle scale
+        el.style.transformOrigin = "50% 50%";
+        el.style.transform = "scale(1.02)";
+        el.style.filter = "drop-shadow(0 0 8px rgba(255, 213, 122, 0.9))";
       });
 
       el.addEventListener("mouseleave", () => {
@@ -51,12 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (originalOpacity) el.setAttribute("fill-opacity", originalOpacity);
         else el.removeAttribute("fill-opacity");
+
+        el.style.filter = originalFilter;
+        el.style.transform = originalTransform;
+        el.style.transformOrigin = originalTransformOrigin;
       });
 
       el.addEventListener("click", () => {
         const category = stateToCategory[stateId];
         if (!category) return;
-        // All categories go to collection.html for now
         window.location.href = `collection.html?category=${encodeURIComponent(category)}`;
       });
     });
