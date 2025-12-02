@@ -1,0 +1,153 @@
+:root {
+  --bg-dark: #05070c;
+  --text-main: #f5f5f5;
+  --accent: #f7d57a;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Fullscreen map */
+
+body.landing {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a222e, var(--bg-dark) 70%);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-object {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+/* COMING SOON overlay */
+
+.coming-soon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.45) 100%);
+  pointer-events: none; /* map stays clickable beneath */
+}
+
+.coming-soon-main {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 20px rgba(0, 0, 0, 0.7);
+  animation: pulseFade 2.4s ease-in-out infinite;
+}
+
+.coming-soon-sub {
+  margin-top: 0.75rem;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.9);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Fade in/out animation */
+
+@keyframes pulseFade {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.98);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.98);
+  }
+}
+
+/* Generic page styling for collection.html */
+
+body.page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a222e, var(--bg-dark) 70%);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-inner {
+  max-width: 640px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: rgba(5, 7, 14, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.page-title {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+}
+
+.page-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Small screens */
+
+@media (max-width: 600px) {
+  .coming-soon-main {
+    letter-spacing: 0.16em;
+  }
+
+  .coming-soon-sub {
+    letter-spacing: 0.18em;
+  }
+}
