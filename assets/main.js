@@ -1,6 +1,8 @@
 // File: assets/main.js  •  Date: 2025-12-02  •  Version: v0.4
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("[RedLife] main.js loaded and running");
+  document.body.style.outline = "4px solid lime";
   const mapObject = document.getElementById("world-map");
   const hoverLabel = document.getElementById("hover-label");
   if (!mapObject) return;
