@@ -30,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function attachRegionHandlers(svg) {
+    svg.addEventListener("mousemove", () => {
+      console.log("[RedLife] mousemove over SVG");
+    });
+
     if (!svg) {
       console.warn("[RedLife] SVG document not available; hover will not work.");
       return;
