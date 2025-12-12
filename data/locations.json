@@ -33,5 +33,320 @@
     ],
     "created": "2025-12-12",
     "updated": "2025-12-12"
+  },
+  {
+    "id": "mistwatch-tower",
+    "title": "Mistwatch Tower",
+    "summary": "A ruined watchtower that only appears on foggy mornings.",
+    "tags": [
+      "ruins",
+      "watchtower",
+      "fog",
+      "travel-encounter"
+    ],
+    "region": "state2",
+    "difficulty": "medium",
+    "body": [
+      "A ruined watchtower that only appears on foggy mornings. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "skull-marsh-causeway",
+    "title": "Skull Marsh Causeway",
+    "summary": "A half-sunken road of stone markers leading through a dead marsh.",
+    "tags": [
+      "marsh",
+      "navigation",
+      "undead-signs",
+      "survival"
+    ],
+    "region": "state3",
+    "difficulty": "medium",
+    "body": [
+      "A half-sunken road of stone markers leading through a dead marsh. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "emberglass-cavern",
+    "title": "Emberglass Cavern",
+    "summary": "A cave of soot-black crystal that holds warmth like a hearth.",
+    "tags": [
+      "cavern",
+      "crystal",
+      "firelight",
+      "resource"
+    ],
+    "region": "state4",
+    "difficulty": "hard",
+    "body": [
+      "A cave of soot-black crystal that holds warmth like a hearth. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "market-of-quiet-coins",
+    "title": "Market of Quiet Coins",
+    "summary": "A night market where sellers speak only in gestures and prices change with secrets.",
+    "tags": [
+      "market",
+      "social",
+      "secrets",
+      "bargains"
+    ],
+    "region": "state5",
+    "difficulty": "medium",
+    "body": [
+      "A night market where sellers speak only in gestures and prices change with secrets. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "tideworn-chapel",
+    "title": "Tideworn Chapel",
+    "summary": "A coastal chapel flooded at high tide, dry at low tide, and never the same twice.",
+    "tags": [
+      "coast",
+      "temple",
+      "shifting",
+      "exploration"
+    ],
+    "region": "state6",
+    "difficulty": "easy",
+    "body": [
+      "A coastal chapel flooded at high tide, dry at low tide, and never the same twice. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "red-stag-trail",
+    "title": "The Red Stag Trail",
+    "summary": "A game path that rearranges itself to lead hunters toward what they most want.",
+    "tags": [
+      "forest",
+      "fey",
+      "temptation",
+      "tracking"
+    ],
+    "region": "state7",
+    "difficulty": "medium",
+    "body": [
+      "A game path that rearranges itself to lead hunters toward what they most want. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "library-of-salt",
+    "title": "Library of Salt",
+    "summary": "A collapsed archive where pages have turned to brittle salt-sheets.",
+    "tags": [
+      "lore",
+      "ruins",
+      "archive",
+      "hazard"
+    ],
+    "region": "state8",
+    "difficulty": "hard",
+    "body": [
+      "A collapsed archive where pages have turned to brittle salt-sheets. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "hollow-ward-post",
+    "title": "Hollow Ward Post",
+    "summary": "An abandoned checkpoint with a still-warm kettle and a ledger of names that updates itself.",
+    "tags": [
+      "mystery",
+      "checkpoint",
+      "omens",
+      "investigation"
+    ],
+    "region": "state9",
+    "difficulty": "easy",
+    "body": [
+      "An abandoned checkpoint with a still-warm kettle and a ledger of names that updates itself. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  },
+  {
+    "id": "black-lantern-bay",
+    "title": "Black Lantern Bay",
+    "summary": "A sheltered bay where lanterns burn with cold light and ships anchor without ropes.",
+    "tags": [
+      "harbor",
+      "ghosts",
+      "navigation",
+      "secrets"
+    ],
+    "region": "state10",
+    "difficulty": "hard",
+    "body": [
+      "A sheltered bay where lanterns burn with cold light and ships anchor without ropes. It has become a known landmark for those who travel the back roads.",
+      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
+      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
+    ],
+    "hooks": [
+      "A local offers payment for proof you reached the site.",
+      "A message arrives that mentions this place by name, but uses an outdated description.",
+      "Someone you meet insists they were here yesterday and saw something impossible."
+    ],
+    "complications": [
+      "The safest route is blocked by a mundane obstacle that still costs time.",
+      "The true danger is not the site itself, but who else is watching it.",
+      "A simple choice here causes a change you can notice on the return journey."
+    ],
+    "rewards": [
+      "A practical advantage for travel in this region.",
+      "A clue that points to another state or category.",
+      "A small treasure that is valuable because of its story, not its price."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
   }
 ]
