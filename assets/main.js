@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function attachRegionHandlers(doc) {
+    const allRegions = Object.keys(stateToCategory)
+      .map(id => doc.querySelector(`#${id}`))
+      .filter(Boolean);
+
     if (!doc) {
       console.warn("[RedLife] SVG document not available.");
       return;
@@ -41,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       el.style.pointerEvents = "all";
       el.style.cursor = "pointer";
-      el.style.transition = "transform 0.18s ease-out, filter 0.18s ease-out, stroke 0.18s ease-out";
+      el.style.transition =
+        "filter 0.18s ease-out, stroke 0.18s ease-out, stroke-width 0.18s ease-out";
+
 
       const originalStroke = el.getAttribute("stroke") || "";
       const originalStrokeWidth = el.getAttribute("stroke-width") || "";
@@ -55,32 +61,44 @@ document.addEventListener("DOMContentLoaded", () => {
           hoverLabel.textContent = stateId.replace("state", "Region ");
           hoverLabel.classList.add("is-visible");
         }
+        allRegions.forEach(r => { if (r !== el) r.style.opacity = "0.35"; });
+          el.style.opacity = "1";
 
-        el.setAttribute("stroke", "#ffd37a");
-        el.setAttribute("stroke-width", "4");
-        el.setAttribute("fill-opacity", "1");
-
-        el.style.transformOrigin = "50% 50%";
-        el.style.transform = "scale(1.04)";
-        el.style.filter = "drop-shadow(0 0 10px rgba(255, 213, 122, 0.9))";
+      
+        // Crisp outline
+        el.setAttribute("stroke", "rgba(255,255,255,0.9)");
+        el.setAttribute("stroke-width", "3");
+      
+        // Slightly increase contrast without tinting
+        el.style.filter = [
+          "drop-shadow(0 6px 10px rgba(0,0,0,0.35))",     // depth shadow
+          "drop-shadow(0 0 10px rgba(180,220,255,0.55))"  // cool glow
+        ].join(" ");
+      
+        // Avoid SVG scale stretch
+        el.style.transform = "none";
+        el.style.transformOrigin = "";
       });
+
 
       el.addEventListener("mouseleave", () => {
         if (originalStroke) el.setAttribute("stroke", originalStroke);
         else el.removeAttribute("stroke");
-
+        allRegions.forEach(r => { r.style.opacity = ""; });
+      
         if (originalStrokeWidth) el.setAttribute("stroke-width", originalStrokeWidth);
         else el.removeAttribute("stroke-width");
-
+      
         if (originalOpacity) el.setAttribute("fill-opacity", originalOpacity);
         else el.removeAttribute("fill-opacity");
-
+      
         el.style.filter = originalFilter;
         el.style.transform = originalTransform;
         el.style.transformOrigin = originalTransformOrigin;
-
+      
         if (hoverLabel) hoverLabel.classList.remove("is-visible");
       });
+
 
       el.addEventListener("click", () => {
         const category = stateToCategory[stateId];
