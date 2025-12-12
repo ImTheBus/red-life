@@ -21,95 +21,89 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function getMapDocument() {
-    // Some browsers implement getSVGDocument, others expose contentDocument
-    if (typeof mapObject.getSVGDocument === "function") {
-      const doc = mapObject.getSVGDocument();
-      if (doc) return doc;
-    }
     return mapObject.contentDocument || null;
   }
 
-  function attachRegionHandlers(svg) {
-    svg.addEventListener("mousemove", () => {
-      console.log("[RedLife] mousemove over SVG");
-    });
 
+  function attachRegionHandlers(svg) {
     if (!svg) {
       console.warn("[RedLife] SVG document not available; hover will not work.");
       return;
     }
-
+  
+    // Debug: proves mouse is moving over the embedded SVG document
+    svg.addEventListener("mousemove", () => {
+      console.log("[RedLife] mousemove over SVG");
+    });
+  
     const stateIds = Object.keys(stateToCategory);
-
-    stateIds.forEach(stateId => {
-      const el = svg.getElementById(stateId);
-
+  
+    stateIds.forEach((stateId) => {
+      const el = svg.querySelector(`#${stateId}`);
       if (!el) {
         console.warn(`[RedLife] State element not found: ${stateId}`);
         return;
       }
-      
-      // --- CRITICAL: ensure SVG has a hit area ---
+  
+      // Ensure SVG has a hit area
       const fill = el.getAttribute("fill");
       if (!fill || fill === "none") {
-        // Use near-transparent fill so the path is still "painted"
         el.setAttribute("fill", "rgba(255,255,255,0.01)");
       }
       el.style.pointerEvents = "all";
-      // -----------------------------------------
-
-
-      if (!el) {
-        console.warn(`[RedLife] State element not found: ${stateId}`);
-        return;
-      }
-
+  
       const originalStroke = el.getAttribute("stroke") || "";
       const originalStrokeWidth = el.getAttribute("stroke-width") || "";
       const originalOpacity = el.getAttribute("fill-opacity") || "";
       const originalFilter = el.style.filter || "";
       const originalTransform = el.style.transform || "";
       const originalTransformOrigin = el.style.transformOrigin || "";
-
-      // Smooth interaction
+  
       el.style.transition =
         "transform 0.18s ease-out, filter 0.18s ease-out, stroke 0.18s ease-out";
       el.style.cursor = "pointer";
-
+  
       el.addEventListener("mouseenter", () => {
         if (hoverLabel) {
           hoverLabel.textContent = stateId.replace("state", "Region ");
           hoverLabel.classList.add("is-visible");
         }
-
+  
         el.setAttribute("stroke", "#ffd37a");
         el.setAttribute("stroke-width", "4");
         el.setAttribute("fill-opacity", "1");
-
+  
         el.style.transformOrigin = "50% 50%";
         el.style.transform = "scale(1.04)";
         el.style.filter = "drop-shadow(0 0 10px rgba(255, 213, 122, 0.9))";
       });
-
+  
       el.addEventListener("mouseleave", () => {
         if (originalStroke) el.setAttribute("stroke", originalStroke);
         else el.removeAttribute("stroke");
-      
+  
         if (originalStrokeWidth) el.setAttribute("stroke-width", originalStrokeWidth);
         else el.removeAttribute("stroke-width");
-      
+  
         if (originalOpacity) el.setAttribute("fill-opacity", originalOpacity);
         else el.removeAttribute("fill-opacity");
-      
+  
         el.style.filter = originalFilter;
         el.style.transform = originalTransform;
         el.style.transformOrigin = originalTransformOrigin;
-      
-        // --- hide hover label ---
+  
         if (hoverLabel) {
           hoverLabel.classList.remove("is-visible");
         }
       });
+  
+      el.addEventListener("click", () => {
+        const category = stateToCategory[stateId];
+        if (!category) return;
+        window.location.href = `collection.html?category=${encodeURIComponent(category)}`;
+      });
+    });
+  }
 
 
       el.addEventListener("click", () => {
