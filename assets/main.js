@@ -1,5 +1,11 @@
-// File: assets/main.js  •  Version: v0.6
-// Goal: Hovering either a region (state) OR its label keeps the same region highlighted and clickable.
+// File: assets/main.js  •  Version: v0.7
+// Supports labels in:
+//  - the embedded SVG document (mapObject.contentDocument)
+//  - the main page HTML (overlay labels)
+// Labels can be matched by:
+//  - data-for="state1" (recommended)
+//  - data-state="state1", data-region="state1", data-label-for="state1"
+//  - id containing "state1" (eg "label-state1", "state1-label", "state1_label", "foo-state1-bar")
 
 document.addEventListener("DOMContentLoaded", () => {
   const mapObject = document.getElementById("world-map");
@@ -19,92 +25,142 @@ document.addEventListener("DOMContentLoaded", () => {
     state10: "secrets",
   };
 
-  // Try to find a label element that corresponds to a given stateId.
-  // Supports a few common conventions so you do not have to be exact:
-  // - id="label-state1" or id="state1-label" or id="state1_label"
-  // - data-for="state1" or data-state="state1" or data-region="state1"
-  function findLabelForState(doc, stateId) {
-    const selectors = [
-      `#label-${stateId}`,
-      `#${stateId}-label`,
-      `#${stateId}_label`,
-      `[data-for="${stateId}"]`,
-      `[data-state="${stateId}"]`,
-      `[data-region="${stateId}"]`,
-      `[data-label-for="${stateId}"]`,
-    ];
+  const STATE_IDS = Object.keys(stateToCategory);
 
-    for (const sel of selectors) {
-      const node = doc.querySelector(sel);
-      if (node) return node;
-    }
+  function inferStateIdFromLabelEl(el) {
+    if (!el) return null;
+
+    const ds =
+      (el.dataset && (el.dataset.for || el.dataset.state || el.dataset.region || el.dataset.labelFor)) || "";
+    const id = el.id || "";
+
+    const haystack = `${ds} ${id}`.toLowerCase();
+    const match = haystack.match(/state\d{1,2}/);
+    if (match && STATE_IDS.includes(match[0])) return match[0];
+
     return null;
   }
 
-  function attachRegionHandlers(doc) {
-    if (!doc) {
+  function collectLabelEls(svgDoc) {
+    const all = [];
+
+    // 1) Labels inside the SVG doc
+    if (svgDoc) {
+      all.push(
+        ...svgDoc.querySelectorAll(
+          [
+            `[data-for]`,
+            `[data-state]`,
+            `[data-region]`,
+            `[data-label-for]`,
+            `[id*="state"]`,
+          ].join(",")
+        )
+      );
+    }
+
+    // 2) Labels in the main HTML doc (overlay labels)
+    all.push(
+      ...document.querySelectorAll(
+        [
+          `[data-for]`,
+          `[data-state]`,
+          `[data-region]`,
+          `[data-label-for]`,
+          `[id*="state"]`,
+          `.map-label`,
+        ].join(",")
+      )
+    );
+
+    // De-dupe
+    return Array.from(new Set(all));
+  }
+
+  function makeClickable(el) {
+    if (!el) return;
+    // Works for both HTML and SVG elements
+    el.style.pointerEvents = "auto";
+    el.style.cursor = "pointer";
+    // Some SVG text/groups can still be weird; force a tiny transparent fill if it's a <text> with no fill.
+    try {
+      const tag = (el.tagName || "").toLowerCase();
+      if (tag === "text") {
+        const fill = el.getAttribute && el.getAttribute("fill");
+        if (!fill || fill === "none") el.setAttribute("fill", "rgba(255,255,255,0.01)");
+      }
+    } catch (_) {}
+  }
+
+  function attachRegionHandlers(svgDoc) {
+    if (!svgDoc) {
       console.warn("[RedLife] SVG document not available.");
       return;
     }
 
     console.log("[RedLife] main.js running, SVG doc OK");
 
-    const regionEls = new Map(); // stateId -> region element
-    const labelEls = new Map();  // stateId -> label element (optional)
-
-    // Collect regions and matching labels
-    Object.keys(stateToCategory).forEach((stateId) => {
-      const region = doc.querySelector(`#${stateId}`);
+    const regionEls = new Map(); // stateId -> SVG region element
+    STATE_IDS.forEach((stateId) => {
+      const region = svgDoc.querySelector(`#${stateId}`);
       if (!region) {
         console.warn(`[RedLife] State element not found: ${stateId}`);
         return;
       }
-
-      const label = findLabelForState(doc, stateId);
-      if (!label) {
-        // Labels are optional, but log so you can confirm naming quickly.
-        console.warn(`[RedLife] Label element not found for: ${stateId}`);
-      }
-
       regionEls.set(stateId, region);
-      if (label) labelEls.set(stateId, label);
+
+      // Ensure it has a hoverable hit area
+      const fill = region.getAttribute("fill");
+      if (!fill || fill === "none") {
+        region.setAttribute("fill", "rgba(255,255,255,0.01)");
+      }
+      region.style.pointerEvents = "all";
+      region.style.cursor = "pointer";
+      region.style.transition =
+        "filter 0.18s ease-out, stroke 0.18s ease-out, stroke-width 0.18s ease-out, opacity 0.18s ease-out";
     });
 
     const allRegions = Array.from(regionEls.values());
 
-    // Per-state original styles so we can restore cleanly
-    const original = new Map(); // element -> { ... }
+    // Build label map from BOTH documents
+    const labelElsByState = new Map(); // stateId -> Set(elements)
+    collectLabelEls(svgDoc).forEach((el) => {
+      const stateId = inferStateIdFromLabelEl(el);
+      if (!stateId) return;
+      if (!labelElsByState.has(stateId)) labelElsByState.set(stateId, new Set());
+      labelElsByState.get(stateId).add(el);
+    });
 
+    console.log(
+      "[RedLife] Regions found:",
+      regionEls.size,
+      "| Label groups found:",
+      labelElsByState.size
+    );
+
+    const original = new Map(); // element -> snapshot
     function snapshot(el) {
-      if (original.has(el)) return;
+      if (!el || original.has(el)) return;
       original.set(el, {
-        stroke: el.getAttribute("stroke") || "",
-        strokeWidth: el.getAttribute("stroke-width") || "",
-        fillOpacity: el.getAttribute("fill-opacity") || "",
-        filter: el.style.filter || "",
-        transform: el.style.transform || "",
-        transformOrigin: el.style.transformOrigin || "",
-        opacity: el.style.opacity || "",
-        cursor: el.style.cursor || "",
-        pointerEvents: el.style.pointerEvents || "",
-        transition: el.style.transition || "",
+        stroke: el.getAttribute ? el.getAttribute("stroke") || "" : "",
+        strokeWidth: el.getAttribute ? el.getAttribute("stroke-width") || "" : "",
+        fillOpacity: el.getAttribute ? el.getAttribute("fill-opacity") || "" : "",
+        filter: el.style ? el.style.filter || "" : "",
+        transform: el.style ? el.style.transform || "" : "",
+        transformOrigin: el.style ? el.style.transformOrigin || "" : "",
+        opacity: el.style ? el.style.opacity || "" : "",
       });
     }
 
-    function makeHitArea(el) {
-      // Ensure it has a hoverable hit area
-      const fill = el.getAttribute("fill");
-      if (!fill || fill === "none") {
-        el.setAttribute("fill", "rgba(255,255,255,0.01)");
-      }
-      el.style.pointerEvents = "all";
-      el.style.cursor = "pointer";
-      el.style.transition =
-        "filter 0.18s ease-out, stroke 0.18s ease-out, stroke-width 0.18s ease-out, opacity 0.18s ease-out";
-    }
+    function applyActiveStyle(stateId) {
+      const regionEl = regionEls.get(stateId);
+      if (!regionEl) return;
 
-    function applyActiveStyle(regionEl) {
-      // Dim others
+      if (hoverLabel) {
+        hoverLabel.textContent = stateId.replace("state", "Region ");
+        hoverLabel.classList.add("is-visible");
+      }
+
       allRegions.forEach((r) => {
         if (r !== regionEl) r.style.opacity = "0.35";
       });
@@ -121,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function restoreAll() {
-      // Restore region styles
       allRegions.forEach((el) => {
         const o = original.get(el);
         if (!o) return;
@@ -149,7 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = `collection.html?category=${encodeURIComponent(category)}`;
     }
 
-    let activeStateId = null;
     let clearTimer = null;
 
     function setActive(stateId) {
@@ -157,96 +211,71 @@ document.addEventListener("DOMContentLoaded", () => {
         clearTimeout(clearTimer);
         clearTimer = null;
       }
-
-      activeStateId = stateId;
-
-      const regionEl = regionEls.get(stateId);
-      if (!regionEl) return;
-
-      if (hoverLabel) {
-        hoverLabel.textContent = stateId.replace("state", "Region ");
-        hoverLabel.classList.add("is-visible");
-      }
-
-      applyActiveStyle(regionEl);
+      applyActiveStyle(stateId);
     }
 
-    // If pointer leaves region/label, we delay clearing slightly.
-    // This avoids flicker when moving between the region and its label.
-    function scheduleClearIfTrulyLeft(stateId) {
+    function scheduleClearIfLeft(stateId) {
       if (clearTimer) clearTimeout(clearTimer);
 
       clearTimer = setTimeout(() => {
         const regionEl = regionEls.get(stateId);
-        const labelEl = labelEls.get(stateId);
+        const labels = labelElsByState.get(stateId);
 
         const regionHovering = regionEl ? regionEl.matches(":hover") : false;
-        const labelHovering = labelEl ? labelEl.matches(":hover") : false;
 
-        if (!regionHovering && !labelHovering) {
-          activeStateId = null;
-          restoreAll();
+        let labelHovering = false;
+        if (labels && labels.size) {
+          for (const el of labels) {
+            if (el.matches && el.matches(":hover")) {
+              labelHovering = true;
+              break;
+            }
+          }
         }
+
+        if (!regionHovering && !labelHovering) restoreAll();
       }, 80);
     }
 
-    // Setup handlers for each state and its label
-    Object.keys(stateToCategory).forEach((stateId) => {
+    // Attach handlers to regions + labels
+    STATE_IDS.forEach((stateId) => {
       const regionEl = regionEls.get(stateId);
       if (!regionEl) return;
 
       snapshot(regionEl);
-      makeHitArea(regionEl);
 
-      const labelEl = labelEls.get(stateId);
-      if (labelEl) {
-        snapshot(labelEl);
-        // Labels should be hoverable/clickable too
-        labelEl.style.pointerEvents = "all";
-        labelEl.style.cursor = "pointer";
-      }
-
-      const onEnter = () => setActive(stateId);
-      const onLeave = () => scheduleClearIfTrulyLeft(stateId);
-      const onClick = (e) => {
-        // Stop odd bubbling inside SVG groups from triggering twice
+      regionEl.addEventListener("mouseenter", () => setActive(stateId));
+      regionEl.addEventListener("mouseleave", () => scheduleClearIfLeft(stateId));
+      regionEl.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
         navigateTo(stateId);
-      };
+      });
 
-      regionEl.addEventListener("mouseenter", onEnter);
-      regionEl.addEventListener("mouseleave", onLeave);
-      regionEl.addEventListener("click", onClick);
+      const labels = labelElsByState.get(stateId);
+      if (labels && labels.size) {
+        for (const labelEl of labels) {
+          snapshot(labelEl);
+          makeClickable(labelEl);
 
-      if (labelEl) {
-        labelEl.addEventListener("mouseenter", onEnter);
-        labelEl.addEventListener("mouseleave", onLeave);
-        labelEl.addEventListener("click", onClick);
+          labelEl.addEventListener("mouseenter", () => setActive(stateId));
+          labelEl.addEventListener("mouseleave", () => scheduleClearIfLeft(stateId));
+          labelEl.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            navigateTo(stateId);
+          });
+        }
+      } else {
+        console.warn(`[RedLife] No label elements mapped to ${stateId}.`);
       }
     });
 
-    // Clicking empty space in the SVG clears highlight
-    doc.addEventListener("click", (e) => {
-      // If click is not on a tracked region or label, clear.
-      const target = e.target;
-      const isTracked =
-        Array.from(regionEls.values()).includes(target) ||
-        Array.from(labelEls.values()).includes(target);
-
-      if (!isTracked) {
-        activeStateId = null;
-        restoreAll();
-      }
-    });
-
-    // Initial clear (in case styles were left from previous hot reload etc.)
     restoreAll();
   }
 
   mapObject.addEventListener("load", () => {
-    const doc = mapObject.contentDocument || null;
-    attachRegionHandlers(doc);
+    attachRegionHandlers(mapObject.contentDocument || null);
   });
 
   if (mapObject.contentDocument) {
