@@ -1,0 +1,37 @@
+[
+  {
+    "id": "old-stone-bridge",
+    "title": "The Old Stone Bridge",
+    "summary": "A crumbling single-span bridge over a narrow river gorge. Locals swear they hear footsteps crossing at night, but the bridge is always empty when they look.",
+    "tags": [
+      "travel-encounter",
+      "haunting",
+      "bridge",
+      "frontier"
+    ],
+    "region": "state1",
+    "difficulty": "easy",
+    "body": [
+      "A crumbling single-span bridge arches over a narrow river gorge. The stone is slick with moss and the parapet is chipped where carts have scraped it for generations.",
+      "After sundown, locals claim they hear footsteps and the creak of unseen weight crossing from bank to bank. Lantern light shows nothing, and any attempt to wait on the bridge feels like being watched from below.",
+      "Use this as a travel encounter that can turn into combat, negotiation, or a social mystery depending on what is haunting the bridge."
+    ],
+    "hooks": [
+      "Travelers vanish when crossing after sundown.",
+      "A rival party swears they were pushed by an invisible hand mid-crossing.",
+      "A local begs the party to retrieve a charm tossed into the river years ago."
+    ],
+    "complications": [
+      "The bridge shudders and cracks if angered or disrespected.",
+      "The river below carries bones and broken gear from past incidents.",
+      "The haunting is a misdirect for something living under the water."
+    ],
+    "rewards": [
+      "A hidden cache wedged under a loose stone.",
+      "A blessing for safe crossing in this region.",
+      "A clue pointing to a larger threat upstream."
+    ],
+    "created": "2025-12-12",
+    "updated": "2025-12-12"
+  }
+]
