@@ -1,0 +1,288 @@
+/* File: assets/styles.css  •  Date: 2025-12-02  •  Version: v0.4 */
+
+:root {
+  /* Sea-coloured background to avoid black borders */
+  --bg-dark: #3f555b;
+  --text-main: #f5f5f5;
+  --accent: #f7d57a;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Overall layout */
+
+
+/* Layout: fill viewport cleanly */
+body.landing {
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  display: flex;
+}
+
+.layout {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Map panel: flexes to available space above footer */
+.map-wrapper {
+  position: relative;
+  flex: 1;
+  min-height: 0;              /* important for flex children */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;              /* gives breathing room */
+  background: #3f555b;        /* match your bg to remove odd edging */
+}
+
+/* Make the map itself fill the panel */
+.map-object {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Make any leftover space feel intentional */
+.map-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.08),
+    inset 0 0 40px rgba(0,0,0,0.30),
+    0 18px 40px rgba(0,0,0,0.35);
+}
+
+.footer-note {
+  flex: 0 0 auto;
+  padding: 10px 12px;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.7);
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+}
+
+
+
+
+/* Footer note */
+
+
+
+/* Generic page styling for collection.html (kept for later) */
+
+body.page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a222e, #05070c 70%);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-inner {
+  max-width: 640px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: rgba(5, 7, 14, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  text-align: center;
+}
+
+.page-title {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+}
+
+.page-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Small screens */
+
+
+/* Hover debug / region label */
+
+.hover-label {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.hover-label.is-visible {
+  opacity: 1;
+}
+
+
+/* =========================
+   Data-driven pages (v0.1)
+   ========================= */
+
+.toolbar {
+  margin: 14px 0 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search {
+  width: min(720px, 100%);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.22);
+  color: var(--text-main);
+  outline: none;
+}
+
+.search::placeholder {
+  color: rgba(245,245,245,0.65);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.18);
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(247,213,122,0.55);
+  background: rgba(0,0,0,0.24);
+}
+
+.card-title {
+  font-family: "Iceland", system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.card-summary {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(0,0,0,0.18);
+}
+
+.detail {
+  max-width: 900px;
+}
+
+.detail-title {
+  margin: 8px 0 10px;
+  font-family: "Iceland", system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+.detail-summary {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.detail-meta {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.detail-h2 {
+  margin-top: 18px;
+  font-family: "Iceland", system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.detail-list {
+  margin: 10px 0 0 18px;
+}
+
+.detail-back {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--accent);
+}
+
+.empty {
+  opacity: 0.85;
+  padding: 10px 0;
+}
