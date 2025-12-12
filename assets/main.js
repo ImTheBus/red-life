@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const mapObject = document.getElementById("world-map");
+  const hoverLabel = document.getElementById("hover-label");
   if (!mapObject) return;
 
   // Map state ids from map.svg to category slugs
@@ -38,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     stateIds.forEach(stateId => {
       const el = svg.getElementById(stateId);
+
+      if (!el) {
+        console.warn(`[RedLife] State element not found: ${stateId}`);
+        return;
+      }
+      
       // --- CRITICAL: ensure SVG has a hit area ---
       const fill = el.getAttribute("fill");
       if (!fill || fill === "none") {
@@ -46,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       el.style.pointerEvents = "all";
       // -----------------------------------------
+
 
       if (!el) {
         console.warn(`[RedLife] State element not found: ${stateId}`);
@@ -65,6 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
       el.style.cursor = "pointer";
 
       el.addEventListener("mouseenter", () => {
+        if (hoverLabel) {
+          hoverLabel.textContent = stateId.replace("state", "Region ");
+          hoverLabel.classList.add("is-visible");
+        }
+
         el.setAttribute("stroke", "#ffd37a");
         el.setAttribute("stroke-width", "4");
         el.setAttribute("fill-opacity", "1");
@@ -77,17 +90,23 @@ document.addEventListener("DOMContentLoaded", () => {
       el.addEventListener("mouseleave", () => {
         if (originalStroke) el.setAttribute("stroke", originalStroke);
         else el.removeAttribute("stroke");
-
+      
         if (originalStrokeWidth) el.setAttribute("stroke-width", originalStrokeWidth);
         else el.removeAttribute("stroke-width");
-
+      
         if (originalOpacity) el.setAttribute("fill-opacity", originalOpacity);
         else el.removeAttribute("fill-opacity");
-
+      
         el.style.filter = originalFilter;
         el.style.transform = originalTransform;
         el.style.transformOrigin = originalTransformOrigin;
+      
+        // --- hide hover label ---
+        if (hoverLabel) {
+          hoverLabel.classList.remove("is-visible");
+        }
       });
+
 
       el.addEventListener("click", () => {
         const category = stateToCategory[stateId];
