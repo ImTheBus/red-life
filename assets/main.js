@@ -2,6 +2,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("[RedLife] main.js loaded and running");
+  if (!hoverLabel) console.warn("[RedLife] hover-label element missing");
+  else {
+    hoverLabel.textContent = "LABEL TEST";
+    hoverLabel.classList.add("is-visible");
+  }
+
   document.body.style.outline = "4px solid lime";
   const mapObject = document.getElementById("world-map");
   const hoverLabel = document.getElementById("hover-label");
