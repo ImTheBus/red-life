@@ -286,3 +286,136 @@ body.page {
   opacity: 0.85;
   padding: 10px 0;
 }
+/* ==========================
+   Adventure Board List Style
+   ========================== */
+
+/* Board background on list pages */
+.collection-wrap,
+.list-wrap,
+main {
+  /* keep existing layout, add board feel */
+}
+
+.board {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+  border-radius: 18px;
+  background:
+    radial-gradient(1200px 500px at 40% 10%, rgba(255,255,255,0.06), transparent 55%),
+    radial-gradient(900px 400px at 70% 60%, rgba(0,0,0,0.25), transparent 55%),
+    linear-gradient(180deg, rgba(70,40,20,0.75), rgba(30,18,10,0.75));
+  box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* The grid of notices */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* Notice card */
+.notice {
+  position: relative;
+  padding: 18px 16px 16px;
+  border-radius: 14px;
+  color: rgba(20, 12, 8, 0.92);
+  background:
+    radial-gradient(900px 120px at 50% 0%, rgba(255,255,255,0.55), transparent 60%),
+    linear-gradient(180deg, rgba(245, 232, 205, 0.98), rgba(225, 206, 170, 0.98));
+  box-shadow:
+    0 18px 30px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(60,40,20,0.25);
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 140ms ease, box-shadow 140ms ease;
+  overflow: hidden;
+}
+
+/* Torn/tattered edge illusion */
+.notice::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(10px 10px at 8% 8%, rgba(0,0,0,0.10), transparent 55%),
+    radial-gradient(12px 12px at 92% 10%, rgba(0,0,0,0.10), transparent 55%),
+    radial-gradient(14px 14px at 6% 92%, rgba(0,0,0,0.12), transparent 55%),
+    radial-gradient(16px 16px at 94% 88%, rgba(0,0,0,0.12), transparent 55%),
+    radial-gradient(900px 300px at 30% 30%, rgba(0,0,0,0.07), transparent 55%);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* Pins */
+.notice::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(180,40,40,0.95) 55%, rgba(80,0,0,0.95));
+  box-shadow: 0 6px 10px rgba(0,0,0,0.45);
+}
+
+/* Second pin */
+.notice .pin2 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(40,90,180,0.95) 55%, rgba(0,20,60,0.95));
+  box-shadow: 0 6px 10px rgba(0,0,0,0.45);
+}
+
+/* Hover */
+.notice:hover {
+  transform: rotate(var(--tilt, 0deg)) translateY(-3px) scale(1.01);
+  box-shadow:
+    0 26px 46px rgba(0,0,0,0.55),
+    inset 0 0 0 1px rgba(60,40,20,0.25);
+}
+
+/* Typography inside notice */
+.notice h3,
+.notice .title {
+  margin: 8px 0 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(18,10,6,0.95);
+}
+
+.notice p,
+.notice .summary {
+  margin: 0 0 12px;
+  color: rgba(20,12,8,0.85);
+}
+
+.notice .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.notice .tag {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(40,20,10,0.08);
+  border: 1px solid rgba(60,30,15,0.18);
+  color: rgba(20,12,8,0.78);
+}
+
+/* Rotation variance */
+.board-grid > *:nth-child(3n + 1) { --tilt: -1.2deg; }
+.board-grid > *:nth-child(3n + 2) { --tilt:  0.9deg; }
+.board-grid > *:nth-child(3n + 3) { --tilt: -0.4deg; }
