@@ -66,48 +66,6 @@ body.landing {
   object-fit: contain;
 }
 
-/* COMING SOON overlay */
-
-.coming-soon {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
-  pointer-events: none; /* map remains clickable underneath */
-}
-
-.coming-soon-main {
-  font-family: "Iceland", system-ui, sans-serif;
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--accent);
-  text-shadow:
-    0 0 10px rgba(0, 0, 0, 0.9),
-    0 0 20px rgba(0, 0, 0, 0.7);
-  animation: pulseFade 2.4s ease-in-out infinite;
-}
-/* File: assets/styles.css */
-
-.coming-soon {
-  pointer-events: none;       /* let mouse clicks pass through to the map */
-}
-
-
-.coming-soon-sub {
-  margin-top: 0.75rem;
-  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(245, 245, 245, 0.9);
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
-}
-
-/* Fade in/out animation */
 
 @keyframes pulseFade {
   0% {
