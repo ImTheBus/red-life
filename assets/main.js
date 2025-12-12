@@ -38,6 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     stateIds.forEach(stateId => {
       const el = svg.getElementById(stateId);
+      // --- CRITICAL: ensure SVG has a hit area ---
+      const fill = el.getAttribute("fill");
+      if (!fill || fill === "none") {
+        // Use near-transparent fill so the path is still "painted"
+        el.setAttribute("fill", "rgba(255,255,255,0.01)");
+      }
+      el.style.pointerEvents = "all";
+      // -----------------------------------------
+
       if (!el) {
         console.warn(`[RedLife] State element not found: ${stateId}`);
         return;
