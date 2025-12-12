@@ -59,28 +59,45 @@
     });
     return wrap;
   }
+function renderList(container, category, records) {
+  container.innerHTML = "";
 
-  function renderList(container, category, records) {
-    container.innerHTML = "";
+  if (!records.length) {
+    container.appendChild(el("div", "empty", "No entries yet."));
+    return;
+  }
 
-    if (!records.length) {
-      container.appendChild(el("div", "empty", "No entries yet."));
-      return;
+  records.forEach((r) => {
+    const card = el("a", "notice");
+    card.href = `detail.html?category=${encodeURIComponent(category)}&id=${encodeURIComponent(r.id)}`;
+
+    // pins
+    const pin2 = el("div", "pin2");
+    card.appendChild(pin2);
+
+    // content
+    const h = el("div", "notice-title", r.title || r.id);
+    card.appendChild(h);
+
+    if (r.summary) {
+      const s = el("div", "notice-summary", r.summary);
+      card.appendChild(s);
     }
 
-    records.forEach((r) => {
-      const card = el("a", "card");
-      card.href = `detail.html?category=${encodeURIComponent(category)}&id=${encodeURIComponent(r.id)}`;
+    // meta line (optional)
+    const metaBits = [];
+    if (r.region) metaBits.push(r.region.toUpperCase());
+    if (r.difficulty) metaBits.push(String(r.difficulty).toUpperCase());
+    if (metaBits.length) {
+      card.appendChild(el("div", "notice-meta", metaBits.join(" • ")));
+    }
 
-      const h = el("div", "card-title", r.title || r.id);
-      const s = el("div", "card-summary", r.summary || "");
-      card.appendChild(h);
-      if (r.summary) card.appendChild(s);
-      if (r.tags && r.tags.length) card.appendChild(renderTags(r.tags));
+    if (r.tags && r.tags.length) card.appendChild(renderTags(r.tags));
 
-      container.appendChild(card);
-    });
-  }
+    container.appendChild(card);
+  });
+}
+
 
   function filterRecords(records, q) {
     const query = (q || "").trim().toLowerCase();
