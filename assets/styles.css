@@ -24,81 +24,72 @@ body {
 
 /* Overall layout */
 
+
+/* Layout: fill viewport cleanly */
 body.landing {
   min-height: 100vh;
   background: var(--bg-dark);
   color: var(--text-main);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   display: flex;
-  align-items: stretch;
-  justify-content: center;
 }
 
 .layout {
-  flex: 1;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px 18px;
 }
 
-/* Map area */
-
+/* Map panel: flexes to available space above footer */
 .map-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 1600px;
-  /* leave room for footer note */
-  height: calc(100vh - 45px);
+  flex: 1;
+  min-height: 0;              /* important for flex children */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 14px;              /* gives breathing room */
+  background: #3f555b;        /* match your bg to remove odd edging */
 }
 
-/* Let the map use full height and stay centred */
+/* Make the map itself fill the panel */
 .map-object {
   width: 100%;
   height: 100%;
-  display: block;
   border: none;
-  object-fit: contain;
+  display: block;
 }
 
-
-@keyframes pulseFade {
-  0% {
-    opacity: 0.2;
-    transform: scale(0.98);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0.2;
-    transform: scale(0.98);
-  }
+/* Make any leftover space feel intentional */
+.map-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.08),
+    inset 0 0 40px rgba(0,0,0,0.30),
+    0 18px 40px rgba(0,0,0,0.35);
 }
-
-/* Footer note */
 
 .footer-note {
+  flex: 0 0 auto;
+  padding: 10px 12px;
   margin-top: 8px;
   font-size: 0.8rem;
   color: rgba(245, 245, 245, 0.7);
   text-align: center;
+  background: rgba(0,0,0,0.15);
 }
 
-.footer-note a {
-  color: var(--accent);
-  text-decoration: none;
-}
 
-.footer-note a:hover {
-  text-decoration: underline;
-}
+
+
+/* Footer note */
+
+
 
 /* Generic page styling for collection.html (kept for later) */
 
@@ -148,19 +139,7 @@ body.page {
 
 /* Small screens */
 
-@media (max-width: 600px) {
-  .coming-soon-main {
-    letter-spacing: 0.16em;
-  }
 
-  .coming-soon-sub {
-    letter-spacing: 0.18em;
-  }
-
-  .map-wrapper {
-    height: calc(100vh - 60px);
-  }
-}
 /* Hover debug / region label */
 
 .hover-label {
