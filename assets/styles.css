@@ -97,9 +97,7 @@ body.landing {
   pointer-events: none;       /* let mouse clicks pass through to the map */
 }
 
-.coming-soon a {
-  pointer-events: auto;       /* optional: make any links inside still clickable */
-}
+
 .coming-soon-sub {
   margin-top: 0.75rem;
   font-size: clamp(0.9rem, 1.6vw, 1.2rem);
