@@ -1,40 +1,101 @@
-<!-- File: index.html  •  Date: 2025-12-02  •  Version: v0.4 -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Red Life Adventures – Coming soon</title>
+  <title>Red Life Adventures – A living archive of tabletop content</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A growing archive of locations, characters, items, and secrets for tabletop roleplaying games. Click a region of the map to explore.">
+  <meta property="og:title" content="Red Life Adventures">
+  <meta property="og:description" content="A living archive of adventures, characters, and secrets for tabletop play.">
+  <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="assets/styles.css">
-
-  <!-- Nordic-ish display font, similar flavour to Valhalica -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="landing">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="header-title">Red Life Adventures</span>
+        <span class="header-sep">&mdash;</span>
+        <span class="header-tagline">A living archive for tabletop play</span>
+      </div>
+    </div>
+  </header>
+
   <div class="layout">
-    <div class="map-wrapper">
-      <!-- Map SVG; keep path if you rename map.svg -->
-      <object
-        id="world-map"
-        type="image/svg+xml"
-        data="assets/map.svg"
-        class="map-object">
-      </object>
-
-
+    <div class="map-section">
+      <p class="map-hint">Click a region of the world to explore its contents</p>
+      <div class="map-wrapper">
+        <object
+          id="world-map"
+          type="image/svg+xml"
+          data="assets/map.svg"
+          class="map-object"
+          aria-label="Interactive world map — click a region to explore">
+        </object>
+      </div>
     </div>
 
-    <div class="footer-note">
-      Being built in the spare time by
-      <a href="https://rougvie.com" target="_blank" rel="noopener noreferrer">rougvie.com</a>
-    </div>
+    <section class="category-grid" aria-label="Content categories">
+      <a href="collection.html?category=locations" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Locations</span>
+        <span class="cat-desc">Places to explore, encounter, and return to</span>
+      </a>
+      <a href="collection.html?category=npc" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">NPCs</span>
+        <span class="cat-desc">Characters who push the story forward</span>
+      </a>
+      <a href="collection.html?category=items" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Items</span>
+        <span class="cat-desc">Objects with history, power, and consequence</span>
+      </a>
+      <a href="collection.html?category=puzzles" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Puzzles</span>
+        <span class="cat-desc">Challenges that reward lateral thinking</span>
+      </a>
+      <a href="collection.html?category=story-hooks" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Story Hooks</span>
+        <span class="cat-desc">Starting points that go somewhere interesting</span>
+      </a>
+      <a href="collection.html?category=character-hooks" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Character Hooks</span>
+        <span class="cat-desc">Background threads for players to develop</span>
+      </a>
+      <a href="collection.html?category=site-lore" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Lore</span>
+        <span class="cat-desc">The history and truth behind the world</span>
+      </a>
+      <a href="collection.html?category=secrets" class="cat-card">
+        <span class="cat-icon">&#9650;</span>
+        <span class="cat-name">Secrets</span>
+        <span class="cat-desc">What the players do not yet know</span>
+      </a>
+    </section>
+
+    <footer class="site-footer-bar">
+      <div>
+        Being built in spare time by <a href="https://rougvie.com" target="_blank" rel="noopener noreferrer">rougvie.com</a>
+      </div>
+      <div>
+        <a href="collection.html?category=submit-your-own">Submit content</a>
+        &middot;
+        <a href="mailto:dean@imthebus.co.uk">Contact</a>
+      </div>
+    </footer>
   </div>
 
   <script src="assets/main.js"></script>
   <div id="hover-label" class="hover-label" aria-live="polite"></div>
+
 </body>
 </html>
-
-
