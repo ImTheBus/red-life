@@ -1,35 +1,128 @@
-<!-- File: collection.html  •  Date: 2025-12-12  •  Version: v0.6 -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Red Life Adventures – Collection</title>
+  <title>Red Life Adventures – Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the Red Life Adventures archive. Locations, NPCs, items, puzzles, story hooks, and more.">
 
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=IM+Fell+English:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body class="page" data-page="collection">
-  <div class="page-inner">
-    <div class="page-title" id="collection-title">COLLECTION</div>
-    <div class="page-subtitle" id="collection-subtitle"></div>
+<body>
+<div class="rla-shell">
 
-    <div class="toolbar">
-      <input id="collection-search" class="search" type="search" placeholder="Search title, tags, region..." autocomplete="off">
+  <header class="rla-header">
+    <a class="rla-header-brand" href="index.html">Red Life Adventures</a>
+    <nav class="rla-header-nav">
+      <a href="index.html">Map</a>
+      <a href="collection.html?category=submit-your-own">Submit</a>
+      <a href="mailto:dean@imthebus.co.uk">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page header: title + back link -->
+  <div class="rla-page-header">
+    <div>
+      <h1 class="rla-page-title" id="collection-title">Archive</h1>
+      <p style="margin:2px 0 0; font-size:0.78rem; color:var(--text-muted);" id="collection-subtitle"></p>
+    </div>
+    <a href="index.html" class="rla-page-back">← Back to map</a>
+  </div>
+
+  <!-- Body: toolbar + board -->
+  <div class="rla-page-body">
+
+    <div class="rla-toolbar">
+
+      <input
+        id="collection-search"
+        class="rla-search"
+        type="search"
+        placeholder="Search title, tags, region…"
+        autocomplete="off"
+        aria-label="Search the archive">
+
+      <form class="rla-subscribe-inline" id="collectionSubscribeForm" action="https://subscribe.imthebus.workers.dev" method="POST">
+        <input type="hidden" name="source" value="redlife-collection">
+        <input type="email" name="email" placeholder="Get new content by email" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Subscribe</button>
+        <p id="collectionSubscribeStatus" style="display:none; font-size:0.78rem; color: var(--text-muted);"></p>
+      </form>
+
     </div>
 
-    <!-- Adventure board -->
     <div class="board">
       <div id="collection-list" class="board-grid" aria-live="polite"></div>
     </div>
 
-    <div class="footer-note">
-      <a href="index.html">Back to map</a>
-    </div>
+    <p style="margin-top:20px; font-size:0.78rem; color:var(--text-faint);">
+      Data lives in your browser and the archive. <a href="index.html" style="color:var(--accent-dim);">Back to map</a>
+    </p>
+
   </div>
 
-  <script src="assets/content.js"></script>
+  <footer class="rla-footer">
+    <div>
+      Built in spare time by <a href="https://rougvie.com" target="_blank" rel="noopener">rougvie.com</a>
+      &middot;
+      Also: <a href="https://imthebus.github.io/OfCourseItWentWrong/" target="_blank" rel="noopener">Of Course It Went Wrong</a>
+    </div>
+    <div>
+      <a href="collection.html?category=submit-your-own">Submit content</a>
+      &middot;
+      <a href="mailto:dean@imthebus.co.uk">Contact</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/content.js"></script>
+
+<script>
+(function () {
+  var form = document.getElementById('collectionSubscribeForm');
+  var statusEl = document.getElementById('collectionSubscribeStatus');
+  if (!form || !statusEl) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = '...';
+    try {
+      var res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: form.email.value, source: form.source.value })
+      });
+      var data = await res.json().catch(function () { return {}; });
+      statusEl.style.display = 'block';
+      if (res.ok) {
+        statusEl.style.color = '#86efac';
+        statusEl.textContent = 'You are in.';
+        form.reset();
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+      } else {
+        statusEl.style.color = '#fca5a5';
+        statusEl.textContent = data.error || 'Something went wrong.';
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+      }
+    } catch {
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#fca5a5';
+      statusEl.textContent = 'Could not connect.';
+      btn.disabled = false;
+      btn.textContent = 'Subscribe';
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
