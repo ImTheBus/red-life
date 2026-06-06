@@ -1,22 +1,47 @@
-/* Red Life Adventures — styles.css */
+/* Red Life Adventures — styles.css
+   Redesign 2026-06-07: map-as-hero, ink/parchment + single gold accent.
+   Design direction: 10-projects/redlifeadventures/design-direction.md */
 
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=IM+Fell+English:ital@0;1&family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --bg-dark:      #2a2018;
-  --bg-mid:       #3a2e1e;
-  --bg-board:     #1a1008;
-  --text-main:    #f0ead8;
-  --text-muted:   rgba(240,234,216,0.6);
-  --text-faint:   rgba(240,234,216,0.35);
-  --accent:       #d4a84b;
-  --accent-dim:   rgba(212,168,75,0.6);
-  --parchment:    #e8d9b0;
-  --border-warm:  rgba(212,168,75,0.2);
+  /* Dark theme — one flat ink base, one gold accent (design-direction §3) */
+  --ink:           #211913;  /* page bg — flat, no gradients */
+  --ink-raised:    #2C2118;  /* cards, header, raised surfaces */
+  --ink-deep:      #1A130D;  /* deepest insets / map margin */
+  --parchment:     #F0EAD8;  /* primary text on dark */
+  --parchment-mut: #B7AE99;  /* secondary text, labels, meta */
+  --gold:          #D4A84B;  /* the one accent */
+  --gold-dim:      #9C7E3A;  /* hover/inactive accent, borders */
+  --hairline:      rgba(212,168,75,0.18); /* 1px dividers + card borders */
+  --hairline-soft: rgba(212,168,75,0.10);
+
+  /* spacing scale: 4 / 8 / 16 / 24 / 40 */
+  --s1: 4px;  --s2: 8px;  --s3: 16px;  --s4: 24px;  --s5: 40px;
+
+  /* legacy token aliases (still referenced by inline styles in HTML) */
+  --bg-dark: var(--ink);
+  --text-main: var(--parchment);
+  --text-muted: var(--parchment-mut);
+  --text-faint: rgba(183,174,153,0.6);
+  --accent: var(--gold);
+  --accent-dim: var(--gold-dim);
+  --border-warm: var(--hairline);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--ink);
+  color: var(--parchment);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--gold); }
 
 /* ── SHARED SHELL ─────────────────────────────────────── */
 
@@ -24,20 +49,21 @@ html, body { margin: 0; padding: 0; }
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--bg-dark);
-  color: var(--text-main);
-  font-family: "Inter", system-ui, sans-serif;
+  background: var(--ink);
+  color: var(--parchment);
 }
 
+/* ── HEADER (slim sticky) ─────────────────────────────── */
+
 .rla-header {
-  background: rgba(0,0,0,0.5);
-  border-bottom: 1px solid var(--border-warm);
-  padding: 0 20px;
+  background: var(--ink-raised);
+  border-bottom: 1px solid var(--hairline);
+  padding: 0 var(--s4);
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: var(--s3);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -46,186 +72,87 @@ html, body { margin: 0; padding: 0; }
 
 .rla-header-brand {
   font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--gold);
   text-decoration: none;
 }
 
 .rla-header-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--s4);
 }
 
 .rla-header-nav a {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--parchment-mut);
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.rla-header-nav a:hover { color: var(--text-main); }
+.rla-header-nav a:hover,
+.rla-header-nav a:focus-visible { color: var(--parchment); }
 
-/* ── HERO BAND ────────────────────────────────────────── */
+/* ── LANDING: SLIM HERO OVERLAY + MAP-AS-HERO ─────────── */
 
-.hero-band {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(60,35,0,0.9) 0%, transparent 70%),
-    radial-gradient(ellipse 100% 100% at 50% 100%, rgba(0,0,0,0.7) 0%, transparent 60%),
-    linear-gradient(180deg, #1a1008 0%, #2a1c08 50%, #2a2018 100%);
-  padding: 60px 20px 40px;
-  text-align: center;
+/* The landing page is the map. Everything else is minimal chrome. */
+.map-stage {
   position: relative;
-  overflow: hidden;
-}
-
-.hero-band::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
-  pointer-events: none;
-}
-
-.hero-inner {
-  max-width: 680px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.hero-eyebrow {
-  font-family: "Inter", sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--accent-dim);
-  margin-bottom: 16px;
-}
-
-.hero-title {
-  font-family: "Iceland", system-ui, sans-serif;
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-main);
-  margin: 0 0 16px;
-  line-height: 1;
-  text-shadow: 0 4px 30px rgba(0,0,0,0.8);
-}
-
-.hero-title span {
-  color: var(--accent);
-}
-
-.hero-lede {
-  font-family: "IM Fell English", Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin: 0 0 32px;
-  max-width: 54ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-rla-primary {
-  display: inline-block;
-  padding: 12px 28px;
-  background: var(--parchment);
-  color: #1a1008;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 4px;
-  font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.15s, transform 0.1s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-.btn-rla-primary:hover {
-  background: #f5ecd0;
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-
-.btn-rla-ghost {
-  display: inline-block;
-  padding: 12px 28px;
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent-dim);
-  border-radius: 4px;
-  font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.15s, border-color 0.15s;
-}
-
-.btn-rla-ghost:hover {
-  background: rgba(212,168,75,0.1);
-  border-color: var(--accent);
-  text-decoration: none;
-}
-
-.hero-rule {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 40px auto 0;
-  max-width: 400px;
-  color: var(--accent-dim);
-  font-size: 0.9rem;
-}
-
-.hero-rule::before, .hero-rule::after {
-  content: "";
   flex: 1;
-  height: 1px;
-  background: var(--border-warm);
-}
-
-/* ── MAP SECTION ──────────────────────────────────────── */
-
-.map-section {
-  background:
-    radial-gradient(ellipse 100% 80% at 50% 50%, rgba(63,85,91,0.7) 0%, rgba(42,32,24,0.9) 100%);
-  padding: 16px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  padding: var(--s3) var(--s3) var(--s2);
+  background: var(--ink);
+  min-height: 86vh;          /* map dominates the first screen */
 }
 
-.map-label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--text-faint);
+/* one soft vignette behind the map — no stacked gradients */
+.map-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 45%, rgba(212,168,75,0.06), transparent 70%);
+  pointer-events: none;
+}
+
+.map-lede {
+  position: relative;
   text-align: center;
+  margin: 0 0 var(--s2);
+  max-width: 60ch;
+}
+
+.map-lede .brand {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  margin: 0;
+  line-height: 1.05;
+}
+.map-lede .brand span { color: var(--gold); }
+
+.map-lede .tagline {
+  font-family: "IM Fell English", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  color: var(--parchment-mut);
+  margin: var(--s1) 0 0;
+  line-height: 1.5;
 }
 
 .map-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;
+  width: min(96vw, 1400px);
+  aspect-ratio: 1377 / 604;       /* matches map.svg viewBox */
+  max-height: 76vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,163 +161,106 @@ html, body { margin: 0; padding: 0; }
 .map-object {
   width: 100%;
   height: 100%;
-  border: none;
-  display: block;
+  border: 1px solid var(--hairline);
   border-radius: 8px;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.06),
-    0 20px 50px rgba(0,0,0,0.6);
+  display: block;
+  background: var(--ink-deep);
 }
 
-/* ── CATEGORY SECTION (notice board) ─────────────────── */
-
-.category-section {
-  background:
-    radial-gradient(1400px 600px at 50% 20%, rgba(255,255,255,0.04), transparent 55%),
-    linear-gradient(180deg, rgba(50,30,10,0.9), rgba(26,16,8,0.95));
-  padding: 32px 20px 40px;
-  border-top: 1px solid var(--border-warm);
+.map-hint {
+  position: relative;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--parchment-mut);
+  text-align: center;
+  margin: var(--s2) 0 0;
 }
 
-.section-heading {
+/* Plain-text fallback list of areas (demoted category board, below the fold).
+   Accessible route to every gateway for non-pointer / no-JS users. */
+.area-fallback {
+  background: var(--ink-raised);
+  border-top: 1px solid var(--hairline);
+  padding: var(--s4) var(--s4) var(--s5);
+}
+.area-fallback h2 {
   font-family: "Iceland", system-ui, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent-dim);
+  color: var(--gold-dim);
   text-align: center;
-  margin: 0 0 24px;
+  margin: 0 0 var(--s3);
 }
-
-.notice-grid {
+.area-fallback-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--s2) var(--s3);
   max-width: 1100px;
   margin: 0 auto;
-  align-items: start;
 }
-
-/* Individual parchment notice card */
-.notice {
-  position: relative;
-  display: block;
+.area-fallback-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--s2) var(--s3);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
   text-decoration: none;
-  padding: 22px 16px 16px;
-  border-radius: 4px;
-  color: rgba(20,12,8,0.92);
-  background:
-    radial-gradient(900px 120px at 50% 0%, rgba(255,255,255,0.55), transparent 60%),
-    linear-gradient(160deg, #f0e3c0, #ddc99a);
-  box-shadow:
-    0 14px 28px rgba(0,0,0,0.45),
-    inset 0 0 0 1px rgba(60,40,20,0.25);
-  transform: rotate(var(--tilt, 0deg));
-  transition: transform 140ms ease, box-shadow 140ms ease;
-  overflow: hidden;
+  color: var(--parchment);
+  transition: border-color 0.15s, background 0.15s;
 }
-
-/* Corner wear */
-.notice::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(12px 12px at 4% 4%, rgba(0,0,0,0.12), transparent 55%),
-    radial-gradient(12px 12px at 96% 4%, rgba(0,0,0,0.10), transparent 55%),
-    radial-gradient(14px 14px at 4% 96%, rgba(0,0,0,0.14), transparent 55%),
-    radial-gradient(16px 16px at 96% 96%, rgba(0,0,0,0.12), transparent 55%);
-  pointer-events: none;
-  mix-blend-mode: multiply;
+.area-fallback-grid a:hover,
+.area-fallback-grid a:focus-visible {
+  border-color: var(--gold);
+  background: rgba(212,168,75,0.06);
 }
-
-/* Red pushpin */
-.notice::after {
-  content: "";
-  position: absolute;
-  top: 9px; left: 50%; transform: translateX(-50%);
-  width: 13px; height: 13px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(180,30,30,0.95) 55%, rgba(90,0,0,0.95));
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-
-.notice:hover {
-  transform: rotate(var(--tilt, 0deg)) translateY(-4px) scale(1.02);
-  box-shadow: 0 22px 44px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(60,40,20,0.25);
-  text-decoration: none;
-}
-
-.notice-cat {
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(20,12,8,0.5);
-  margin-bottom: 4px;
-}
-
-.notice-title {
+.area-fallback-grid .fa-name {
   font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1.15rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(18,10,6,0.95);
-  margin: 0 0 6px;
-  line-height: 1.15;
+  font-size: 1rem;
+  color: var(--parchment);
+}
+.area-fallback-grid .fa-sub {
+  font-size: 0.8rem;
+  color: var(--parchment-mut);
+  letter-spacing: 0.04em;
 }
 
-.notice-desc {
-  font-family: "IM Fell English", Georgia, serif;
-  font-style: italic;
-  font-size: 0.82rem;
-  color: rgba(20,12,8,0.7);
-  line-height: 1.45;
-  margin: 0;
-}
-
-.notice-grid > *:nth-child(4n+1) { --tilt: -1.4deg; }
-.notice-grid > *:nth-child(4n+2) { --tilt:  0.8deg; }
-.notice-grid > *:nth-child(4n+3) { --tilt: -0.5deg; }
-.notice-grid > *:nth-child(4n+4) { --tilt:  1.2deg; }
-
-/* ── NEWSLETTER / JOIN ────────────────────────────────── */
+/* ── NEWSLETTER / JOIN (slim, below the fold) ─────────── */
 
 .join-band {
-  background:
-    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(60,35,0,0.8), transparent 70%),
-    linear-gradient(0deg, #1a1008 0%, #2a1c08 100%);
-  border-top: 1px solid var(--border-warm);
-  padding: 44px 20px 52px;
+  background: var(--ink-deep);
+  border-top: 1px solid var(--hairline);
+  padding: var(--s5) var(--s4);
   text-align: center;
 }
 
-.join-inner {
-  max-width: 480px;
-  margin: 0 auto;
-}
+.join-inner { max-width: 520px; margin: 0 auto; }
 
 .join-heading {
   font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-main);
-  margin: 0 0 8px;
+  color: var(--parchment);
+  margin: 0 0 var(--s2);
 }
 
 .join-sub {
   font-family: "IM Fell English", Georgia, serif;
   font-style: italic;
   font-size: 1rem;
-  color: var(--text-muted);
-  margin: 0 0 24px;
+  color: var(--parchment-mut);
+  margin: 0 0 var(--s4);
   line-height: 1.55;
 }
 
 .join-form {
   display: flex;
-  gap: 8px;
+  gap: var(--s2);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -399,24 +269,23 @@ html, body { margin: 0; padding: 0; }
   flex: 1;
   min-width: 220px;
   padding: 11px 14px;
-  border: 1px solid var(--accent-dim);
+  border: 1px solid var(--gold-dim);
   border-radius: 4px;
-  background: rgba(0,0,0,0.4);
-  color: var(--text-main);
+  background: var(--ink-raised);
+  color: var(--parchment);
   font-family: "Inter", sans-serif;
-  font-size: 0.88rem;
+  font-size: 1rem;
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
-
-.join-input::placeholder { color: var(--text-faint); }
-.join-input:focus { border-color: var(--accent); }
+.join-input::placeholder { color: var(--parchment-mut); }
+.join-input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
 
 .join-btn {
   padding: 11px 24px;
-  background: var(--parchment);
-  color: #1a1008;
-  border: 1px solid rgba(0,0,0,0.25);
+  background: var(--gold);
+  color: var(--ink-deep);
+  border: 1px solid transparent;
   border-radius: 4px;
   font-family: "Iceland", system-ui, sans-serif;
   font-size: 1rem;
@@ -426,289 +295,360 @@ html, body { margin: 0; padding: 0; }
   white-space: nowrap;
   transition: background 0.15s;
 }
-
-.join-btn:hover { background: #f5ecd0; }
+.join-btn:hover { background: #e2bd6a; }
 .join-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .join-status {
-  font-size: 0.82rem;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  margin-top: var(--s2);
   font-family: "IM Fell English", Georgia, serif;
   font-style: italic;
   width: 100%;
 }
+.join-status--ok  { color: #9ad6a0; }
+.join-status--err { color: #e08585; }
 
-.join-status--ok  { color: #86efac; }
-.join-status--err { color: #fca5a5; }
-
-/* ── RLA FOOTER ───────────────────────────────────────── */
+/* ── FOOTER ───────────────────────────────────────────── */
 
 .rla-footer {
-  background: rgba(0,0,0,0.45);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 12px 20px;
+  background: var(--ink-raised);
+  border-top: 1px solid var(--hairline);
+  padding: var(--s3) var(--s4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  font-size: 0.75rem;
-  color: var(--text-faint);
+  gap: var(--s3);
+  font-size: 0.8rem;
+  color: var(--parchment-mut);
   flex-shrink: 0;
+  flex-wrap: wrap;
 }
+.rla-footer a { color: var(--parchment-mut); text-decoration: none; transition: color 0.15s; }
+.rla-footer a:hover, .rla-footer a:focus-visible { color: var(--gold); }
 
-.rla-footer a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
-.rla-footer a:hover { color: var(--accent); }
-
-/* ── COLLECTION / DETAIL SHELL ────────────────────────── */
-
-.rla-page {
-  min-height: 100vh;
-  background:
-    radial-gradient(circle at top, #1a222e, #05070c 70%);
-  color: var(--text-main);
-  display: flex;
-  flex-direction: column;
-}
+/* ── COLLECTION PAGE ──────────────────────────────────── */
 
 .rla-page-header {
-  background: rgba(0,0,0,0.5);
-  border-bottom: 1px solid var(--border-warm);
-  padding: 16px 24px 14px;
+  background: var(--ink-raised);
+  border-bottom: 1px solid var(--hairline);
+  padding: var(--s4) var(--s4) var(--s3);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 16px;
+  gap: var(--s3);
   flex-wrap: wrap;
 }
 
 .rla-page-title {
   font-family: "Iceland", system-ui, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin: 0;
+  color: var(--parchment);
 }
 
 .rla-page-back {
-  font-size: 0.78rem;
-  color: var(--accent-dim);
+  font-size: 0.8rem;
+  color: var(--gold);
   letter-spacing: 0.06em;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.15s;
 }
-
-.rla-page-back:hover { color: var(--accent); }
+.rla-page-back:hover, .rla-page-back:focus-visible { color: #e2bd6a; }
 
 .rla-page-body {
   flex: 1;
-  padding: 24px;
-  max-width: 1200px;
+  padding: var(--s4);
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
 
+/* Filter / toolbar strip — the findability backbone (design-direction §6.2).
+   Calm raised strip with a gold hairline; search prominent. */
 .rla-toolbar {
   display: flex;
-  gap: 12px;
+  gap: var(--s3);
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: var(--s4);
+  padding: var(--s3);
+  background: var(--ink-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
 }
 
 .rla-search {
   flex: 1;
   min-width: 240px;
-  max-width: 480px;
+  max-width: 520px;
   padding: 10px 14px;
   border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(0,0,0,0.3);
-  color: var(--text-main);
+  border: 1px solid var(--hairline);
+  background: var(--ink-deep);
+  color: var(--parchment);
   font-family: "Inter", sans-serif;
-  font-size: 0.88rem;
+  font-size: 1rem;
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
-
-.rla-search::placeholder { color: var(--text-faint); }
-.rla-search:focus { border-color: var(--accent-dim); }
+.rla-search::placeholder { color: var(--parchment-mut); }
+.rla-search:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
 
 .rla-subscribe-inline {
   display: flex;
-  gap: 6px;
+  gap: var(--s2);
   align-items: center;
   margin-left: auto;
 }
-
 .rla-subscribe-inline input[type=email] {
   padding: 9px 12px;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid var(--hairline);
   border-radius: 6px;
-  background: rgba(0,0,0,0.3);
-  color: var(--text-main);
+  background: var(--ink-deep);
+  color: var(--parchment);
   font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   outline: none;
-  width: 200px;
-  transition: border-color 0.15s;
+  width: 210px;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
-
-.rla-subscribe-inline input::placeholder { color: var(--text-faint); }
-.rla-subscribe-inline input:focus { border-color: var(--accent-dim); }
+.rla-subscribe-inline input::placeholder { color: var(--parchment-mut); }
+.rla-subscribe-inline input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
 
 .rla-subscribe-inline button {
   padding: 9px 16px;
   background: transparent;
-  border: 1px solid var(--accent-dim);
+  border: 1px solid var(--gold-dim);
   border-radius: 6px;
-  color: var(--accent);
+  color: var(--gold);
   font-family: "Iceland", sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s, border-color 0.15s;
 }
+.rla-subscribe-inline button:hover { background: rgba(212,168,75,0.1); border-color: var(--gold); }
 
-.rla-subscribe-inline button:hover {
-  background: rgba(212,168,75,0.1);
-  border-color: var(--accent);
-}
-
-/* ── BOARD (notice grid on collection page) ───────────── */
-
-.board {
-  background:
-    radial-gradient(1200px 500px at 40% 10%, rgba(255,255,255,0.05), transparent 55%),
-    linear-gradient(180deg, rgba(70,40,20,0.7), rgba(30,18,10,0.75));
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.07);
-  padding: 24px;
-  box-shadow: 0 18px 60px rgba(0,0,0,0.5);
-}
+/* board = tidy grid, no decorative panel */
+.board { background: transparent; padding: 0; }
 
 .board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 18px;
-  align-items: start;
+  align-items: stretch;
+}
+
+/* ── CARDS — flat, calm parchment-on-ink, tidy grid ───── */
+/* (used by content.js list renderer: a.notice) */
+
+.notice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--parchment);
+  background: var(--ink-raised);
+  border: 1px solid var(--hairline);
+  transition: transform 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
+}
+.notice:hover, .notice:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+  text-decoration: none;
+  outline: none;
+}
+
+.notice-cat {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--parchment-mut);
+  margin-bottom: var(--s1);
+}
+
+.notice-title {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+
+.notice-summary, .notice-desc {
+  font-family: "IM Fell English", Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--parchment-mut);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.notice-meta {
+  margin-top: var(--s2);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--parchment-mut);
+}
+
+/* content.js emits a stray <div class="pin2"> per card — neutralise it */
+.pin2 { display: none; }
+
+/* ── TAGS / CHIPS ─────────────────────────────────────── */
+
+.tags { margin-top: var(--s2); display: flex; flex-wrap: wrap; gap: 6px; }
+
+.tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--ink-deep);
+  color: var(--parchment-mut);
+}
+
+.empty {
+  padding: var(--s4);
+  text-align: center;
+  color: var(--parchment-mut);
+  font-family: "IM Fell English", Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
 }
 
 /* ── DETAIL PAGE ──────────────────────────────────────── */
 
-.detail {
+.page { min-height: 100vh; background: var(--ink); color: var(--parchment); }
+
+.page-inner {
   max-width: 720px;
+  margin: 0 auto;
+  padding: var(--s5) var(--s4);
 }
 
+.page-title {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: var(--s3);
+}
+
+.detail { max-width: 720px; }
+
 .detail-title {
-  margin: 8px 0 10px;
+  margin: var(--s1) 0 var(--s2);
   font-family: "Iceland", system-ui, sans-serif;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--parchment);
+  line-height: 1.1;
 }
 
 .detail-summary {
   font-family: "IM Fell English", Georgia, serif;
   font-style: italic;
-  font-size: 1.05rem;
-  opacity: 0.9;
-}
-
-.detail-meta { margin-top: 8px; font-size: 0.85rem; opacity: 0.75; }
-.detail-h2 {
-  margin-top: 24px;
-  font-family: "Iceland", system-ui, sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.detail-list { margin: 10px 0 0 18px; }
-.detail-back { display: inline-block; margin-top: 20px; color: var(--accent); }
-
-/* ── SHARED CARD / TAG STYLES ─────────────────────────── */
-
-.card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(0,0,0,0.18);
-  transition: transform 0.12s, border-color 0.12s, background 0.12s;
-}
-
-.card:hover {
-  transform: translateY(-1px);
-  border-color: rgba(212,168,75,0.5);
-  background: rgba(0,0,0,0.26);
-  text-decoration: none;
-}
-
-.card-title {
-  font-family: "Iceland", system-ui, sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   font-size: 1.15rem;
-  line-height: 1.1;
+  color: var(--parchment-mut);
+  line-height: 1.6;
 }
 
-.card-summary { margin-top: 8px; font-size: 0.9rem; opacity: 0.85; }
+.detail-meta { margin-top: var(--s2); font-size: 0.875rem; color: var(--parchment-mut); }
 
-.tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.detail-p { line-height: 1.65; margin: var(--s3) 0 0; }
 
-.tag {
-  font-size: 0.72rem;
-  letter-spacing: 0.07em;
+.detail-h2 {
+  margin-top: var(--s4);
+  font-family: "Iceland", system-ui, sans-serif;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(0,0,0,0.18);
-  color: var(--text-muted);
+  color: var(--gold);
+  font-size: 1.2rem;
 }
 
-.empty { opacity: 0.7; padding: 12px 0; }
+.detail-list { margin: var(--s2) 0 0 var(--s4); line-height: 1.6; }
 
-/* ── HOVER LABEL ──────────────────────────────────────── */
+.detail-back {
+  display: inline-block;
+  margin-top: var(--s5);
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.detail-back:hover, .detail-back:focus-visible { color: #e2bd6a; }
+
+.footer-note { margin-top: var(--s5); font-size: 0.875rem; }
+.footer-note a { color: var(--gold); text-decoration: none; }
+
+/* ── HOVER LABEL (map region readout) ─────────────────── */
 
 .hover-label {
   position: fixed;
-  left: 14px; bottom: 14px;
-  padding: 6px 12px;
-  font-size: 0.72rem;
-  font-family: "Iceland", sans-serif;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(0,0,0,0.65);
-  border: 1px solid var(--border-warm);
-  border-radius: 4px;
+  left: 16px; bottom: 16px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-deep);
+  background: var(--gold);
+  border: 1px solid var(--gold-dim);
+  border-radius: 6px;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.15s ease;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 60;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+.hover-label.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ── FOCUS RING (keyboard) ────────────────────────────── */
+
+a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
-.hover-label.is-visible { opacity: 1; }
+/* ── RESPONSIVE ───────────────────────────────────────── */
 
-/* ── RESPONSIVE ─────────────────────────────────────── */
+@media (max-width: 880px) {
+  .map-stage { min-height: 78vh; }
+  .map-wrapper { width: 98vw; max-height: 68vh; }
+}
 
 @media (max-width: 640px) {
-  .hero-band { padding: 40px 16px 28px; }
-  .notice-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
-  .rla-page-header { flex-direction: column; gap: 4px; }
-  .rla-toolbar { flex-direction: column; align-items: flex-start; }
-  .rla-subscribe-inline { margin-left: 0; }
+  .map-stage { min-height: auto; padding: var(--s3) var(--s2); }
+  .map-wrapper { width: 100%; max-height: none; aspect-ratio: 1377 / 604; }
+  .rla-page-header { flex-direction: column; gap: var(--s1); align-items: flex-start; }
+  .rla-toolbar { flex-direction: column; align-items: stretch; }
+  .rla-subscribe-inline { margin-left: 0; flex-wrap: wrap; }
   .rla-subscribe-inline input[type=email] { width: 100%; }
   .board-grid { grid-template-columns: 1fr; }
-  .rla-footer { flex-direction: column; gap: 6px; }
-  .site-footer-bar { flex-direction: column; }
+  .rla-footer { flex-direction: column; gap: var(--s2); text-align: center; }
+  .area-fallback-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* ── LEGACY COMPAT (still used by collection.html notice styles from old CSS) ── */
+/* ── REDUCED MOTION ───────────────────────────────────── */
 
-.board-grid > *:nth-child(3n+1) { --tilt: -1.1deg; }
-.board-grid > *:nth-child(3n+2) { --tilt:  0.7deg; }
-.board-grid > *:nth-child(3n+3) { --tilt: -0.4deg; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  .notice:hover, .notice:focus-visible { transform: none; }
+}

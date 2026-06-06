@@ -12,20 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoverLabel = document.getElementById("hover-label");
   if (!mapObject) return;
 
-  const stateToCategory = {
-    state1: "locations",
-    state2: "items",
-    state3: "puzzles",
-    state4: "character-hooks",
-    state5: "npc",
-    state6: "contact",
-    state7: "story-hooks",
-    state8: "site-lore",
-    state9: "submit-your-own",
-    state10: "secrets",
+  // Canonical map → content-area wiring (site-scope.md §5.3, D-006).
+  // Each region is a content-type gateway. stateN ids are the load-bearing
+  // contract; label = fantasy name, sub = content-type, category = link target.
+  const REGIONS = {
+    state1:  { label: "The Crossroads", sub: "NPCs",            category: "npc" },
+    state2:  { label: "The Hoard",      sub: "Treasure",        category: "items" },
+    state3:  { label: "The Warrens",    sub: "Traps & Puzzles", category: "puzzles" },
+    state4:  { label: "The Crucible",   sub: "Encounters",      category: "encounters" },
+    state5:  { label: "The Waypost",    sub: "Story Hooks",     category: "story-hooks" },
+    state6:  { label: "The Hearth",     sub: "Character Hooks", category: "character-hooks" },
+    state7:  { label: "The Realms",     sub: "Locations",       category: "locations" },
+    state8:  { label: "The Archive",    sub: "Lore",            category: "site-lore" },
+    state9:  { label: "The Veil",       sub: "Secrets",         category: "secrets" },
+    state10: { label: "The Oracle",     sub: "Random Tables",   category: "tables" },
   };
 
-  const STATE_IDS = Object.keys(stateToCategory);
+  const stateToCategory = Object.fromEntries(
+    Object.entries(REGIONS).map(([k, v]) => [k, v.category])
+  );
+
+  const STATE_IDS = Object.keys(REGIONS);
 
   function inferStateIdFromLabelEl(el) {
     if (!el) return null;
@@ -157,20 +164,22 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!regionEl) return;
 
       if (hoverLabel) {
-        hoverLabel.textContent = stateId.replace("state", "Region ");
+        const r = REGIONS[stateId];
+        hoverLabel.textContent = r ? `${r.label} — ${r.sub}` : stateId;
         hoverLabel.classList.add("is-visible");
       }
 
       allRegions.forEach((r) => {
-        if (r !== regionEl) r.style.opacity = "0.35";
+        if (r !== regionEl) r.style.opacity = "0.45";
       });
 
       regionEl.style.opacity = "1";
-      regionEl.setAttribute("stroke", "rgba(255,255,255,0.9)");
+      // gold wash + faint gold outline — region reads as a button (design-direction §5)
+      regionEl.setAttribute("stroke", "rgba(212,168,75,0.95)");
       regionEl.setAttribute("stroke-width", "3");
       regionEl.style.filter = [
-        "drop-shadow(0 6px 10px rgba(0,0,0,0.35))",
-        "drop-shadow(0 0 10px rgba(180,220,255,0.55))",
+        "drop-shadow(0 4px 8px rgba(0,0,0,0.4))",
+        "drop-shadow(0 0 10px rgba(212,168,75,0.55))",
       ].join(" ");
       regionEl.style.transform = "none";
       regionEl.style.transformOrigin = "";
@@ -274,11 +283,28 @@ document.addEventListener("DOMContentLoaded", () => {
     restoreAll();
   }
 
-  mapObject.addEventListener("load", () => {
-    attachRegionHandlers(mapObject.contentDocument || null);
-  });
+  // The <object>'s SVG sub-document can fire "load" (or already be present)
+  // before its inner DOM is fully queryable. Poll until the region shapes
+  // actually exist, then wire once. This is the load-bearing nav path.
+  let wired = false;
 
-  if (mapObject.contentDocument) {
-    attachRegionHandlers(mapObject.contentDocument);
+  function tryWire() {
+    if (wired) return true;
+    const doc = mapObject.contentDocument || null;
+    if (!doc) return false;
+    if (!doc.querySelector(`#${STATE_IDS[0]}`)) return false; // inner DOM not ready yet
+    wired = true;
+    attachRegionHandlers(doc);
+    return true;
+  }
+
+  mapObject.addEventListener("load", tryWire);
+
+  if (!tryWire()) {
+    let attempts = 0;
+    const poll = setInterval(() => {
+      attempts += 1;
+      if (tryWire() || attempts > 40) clearInterval(poll); // up to ~4s
+    }, 100);
   }
 });

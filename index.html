@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Red Life Adventures – A living archive for tabletop play</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A growing archive of locations, characters, items, and secrets for tabletop roleplaying games. Explore the world map or browse by category.">
+  <meta name="description" content="A growing archive of NPCs, treasure, traps, encounters, locations, lore and secrets for tabletop roleplaying games. The world map is your way in — each region is a content area.">
   <meta property="og:title" content="Red Life Adventures">
-  <meta property="og:description" content="A living archive of adventures, characters, and secrets for tabletop play.">
+  <meta property="og:description" content="A living archive of adventures, characters, and secrets for tabletop play. The map is the navigation.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,103 +21,56 @@
   <header class="rla-header">
     <a class="rla-header-brand" href="index.html">Red Life Adventures</a>
     <nav class="rla-header-nav">
-      <a href="collection.html">Browse archive</a>
+      <a href="collection.html?category=locations">Browse archive</a>
       <a href="mailto:dean@imthebus.co.uk">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero-band">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">A living archive for tabletop play</p>
-      <h1 class="hero-title">Red Life <span>Adventures</span></h1>
-      <p class="hero-lede">Locations, characters, items, and secrets — built for the table, not the shelf. Click a region of the map or browse the board below.</p>
-      <div class="hero-cta">
-        <a href="collection.html" class="btn-rla-primary">Browse the archive</a>
-        <a href="#join" class="btn-rla-ghost">Join the expedition</a>
-      </div>
-      <div class="hero-rule">✦</div>
+  <!-- THE MAP IS THE HERO + PRIMARY NAVIGATION (design-direction §5) -->
+  <main class="map-stage" aria-label="World map — primary navigation">
+    <div class="map-lede">
+      <h1 class="brand">Red Life <span>Adventures</span></h1>
+      <p class="tagline">A living archive for the table. Choose a region of the world to enter its content.</p>
     </div>
-  </section>
 
-  <!-- World map -->
-  <section class="map-section" aria-label="Interactive world map">
-    <p class="map-label">Click a region of the world to explore its contents</p>
     <div class="map-wrapper">
       <object
         id="world-map"
         type="image/svg+xml"
         data="assets/map.svg"
         class="map-object"
-        aria-label="Interactive world map — click a region to explore">
+        aria-label="Interactive world map — each region is a content area; click to explore">
       </object>
     </div>
-  </section>
 
-  <!-- Category board -->
-  <section class="category-section" aria-label="Content categories">
-    <p class="section-heading">What are you looking for?</p>
-    <div class="notice-grid">
+    <p class="map-hint">Click a region to open its archive</p>
+  </main>
 
-      <a href="collection.html?category=locations" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Locations</h3>
-        <p class="notice-desc">Places to explore, encounter, and return to. Every room has a history.</p>
-      </a>
-
-      <a href="collection.html?category=npc" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">NPCs</h3>
-        <p class="notice-desc">Characters who push the story forward — allies, rivals, and faces in the crowd.</p>
-      </a>
-
-      <a href="collection.html?category=items" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Items</h3>
-        <p class="notice-desc">Objects with history, power, and consequence. Some are what they seem.</p>
-      </a>
-
-      <a href="collection.html?category=puzzles" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Puzzles</h3>
-        <p class="notice-desc">Challenges that reward lateral thinking. Fair, strange, and unforgettable.</p>
-      </a>
-
-      <a href="collection.html?category=story-hooks" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Story Hooks</h3>
-        <p class="notice-desc">Starting points that go somewhere interesting. Drop one in and see what happens.</p>
-      </a>
-
-      <a href="collection.html?category=character-hooks" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Character Hooks</h3>
-        <p class="notice-desc">Background threads for players to develop. Their past, waiting to surface.</p>
-      </a>
-
-      <a href="collection.html?category=site-lore" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Lore</h3>
-        <p class="notice-desc">The history and truth behind the world. What the oldest maps remember.</p>
-      </a>
-
-      <a href="collection.html?category=secrets" class="notice">
-        <p class="notice-cat">Category</p>
-        <h3 class="notice-title">Secrets</h3>
-        <p class="notice-desc">What the players do not yet know. Handle with appropriate care.</p>
-      </a>
-
+  <!-- Plain-text gateway fallback (demoted category board; accessible / no-JS route) -->
+  <section class="area-fallback" aria-label="Content areas">
+    <h2>The world's content areas</h2>
+    <div class="area-fallback-grid">
+      <a href="collection.html?category=npc"><span class="fa-name">The Crossroads</span><span class="fa-sub">NPCs</span></a>
+      <a href="collection.html?category=items"><span class="fa-name">The Hoard</span><span class="fa-sub">Treasure</span></a>
+      <a href="collection.html?category=puzzles"><span class="fa-name">The Warrens</span><span class="fa-sub">Traps &amp; Puzzles</span></a>
+      <a href="collection.html?category=encounters"><span class="fa-name">The Crucible</span><span class="fa-sub">Encounters</span></a>
+      <a href="collection.html?category=story-hooks"><span class="fa-name">The Waypost</span><span class="fa-sub">Story Hooks</span></a>
+      <a href="collection.html?category=character-hooks"><span class="fa-name">The Hearth</span><span class="fa-sub">Character Hooks</span></a>
+      <a href="collection.html?category=locations"><span class="fa-name">The Realms</span><span class="fa-sub">Locations</span></a>
+      <a href="collection.html?category=site-lore"><span class="fa-name">The Archive</span><span class="fa-sub">Lore</span></a>
+      <a href="collection.html?category=secrets"><span class="fa-name">The Veil</span><span class="fa-sub">Secrets</span></a>
+      <a href="collection.html?category=tables"><span class="fa-name">The Oracle</span><span class="fa-sub">Random Tables</span></a>
     </div>
   </section>
 
-  <!-- Newsletter join -->
+  <!-- Newsletter join (slim, below the fold) -->
   <section class="join-band" id="join" aria-label="Join the expedition">
     <div class="join-inner">
       <h2 class="join-heading">Join the expedition</h2>
       <p class="join-sub">New content lands in the archive regularly. Get a note when something worth finding arrives.</p>
       <form class="join-form" id="joinForm" action="https://subscribe.imthebus.workers.dev" method="POST">
         <input type="hidden" name="source" value="redlife-landing">
-        <input type="email" name="email" class="join-input" placeholder="your@email.com" required autocomplete="email">
+        <input type="email" name="email" class="join-input" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
         <button type="submit" class="join-btn">Subscribe</button>
         <p class="join-status" id="joinStatus" hidden></p>
       </form>

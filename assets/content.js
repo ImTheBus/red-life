@@ -17,6 +17,26 @@
     "secrets": "secrets",
     "contact": "contact",
     "submit-your-own": "submit-your-own",
+    "encounter": "encounters",
+    "encounters": "encounters",
+    "story-hooks": "story-hooks",
+    "table": "tables",
+    "tables": "tables",
+  };
+
+  // Friendly display titles where the slug alone reads oddly.
+  const CATEGORY_TITLES = {
+    npc: "NPCs",
+    items: "Treasure",
+    puzzles: "Traps & Puzzles",
+    encounters: "Encounters",
+    "story-hooks": "Story Hooks",
+    "character-hooks": "Character Hooks",
+    locations: "Locations",
+    "site-lore": "Lore",
+    secrets: "Secrets",
+    tables: "Random Tables",
+    "submit-your-own": "Submit Your Own",
   };
 
   function getParam(name) {
@@ -30,6 +50,7 @@
   }
 
   function titleCaseCategory(cat) {
+    if (cat && CATEGORY_TITLES[cat]) return CATEGORY_TITLES[cat];
     return (cat || "collection")
       .replace(/-/g, " ")
       .replace(/\b\w/g, (c) => c.toUpperCase());
@@ -37,10 +58,19 @@
 
   async function loadCategoryData(category) {
     const url = `data/${encodeURIComponent(category)}.json`;
-    const res = await fetch(url, { cache: "no-store" });
+    let res;
+    try {
+      res = await fetch(url, { cache: "no-store" });
+    } catch (_) {
+      // network/parse failure — degrade to a graceful empty area, don't crash
+      return [];
+    }
+    // A category whose JSON doesn't exist yet (e.g. encounters, tables) is a valid
+    // empty gateway, not an error — render the empty state rather than failing.
+    if (res.status === 404) return [];
     if (!res.ok) throw new Error(`Failed to load ${url} (${res.status})`);
-    const data = await res.json();
-    if (!Array.isArray(data)) throw new Error(`Expected an array in ${url}`);
+    const data = await res.json().catch(() => null);
+    if (!Array.isArray(data)) return [];
     return data;
   }
 
@@ -63,7 +93,9 @@ function renderList(container, category, records) {
   container.innerHTML = "";
 
   if (!records.length) {
-    container.appendChild(el("div", "empty", "No entries yet."));
+    container.appendChild(
+      el("div", "empty", "Nothing here yet — this area is still being written. Check back soon.")
+    );
     return;
   }
 
@@ -84,9 +116,10 @@ function renderList(container, category, records) {
       card.appendChild(s);
     }
 
-    // meta line (optional)
+    // meta line (optional). Region (stateN) is retired as a display facet (D-006) —
+    // don't surface raw state ids; show difficulty + tier where present.
     const metaBits = [];
-    if (r.region) metaBits.push(r.region.toUpperCase());
+    if (r.tier) metaBits.push(`TIER ${String(r.tier).toUpperCase()}`);
     if (r.difficulty) metaBits.push(String(r.difficulty).toUpperCase());
     if (metaBits.length) {
       card.appendChild(el("div", "notice-meta", metaBits.join(" • ")));
@@ -132,7 +165,7 @@ function renderList(container, category, records) {
     if (record.tags && record.tags.length) container.appendChild(renderTags(record.tags));
 
     const meta = [];
-    if (record.region) meta.push(`Region: ${record.region}`);
+    if (record.tier) meta.push(`Tier: ${record.tier}`);
     if (record.difficulty) meta.push(`Difficulty: ${record.difficulty}`);
     if (record.updated) meta.push(`Updated: ${record.updated}`);
     if (meta.length) container.appendChild(el("div", "detail-meta", meta.join(" • ")));
@@ -168,7 +201,7 @@ function renderList(container, category, records) {
     const searchEl = document.getElementById("collection-search");
 
     if (titleEl) titleEl.textContent = titleCaseCategory(category);
-    if (subtitleEl) subtitleEl.textContent = "Browse entries. Add new content by editing data JSON files.";
+    if (subtitleEl) subtitleEl.textContent = "Browse the archive, or search to narrow it down.";
 
     let records = [];
     try {
