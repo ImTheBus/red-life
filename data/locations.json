@@ -4,13 +4,17 @@
     "title": "The Old Stone Bridge",
     "summary": "A crumbling single-span bridge over a narrow river gorge. Locals swear they hear footsteps crossing at night, but the bridge is always empty when they look.",
     "tags": [
-      "travel-encounter",
       "haunting",
       "bridge",
-      "frontier"
+      "travel-encounter",
+      "river",
+      "ghost"
     ],
     "region": "state1",
     "difficulty": "easy",
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "unsettling",
     "body": [
       "A crumbling single-span bridge arches over a narrow river gorge. The stone is slick with moss and the parapet is chipped where carts have scraped it for generations.",
       "After sundown, locals claim they hear footsteps and the creak of unseen weight crossing from bank to bank. Lantern light shows nothing, and any attempt to wait on the bridge feels like being watched from below.",
@@ -39,13 +43,17 @@
     "title": "Mistwatch Tower",
     "summary": "A ruined watchtower that only appears on foggy mornings.",
     "tags": [
-      "ruins",
       "watchtower",
       "fog",
+      "ruins",
+      "landmark",
       "travel-encounter"
     ],
     "region": "state2",
     "difficulty": "medium",
+    "tier": "1",
+    "biome": "ruins",
+    "mood": "mysterious",
     "body": [
       "A ruined watchtower that only appears on foggy mornings. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -77,10 +85,14 @@
       "marsh",
       "navigation",
       "undead-signs",
-      "survival"
+      "survival",
+      "causeway"
     ],
     "region": "state3",
     "difficulty": "medium",
+    "tier": "2",
+    "biome": "marsh",
+    "mood": "grim",
     "body": [
       "A half-sunken road of stone markers leading through a dead marsh. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -112,10 +124,14 @@
       "cavern",
       "crystal",
       "firelight",
-      "resource"
+      "resource",
+      "warmth"
     ],
     "region": "state4",
     "difficulty": "hard",
+    "tier": "2",
+    "biome": "cavern",
+    "mood": "wondrous",
     "body": [
       "A cave of soot-black crystal that holds warmth like a hearth. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -147,10 +163,14 @@
       "market",
       "social",
       "secrets",
-      "bargains"
+      "bargains",
+      "night"
     ],
     "region": "state5",
     "difficulty": "medium",
+    "tier": "2",
+    "biome": "urban",
+    "mood": "mysterious",
     "body": [
       "A night market where sellers speak only in gestures and prices change with secrets. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -182,10 +202,14 @@
       "coast",
       "temple",
       "shifting",
-      "exploration"
+      "exploration",
+      "tide"
     ],
     "region": "state6",
     "difficulty": "easy",
+    "tier": "1",
+    "biome": "coast",
+    "mood": "wondrous",
     "body": [
       "A coastal chapel flooded at high tide, dry at low tide, and never the same twice. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -217,10 +241,14 @@
       "forest",
       "fey",
       "temptation",
-      "tracking"
+      "tracking",
+      "ancient-woods"
     ],
     "region": "state7",
     "difficulty": "medium",
+    "tier": "2",
+    "biome": "forest",
+    "mood": "mysterious",
     "body": [
       "A game path that rearranges itself to lead hunters toward what they most want. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -252,10 +280,14 @@
       "lore",
       "ruins",
       "archive",
-      "hazard"
+      "hazard",
+      "salt"
     ],
     "region": "state8",
     "difficulty": "hard",
+    "tier": "3",
+    "biome": "ruins",
+    "mood": "melancholy",
     "body": [
       "A collapsed archive where pages have turned to brittle salt-sheets. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -287,10 +319,14 @@
       "mystery",
       "checkpoint",
       "omens",
-      "investigation"
+      "investigation",
+      "abandoned"
     ],
     "region": "state9",
     "difficulty": "easy",
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "unsettling",
     "body": [
       "An abandoned checkpoint with a still-warm kettle and a ledger of names that updates itself. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
@@ -322,10 +358,14 @@
       "harbor",
       "ghosts",
       "navigation",
-      "secrets"
+      "secrets",
+      "pirate"
     ],
     "region": "state10",
     "difficulty": "hard",
+    "tier": "3",
+    "biome": "coast",
+    "mood": "unsettling",
     "body": [
       "A sheltered bay where lanterns burn with cold light and ships anchor without ropes. It has become a known landmark for those who travel the back roads.",
       "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",

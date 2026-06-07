@@ -33,7 +33,7 @@
     <a href="index.html" class="rla-page-back">← Back to map</a>
   </div>
 
-  <!-- Body: toolbar + board -->
+  <!-- Body: toolbar + filter bar + board -->
   <div class="rla-page-body">
 
     <div class="rla-toolbar">
@@ -42,7 +42,7 @@
         id="collection-search"
         class="rla-search"
         type="search"
-        placeholder="Search title, tags, difficulty…"
+        placeholder="Search title, tags, biome…"
         autocomplete="off"
         aria-label="Search the archive">
 
@@ -54,6 +54,9 @@
       </form>
 
     </div>
+
+    <!-- In-area facet filter bar (built by content.js from the per-collection filter set) -->
+    <div id="collection-filters" class="rla-filterbar" aria-label="Filter this collection" hidden></div>
 
     <div class="board">
       <div id="collection-list" class="board-grid" aria-live="polite"></div>

@@ -39,6 +39,80 @@
     "submit-your-own": "Submit Your Own",
   };
 
+  // ── Filter taxonomy (filter-spec.md §1 controlled vocab + §3 per-collection sets) ──
+  // Controlled vocabulary per facet: value → display label. `tags` is the one OPEN facet
+  // (options are derived from the data at render time), so it carries no fixed vocab here.
+  const FACET_VOCAB = {
+    tier: [
+      ["1", "Low (lv 1–4)"],
+      ["2", "Mid (lv 5–10)"],
+      ["3", "High (lv 11–16)"],
+      ["4", "Epic (lv 17–20)"],
+    ],
+    difficulty: [
+      ["easy", "Easy"],
+      ["medium", "Medium"],
+      ["hard", "Hard"],
+    ],
+    biome: [
+      ["forest", "Forest"], ["coast", "Coast"], ["underwater", "Underwater"],
+      ["marsh", "Marsh"], ["cavern", "Cavern"], ["mountain", "Mountain"],
+      ["urban", "Urban"], ["ruins", "Ruins"], ["frontier", "Frontier"],
+      ["frozen", "Frozen"], ["planar", "Planar"],
+    ],
+    mood: [
+      ["unsettling", "Unsettling"], ["wondrous", "Wondrous"], ["grim", "Grim"],
+      ["comic", "Comic"], ["mysterious", "Mysterious"], ["heroic", "Heroic"],
+      ["melancholy", "Melancholy"],
+    ],
+    time: [
+      ["5-min", "5 min"], ["15-min", "15 min"],
+      ["1-hour", "1 hour"], ["full-session", "Full session"],
+    ],
+    party: [
+      ["solo", "Solo"], ["small", "Small (2–3)"],
+      ["standard", "Standard (4–5)"], ["large", "Large (6+)"],
+    ],
+    rarity: [
+      ["common", "Common"], ["uncommon", "Uncommon"], ["rare", "Rare"],
+      ["very-rare", "Very rare"], ["legendary", "Legendary"],
+    ],
+    type: [
+      ["wondrous-item", "Wondrous item"], ["weapon", "Weapon"], ["armor", "Armor"],
+      ["consumable", "Consumable"], ["hoard", "Hoard"], ["trinket", "Trinket"],
+    ],
+    role: [
+      ["ally", "Ally"], ["rival", "Rival"], ["merchant", "Merchant"],
+      ["authority", "Authority"], ["villain", "Villain"], ["guide", "Guide"],
+      ["informant", "Informant"],
+    ],
+  };
+
+  // Human label for each facet's filter-bar heading.
+  const FACET_LABELS = {
+    tier: "Tier", difficulty: "Difficulty", biome: "Biome", mood: "Mood",
+    time: "Time to run", party: "Party size", rarity: "Rarity", type: "Type",
+    role: "Role", tags: "Tags",
+  };
+
+  // Per-collection filter sets (filter-spec.md §3), in display order (most-decisive-first).
+  // `tags` is always the trailing open facet. A collection not listed gets a sensible default.
+  const COLLECTION_FACETS = {
+    npc:               ["tier", "difficulty", "role", "mood", "tags"],
+    items:             ["tier", "rarity", "type", "biome", "tags"],
+    puzzles:           ["tier", "difficulty", "biome", "mood", "tags"],
+    encounters:        ["tier", "difficulty", "time", "biome", "party", "mood", "tags"],
+    "story-hooks":     ["tier", "biome", "mood", "tags"],
+    "character-hooks": ["tier", "mood", "tags"],
+    locations:         ["tier", "difficulty", "biome", "mood", "tags"],
+    "site-lore":       ["biome", "mood", "tags"],
+    secrets:           ["tier", "mood", "tags"],
+    tables:            ["biome", "tags"],
+  };
+
+  // Collections that are content gateways but have no filter bar (intake forms etc.).
+  const NO_FILTER_BAR = new Set(["submit-your-own", "contact"]);
+
   function getParam(name) {
     const params = new URLSearchParams(window.location.search);
     return params.get(name);
@@ -89,13 +163,16 @@
     });
     return wrap;
   }
-function renderList(container, category, records) {
+function renderList(container, category, records, opts) {
   container.innerHTML = "";
+  opts = opts || {};
 
   if (!records.length) {
-    container.appendChild(
-      el("div", "empty", "Nothing here yet — this area is still being written. Check back soon.")
-    );
+    // Distinguish "this area has no content yet" from "your filters excluded everything".
+    const msg = opts.filtered
+      ? "No matches. Try clearing a filter or widening your search."
+      : "Nothing here yet — this area is still being written. Check back soon.";
+    container.appendChild(el("div", "empty", msg));
     return;
   }
 
@@ -132,24 +209,66 @@ function renderList(container, category, records) {
 }
 
 
-  function filterRecords(records, q) {
-    const query = (q || "").trim().toLowerCase();
-    if (!query) return records;
+  // Free-text search across the entry's text blob (unchanged behaviour, retained).
+  function matchesSearch(r, query) {
+    if (!query) return true;
+    const hay = [
+      r.id, r.title, r.summary,
+      ...(r.tags || []),
+      r.region, r.difficulty, r.tier, r.biome, r.mood,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return hay.includes(query);
+  }
 
+  // The value(s) a record carries for a facet, as an array of lowercase strings.
+  function recordFacetValues(r, facet) {
+    if (facet === "tags") return (r.tags || []).map((t) => String(t).toLowerCase());
+    const v = r[facet];
+    if (v === undefined || v === null || v === "") return [];
+    return [String(v).toLowerCase()];
+  }
+
+  // Compose free-text search (AND) with facet filters: AND across different facets,
+  // OR within a single facet's selected values. `active` is { facet: Set<value> }.
+  function applyFilters(records, query, active) {
+    const q = (query || "").trim().toLowerCase();
     return records.filter((r) => {
-      const hay = [
-        r.id,
-        r.title,
-        r.summary,
-        ...(r.tags || []),
-        r.region,
-        r.difficulty,
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
-      return hay.includes(query);
+      if (!matchesSearch(r, q)) return false;
+      for (const facet of Object.keys(active)) {
+        const wanted = active[facet];
+        if (!wanted || wanted.size === 0) continue;
+        const have = recordFacetValues(r, facet);
+        // OR within facet: the record must carry at least one of the selected values.
+        if (!have.some((v) => wanted.has(v))) return false;
+      }
+      return true;
     });
+  }
+
+  // Which option values actually appear in the current data for a facet (avoid dead options).
+  function valuesPresentInData(records, facet) {
+    const present = new Set();
+    records.forEach((r) => recordFacetValues(r, facet).forEach((v) => present.add(v)));
+    return present;
+  }
+
+  // Build the ordered option list for a facet: controlled vocab in canonical order,
+  // narrowed to values present in the data where the facet is controlled. For the open
+  // `tags` facet, options are the sorted distinct tags found in the data.
+  function facetOptions(facet, records) {
+    const present = valuesPresentInData(records, facet);
+    if (facet === "tags") {
+      return [...present].sort().map((v) => [v, v]);
+    }
+    const vocab = FACET_VOCAB[facet] || [];
+    const inData = vocab.filter(([value]) => present.has(value));
+    // If the controlled vocab and data disagree entirely (e.g. unexpected values), fall
+    // back to showing whatever the data actually has so the bar is never silently empty.
+    if (inData.length) return inData;
+    return [...present].sort().map((v) => [v, v]);
   }
 
   function renderDetail(container, category, record) {
@@ -191,6 +310,113 @@ function renderList(container, category, records) {
     container.appendChild(back);
   }
 
+  // The facets to show for a collection, in display order. Unknown categories fall back to
+  // a lean, broadly-applicable default so a brand-new gateway still renders a usable bar.
+  function facetsForCollection(category) {
+    return COLLECTION_FACETS[category] || ["tier", "biome", "mood", "tags"];
+  }
+
+  // ── URL state <-> active filters ────────────────────────────────────────────
+  // Each facet is a query param holding a comma-separated list of selected values.
+  // `?category=` is preserved untouched. Free text lives in `?q=`.
+  function readStateFromUrl(facets) {
+    const params = new URLSearchParams(window.location.search);
+    const active = {};
+    facets.forEach((f) => {
+      const raw = params.get(f);
+      active[f] = new Set(
+        raw ? raw.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean) : []
+      );
+    });
+    const q = params.get("q") || "";
+    return { active, q };
+  }
+
+  function writeStateToUrl(facets, active, q) {
+    const params = new URLSearchParams(window.location.search);
+    facets.forEach((f) => {
+      const vals = [...(active[f] || [])];
+      if (vals.length) params.set(f, vals.join(","));
+      else params.delete(f);
+    });
+    if (q && q.trim()) params.set("q", q.trim());
+    else params.delete("q");
+    const qs = params.toString();
+    const url = window.location.pathname + (qs ? `?${qs}` : "");
+    window.history.replaceState(null, "", url);
+  }
+
+  function buildFilterBar(barEl, facets, records, active, onChange) {
+    barEl.innerHTML = "";
+    barEl.hidden = false;
+
+    let anyOptionsRendered = false;
+
+    facets.forEach((facet) => {
+      const options = facetOptions(facet, records);
+      // Skip a facet with no options present in the data (avoid dead controls) — but only
+      // if nothing is currently selected for it (a URL-selected value must stay visible
+      // so the user can clear it).
+      if (!options.length && (!active[facet] || active[facet].size === 0)) return;
+
+      anyOptionsRendered = true;
+
+      const group = el("div", "rla-facet");
+      group.setAttribute("role", "group");
+      group.setAttribute("aria-label", FACET_LABELS[facet] || facet);
+
+      const heading = el("div", "rla-facet-label", (FACET_LABELS[facet] || facet));
+      group.appendChild(heading);
+
+      const chips = el("div", "rla-facet-chips");
+      const optionSet = new Map(options);
+      // Ensure any active-but-not-in-data value still renders (so it can be deselected).
+      (active[facet] ? [...active[facet]] : []).forEach((v) => {
+        if (!optionSet.has(v)) optionSet.set(v, v);
+      });
+
+      [...optionSet.entries()].forEach(([value, label]) => {
+        const selected = active[facet] && active[facet].has(value);
+        const chip = el("button", "rla-chip", label);
+        chip.type = "button";
+        chip.setAttribute("aria-pressed", selected ? "true" : "false");
+        chip.dataset.facet = facet;
+        chip.dataset.value = value;
+        if (selected) chip.classList.add("is-active");
+        chip.addEventListener("click", () => {
+          const set = active[facet] || (active[facet] = new Set());
+          if (set.has(value)) set.delete(value);
+          else set.add(value);
+          onChange();
+        });
+        chips.appendChild(chip);
+      });
+
+      group.appendChild(chips);
+      barEl.appendChild(group);
+    });
+
+    // "Clear all" — only meaningful if anything is active.
+    const anyActive = facets.some((f) => active[f] && active[f].size > 0);
+    if (anyActive) {
+      const clear = el("button", "rla-clear", "Clear filters");
+      clear.type = "button";
+      clear.addEventListener("click", () => {
+        facets.forEach((f) => active[f] && active[f].clear());
+        onChange();
+      });
+      barEl.appendChild(clear);
+    }
+
+    if (!anyOptionsRendered) {
+      // No structured facet data yet (e.g. an empty collection): keep the bar present but
+      // quiet rather than rendering an empty box.
+      barEl.appendChild(
+        el("div", "rla-facet-empty", "Filters appear here once this area has content.")
+      );
+    }
+  }
+
   async function initCollectionPage() {
     const rawCat = getParam("category");
     const category = normaliseCategory(rawCat);
@@ -199,9 +425,10 @@ function renderList(container, category, records) {
     const subtitleEl = document.getElementById("collection-subtitle");
     const listEl = document.getElementById("collection-list");
     const searchEl = document.getElementById("collection-search");
+    const barEl = document.getElementById("collection-filters");
 
     if (titleEl) titleEl.textContent = titleCaseCategory(category);
-    if (subtitleEl) subtitleEl.textContent = "Browse the archive, or search to narrow it down.";
+    if (subtitleEl) subtitleEl.textContent = "Browse the archive, or filter and search to narrow it down.";
 
     let records = [];
     try {
@@ -212,14 +439,28 @@ function renderList(container, category, records) {
       return;
     }
 
+    const showBar = barEl && !NO_FILTER_BAR.has(category);
+    const facets = facetsForCollection(category);
+    const { active, q } = readStateFromUrl(facets);
+
+    // Seed the search box from the URL so a shared link restores the full view.
+    if (searchEl && q) searchEl.value = q;
+
     const rerender = () => {
-      const filtered = filterRecords(records, searchEl ? searchEl.value : "");
-      renderList(listEl, category, filtered);
+      const query = searchEl ? searchEl.value : q;
+      writeStateToUrl(facets, active, query);
+      if (showBar) buildFilterBar(barEl, facets, records, active, rerender);
+      const filtered = applyFilters(records, query, active);
+      const isNarrowing =
+        (query && query.trim().length > 0) ||
+        facets.some((f) => active[f] && active[f].size > 0);
+      // Only call it "filtered to nothing" when the source data isn't itself empty.
+      renderList(listEl, category, filtered, { filtered: isNarrowing && records.length > 0 });
     };
 
-    if (searchEl) {
-      searchEl.addEventListener("input", rerender);
-    }
+    if (searchEl) searchEl.addEventListener("input", rerender);
+
+    if (barEl && !showBar) barEl.hidden = true;
 
     rerender();
   }

@@ -31,11 +31,46 @@ Required fields:
 - `tags` (string[])  
   Lowercase, hyphenated. Example: `["travel-encounter", "haunting"]`
 - `region` (string)  
-  `state1` to `state10` (or empty string if not regional).
+  `state1` to `state10` (or empty string if not regional).  
+  **Deprecated as a navigation/filter facet (D-006).** The map now routes by content
+  type, not place. `region` persists as a latent value but is NOT a filter-bar facet and
+  is not surfaced in the UI. Leave existing values as-is; new entries may omit it.
 - `difficulty` (string)  
   `easy` | `medium` | `hard` (or empty string).
 - `body` (string[])  
   Paragraphs, in order.
+
+### Facet fields (filter-bar taxonomy — D-004 LOCKED)
+
+These power the in-area filter bar on `collection.html`. They are a **closed, controlled
+vocabulary** (the only legal values are listed below) so the data and the filter UI match
+byte-for-byte. Values are stored lowercase, hyphenated where multi-word. The renderer
+ignores unknown fields, so these are backward-compatible additions. Canonical source of
+truth for the full vocab + per-collection filter sets:
+`10-projects/redlifeadventures/filter-spec.md`.
+
+- `tier` (string) — party-level band.  
+  `1` Low (lv 1–4) | `2` Mid (lv 5–10) | `3` High (lv 11–16) | `4` Epic (lv 17–20).  
+  Separate facet from `difficulty` (D-003): tier = is-it-for-my-party's-level; difficulty
+  = relative hardness within a tier.
+- `biome` (string) — setting / terrain.  
+  `forest` | `coast` | `underwater` | `marsh` | `cavern` | `mountain` | `urban` | `ruins`
+  | `frontier` | `frozen` | `planar`.
+- `mood` (string) — tone.  
+  `unsettling` | `wondrous` | `grim` | `comic` | `mysterious` | `heroic` | `melancholy`.
+- `time` (string) — time-to-run. **Encounters only** (a place/NPC/item has no run-time).  
+  `5-min` | `15-min` | `1-hour` | `full-session`.
+- `party` (string, optional) — party-size scaling. **Encounters only.**  
+  `solo` | `small` | `standard` | `large`.
+
+Item-native and NPC-native controlled facets (already in the per-category field guides
+below): `rarity` and `type` (Items), `role` (NPCs). These are exposed in those collections'
+filter bars per `filter-spec.md` §3.
+
+**Which facets appear per collection** is defined in `filter-spec.md` §3 (the per-collection
+filter sets). Not every facet suits every type: `time`/`party` are Encounters-only;
+`rarity`/`type` are Items-only; `biome` is omitted from NPCs / Character Hooks / Secrets.
+Writers should set **all applicable facets** plus 3–6 open `tags` per entry.
 
 Common optional fields (recommended):
 

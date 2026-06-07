@@ -472,6 +472,98 @@ a { color: var(--coral); }
 }
 .rla-subscribe-inline button:hover { background: rgba(252,141,98,0.12); border-color: var(--gold); }
 
+/* ── IN-AREA FILTER BAR — the findability backbone (design-direction §6.2) ──────
+   Prominent, fast, one-tap chips grouped per facet. Sea/sand/coral palette, keyboard
+   accessible (real <button>s, focus rings via the global :focus-visible rule), and
+   collapses to a stacked, horizontally-scrollable layout on small screens. */
+.rla-filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--s3) var(--s4);
+  margin-bottom: var(--s4);
+  padding: var(--s3) var(--s4);
+  background: var(--ink-raised);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--coral);
+  border-radius: 8px;
+}
+.rla-filterbar[hidden] { display: none; }
+
+.rla-facet {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.rla-facet-label {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral-soft);
+}
+
+.rla-facet-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rla-chip {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--ink-deep);
+  color: var(--sand);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+.rla-chip:hover {
+  border-color: var(--coral);
+  background: rgba(252,141,98,0.12);
+}
+.rla-chip.is-active {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: var(--sea-ink);
+  font-weight: 600;
+}
+.rla-chip.is-active:hover {
+  background: var(--coral-soft);
+  border-color: var(--coral-soft);
+}
+
+.rla-clear {
+  align-self: center;
+  margin-left: auto;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--coral);
+  background: transparent;
+  color: var(--coral-soft);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
+}
+.rla-clear:hover { background: rgba(252,141,98,0.14); color: var(--sand); }
+
+.rla-facet-empty {
+  font-family: "IM Fell English", Georgia, serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--sand-mut);
+}
+
 /* board = tidy grid, no decorative panel */
 .board { background: transparent; padding: 0; }
 
@@ -524,20 +616,26 @@ a { color: var(--coral); }
   line-height: 1.15;
 }
 
+/* Card description — legibility fix (Dean 2026-06-07): keep the IM Fell English
+   typeface, but the muted-sand italic at 0.95rem read poorly at a glance mid-game.
+   Brighter sand (full --sand, ~8.9:1 on the card — comfortably past WCAG AA), a
+   larger 1.05rem body, and more line-height. Upright (not italic) so the serif's
+   small-size strokes stay crisp for read-at-speed. */
 .notice-summary, .notice-desc {
   font-family: "IM Fell English", Georgia, serif;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--parchment-mut);
-  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.05rem;
+  color: var(--sand);
+  line-height: 1.55;
   margin: 0;
 }
 
 .notice-meta {
   margin-top: var(--s2);
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
-  color: var(--parchment-mut);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--sand);
 }
 
 /* content.js emits a stray <div class="pin2"> per card — neutralise it */
@@ -678,6 +776,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   .rla-toolbar { flex-direction: column; align-items: stretch; }
   .rla-subscribe-inline { margin-left: 0; flex-wrap: wrap; }
   .rla-subscribe-inline input[type=email] { width: 100%; }
+  /* Filter bar: stack facet groups full-width; let chip rows scroll horizontally
+     rather than wrapping into tall blocks on a phone. Clear-all drops below. */
+  .rla-filterbar { flex-direction: column; gap: var(--s3); padding: var(--s3); }
+  .rla-facet { width: 100%; }
+  .rla-facet-chips { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
+  .rla-clear { margin-left: 0; align-self: flex-start; }
   .board-grid { grid-template-columns: 1fr; }
   .rla-footer { flex-direction: column; gap: var(--s2); text-align: center; }
   .area-fallback-grid { grid-template-columns: 1fr 1fr; }
