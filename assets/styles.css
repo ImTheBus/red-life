@@ -668,13 +668,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 /* ── RESPONSIVE ───────────────────────────────────────── */
 
 @media (max-width: 880px) {
-  .map-stage { min-height: 78vh; }
-  .map-wrapper { width: 98vw; max-height: 68vh; }
+  /* map stays full-bleed at every width; lede nudges up to clear the brand */
+  .map-lede { top: 56px; }
 }
 
 @media (max-width: 640px) {
-  .map-stage { min-height: auto; padding: var(--s3) var(--s2); }
-  .map-wrapper { width: 100%; max-height: none; aspect-ratio: 1377 / 604; }
+  .map-lede { top: 52px; }
   .rla-page-header { flex-direction: column; gap: var(--s1); align-items: flex-start; }
   .rla-toolbar { flex-direction: column; align-items: stretch; }
   .rla-subscribe-inline { margin-left: 0; flex-wrap: wrap; }
