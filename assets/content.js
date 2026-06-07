@@ -197,6 +197,55 @@
     return n;
   }
 
+  // ── Minimal inline-markdown pass ────────────────────────────────────────────
+  // The content is authored with markdown emphasis (`**bold**`, `*italic*`) but the
+  // site has no markdown parser, so without this the raw `**`/`*` markers render as
+  // literal characters on the page. This is a deliberately SMALL pass: inline emphasis
+  // plus line/paragraph breaks, NOT a full markdown engine (no links, headings, lists,
+  // code, images — those aren't authored in the prose fields).
+  //
+  // Safety: callers feed the OUTPUT to innerHTML, so we HTML-escape the raw text FIRST
+  // (so stray `<`/`&`/`>` in prose can't break layout or inject markup), and only THEN
+  // substitute emphasis markers for the tags we ourselves emit. Order matters — escaping
+  // after substitution would neuter our own <strong>/<em>; escaping before keeps the
+  // content inert and the only HTML in the result is the tags this function produces.
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  // Convert escaped text with markdown emphasis into safe HTML. Bold is matched before
+  // italic so `**x**` is not mis-read as two italic markers. Italic supports both `*x*`
+  // and `_x_`. Single newlines become <br>; blank lines (paragraph breaks) become a
+  // doubled break so authored paragraphs within one string still read as paragraphs.
+  function inlineMdToHtml(raw) {
+    let s = escapeHtml(raw);
+    // **bold** → <strong> (non-greedy, must contain at least one non-* char)
+    s = s.replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>");
+    // *italic* → <em>. Avoid matching a stray `*` by requiring a non-space, non-*
+    // run between the markers.
+    s = s.replace(/\*(?!\s)([^*\n]+?)(?<!\s)\*/g, "<em>$1</em>");
+    // _italic_ → <em>. Use word-ish boundaries so mid-word underscores (rare here)
+    // don't get swallowed.
+    s = s.replace(/(^|[\s(])_(?!\s)([^_\n]+?)(?<!\s)_(?=$|[\s).,;:!?])/g, "$1<em>$2</em>");
+    // Paragraph + line breaks.
+    s = s.replace(/\n{2,}/g, "<br><br>").replace(/\n/g, "<br>");
+    return s;
+  }
+
+  // Build an element whose text is rendered through the inline-markdown pass. Mirrors
+  // el(tag, className, text) but routes prose through inlineMdToHtml + innerHTML instead
+  // of textContent. Use this ONLY for author-written prose (body, summaries, field text,
+  // list items) — never for structural/label strings, which stay on el()/textContent.
+  function richEl(tag, className, text) {
+    const n = document.createElement(tag);
+    if (className) n.className = className;
+    if (typeof text === "string") n.innerHTML = inlineMdToHtml(text);
+    return n;
+  }
+
   function renderTags(tags) {
     const wrap = el("div", "tags");
     (tags || []).forEach((t) => {
@@ -231,7 +280,7 @@ function renderList(container, category, records, opts) {
     card.appendChild(h);
 
     if (r.summary) {
-      const s = el("div", "notice-summary", r.summary);
+      const s = richEl("div", "notice-summary", r.summary);
       card.appendChild(s);
     }
 
@@ -362,7 +411,7 @@ function renderList(container, category, records, opts) {
     container.appendChild(title);
 
     if (record.summary) {
-      container.appendChild(el("p", "detail-summary", record.summary));
+      container.appendChild(richEl("p", "detail-summary", record.summary));
     }
 
     if (record.tags && record.tags.length) container.appendChild(renderTags(record.tags));
@@ -374,14 +423,14 @@ function renderList(container, category, records, opts) {
     if (meta.length) container.appendChild(el("div", "detail-meta", meta.join(" • ")));
 
     (record.body || []).forEach((p) => {
-      container.appendChild(el("p", "detail-p", p));
+      container.appendChild(richEl("p", "detail-p", p));
     });
 
     function addList(label, items) {
       if (!items || !items.length) return;
       container.appendChild(el("h2", "detail-h2", label));
       const ul = el("ul", "detail-list");
-      items.forEach((it) => ul.appendChild(el("li", "", it)));
+      items.forEach((it) => ul.appendChild(richEl("li", "", it)));
       container.appendChild(ul);
     }
 
@@ -420,7 +469,7 @@ function renderList(container, category, records, opts) {
       const v = record[field];
       if (typeof v === "string" && v.trim()) {
         container.appendChild(el("h2", "detail-h2", label));
-        container.appendChild(el("p", "detail-p", v));
+        container.appendChild(richEl("p", "detail-p", v));
       } else if (Array.isArray(v) && v.length) {
         addList(label, v);
       }
