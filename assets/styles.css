@@ -1,31 +1,49 @@
 /* Red Life Adventures — styles.css
-   Redesign 2026-06-07: map-as-hero, ink/parchment + single gold accent.
-   Design direction: 10-projects/redlifeadventures/design-direction.md */
+   Redesign 2026-06-07b: map-as-page (full-bleed, frameless) + palette derived
+   from the map's own colours (sea teal / land sand / region coral).
+   Sampled from assets/map.svg: oceanBase #4e6964, land #E8D9B0/#F0EAD8,
+   coastline ink #1f3846, region tint #fc8d62.
+   Design direction: 10-projects/redlifeadventures/design-direction.md
+   (Dean feedback 2026-06-07 overrides the old ink/gold palette.) */
 
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=IM+Fell+English:ital@0;1&family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  /* Dark theme — one flat ink base, one gold accent (design-direction §3) */
-  --ink:           #211913;  /* page bg — flat, no gradients */
-  --ink-raised:    #2C2118;  /* cards, header, raised surfaces */
-  --ink-deep:      #1A130D;  /* deepest insets / map margin */
-  --parchment:     #F0EAD8;  /* primary text on dark */
-  --parchment-mut: #B7AE99;  /* secondary text, labels, meta */
-  --gold:          #D4A84B;  /* the one accent */
-  --gold-dim:      #9C7E3A;  /* hover/inactive accent, borders */
-  --hairline:      rgba(212,168,75,0.18); /* 1px dividers + card borders */
-  --hairline-soft: rgba(212,168,75,0.10);
+  /* ── Palette DERIVED FROM THE MAP (map.svg sampled colours) ───────────
+     sea     ← oceanBase #4e6964 (deepened for text contrast)
+     sand    ← land #F0EAD8 / #E8D9B0
+     sea-ink ← coastline #1f3846
+     coral   ← region tint #fc8d62 (the warm "red" of Red Life)            */
+  --sea:          #3A514D;  /* page bg — the sea */
+  --sea-raised:   #2E423E;  /* cards, header, raised surfaces */
+  --sea-deep:     #22312E;  /* deepest insets / inputs */
+  --sea-ink:      #1f3846;  /* coastline ink — borders, deep chrome */
+  --sand:         #F0EAD8;  /* primary text on sea (land cream) */
+  --sand-mut:     #C9BE9E;  /* secondary text, labels, meta */
+  --sand-surface: #EDE3C8;  /* light surface (buttons, plates) */
+  --coral:        #FC8D62;  /* accent on dark (from region tint) */
+  --coral-soft:   #FFB088;  /* link/hover on sea bg */
+  --coral-deep:   #A8421C;  /* accent/link on light surface */
+  --hairline:      rgba(240,234,216,0.16); /* sand hairline on sea */
+  --hairline-soft: rgba(240,234,216,0.09);
 
   /* spacing scale: 4 / 8 / 16 / 24 / 40 */
   --s1: 4px;  --s2: 8px;  --s3: 16px;  --s4: 24px;  --s5: 40px;
 
   /* legacy token aliases (still referenced by inline styles in HTML) */
-  --bg-dark: var(--ink);
-  --text-main: var(--parchment);
-  --text-muted: var(--parchment-mut);
-  --text-faint: rgba(183,174,153,0.6);
-  --accent: var(--gold);
-  --accent-dim: var(--gold-dim);
+  --ink:           var(--sea);
+  --ink-raised:    var(--sea-raised);
+  --ink-deep:      var(--sea-deep);
+  --parchment:     var(--sand);
+  --parchment-mut: var(--sand-mut);
+  --gold:          var(--coral);
+  --gold-dim:      var(--coral); /* used as accent text/border on dark — keep bright for contrast */
+  --bg-dark: var(--sea);
+  --text-main: var(--sand);
+  --text-muted: var(--sand-mut);
+  --text-faint: rgba(201,190,158,0.6);
+  --accent: var(--coral);
+  --accent-dim: var(--coral-deep);
   --border-warm: var(--hairline);
 }
 
@@ -41,7 +59,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--gold); }
+a { color: var(--coral); }
 
 /* ── SHARED SHELL ─────────────────────────────────────── */
 
@@ -49,14 +67,17 @@ a { color: var(--gold); }
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--ink);
-  color: var(--parchment);
+  background: var(--sea);
+  color: var(--sand);
 }
 
-/* ── HEADER (slim sticky) ─────────────────────────────── */
+/* The landing shell hosts a full-bleed map; let it own the viewport. */
+.rla-shell--map { min-height: 100vh; }
+
+/* ── HEADER ───────────────────────────────────────────── */
 
 .rla-header {
-  background: var(--ink-raised);
+  background: var(--sea-raised);
   border-bottom: 1px solid var(--hairline);
   padding: 0 var(--s4);
   height: 48px;
@@ -70,14 +91,30 @@ a { color: var(--gold); }
   flex-shrink: 0;
 }
 
+/* On the map landing the header OVERLAYS the map (no bar above it) so the
+   map reads as the whole page (Dean feedback #1). */
+.rla-header--overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  background: linear-gradient(to bottom, rgba(31,56,70,0.62), rgba(31,56,70,0));
+  border-bottom: none;
+  height: 56px;
+  z-index: 40;
+}
+.rla-header--overlay .rla-header-brand,
+.rla-header--overlay .rla-header-nav a {
+  text-shadow: 0 1px 4px rgba(0,0,0,0.55);
+}
+
 .rla-header-brand {
   font-family: "Iceland", system-ui, sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--sand);
   text-decoration: none;
 }
+.rla-header-brand:hover { color: var(--coral-soft); }
 
 .rla-header-nav {
   display: flex;
@@ -89,43 +126,53 @@ a { color: var(--gold); }
   font-size: 0.8rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--parchment-mut);
+  color: var(--sand);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .rla-header-nav a:hover,
-.rla-header-nav a:focus-visible { color: var(--parchment); }
+.rla-header-nav a:focus-visible { color: var(--coral-soft); }
 
-/* ── LANDING: SLIM HERO OVERLAY + MAP-AS-HERO ─────────── */
+/* ── LANDING: MAP IS THE PAGE (full-bleed, frameless) ──────
+   Dean feedback #1: the map should feel like it IS the whole page, not a
+   picture in a frame. No wrapper card, no max-width, no border/radius,
+   no aspect-box. The map fills the viewport; the lede + hint overlay it. */
 
-/* The landing page is the map. Everything else is minimal chrome. */
 .map-stage {
   position: relative;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--s3) var(--s3) var(--s2);
-  background: var(--ink);
-  min-height: 86vh;          /* map dominates the first screen */
+  width: 100vw;
+  height: 100vh;            /* fill the viewport edge-to-edge */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--sea);   /* sea colour so any bleed margin matches the map's ocean */
 }
 
-/* one soft vignette behind the map — no stacked gradients */
-.map-stage::before {
-  content: "";
+.map-object {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 45%, rgba(212,168,75,0.06), transparent 70%);
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  background: transparent;
+  /* The map art's own ocean extends to the SVG canvas; meet-fit keeps every
+     label inside the visible canvas (no clipping of the art). */
 }
 
+/* Slim hero lede overlaid on the map (top-centre), legible over the art. */
 .map-lede {
-  position: relative;
+  position: absolute;
+  top: 64px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
   text-align: center;
-  margin: 0 0 var(--s2);
-  max-width: 60ch;
+  width: min(92vw, 60ch);
+  pointer-events: none;
 }
 
 .map-lede .brand {
@@ -133,48 +180,39 @@ a { color: var(--gold); }
   font-size: clamp(1.6rem, 3.4vw, 2.4rem);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--parchment);
+  color: var(--sand);
   margin: 0;
   line-height: 1.05;
+  text-shadow: 0 2px 10px rgba(31,56,70,0.85), 0 0 2px rgba(31,56,70,0.9);
 }
-.map-lede .brand span { color: var(--gold); }
+.map-lede .brand span { color: var(--coral); }
 
 .map-lede .tagline {
   font-family: "IM Fell English", Georgia, serif;
   font-style: italic;
   font-size: clamp(0.95rem, 1.6vw, 1.1rem);
-  color: var(--parchment-mut);
+  color: var(--sand);
   margin: var(--s1) 0 0;
   line-height: 1.5;
-}
-
-.map-wrapper {
-  position: relative;
-  width: min(96vw, 1400px);
-  aspect-ratio: 1377 / 604;       /* matches map.svg viewBox */
-  max-height: 76vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.map-object {
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--hairline);
-  border-radius: 8px;
-  display: block;
-  background: var(--ink-deep);
+  text-shadow: 0 1px 8px rgba(31,56,70,0.9);
 }
 
 .map-hint {
-  position: relative;
+  position: absolute;
+  bottom: 18px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--parchment-mut);
+  color: var(--sand);
   text-align: center;
-  margin: var(--s2) 0 0;
+  margin: 0;
+  padding: 6px 16px;
+  background: rgba(31,56,70,0.55);
+  border-radius: 999px;
+  pointer-events: none;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
 /* Plain-text fallback list of areas (demoted category board, below the fold).
@@ -214,7 +252,7 @@ a { color: var(--gold); }
 .area-fallback-grid a:hover,
 .area-fallback-grid a:focus-visible {
   border-color: var(--gold);
-  background: rgba(212,168,75,0.06);
+  background: rgba(252,141,98,0.08);
 }
 .area-fallback-grid .fa-name {
   font-family: "Iceland", system-ui, sans-serif;
@@ -279,7 +317,7 @@ a { color: var(--gold); }
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .join-input::placeholder { color: var(--parchment-mut); }
-.join-input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
+.join-input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(252,141,98,0.30); }
 
 .join-btn {
   padding: 11px 24px;
@@ -295,7 +333,7 @@ a { color: var(--gold); }
   white-space: nowrap;
   transition: background 0.15s;
 }
-.join-btn:hover { background: #e2bd6a; }
+.join-btn:hover { background: var(--coral-soft); }
 .join-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .join-status {
@@ -356,7 +394,7 @@ a { color: var(--gold); }
   text-transform: uppercase;
   transition: color 0.15s;
 }
-.rla-page-back:hover, .rla-page-back:focus-visible { color: #e2bd6a; }
+.rla-page-back:hover, .rla-page-back:focus-visible { color: var(--coral-soft); }
 
 .rla-page-body {
   flex: 1;
@@ -395,7 +433,7 @@ a { color: var(--gold); }
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .rla-search::placeholder { color: var(--parchment-mut); }
-.rla-search:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
+.rla-search:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(252,141,98,0.30); }
 
 .rla-subscribe-inline {
   display: flex;
@@ -416,7 +454,7 @@ a { color: var(--gold); }
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .rla-subscribe-inline input::placeholder { color: var(--parchment-mut); }
-.rla-subscribe-inline input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(212,168,75,0.25); }
+.rla-subscribe-inline input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(252,141,98,0.30); }
 
 .rla-subscribe-inline button {
   padding: 9px 16px;
@@ -432,7 +470,7 @@ a { color: var(--gold); }
   white-space: nowrap;
   transition: background 0.15s, border-color 0.15s;
 }
-.rla-subscribe-inline button:hover { background: rgba(212,168,75,0.1); border-color: var(--gold); }
+.rla-subscribe-inline button:hover { background: rgba(252,141,98,0.12); border-color: var(--gold); }
 
 /* board = tidy grid, no decorative panel */
 .board { background: transparent; padding: 0; }
@@ -592,7 +630,7 @@ a { color: var(--gold); }
   text-transform: uppercase;
   font-size: 0.875rem;
 }
-.detail-back:hover, .detail-back:focus-visible { color: #e2bd6a; }
+.detail-back:hover, .detail-back:focus-visible { color: var(--coral-soft); }
 
 .footer-note { margin-top: var(--s5); font-size: 0.875rem; }
 .footer-note a { color: var(--gold); text-decoration: none; }

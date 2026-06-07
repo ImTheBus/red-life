@@ -16,9 +16,10 @@
 </head>
 
 <body>
-<div class="rla-shell">
+<div class="rla-shell rla-shell--map">
 
-  <header class="rla-header">
+  <!-- Header OVERLAYS the map so the map reads as the whole page (Dean #1) -->
+  <header class="rla-header rla-header--overlay">
     <a class="rla-header-brand" href="index.html">Red Life Adventures</a>
     <nav class="rla-header-nav">
       <a href="collection.html?category=locations">Browse archive</a>
@@ -26,22 +27,20 @@
     </nav>
   </header>
 
-  <!-- THE MAP IS THE HERO + PRIMARY NAVIGATION (design-direction §5) -->
+  <!-- THE MAP IS THE PAGE: full-bleed, frameless, primary navigation -->
   <main class="map-stage" aria-label="World map — primary navigation">
     <div class="map-lede">
       <h1 class="brand">Red Life <span>Adventures</span></h1>
       <p class="tagline">A living archive for the table. Choose a region of the world to enter its content.</p>
     </div>
 
-    <div class="map-wrapper">
-      <object
-        id="world-map"
-        type="image/svg+xml"
-        data="assets/map.svg"
-        class="map-object"
-        aria-label="Interactive world map — each region is a content area; click to explore">
-      </object>
-    </div>
+    <object
+      id="world-map"
+      type="image/svg+xml"
+      data="assets/map.svg"
+      class="map-object"
+      aria-label="Interactive world map — each region is a content area; click to explore">
+    </object>
 
     <p class="map-hint">Click a region to open its archive</p>
   </main>
