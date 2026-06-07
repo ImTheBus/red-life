@@ -84,6 +84,19 @@ Common optional fields (recommended):
   Relative path, e.g. `assets/img/locations/old-stone-bridge.jpg`
 - `links` ({label:string,url:string}[])  
   For cross-references or external references.
+- `related` (string[])  
+  Structured interconnection links — a list of entry **ids** (or, for not-yet-published
+  targets, queue **ids**) this entry connects to. Example:
+  `["the-water-came-later", "marrows-toll", "old-stone-bridge"]`.
+  Replaces dangling prose pointers ("see X", "if you've run X") with machine-checkable
+  links. Each value must resolve to either a **published entry id** (EXISTS in some
+  `data/*.json`) or a **queued id** (in `content-manifest.json`); a value that resolves to
+  neither is a defect the editor pass rejects. The detail page surfaces these as a
+  **"Related"** section: ids that resolve to a published entry render as links to that
+  entry's detail page; ids that point at a queued-but-unwritten target render as a
+  non-link **"coming soon"** chip, never a dead link. Source of truth for the field and
+  its surfacing: `10-projects/redlifeadventures/filter-spec.md` §5 and
+  `editorial-standard.md` §C.
 - `created` (YYYY-MM-DD)
 - `updated` (YYYY-MM-DD)
 

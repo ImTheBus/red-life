@@ -113,6 +113,14 @@
   // Collections that are content gateways but have no filter bar (intake forms etc.).
   const NO_FILTER_BAR = new Set(["submit-your-own", "contact"]);
 
+  // The content categories that hold real entries — used to build the cross-category
+  // index that resolves `related` ids to a {category, title} so a link can point at the
+  // right detail page. (Intake gateways are excluded — they hold no linkable entries.)
+  const CONTENT_CATEGORIES = [
+    "locations", "npc", "items", "puzzles", "encounters",
+    "story-hooks", "character-hooks", "site-lore", "secrets", "tables",
+  ];
+
   function getParam(name) {
     const params = new URLSearchParams(window.location.search);
     return params.get(name);
@@ -146,6 +154,40 @@
     const data = await res.json().catch(() => null);
     if (!Array.isArray(data)) return [];
     return data;
+  }
+
+  // Build a cross-category index of every PUBLISHED entry: id -> { category, title }.
+  // This is what lets a `related` id (a bare entry id) resolve to a working detail link
+  // and its real title. Loads each content category once, in parallel; a missing/empty
+  // file is simply skipped (loadCategoryData already degrades 404/parse errors to []).
+  async function buildEntryIndex() {
+    const index = new Map();
+    const results = await Promise.all(
+      CONTENT_CATEGORIES.map(async (cat) => {
+        try {
+          const records = await loadCategoryData(cat);
+          return { cat, records };
+        } catch (_) {
+          return { cat, records: [] };
+        }
+      })
+    );
+    results.forEach(({ cat, records }) => {
+      records.forEach((r) => {
+        if (r && r.id && !index.has(String(r.id))) {
+          index.set(String(r.id), { category: cat, title: r.title || r.id });
+        }
+      });
+    });
+    return index;
+  }
+
+  // Turn a bare id (a queued-but-unwritten target) into a readable label for the
+  // "coming soon" chip, e.g. "ambush-at-the-tithe-bridge" -> "Ambush At The Tithe Bridge".
+  function humaniseId(id) {
+    return String(id)
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
   }
 
   function el(tag, className, text) {
@@ -203,6 +245,16 @@ function renderList(container, category, records, opts) {
     }
 
     if (r.tags && r.tags.length) card.appendChild(renderTags(r.tags));
+
+    // Small "connected" affordance: if the entry links to others, hint it on the card so a
+    // DM browsing the board can see at a glance which entries open into the wider world.
+    // (The navigable links themselves live on the detail page's Related section.)
+    if (Array.isArray(r.related) && r.related.length) {
+      const n = r.related.length;
+      card.appendChild(
+        el("div", "notice-related", `↳ ${n} related ${n === 1 ? "entry" : "entries"}`)
+      );
+    }
 
     container.appendChild(card);
   });
@@ -271,7 +323,39 @@ function renderList(container, category, records, opts) {
     return [...present].sort().map((v) => [v, v]);
   }
 
-  function renderDetail(container, category, record) {
+  // Render the "Related" section: structured interconnection links (the `related` field).
+  // A related id that resolves to a PUBLISHED entry (present in `index`) becomes a link to
+  // that entry's detail page; an id that doesn't resolve (a queued-but-unwritten target)
+  // renders as a non-link "coming soon" chip — visible and honest, never a dead link.
+  function renderRelated(container, record, index) {
+    const related = Array.isArray(record.related) ? record.related : [];
+    if (!related.length) return;
+
+    const heading = el("h2", "detail-h2", "Related");
+    container.appendChild(heading);
+
+    const wrap = el("div", "related-list");
+    related.forEach((rawId) => {
+      const id = String(rawId);
+      const hit = index ? index.get(id) : null;
+      if (hit) {
+        // Resolves to a published entry → live link to its detail page.
+        const link = el("a", "related-chip related-chip--live", hit.title);
+        link.href = `detail.html?category=${encodeURIComponent(hit.category)}&id=${encodeURIComponent(id)}`;
+        wrap.appendChild(link);
+      } else {
+        // Queued but unwritten → non-interactive "coming soon" chip.
+        const chip = el("span", "related-chip related-chip--soon");
+        chip.setAttribute("aria-disabled", "true");
+        chip.appendChild(el("span", "related-chip-name", humaniseId(id)));
+        chip.appendChild(el("span", "related-chip-soon", "coming soon"));
+        wrap.appendChild(chip);
+      }
+    });
+    container.appendChild(wrap);
+  }
+
+  function renderDetail(container, category, record, index) {
     container.innerHTML = "";
 
     const title = el("h1", "detail-title", record.title || record.id);
@@ -304,6 +388,45 @@ function renderList(container, category, records, opts) {
     addList("Hooks", record.hooks);
     addList("Complications", record.complications);
     addList("Rewards", record.rewards);
+
+    // Per-category content fields (schema field-guides). These carry the entry's actual
+    // payoff — e.g. a character hook's stakes/next steps/twists, a puzzle's clues/solution.
+    // Rendered in a stable, readable order; each only if the entry actually has it. Without
+    // this, the resonance edits (the ledger's payoff) would live in the data but never show.
+    const FIELD_SECTIONS = [
+      ["statblock", "Stat block"],
+      ["dm_tips", "Running it"],
+      ["setup", "Setup"],
+      ["trigger", "Trigger"],
+      ["clues", "Clues"],
+      ["escalation", "Escalation"],
+      ["solution", "Solution"],
+      ["failure_states", "Failure states"],
+      ["consequences", "Consequences"],
+      ["resolution", "Resolution"],
+      ["variants", "Variants"],
+      ["properties", "Properties"],
+      ["drawbacks", "Drawbacks"],
+      ["stakes", "Stakes"],
+      ["next_steps", "Next steps"],
+      ["twists", "Twists"],
+      ["truth", "The truth"],
+      ["rumours", "Rumours & reveals"],
+      ["how_to_reveal", "How to reveal"],
+      ["secrets", "Secrets"],
+      ["who_knows", "Who knows"],
+    ];
+    FIELD_SECTIONS.forEach(([field, label]) => {
+      const v = record[field];
+      if (typeof v === "string" && v.trim()) {
+        container.appendChild(el("h2", "detail-h2", label));
+        container.appendChild(el("p", "detail-p", v));
+      } else if (Array.isArray(v) && v.length) {
+        addList(label, v);
+      }
+    });
+
+    renderRelated(container, record, index);
 
     const back = el("a", "detail-back", `Back to ${titleCaseCategory(category)}`);
     back.href = `collection.html?category=${encodeURIComponent(category)}`;
@@ -481,8 +604,15 @@ function renderList(container, category, records, opts) {
     }
 
     let records = [];
+    let index = new Map();
     try {
-      records = await loadCategoryData(category);
+      // Load this category's records and the cross-category index together. The index
+      // resolves `related` ids to working detail links; if it fails to build we still
+      // render the entry (related chips just fall back to "coming soon").
+      [records, index] = await Promise.all([
+        loadCategoryData(category),
+        buildEntryIndex().catch(() => new Map()),
+      ]);
     } catch (err) {
       console.error(err);
       if (container) container.textContent = `Could not load data for "${category}".`;
@@ -495,7 +625,7 @@ function renderList(container, category, records, opts) {
       return;
     }
 
-    renderDetail(container, category, record);
+    renderDetail(container, category, record, index);
   }
 
   document.addEventListener("DOMContentLoaded", () => {

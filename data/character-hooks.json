@@ -11,9 +11,9 @@
     "tier": "1",
     "mood": "unsettling",
     "next_steps": [
-      "**Stakes:** Whatever keeps the ledger knows the character by that private name, and has been waiting. Leave without answering and something comes to ask why they never came through.",
-      "**Next steps:** Match the entry's date against family history. Find the duty officer who signed the page, if they still live. Follow the ledger back — do other family names appear? Does the Ledger Door at its far end open only to *this* name?",
-      "**Twists:** A second entry, directly below, reads *departed* — dated tomorrow. The name just above theirs belongs to someone they were told died before they were born. A smudged third column reads like a destination — but the place name is on no map."
+      "**Stakes:** The ledger is not a list of who passed through — it is a list of who is *owed for*. Your name is in the debt column, entered a generation before you were born, in your family's private hand. A duty was promised in your name, and the post has kept your place. Now you have arrived, and the entry beside your name has begun to dry — as though someone is finally ready to collect.",
+      "**Next steps:** Find out what was promised, and by whom — a name in the signing column the family will not discuss. Decide whether to pay the duty, refuse it (the post does not take refusal well), or learn what the post actually is before you do either.",
+      "**Twists:** A second entry, directly below, reads *departed* — dated tomorrow. The signing hand in the column is one the character will recognise the first time they see a family document — it is their own, not yet written."
     ],
     "tags": [
       "character-hook",
@@ -21,6 +21,11 @@
       "frontier",
       "ancestry",
       "mystery"
+    ],
+    "related": [
+      "hollow-ward-post",
+      "the-ledger-door",
+      "quick-the-kettles-still-warm"
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"

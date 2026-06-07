@@ -719,6 +719,72 @@ a { color: var(--coral); }
 
 .detail-list { margin: var(--s2) 0 0 var(--s4); line-height: 1.6; }
 
+/* ── RELATED SECTION (interconnection surfacing) ──────────
+   Renders under the detail body. Live links (resolve to a published entry) are coral
+   chips; queued-but-unwritten targets are muted "coming soon" chips, never dead links.
+   Palette: sea-deep chip on the sea page, coral accent — consistent with .tag/.rla-chip. */
+.related-list {
+  margin-top: var(--s3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+.related-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--ink-deep);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+/* Live link → a published entry. Coral border + text, lifts on hover like the cards. */
+.related-chip--live {
+  color: var(--coral-soft);
+  border-color: var(--coral);
+  text-decoration: none;
+  transition: background 0.14s ease, color 0.14s ease, transform 0.14s ease;
+}
+.related-chip--live:hover,
+.related-chip--live:focus-visible {
+  background: rgba(252, 141, 98, 0.14);
+  color: var(--sand);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Queued, unwritten target → non-interactive "coming soon" chip. Muted, no pointer. */
+.related-chip--soon {
+  color: var(--sand-mut);
+  cursor: default;
+}
+.related-chip-name { color: var(--sand-mut); }
+.related-chip-soon {
+  font-family: "Iceland", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sea-ink);
+  background: var(--sand-mut);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* Card-level "connected" hint on the collection board (the navigable links are on detail). */
+.notice-related {
+  margin-top: var(--s2);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--coral-soft);
+}
+
 .detail-back {
   display: inline-block;
   margin-top: var(--s5);
