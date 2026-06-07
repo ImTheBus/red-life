@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": "the-water-came-later",
+    "title": "The Water Came Later",
+    "special_element": "Old Marrow was a ferryman before there was a river to ferry across. The water is the new thing. Whatever crossing he kept across the open valley in the dry years, he is keeping still — the river only made the boundary visible.",
+    "summary": "Run your hand along the gorge wall where the ferry ropes have worn grooves in the stone and you feel two different rocks: smooth pale limestone above, rough dark basalt below — the seam dead-level, as though someone drew a line and said…",
+    "body": [
+      "Run your hand along the gorge wall where the ferry ropes have worn grooves in the stone and you feel two different rocks: smooth pale limestone above, rough dark basalt below — the seam dead-level, as though someone drew a line and said *here the river begins.* In dry summers, when the current drops to a murmur, fitted stones break the surface on the western bank. Dressed work. Cut square. They lead nowhere a river would explain.",
+      "The valley folk will tell you the river shifted course two or three generations back — an upstream collapse, a dam of old ice and older clay. It happens. What they struggle with, when pressed, is that Old Marrow was already on the ferry when their grandparents were children, and their grandparents say he was old then too.",
+      "There was a crossing here before the water came. The old road still shows in dry years: a pale stripe through the valley grass, dead straight, unbroken. It doesn't angle toward a riverbank. It crosses the floor as if there were nothing to cross — because once there wasn't.",
+      "Old Marrow will confirm it, if asked plainly. *The water came later,* he says, the way you'd mention it looks like rain. He doesn't offer what came before, and the question doesn't seem to trouble him.",
+      "The dressed stones in the shallows are the same cut as the ferry landing's foundations. Whatever was built here — whatever needed a guide across this valley before it was a river valley — was built with intention and patience and no water in sight.",
+      "Special element: Old Marrow was a ferryman before there was a river to ferry across. The water is the new thing. Whatever crossing he kept across the open valley in the dry years, he is keeping still — the river only made the boundary visible."
+    ],
+    "biome": "frontier",
+    "mood": "unsettling",
+    "rumours": [
+      "**Truth:** The river is roughly eighty years old. An upstream clay dam failed — naturally, or otherwise — and the watershed rerouted overnight. Old Marrow predates it. He was running a crossing here when the valley was dry, and what crossed was not wagons. The dressed stones are the remnant of a waystation for the dead: a holding place at a border that existed before geography confirmed it.",
+      "**Rumours:** *The river sprang up to slow something that was crossing too freely without a guide.* / *Old Marrow made a bargain for a reason to stay, and the river was the price paid on his behalf.* / *The valley used to connect to somewhere that doesn't exist anymore — the water covered the road deliberately.*",
+      "**How to reveal:** A dry summer drops the waterline and the old road appears as a pale stripe in the grass, visible from the ridge above the crossing. The dressed stones in the shallows can be pulled loose — each has a name carved on the underside, worn past legibility. Old Marrow, asked directly about the river's age, answers without hesitation and without guile; ask him what he ferried before it arrived, and he picks up the oar and starts rowing, mid-conversation, before you finish the question."
+    ],
+    "tags": [
+      "lore",
+      "frontier",
+      "history",
+      "river",
+      "ferryman",
+      "old-marrow"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "id": "the-name-on-the-ledger",
+    "title": "The Name on the Ledger",
+    "special_element": "The entry predates the character's arrival by a generation, in a hand that is not theirs — yet the name is spelled in the exact private form their family uses at home, the form no one outside the household has ever known.",
+    "summary": "The Hollow Ward Post smells of old paper and something sweet, like candle-wax left too long in the sun.",
+    "body": [
+      "The Hollow Ward Post smells of old paper and something sweet, like candle-wax left too long in the sun. The duty ledger lies open on the desk — entries in a dozen different hands, the oldest faded to rust-brown. Near the bottom, in ink that has not yet dried, is your name.",
+      "Special element: The entry predates the character's arrival by a generation, in a hand that is not theirs — yet the name is spelled in the exact private form their family uses at home, the form no one outside the household has ever known."
+    ],
+    "tier": "1",
+    "mood": "unsettling",
+    "next_steps": [
+      "**Stakes:** Whatever keeps the ledger knows the character by that private name, and has been waiting. Leave without answering and something comes to ask why they never came through.",
+      "**Next steps:** Match the entry's date against family history. Find the duty officer who signed the page, if they still live. Follow the ledger back — do other family names appear? Does the Ledger Door at its far end open only to *this* name?",
+      "**Twists:** A second entry, directly below, reads *departed* — dated tomorrow. The name just above theirs belongs to someone they were told died before they were born. A smudged third column reads like a destination — but the place name is on no map."
+    ],
+    "tags": [
+      "character-hook",
+      "investigation",
+      "frontier",
+      "ancestry",
+      "mystery"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

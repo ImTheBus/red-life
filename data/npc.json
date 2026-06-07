@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "old-marrow-the-ferryman",
+    "title": "Old Marrow, the Ferryman",
+    "statblock": "No combat block. If the party attacks him, he does not defend: he steps off the ferry and walks into the river, gone beneath the surface. The ferry drifts to the far bank on its own, party aboard. He is at his post the next morning. Use **Commoner** if a mechanical reference is required; he will not use it.",
+    "special_element": "Old Marrow is older than the river. He was here when this valley was dry land, ferrying people across something else the locals have long since stopped remembering. The water came later; he stayed. The coins he drops over the rail are not payment — they are the old way of sealing a crossing-contract with the dry earth beneath, a habit he has never broken. Not undead, not fey, not a god: simply very old and very patient, and whatever bound him to this crossing has not yet let him go.",
+    "summary": "Old Marrow keeps the ferry, and Old Marrow does not blink.",
+    "body": [
+      "Old Marrow keeps the ferry, and Old Marrow does not blink. He is thin as a peeled branch, in a coat the colour of river silt, and when he turns to greet you he already knows your name — not *a* name, yours, the one your mother used. His voice is a rope dragged over wet wood. Every coin he takes from your palm goes over the rail into the river. Never a purse. Never a pocket.",
+      "Old Marrow has worked this crossing since before anyone can say otherwise. He knows every passenger by name before they speak and every destination before they ask, and he explains neither. He offers no pleasantries beyond what it takes to get the party aboard and across.",
+      "He is not threatening. He is not exactly welcoming. He is simply *there*, the way the bank is there — as though the crossing would not function without him.",
+      "He answers questions about the river, the far bank, and the road ahead in short, accurate words. He will not answer questions about himself, except one: *\"How long have you kept this ferry?\"* To that he says, without pausing the oar: **\"Since before the water was here.\"**",
+      "He is telling the truth.",
+      "Special element: Old Marrow is older than the river. He was here when this valley was dry land, ferrying people across something else the locals have long since stopped remembering. The water came later; he stayed. The coins he drops over the rail are not payment — they are the old way of sealing a crossing-contract with the dry earth beneath, a habit he has never broken. Not undead, not fey, not a god: simply very old and very patient, and whatever bound him to this crossing has not yet let him go."
+    ],
+    "tier": "1",
+    "mood": "unsettling",
+    "role": "guide",
+    "difficulty": "easy",
+    "dm_tips": [
+      "**Introduce:** The ferry is already at the bank when the party arrives, as though it was waiting. Old Marrow is at the oar without having been seen to approach it.",
+      "**Voice/play:** Never blink. Speak slowly, with long pauses before answers — not as if thinking, but as if remembering from very far back. Use each character's real name the first time he addresses them, unprompted, before anyone has introduced themselves.",
+      "**Wants:** Nothing urgent. He wants the crossing made, the coin in the river, and the passengers off on the far side. He is not collecting debts. He is not watching. He completes crossings.",
+      "**Reveal:** If a player asks how he knows their name: *\"I know everyone who crosses. I have known you since before you had a name for it.\"* Save the *\"since before the water was here\"* line for when someone presses his age — it lands hardest after he's already unsettled them once. The full truth (he predates the river; the coins are a land-contract ritual, not a toll) is never stated aloud. Let the party piece it together, or not.",
+      "**Dialogue seeds:** *\"You're earlier than I expected.\"* / *\"The far bank is dry today. It will not always be.\"* / *\"Everyone crosses eventually.\"*"
+    ],
+    "tags": [
+      "ferryman",
+      "river-crossing",
+      "frontier",
+      "social",
+      "guide",
+      "ancient"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

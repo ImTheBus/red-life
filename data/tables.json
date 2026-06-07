@@ -1,0 +1,40 @@
+[
+  {
+    "id": "whats-in-its-pockets",
+    "title": "What's in Its Pockets (d20)",
+    "dice": "d20",
+    "summary": "A quick-reach loot table for any humanoid the party stops to search — most of it mundane, some of it asking a question the bearer can no longer answer.",
+    "body": [
+      "A quick-reach loot table for any humanoid the party stops to search — most of it mundane, some of it asking a question the bearer can no longer answer.",
+      "1. Three copper coins and a smooth river stone, warm from body heat.",
+      "2. A folded letter, sealed but never sent, addressed to someone named \"Mira.\"",
+      "3. Half a hardtack biscuit wrapped in a scrap of oilcloth.",
+      "4. A small knife, blade notched, handle wrapped in yellow cord.",
+      "5. Seven teeth. Not the bearer's.",
+      "6. A prayer token — wrong faith for this region.",
+      "7. A key on a cord, iron, unlabelled.",
+      "8. Two mismatched dice, both weighted the same way.",
+      "9. A scrap of map, edges burned, showing a coastline with an X.",
+      "10. A glass eye, brown, wrapped in soft cloth.",
+      "11. A pouch of dried herbs — culinary, harmless, and a long way from where they grow.",
+      "12. Twelve silver coins and one of pure gold, older-minted, the face unfamiliar.",
+      "13. A child's toy carved from bone. The cuts are fresh.",
+      "14. A folded wanted notice. The face on it is the party member who searched them.",
+      "15. A vial of dark liquid, stoppered tight, no label — not quite the same colour twice.",
+      "16. A small iron box, locked, no key. It is ticking.",
+      "17. A ring of hair woven tight, still on a severed finger.",
+      "18. A letter of safe passage, signed by someone who died three years ago.",
+      "19. A crude sketch of the nearest settlement — exits marked, guards noted.",
+      "20. Nothing. The pockets are sewn shut from the inside."
+    ],
+    "tags": [
+      "loot",
+      "loot-table",
+      "humanoid",
+      "search",
+      "investigation"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

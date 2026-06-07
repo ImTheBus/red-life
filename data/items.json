@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "id": "hearthstone-of-emberglass",
+    "title": "Hearthstone of Emberglass",
+    "special_element": "**The Hearthstone learns to speak — slowly, and only in voices it has already heard.** After thirty nights of use it begins to repeat things: a word here, a half-phrase in the small hours, murmured in someone else's voice. After sixty nights the repetitions arrive out of order — things said two weeks ago, delivered in the voice of someone who has since left the party. After a hundred nights, it sometimes says things that have not been said yet.",
+    "summary": "It looks like a coal — thumb-sized, soot-dark, faintly ridged where crystal and stone fused as they cooled.",
+    "body": [
+      "It looks like a coal — thumb-sized, soot-dark, faintly ridged where crystal and stone fused as they cooled. Hold it in a closed fist and warmth blooms up your arm like a hearthside in January. The amber glow between your fingers does not waver — not in wind, not in rain, not in the cold of a mountain pass where every other fire has long since died.",
+      "Set at the centre of a camp, the Hearthstone warms a 20-foot radius as well as a full fire — no wood, no smoke, no light bright enough to betray a position from distance. It cannot ignite anything. It never runs out.",
+      "Carried in a pouch or wrapped in cloth, it holds a steady, comfortable warmth, never scalding. Cold muffles but does not kill it; submerge it in running water and it goes quiet for a night, but the heat persists.",
+      "A now-dissolved expedition cut it from the Emberglass Cavern roughly sixty years ago. Most who carry it notice nothing unusual at first.",
+      "Decide before play how many nights into the arc this particular stone has already run. A fresh stone is a warm, trustworthy tool. A well-used stone is a question the party has to live with.",
+      "Keep the future-fragments short and deniable — a single word, a name, a number. Never a complete sentence. Decide privately whether they are genuine prophecy or the preserved voices of the stone's previous owners; either reading holds, and the uncertainty is the point.",
+      "The social pressure is the real mechanic: sooner or later the stone will say the wrong thing, aloud, at the wrong moment, in a voice that someone at the table recognises.",
+      "Special element: **The Hearthstone learns to speak — slowly, and only in voices it has already heard.** After thirty nights of use it begins to repeat things: a word here, a half-phrase in the small hours, murmured in someone else's voice. After sixty nights the repetitions arrive out of order — things said two weeks ago, delivered in the voice of someone who has since left the party. After a hundred nights, it sometimes says things that have not been said yet."
+    ],
+    "tier": "1",
+    "rarity": "uncommon",
+    "type": "wondrous-item",
+    "biome": "cavern",
+    "drawbacks": [
+      "It cannot be silenced by ordinary means — only muffled by water, and only for a night. A party travelling in silence should know this before they rely on it.",
+      "It cannot be destroyed by fire, cold, or force. The one way to quiet it permanently is to return it to the Emberglass Cavern, where the heat and the crystal are still fused in the walls. The walls there remember things too."
+    ],
+    "tags": [
+      "campfire",
+      "warmth",
+      "prophecy",
+      "cursed-item",
+      "wilderness",
+      "voices"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "id": "the-tithe-bridge",
+    "title": "The Tithe Bridge",
+    "special_element": "**The bridge reads what each person values most, and will not let them pass until they set it down on the stones — and mean it.** Not forever. The item waits on the span, exactly where they left it, in plain sight the whole crossing; they may take it up again on the far side. But they have to let go of it for true, or the bridge knows. A warrior's father's sword. A merchant's last letter from someone dead. A child's luck-stone carried since before they could read. The bridge has no patience for decoys — it returns them, gently, to your feet.",
+    "summary": "The bridge is narrow — one cart's width, no more — its stones worn smooth as old soap by ten thousand crossings.",
+    "body": [
+      "The bridge is narrow — one cart's width, no more — its stones worn smooth as old soap by ten thousand crossings. The mortar between them is the colour of dried blood, and every parapet stone is carved with an open hand, palm up, waiting. Step onto the span and the whole structure *settles*: a low groan that runs abutment to abutment, stone talking to stone. Something has noticed you.",
+      "The Tithe Bridge has stood at this ford longer than the village behind you has had a name. Most travellers cross without incident. The bridge is not always hungry.",
+      "When it is, the carved hands are the tell. Locals call it *taking its due* — flat, matter-of-fact, the way they'd describe a tax. Outsiders call it a curse. The bridge does not care what it is called.",
+      "It does not want coin. The bandits camped at the near bank want coin (see *Ambush at the Tithe Bridge*). The bridge wants something older.",
+      "Decide before play whether the bridge is live for this crossing. At easy difficulty, deploy it once — as a character moment, not a resource drain.",
+      "The reveal lands hardest when the *player* names what their character values — don't assign it, ask. *\"What does [name] put down?\"* Then give them a beat. The crossing is theirs, not yours.",
+      "If the party has already run *Ambush at the Tithe Bridge*, the bandits' stalemate becomes a clue they can now read: the boast about holding this ford rings false in a useful way.",
+      "Special element: **The bridge reads what each person values most, and will not let them pass until they set it down on the stones — and mean it.** Not forever. The item waits on the span, exactly where they left it, in plain sight the whole crossing; they may take it up again on the far side. But they have to let go of it for true, or the bridge knows. A warrior's father's sword. A merchant's last letter from someone dead. A child's luck-stone carried since before they could read. The bridge has no patience for decoys — it returns them, gently, to your feet."
+    ],
+    "tier": "1",
+    "difficulty": "easy",
+    "biome": "frontier",
+    "mood": "grim",
+    "trigger": [
+      "The bridge is hungry only on a crossing the DM marks *live* — not every time. Signs it is live: the carved hands are warm to the touch, and the groan as you step onto the span runs longer than stone should make."
+    ],
+    "clues": [
+      "The parapet carvings: open hands, palms up. Not threatening. Waiting.",
+      "Old offerings wedged in the stonework: a child's boot, a split arrowshaft, a plain ring with no inscription.",
+      "Any local, asked directly: *\"It takes its due, when it's of a mind to. You'll know.\"*",
+      "The bandits at the near bank have not crossed in three weeks. They value their lives too much to mean it."
+    ],
+    "solution": [
+      "Each character sets the object they value most on the stones, crosses, and takes it up on the far bank.",
+      "The test is sincerity, not loss. A character who genuinely values nothing they carry crosses freely — the bridge goes quiet under their feet."
+    ],
+    "consequences": [
+      "**Comply:** the stones hold firm; the objects wait untouched, exactly where they were set.",
+      "**Refuse:** the stones shift — not enough to kill, enough to unsteady. The crossing is possible but lurching; fumble a check and something goes into the gorge anyway.",
+      "**Deceive:** the decoy comes back to your feet. The bridge waits. It has waited longer than you.",
+      "**Force it:** the bridge is old, and feels no pain, and has survived worse. Nothing happens to the bridge."
+    ],
+    "tags": [
+      "puzzle",
+      "bridge",
+      "sacrifice",
+      "frontier",
+      "travel-encounter",
+      "grim"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

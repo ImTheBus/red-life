@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "the-outdated-message",
+    "title": "The Outdated Message",
+    "special_element": "The letter is dated yesterday — sealed yesterday, describing a town that has not stood in fifty years, written as though the writer walked its streets this morning.",
+    "summary": "A letter arrives — the ink still wet at the crease, the wax seal unbroken, the paper smelling of pine resin and cold road.",
+    "body": [
+      "A letter arrives — the ink still wet at the crease, the wax seal unbroken, the paper smelling of pine resin and cold road. The handwriting inside describes Callow's Ford in fond, exact detail: the mill with the red waterwheel, the widow Sarn who keeps the only inn, the garrison bell that rings the hour. Callow's Ford burned to the ground fifty years ago. No one has lived there since.",
+      "Special element: The letter is dated yesterday — sealed yesterday, describing a town that has not stood in fifty years, written as though the writer walked its streets this morning."
+    ],
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "mysterious",
+    "next_steps": [
+      "**Stakes:** Someone — or something — is either trapped in a moment fifty years gone or has found a way to walk back into it. Either way, the road to Callow's Ford leads somewhere the maps no longer show.",
+      "**Next steps:** Follow the road to where the town stood. Find ash, foundations, and the red waterwheel still turning over rubble. Find no widow Sarn. Find the bell ringing the hour.",
+      "**Twists:** The letter was addressed to a party member by name, and the seal bears a mark — a family sigil, a guild stamp — the recipient knows but cannot explain. The widow Sarn is still there, alone, and does not know fifty years have passed."
+    ],
+    "tags": [
+      "story-hook",
+      "mystery",
+      "frontier",
+      "ghost-town",
+      "letter",
+      "investigation"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]

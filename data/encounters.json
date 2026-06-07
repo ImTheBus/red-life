@@ -1,0 +1,45 @@
+[
+  {
+    "id": "quick-the-kettles-still-warm",
+    "title": "Quick: The Kettle's Still Warm",
+    "special_element": "**The tracks only go in.** In the mud around the post, three or four sets of boot-prints converge on the door from different directions. None lead away. The ground past the threshold is unmarked. Whatever was in this room did not walk out of it.",
+    "summary": "The door to the Ward Post hangs open a finger's width.",
+    "body": [
+      "The door to the Ward Post hangs open a finger's width. Wood smoke and the sharp bite of scorched oats drift out. Inside: a fire banked to coals, a kettle on its hook still warm when you press your palm to it, and a bowl of porridge at the table — half-eaten, spoon laid neatly across the rim.",
+      "Decide one thing before play: whose name is scratched out of the ledger? A party member's name, a name they'll meet later, or a name no living person should know — each lands a different kind of dread. Keep that decision to yourself until it pays off.",
+      "Special element: **The tracks only go in.** In the mud around the post, three or four sets of boot-prints converge on the door from different directions. None lead away. The ground past the threshold is unmarked. Whatever was in this room did not walk out of it."
+    ],
+    "tier": "1",
+    "difficulty": "easy",
+    "time": "5-min",
+    "biome": "frontier",
+    "mood": "unsettling",
+    "setup": [
+      "The party reaches Hollow Ward Post to find it left minutes ago. The fire isn't dead. The food isn't cold. A lantern on the wall peg still holds a thread of warmth in its glass. Nothing is overturned, nothing fled-from — whoever was here left carefully, and left fast. There is no monster to fight here. The pressure is the question of what happened, and you let it sit."
+    ],
+    "escalation": [
+      "**Opening:** The sensory intro lands. Give the party a beat of silence before they step across the threshold — the warm kettle does the work.",
+      "**Complication:** A Perception or Survival check (DC 10) outside spots the inward-only tracks. A second look inside finds one entry in the post ledger scratched out so hard the page is torn through. Decide whose name it was before play.",
+      "**Climax:** No creature, no combat. The climax is the realisation — the spoon is still warm, the tracks only go in — and the party looking at each other."
+    ],
+    "resolution": [
+      "**Leave:** The unease goes with them. At your discretion, the scratched name is one of theirs.",
+      "**Dig deeper:** This scene is the way into the full Hollow Ward Post location. Five minutes is enough to make them want to come back.",
+      "**Wait it out:** The fire never quite goes cold. No one comes."
+    ],
+    "rewards": [
+      "No loot. The reward is the question.",
+      "The torn ledger page, if taken, connects directly to *The Name on the Ledger* character hook.",
+      "Advantage on the first Investigation check if the party returns to Hollow Ward Post."
+    ],
+    "tags": [
+      "frontier",
+      "mystery",
+      "investigation",
+      "travel-encounter",
+      "low-level"
+    ],
+    "created": "2026-06-07",
+    "updated": "2026-06-07"
+  }
+]
