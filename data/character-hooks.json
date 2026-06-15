@@ -29,5 +29,42 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "ferrymans-fare",
+    "title": "Ferryman's Fare",
+    "special_element": "Old Marrow never wanted money. The coins go into the river — they always have — and what the ferryman truly collects is a **secret, spoken aloud on the crossing, so the water can hear it.** The PC paid in metal and never paid the real fare. Until they return to that bank, find that ferryman, and speak the secret owed, the coin keeps coming back — cold and waiting, wherever they sleep.",
+    "summary": "Category: Character Hook · Tier: 1 · Mood: mysterious",
+    "body": [
+      "Category: Character Hook · Tier: 1 · Mood: mysterious",
+      "You crossed a river once — grey morning, the water swollen and cold, a ferryman who had your name on his tongue before you gave it. You counted out the fare. He took it without looking, watched you reach the far bank in a voice like rope dragged over wet wood, and never once looked at the water.",
+      "That was a season ago. Last night, before dawn, someone left a single coin on your windowsill. It was cold to the touch, the way only river-water is cold. Your name was on one face — not printed, not stamped. Scratched in, like a reminder.",
+      "Special element: Old Marrow never wanted money. The coins go into the river — they always have — and what the ferryman truly collects is a **secret, spoken aloud on the crossing, so the water can hear it.** The PC paid in metal and never paid the real fare. Until they return to that bank, find that ferryman, and speak the secret owed, the coin keeps coming back — cold and waiting, wherever they sleep."
+    ],
+    "tier": "1",
+    "mood": "mysterious",
+    "next_steps": [
+      "**Stakes:** The debt is quiet for now — a coin, a chill. But it is a marker, and something on the far side of every crossing knows where the PC stands.",
+      "**Next steps:** Return to the crossing and name the secret. Or don't — and learn what the river does when a toll runs long overdue.",
+      "**Twists:**",
+      "Marrow doesn't want a shameful secret. He wants the one true thing the PC has never said aloud to anyone — and saying it, to the river, changes something in them. The DM decides what.",
+      "The crossing the PC remembers may not be the one they took. Marrow ferried someone with their face the same morning.",
+      "If the PC has already met Marrow's Toll, they may recognise this coin in the river-tally — and understand, with sick clarity, what they're being counted toward."
+    ],
+    "tags": [
+      "character-hook",
+      "ferryman",
+      "river",
+      "debt",
+      "old-marrow",
+      "mystery"
+    ],
+    "related": [
+      "old-marrow-the-ferryman",
+      "marrows-toll",
+      "the-quiet-coin"
+    ],
+    "created": "2026-06-13",
+    "updated": "2026-06-13"
   }
 ]
