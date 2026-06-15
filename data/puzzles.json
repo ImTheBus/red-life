@@ -50,5 +50,45 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "the-ledger-door",
+    "title": "The Ledger Door",
+    "special_element": "A true name opens the door — but the ledger keeps it. When a PC writes their name and the door swings, have them turn back, once they are through, and look at the page. Their name is already there, crossed out — in an older hand, in ink dry long before they stepped up to write. Somewhere in this ledger they were always here. And someone had already marked them as not coming back.",
+    "summary": "Category: Puzzle · Tier: 1 · Difficulty: medium · Biome: ruins · Mood: mysterious",
+    "body": [
+      "Category: Puzzle · Tier: 1 · Difficulty: medium · Biome: ruins · Mood: mysterious",
+      "The door has no handle, no keyhole, no hinge — pale stone set flush with the wall, seamless but for a brass bracket at chest height holding an open ledger. The pages are brown at the edges, the ink the colour of dried blood. The air is close and still, thick with old paper and, under it, something sharper: char, as though pages burned here an hour ago.",
+      "The ledger is the lock. Write a name and the door answers — but only to a true name. Aliases, titles, pet names, invented ones scorch off the moment the ink dries, leaving the paper clean. Only a name the writer truly answers to — a birth name, the name at the back of their own mind — holds. When it does, the door grinds inward on a breath of cold air.",
+      "The ledger is not blank. Every page within reach is full: names in a dozen hands across what looks like centuries. Most are legible. A few are struck through with one hard stroke.",
+      "If your table has met the self-updating roster at the Hollow Ward Post, the difference is the whole point: that ledger writes down who passes through, after the fact. This one was filled before anyone arrived. It does not record the living — it waits for them.",
+      "Special element: A true name opens the door — but the ledger keeps it. When a PC writes their name and the door swings, have them turn back, once they are through, and look at the page. Their name is already there, crossed out — in an older hand, in ink dry long before they stepped up to write. Somewhere in this ledger they were always here. And someone had already marked them as not coming back."
+    ],
+    "tier": "1",
+    "difficulty": "medium",
+    "biome": "ruins",
+    "mood": "mysterious",
+    "consequences": [
+      "A character who reads old scripts can scan earlier pages: most are single names, no dates. A handful carry a margin mark — a circle with a line through it — and those names are also struck through.",
+      "The table beneath the bracket is scorched in repeated smears. Someone tried false names here, many times, and the charring runs deep.",
+      "A PC who studies the crossed-out names and beats a DC 12 Investigation or History check recognises one: a minor historical figure who vanished exploring these ruins. No record of their death was ever found.",
+      "The crossed-out name is the slow burn. It blocks nothing, but it is now a fact in the world. Who made the mark, and when? The answer may be sessions away.",
+      "Decide before play: does the circle-and-line carry mechanical weight — a curse, a pact, something that tracks the bearer — or is it simply a mark the door makes, its meaning dead with whoever built it? Either works; the second is harder to resolve and lingers longer."
+    ],
+    "tags": [
+      "ruins",
+      "puzzle",
+      "name-magic",
+      "door",
+      "investigation",
+      "mystery"
+    ],
+    "related": [
+      "hollow-ward-post",
+      "the-name-on-the-ledger",
+      "the-ledger-writes-the-living"
+    ],
+    "created": "2026-06-10",
+    "updated": "2026-06-10"
   }
 ]
