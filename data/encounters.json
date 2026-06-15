@@ -45,5 +45,59 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "ambush-at-the-tithe-bridge",
+    "title": "Ambush at the Tithe Bridge",
+    "special_element": "The bandits are the obvious threat — but they are standing on ground that has already decided they haven't paid. The longer anyone lingers, the worse the bridge becomes for *everyone* on it. The party can pay, fight, or talk their way past Vael; the bridge does not distinguish a bandit holding ground from a traveller who hesitates. It counts only what you have left behind.",
+    "summary": "Category: Encounter · Tier: 1 · Difficulty: medium · Time-to-run: 15-min · Biome: frontier · Mood: unsettling",
+    "body": [
+      "Category: Encounter · Tier: 1 · Difficulty: medium · Time-to-run: 15-min · Biome: frontier · Mood: unsettling",
+      "The bridge is one cart's width, no more, and the planks underfoot are cold and damp despite the dry weather. Three figures step out from the far end, blades already loose. The one in front is smiling. From somewhere below the water — slow, rhythmic — something knocks against the underside of the bridge. Once. Twice. As though counting.",
+      "Special element: The bandits are the obvious threat — but they are standing on ground that has already decided they haven't paid. The longer anyone lingers, the worse the bridge becomes for *everyone* on it. The party can pay, fight, or talk their way past Vael; the bridge does not distinguish a bandit holding ground from a traveller who hesitates. It counts only what you have left behind."
+    ],
+    "tier": "1",
+    "difficulty": "medium",
+    "time": "15-min",
+    "biome": "frontier",
+    "mood": "unsettling",
+    "setup": [
+      "A bandit trio — Vael and two lackeys — has worked this crossing for two weeks. The location is good: the only bridge for six miles either way, a choke point on the trade road. Their pitch is simple: five silver per head, cross without bleeding.",
+      "What no one has told them is that the Tithe Bridge keeps its own toll. It takes something of value from anyone who stops on it with no intent to cross. The bandits have stopped here every day. The bridge has been patient. It is no longer patient.",
+      "The knocking is the mechanism: a counting logic built into the wood and stone by whoever raised this span, older than the road it serves. It has tallied what the bandits owe. It has found them short."
+    ],
+    "escalation": [
+      "**Opening.** Vael demands five silver per head to cross. The knocking starts — quiet, once every six seconds. The party hears it. The bandits pretend not to.",
+      "**Complication.** Round three: the planks under the bandits' feet begin to sweat, a thin cold mist rising off the wood, wrong in a way that's hard to name. A lackey shifts his weight; a plank cracks, holds. Anyone looking over the railing sees dark water and, faintly, a shape that is not a rock.",
+      "**Climax.** Round five — or the instant violence begins, whichever comes first — the bridge shudders. Every creature still mid-span makes a DC 12 Dexterity saving throw or falls prone. One plank drops away entirely, opening a gap above the water. The knocking stops. The air goes tight and close. Vael's nerve breaks: he is superstitious, and this is not natural. He will negotiate now, or run."
+    ],
+    "resolution": [
+      "**Win — fight or talk.** The bandits flee, surrender, or fall. The bridge settles. Anyone who crossed fully to the far side without pausing feels nothing further. One character who lingered mid-span during the climax hears the knocking one last time — quiet, directly beneath their feet — then silence. They are unharmed. Their coinpurse is one silver lighter. The clasp was never opened.",
+      "**Fail — pay and pass.** The party pays Vael and crosses, unhindered. The bandits stay on the bridge to count the coin. The knocking resumes behind the party — louder now. What happens to the bandits is not the party's concern, unless they look back.",
+      "**Walk away.** The party refuses and takes the long road. Three days later word reaches them: the crossing is unguarded, the bandits' camp fire was found still lit, and their boots were left in a neat row on the near bank."
+    ],
+    "scaling": [
+      "**Tier 1 / medium (as written).** Two Bandits, one Bandit Captain (Vael). The shudder creates chaos and limits the battlefield; it deals no damage.",
+      "**Easier.** Two lackeys only, no captain. The bridge only knocks — never shudders.",
+      "**Harder.** Four lackeys. The shudder deals 1d6 cold damage on a failed save and leaves the gap as difficult terrain. Vael knows exactly what the bridge is and is using it — he expects the party to pay *him* so the bridge won't collect *from* them. He is not bluffing."
+    ],
+    "rewards": [
+      "Five silver per bandit on their persons, plus Vael's coinpurse: 2d6+4 sp and a folded note listing a toll schedule in two different hands.",
+      "The one silver taken by the bridge cannot be recovered — the coinpurse is empty, clasp still fastened.",
+      "If the party examines the bridge after: a DC 15 History or Arcana check reveals it is older than the road it serves and was not built for travellers. A DM running **The Tithe Bridge** (puzzles) may treat this as the same structure seen from the crossing side; the `related` field handles that link."
+    ],
+    "tags": [
+      "travel-encounter",
+      "bridge",
+      "bandits",
+      "frontier",
+      "supernatural-terrain",
+      "ambush"
+    ],
+    "related": [
+      "the-tithe-bridge"
+    ],
+    "created": "2026-06-09",
+    "updated": "2026-06-09"
   }
 ]
