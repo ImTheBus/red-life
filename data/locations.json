@@ -314,41 +314,43 @@
   {
     "id": "hollow-ward-post",
     "title": "Hollow Ward Post",
-    "summary": "An abandoned checkpoint with a still-warm kettle and a ledger of names that updates itself.",
-    "tags": [
-      "mystery",
-      "checkpoint",
-      "omens",
-      "investigation",
-      "abandoned"
+    "special_element": "Travellers who spend the night hear the bell ring once before dawn: a single clear toll from above the empty lintel. The warning is always true. Whatever danger the road holds that day — a predator on the trail, a washed-out ford, a patrol with wrong intentions — the bell rings first. Nobody who passes through asks about it twice.",
+    "summary": "Category: Location · Region: state1 · Difficulty: easy · Mood: unsettling",
+    "body": [
+      "Category: Location · Region: state1 · Difficulty: easy · Mood: unsettling",
+      "A squat stone post where the frontier road narrows — walls the colour of old ash, a rusted iron bracket above the lintel where a bell once hung. Inside, woodsmoke and sage still hang in the air, and the kettle on its hook holds water warm to the touch. The hearth holds only cold grey ash. There is no other door.",
+      "The waypost was built to log traveller traffic on the frontier road, and it did, for a generation. The Frontier Watch was disbanded — nobody out here agrees on exactly when — and the post was quietly abandoned. Travellers still use it as a shelter, and whatever they find inside, they leave as they found it. Out here that habit has a name: *the customs of the road.*",
+      "A duty ledger hangs on a peg by the door. The last signed entry is dated three weeks ago, and the page is not quite full.",
+      "The iron bracket above the lintel held the alarm bell. It was taken down before the post closed — lost, repurposed, nobody agrees. The bracket has been empty for years.",
+      "Decide before play whether the bell rings that night. If it does, have something true waiting on the road — bad weather, a predator, an ambush. The bell is never a bluff: honour it every time, and the players learn to trust it. That trust is the hook.",
+      "The kettle and the bell are separate beats. Run *The Kettle's Still Warm* first if you want the post unsettling from the moment they arrive; let the bell come later, in the dark, after they have stopped wondering who made the fire.",
+      "Do not explain the bell unless the players pursue it hard. A partial answer — *\"the old watch-captain who last rang it is buried on the ridge somewhere, they say\"* — gives them something to hold without closing the question.",
+      "Special element: Travellers who spend the night hear the bell ring once before dawn: a single clear toll from above the empty lintel. The warning is always true. Whatever danger the road holds that day — a predator on the trail, a washed-out ford, a patrol with wrong intentions — the bell rings first. Nobody who passes through asks about it twice."
     ],
-    "region": "state9",
-    "difficulty": "easy",
     "tier": "1",
     "biome": "frontier",
     "mood": "unsettling",
-    "body": [
-      "An abandoned checkpoint with a still-warm kettle and a ledger of names that updates itself. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "easy",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "**Hooks:** The ledger's last entry carries a name the party recognises. · The kettle is warm with no fire to explain it (→ *The Kettle's Still Warm*). · A bedroll on the bunk has been slept in since the last rain.",
+      "**Complications:** The bell rings mid-afternoon, not before dawn — something on the road ahead is not following the old rules. · A rider pulls in hard and fast, wanting walls between themselves and the road, not yet willing to say what is behind them.",
+      "**Rewards:** The ledger holds route notes going back years — terrain, flood dates, patrol schedules, warnings left by travellers who knew the road. · A sealed tin box under the bunk, addressed *DELIVER IF FOUND* to a name in a town two days east."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "abandoned",
+      "frontier",
+      "omen",
+      "travel-shelter",
+      "investigation",
+      "waystation"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "quick-the-kettles-still-warm",
+      "the-name-on-the-ledger",
+      "the-ledger-writes-the-living"
+    ],
+    "created": "2026-06-12",
+    "updated": "2026-06-12"
   },
   {
     "id": "black-lantern-bay",
