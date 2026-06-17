@@ -39,5 +39,52 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "the-saltwidow",
+    "title": "The Saltwidow",
+    "statblock": "```\nSTAT BLOCK — The Saltwidow                        (5e-compatible)\nAC 13 (natural resilience) · HP 84 (13d8+26) · Speed 30 ft\nSTR 10  DEX 13  CON 14  INT 18  WIS 20  CHA 17\nSaves: Wis +9, Cha +7\nSkills: Insight +9, Perception +9, History +8, Persuasion +7\nCondition Immunities: charmed, frightened\nSenses: truesight 30 ft · Passive Perception 19\n\nKey action: TAKE THE MEMORY (Recharge 5–6). One creature within 30 ft makes a\nDC 17 Wisdom save or loses a memory (DM's choice). On a fail: 4d8 psychic\ndamage, disadvantage on Insight checks until a long rest. The Saltwidow regains\nHP equal to half the psychic damage dealt.\n\nSpells (Warlock 13, coast-patron flavour): Eldritch Blast (grey salt-spray),\nMisty Step, Detect Thoughts, Modify Memory, Legend Lore.\n\nCR 9  (scale: easy = CR 6, hard = CR 12 — see Difficulty)\n```\n\nShe will not initiate combat. If the party steals the locket and runs, she does not pursue at once — she sends something, and they will understand at once that she could have done worse.",
+    "special_element": "A borrowed memory keeps the Saltwidow from aging — a decade or two each, before it fades — and she has strung three centuries together this way, outliving everyone she ever dealt with. The one memory she believes will hold for good is a child's last unclouded summer: the exact texture of a life in the weeks before it broke. She cannot make it and cannot take it from someone who never carried it. She has felt it twice in three hundred years, both times in people she could not reach a deal with before they were gone. She knows it is out in the world right now. She can feel it the moment it enters a room.",
+    "summary": "Category: NPC · Tier: 3 · Biome: coast · Role: informant · Mood: grim · Difficulty: hard",
+    "body": [
+      "Category: NPC · Tier: 3 · Biome: coast · Role: informant · Mood: grim · Difficulty: hard",
+      "She is already seated when you arrive, back to the door, facing the water. The first thing you notice is the smell — not salt, not rot, but something inland and weeks gone: cut grass, warm stone, a summer that ended somewhere else. When she turns, she does not look at the group. She looks at each of you in turn, once, the way a person counts coins. Her eyes are the colour of someone else's, and they change as they move across you.",
+      "The Saltwidow has kept this stretch of coast as long as anyone can remember — which is, she would tell you, the problem. She trades favours for memories. A secret you need, a name that opens a locked door, safe passage through a guarded shore: the price is always a memory. A small one, she says. Nothing you will miss.",
+      "She is not cruel about it. She is precise. She asks questions that seem personal and incidental until you realise she is gauging what you can afford to lose — *tell me about the house you grew up in; tell me about the first time you were afraid* — and she takes the smallest viable piece. She does not take what you will mourn.",
+      "She holds the memories rather than spends them, and while she holds one she does not age. But they dim — within a decade or two each goes pale, then dark — and when one goes, the years it kept at bay arrive all at once. She has managed the trade for three hundred years.",
+      "There is one memory she has been hunting that whole time. She has come close twice. She keeps an empty locket for the day she gets it.",
+      "Special element: A borrowed memory keeps the Saltwidow from aging — a decade or two each, before it fades — and she has strung three centuries together this way, outliving everyone she ever dealt with. The one memory she believes will hold for good is a child's last unclouded summer: the exact texture of a life in the weeks before it broke. She cannot make it and cannot take it from someone who never carried it. She has felt it twice in three hundred years, both times in people she could not reach a deal with before they were gone. She knows it is out in the world right now. She can feel it the moment it enters a room."
+    ],
+    "tier": "3",
+    "mood": "grim",
+    "role": "informant",
+    "difficulty": "hard",
+    "dm_tips": [
+      "**Introduce:** She is already there when the party arrives, seated, facing away, as though she expected them. She does not stand.",
+      "**Voice/play:** Quiet, unhurried, always a beat behind where the conversation expects her — she answers the question before the one you just asked. Her eyes shift colour when her attention moves. Do not name the shift; let the players catch it themselves.",
+      "**Wants:** The memory the empty locket is waiting for. She will give almost anything for it — information, a lifted curse, a name no one living should know — and will not say why until pressed hard. Even then, only: *\"It is the one I have been looking for.\"*",
+      "**Reveal:** If a PC carries the missing childhood summer (via the character hook), she knows it the moment they walk in. She has been waiting. Hold the reveal until a player asks why she keeps looking at one of them — then answer flat, no drama: *\"Because I have something of yours. And I think you have come to take it back.\"*",
+      "**Dialogue seeds:**",
+      "*\"Tell me about the summer you were eight. Not what happened. How the light looked.\"*",
+      "*\"I am not what I was. No one is. I simply remember the distance.\"*",
+      "*\"The memory in the locket is not mine. I have been keeping it safe. That is what I tell myself.\"*"
+    ],
+    "tags": [
+      "coast",
+      "memory",
+      "social",
+      "informant",
+      "negotiation",
+      "high-level"
+    ],
+    "related": [
+      "saltwidows-locket",
+      "the-memory-the-saltwidow-took",
+      "the-saltwidows-one-memory",
+      "market-of-quiet-coins",
+      "the-quiet-coin"
+    ],
+    "created": "2026-06-15",
+    "updated": "2026-06-15"
   }
 ]
