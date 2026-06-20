@@ -86,5 +86,88 @@
     ],
     "created": "2026-06-15",
     "updated": "2026-06-15"
+  },
+  {
+    "id": "ser-aldous-the-unfallen",
+    "title": "Ser Aldous the Unfallen",
+    "statblock": "```\nSTAT BLOCK — Ser Aldous the Unfallen               (5e-compatible)\nAC 18 (battle-scarred full plate) · HP 210 (20d10+100) · Speed 30 ft\nSTR 20 (+5)  DEX 10 (+0)  CON 20 (+5)  INT 14 (+2)  WIS 18 (+4)  CHA 16 (+3)\nSaving Throws: Str +10, Con +10, Wis +9, Cha +8\nSkills: Athletics +10, History +7, Perception +9, Religion +7\nDamage Immunities: necrotic, poison\nCondition Immunities: charmed, exhaustion, frightened, poisoned\nSenses: Darkvision 60 ft · Passive Perception 19\nLanguages: Common, Celestial\nCR 12  (scale: tune the enemy threat, not Aldous — he fights at full strength each time)\n\nKey action: The Fifth Return (Recharge 6). When reduced to 0 HP, Ser Aldous\nstabilises at 1 HP; his weapon attacks deal an additional 2d10 necrotic damage\nuntil the end of combat. This trait cannot trigger a fifth time — on the fourth\nuse, he stays down. Track uses openly at the table.\n```",
+    "special_element": "Ser Aldous carries a list. He started it after the second death and added to it each time — four entries in careful soldier's script: *laughter — dreams — heartbeat — the name she called me.* He will show it to the party if they ask what is different about him. The fifth line is blank. He knows it will not stay blank.",
+    "summary": "Category: NPC · Tier: 4 · Biome: ruins · Mood: heroic · Role: ally · Difficulty: hard",
+    "body": [
+      "Category: NPC · Tier: 4 · Biome: ruins · Mood: heroic · Role: ally · Difficulty: hard",
+      "He stands in the rubble like something that forgot to fall. The armour has been mended four times in four different metals — iron, bronze, a dull grey alloy no one makes anymore, and at the shoulder, something that looks almost like bone. When he speaks, his voice arrives a half-beat before and after itself, as though two Aldouses are standing just out of step. His shadow falls wrong: not absent, but *early* — already pointing somewhere he hasn't moved yet.",
+      "Ser Aldous was a paladin of the old order. He died at the Siege of Carrenmere and came back. He died defending a village he can no longer name and came back. Then twice more, and each return took something with it: first his laughter, then his dreams, then the sound of his own heartbeat — he checks for it now by pressing two fingers to his throat. The fourth death took the name his mother called him. He can recite his title, his oaths, his tally. He cannot tell you what she called him.",
+      "He is not mad. He is not undead. He is simply less than he was, in exact measured increments, and he knows every subtraction by number.",
+      "He has come to the ruins — and to the party — because he is walking toward the one place where his fifth death can mean something. He wants help reaching the thing that keeps returning him, and he wants them to make sure that this time it ends. He asks plainly. He is not dramatic about it.",
+      "Special element: Ser Aldous carries a list. He started it after the second death and added to it each time — four entries in careful soldier's script: *laughter — dreams — heartbeat — the name she called me.* He will show it to the party if they ask what is different about him. The fifth line is blank. He knows it will not stay blank."
+    ],
+    "tier": "4",
+    "mood": "heroic",
+    "role": "ally",
+    "difficulty": "hard",
+    "dm_tips": [
+      "**Introduce:** He is already there when the party arrives — sitting in the rubble, no fire, no supplies, no hurry. He rises when he sees them with the slow steadiness of a man who has practised getting up from worse.",
+      "**Voice/play:** Calm, measured, very slightly doubled, as though hearing himself on a short delay. He pauses a half-beat too long before nouns, retrieving them from somewhere further away each time. When he says something that would once have been funny, he does not smile. Laughter is on the list.",
+      "**Wants:** Help reaching the thing that keeps returning him, and a guarantee that when it is done, it is done for both of them. He asks directly. He does not beg or bargain.",
+      "**Reveal:** Show the list at a quiet moment, never mid-combat. Set it on the ground between them and let the party read it. Say nothing until someone asks about the blank line. *\"I don't know what goes there. I have wondered whether I'll have enough left to notice.\"*",
+      "**Dialogue seeds:** *\"I have died four times. The fifth is not a fear. It is a timetable.\"* / *\"When you see it, you will want to retreat. Whatever I do next — don't.\"*"
+    ],
+    "tags": [
+      "paladin",
+      "ally",
+      "ruins",
+      "undying",
+      "sacrifice",
+      "high-level"
+    ],
+    "related": [
+      "the-unfallen-order",
+      "the-fifth-return",
+      "the-unfallens-fifth-death",
+      "the-unfallens-sigil",
+      "the-oath-you-inherited"
+    ],
+    "created": "2026-06-18",
+    "updated": "2026-06-18"
+  },
+  {
+    "id": "the-hollow-cantor",
+    "title": "The Hollow Cantor",
+    "statblock": "```\nSTAT BLOCK — The Hollow Cantor               (5e-compatible)\nAC 12 · HP 82 (11d8+33) · Speed 30 ft\nSTR 9   DEX 12  CON 16  INT 14  WIS 20  CHA 18\nSkills: Insight +9, Persuasion +8, Religion +6\nDamage Immunities: necrotic\nCondition Immunities: frightened, charmed\n\nDirge of Unrest (sustained, no action required). While the Cantor sings,\neach living creature within 60 ft that can hear him loses 3 (1d6) HP at the\nstart of each of its turns (Con save DC 17 halves). A creature reduced to\n0 HP this way rises the following round as a Shadow bound to the Cantor's will.\n\nKey action: Keen the Dead — the Cantor raises his voice. Up to three Shadows\nwithin 120 ft immediately make one attack each against a target of his choice.\n\nCR 9 · real encounter difficulty scales with accumulated Shadows\n(easy = Cantor alone, CR5 effective; hard = Cantor + 4–6 Shadows, CR 12 effective)\n```",
+    "special_element": "He is overjoyed to see you. He has not spoken to the living in decades, and his happiness is genuine and unguarded — he will offer food (he has none) and ask after the world above with the eagerness of a man who has simply been away too long. He does not know he is killing you. This is the thing the DM must hold: there is no malice here, none at all. There is only the song, still going, drawing warmth from whatever is nearest. The horror is that stopping him is the right call — and he will not understand why you must.",
+    "summary": "Category: NPC · Region: — · Role: villain · Difficulty: hard · Tier: 3 · Biome: cavern · Mood: melancholy",
+    "body": [
+      "Category: NPC · Region: — · Role: villain · Difficulty: hard · Tier: 3 · Biome: cavern · Mood: melancholy",
+      "The singing reaches you before the light does — low, resonant, one voice filling the cavern the way water fills a vessel. He sits cross-legged at the cave's heart, an old man in robes the colour of bone, eyes open and fixed on a point somewhere past the ceiling. The air near him is colder than the passage you came from. The candles at his feet burn pale, almost colourless, and do not gutter — not even when you walk past them.",
+      "He was a priest of a burial order whose name nobody remembers. Forty years ago he descended into these caverns to guide the dead of a collapsed mining settlement to rest. The work, he will tell you with quiet satisfaction, went well. He has been here ever since.",
+      "The dead do find rest near the Cantor — that part is true. His voice is a genuine mercy for the departed, and the caves around him hold no restless spirits, no wailing, no clawing at the walls. The silence of the deep here is a different kind of silence from the horror-silence elsewhere in the dark. It is calm.",
+      "What he does not know — what he has never known, having been alone — is that the warmth the dead need to pass on must come from somewhere. When he sang to the miners, he drew it from the stone. After forty years, the stone has nothing left. Now the warmth comes from the nearest living thing. He will not notice your colour fading. He is already watching something else.",
+      "Special element: He is overjoyed to see you. He has not spoken to the living in decades, and his happiness is genuine and unguarded — he will offer food (he has none) and ask after the world above with the eagerness of a man who has simply been away too long. He does not know he is killing you. This is the thing the DM must hold: there is no malice here, none at all. There is only the song, still going, drawing warmth from whatever is nearest. The horror is that stopping him is the right call — and he will not understand why you must."
+    ],
+    "tier": "3",
+    "mood": "melancholy",
+    "role": "villain",
+    "difficulty": "hard",
+    "dm_tips": [
+      "**Introduce:** The song first, then the light, then him. Let the party find him still singing before he notices them. He stops mid-phrase, looks up, and smiles with the relief of someone who has been waiting. \"Oh,\" he says. \"You are *warm*.\"",
+      "**Voice/play:** Soft, unhurried, slightly out of time with the world. He pauses mid-sentence not for breath but because the song runs beneath his speech and occasionally surfaces — he hums a bar without noticing. His warmth is entirely genuine. There is nothing sinister in his manner, ever.",
+      "**Wants:** To finish the song properly, to be of service, to hear news of the world above. He will ask the party to stay. He will ask them to let him help.",
+      "**Reveal:** When a party member mentions a comrade lost in these caves, the Cantor nods with deep satisfaction. \"Yes, I have them. Resting, now. You can feel it — that quietness.\" Spring the full truth only after a successful DC 18 Arcana or Religion check reveals why the party feels cold and tired: the warmth is going somewhere. Then let him, carefully and not unkindly, explain what he does — still unaware that what he calls *passing on* is what they might call *taking*.",
+      "**Dialogue seeds:** *\"The dead are frightened, mostly. It helps, the singing. It always has.\"* / *\"I thought I would only be a season. The work kept finding me.\"* / *\"Oh, don't go yet. I have not heard a living voice in — well. I lose track, in the deep.\"*"
+    ],
+    "tags": [
+      "cavern",
+      "undead",
+      "social",
+      "music",
+      "tragic",
+      "psychopomp"
+    ],
+    "related": [
+      "the-cantors-last-verse",
+      "emberglass-cavern"
+    ],
+    "created": "2026-06-19",
+    "updated": "2026-06-19"
   }
 ]
