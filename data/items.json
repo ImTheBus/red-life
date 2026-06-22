@@ -35,5 +35,42 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "the-tidelace-compass",
+    "title": "The Tidelace Compass",
+    "special_element": "The Tidelace Compass is a finder of the drowned, and the drowned keep what they carried under. Follow it carefully and it is a map to the dead and their pockets. Follow it carelessly and it is a map to whatever held them down.",
+    "summary": "Category: Item · Tier: 2 · Rarity: uncommon · Type: wondrous-item · Biome: underwater · Mood: mysterious",
+    "body": [
+      "Category: Item · Tier: 2 · Rarity: uncommon · Type: wondrous-item · Biome: underwater · Mood: mysterious",
+      "The compass is cold — cold against a warm palm, cold on a dry day a week from the nearest shore. The brass casing has gone the colour of a drowned man's lips, and the needle inside is almost black, circling in slow quarter-arcs as though tasting the air. There is no north marked on the face. There is no marking at all.",
+      "The Tidelace Compass does not point north. It points to the nearest drowned thing — the closest creature that died by drowning, whether lost last week or sunk a thousand years. River bottom, collapsed pier, flooded vault: it makes no distinction.",
+      "Above water the needle drifts, restless, rarely settling for more than a breath. Below the surface it locks fast and decisive, like a dog that has caught a scent.",
+      "The compass gives direction only, never distance. It points through sixty feet of black water or solid stone with the same impassive certainty, and says nothing about how far.",
+      "Special element: The Tidelace Compass is a finder of the drowned, and the drowned keep what they carried under. Follow it carefully and it is a map to the dead and their pockets. Follow it carelessly and it is a map to whatever held them down."
+    ],
+    "tier": "2",
+    "rarity": "uncommon",
+    "type": "wondrous-item",
+    "biome": "underwater",
+    "drawbacks": [
+      "In waters where many have drowned — a shipwreck field, a flood-taken town — the needle spins. Too many nearest things, and the compass cannot choose. It fails precisely where it would be most useful.",
+      "There is a slower cost. Carry it more than a few days and you begin to dream of waiting at the bottom, watching the light above grow small and go out. Not drowning — just watching. Treat this as a tell, not a mechanical curse: the compass has learned something about its owner, and is keeping it."
+    ],
+    "tags": [
+      "underwater",
+      "drowned",
+      "compass",
+      "treasure-finding",
+      "navigation",
+      "shipwreck"
+    ],
+    "related": [
+      "drowned-kin",
+      "the-drowned-vault",
+      "the-drowning-stair"
+    ],
+    "created": "2026-06-20",
+    "updated": "2026-06-20"
   }
 ]
