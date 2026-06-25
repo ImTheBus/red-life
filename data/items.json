@@ -72,5 +72,122 @@
     ],
     "created": "2026-06-20",
     "updated": "2026-06-20"
+  },
+  {
+    "id": "the-quiet-coin",
+    "title": "The Quiet Coin",
+    "special_element": "The coin decides what *truest* means. The bearer does not pick the secret and may not learn what the coin judges most guarded until they hear it leave their own mouth. A soldier braced to confess a battlefield shame may instead blurt a childhood thing buried so deep they had forgotten it was there. The coin finds what the bearer has defended longest — and gives it away to exactly the wrong audience.",
+    "summary": "Category: Item · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: urban · Mood: grim",
+    "body": [
+      "Category: Item · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: urban · Mood: grim",
+      "The coin is the size of a common silver, but heavier — noticeably, wrongly heavier for its size. Both faces are blank: no king, no crest, no mint mark. One side is smooth as a worry-stone rubbed for years; the other carries a single impression — a closed mouth, lips pressed flat, a touch too lifelike to be stamped metal. It is always faintly warm, as though it sat in someone else's fist a moment before it reached yours.",
+      "Spend it once, for anything. A merchant who has refused a thousand gold will take the Quiet Coin for the thing they would never sell. A locked gate, a sealed vault, safe passage through enemy lines, a prisoner's freedom, a night in a house that admits no strangers — the Coin pays for it. The seller does not haggle and does not question. The Coin vanishes from the buyer's hand the instant it is accepted.",
+      "It is spent. It is gone. And then the bearer speaks.",
+      "Not by choice. In their own voice, at ordinary volume, in one clear sentence: the truest secret they have ever kept. The words come like a cough — sudden, unstoppable, finished. The bearer hears themselves at the same instant as everyone within earshot.",
+      "Special element: The coin decides what *truest* means. The bearer does not pick the secret and may not learn what the coin judges most guarded until they hear it leave their own mouth. A soldier braced to confess a battlefield shame may instead blurt a childhood thing buried so deep they had forgotten it was there. The coin finds what the bearer has defended longest — and gives it away to exactly the wrong audience."
+    ],
+    "tier": "3",
+    "rarity": "rare",
+    "type": "wondrous-item",
+    "biome": "urban",
+    "drawbacks": [
+      "The exposure is immediate, involuntary, and public — whoever stands near hears it. Nothing stops the words once the transaction closes; no magic silences them mid-sentence. What the coin pulls loose cannot be recalled, suppressed after the fact, or unsaid. The bearer will remember it. So will everyone in the room.",
+      "**DM notes.** Before play, decide what secret the coin takes — pick the one that does the most damage to the bearer's relationships at the table, not the most lurid secret in isolation. Timing carries the scene: the coin pays at the moment of the deal, so the secret is spoken in front of whoever the bearer was buying from. A fence. A noble. A captor. A friend. Let the setting do the work.",
+      "If a player asks whether they can choose what is spoken — they cannot. If they ask whether they can prepare a harmless secret to sacrifice — the coin has no use for rehearsed falsehoods. It takes the real thing."
+    ],
+    "tags": [
+      "secret",
+      "payment",
+      "cursed",
+      "social",
+      "urban",
+      "rare-wondrous"
+    ],
+    "related": [
+      "market-of-quiet-coins",
+      "the-quiet-coin-mint",
+      "the-mint-is-a-person",
+      "night-market-wares"
+    ],
+    "created": "2026-06-23",
+    "updated": "2026-06-23"
+  },
+  {
+    "id": "saltwidows-locket",
+    "title": "Saltwidow's Locket",
+    "special_element": "Whoever physically places the locket in the rightful owner's hands — the go-between, the party member who carried it across the sea — catches a single involuntary flash of the memory as it transfers. Not the whole year. One image: clear as daylight, filed with no label, indistinguishable from their own recollections. They carry it forever, and there is no one left to confirm it was never theirs.",
+    "summary": "Category: Item · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: coast · Mood: melancholy",
+    "body": [
+      "Category: Item · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: coast · Mood: melancholy",
+      "The locket is always cold — not cool as silver goes, but cold as a tidal pool in January, even cupped in a warm palm. It hangs on a cord of braided kelp that never quite dries. When the light catches its face, the engraving shifts: a wave, then a door, then a face almost familiar that will not resolve into anyone you know.",
+      "The locket holds a single stolen memory — one year, one conversation, one face — drawn from a living person as part of the Saltwidow's trade. It is preserved exactly as it was at the moment of taking: complete, intact, all its original weight kept the way amber keeps an insect with its wings still spread.",
+      "No tool works its clasp, and it cannot be forced. It opens only when the person whose memory is inside touches it and wills it so.",
+      "When the rightful owner opens it, they relive the memory in full. A minute of real time passes; inside, it runs at its true length — a year, a conversation, an afternoon. When it ends, the memory is theirs again: waking, permanent, undiminished. The locket is then empty, and warm for the first time.",
+      "Special element: Whoever physically places the locket in the rightful owner's hands — the go-between, the party member who carried it across the sea — catches a single involuntary flash of the memory as it transfers. Not the whole year. One image: clear as daylight, filed with no label, indistinguishable from their own recollections. They carry it forever, and there is no one left to confirm it was never theirs."
+    ],
+    "tier": "3",
+    "rarity": "rare",
+    "type": "wondrous-item",
+    "biome": "coast",
+    "drawbacks": [
+      "Bearing the locket more than a day brings a low, sourceless unease — the sense of reaching for a memory that should be there and is not. This is no condition or mechanical penalty; it is the proximity of something absent. Characters might name it grief with no object, or the snag of having forgotten something the instant before they could say it.",
+      "The transfer-flash, once caught, does not fade and does not harm. But it is someone else's grief, or someone else's joy, now filed under the bearer's own name, with no way to give it back."
+    ],
+    "tags": [
+      "coast",
+      "memory",
+      "cursed",
+      "social",
+      "wondrous-item"
+    ],
+    "related": [
+      "the-saltwidow",
+      "the-memory-the-saltwidow-took",
+      "the-saltwidows-one-memory"
+    ],
+    "created": "2026-06-24",
+    "updated": "2026-06-24"
+  },
+  {
+    "id": "the-unfallens-sigil",
+    "title": "The Unfallen's Sigil",
+    "special_element": "Every time the sigil heals someone, one of Ser Aldous's four death-wounds closes. A tally is scratched into the iron on the back — four marks, one per death. No one scratched them. Each time the healing property is used, the next mark smooths away, as though it was never cut. When all four are gone, Ser Aldous finds the party within 1d4 days. He is alive. He is mostly himself. He wants the oath observed — and the bearer has been accumulating it, tenet by tenet, every time they called on the sigil. Decide before play whether Aldous arrives grateful, hollowed, or wearing gratitude like a coat over something worse.",
+    "summary": "Category: Item · Tier: 4 · Rarity: very-rare · Type: wondrous-item · Biome: ruins · Mood: heroic",
+    "body": [
+      "Category: Item · Tier: 4 · Rarity: very-rare · Type: wondrous-item · Biome: ruins · Mood: heroic",
+      "The symbol is cast iron, cracked from rim to centre — a god's face split clean in two, the fissure packed with something that looks like old wax. Hold the halves together and the crack seals, smooth as though it was never there. Let go and it opens again. It sits cold in the palm until the moment it heals you. Then it is briefly, unmistakably warm — the weight of a hand pressed over a wound by someone who meant it — and gone before you can name the feeling.",
+      "The Unfallen's Sigil is the holy symbol Ser Aldous carried through four deaths. It is cracked because the oath that empowered it is broken; the substance in the fissure is not wax.",
+      "**Attunement.** Any creature may attune to the sigil. Attuning takes one hour of contact and the verbal acceptance of Aldous's oath (see ★ below). The sigil does not announce this. It simply waits until the words are said.",
+      "**Healing.** While attuned, the bearer may invoke the sigil as an action to regain hit points equal to 4d8 + their Charisma modifier. Recharges at dawn. The effect bypasses stabilisation — it corrects, not merely arrests.",
+      "**Radiant ward.** The bearer has resistance to necrotic damage. Undead within 30 ft that can see the sigil must succeed on a DC 17 Wisdom saving throw or be Frightened of the bearer until the end of their next turn.",
+      "**Introduce it** on Aldous's body in a ruin, surrounded by four sets of armour arranged outward like a bloom — each a slightly different fit, as though worn by someone who kept changing. The sigil is in his dead hand. His chest rises. **Pace the oath.** Let the bearer accumulate two or three tenets before Aldous arrives. They have been living his promises without knowing the full shape of them. **The reveal.** Do not explain the tally. Let someone count. The moment a player realises the marks are counting down is the moment the item becomes a story. **Aldous on arrival.** He is not hostile unless the oath was broken. He is not comfortable to be around — a man who has died four times and cannot quite believe he has weight again. Play him quietly, not dramatically. **Dialogue seed:** *\"I felt each one close. I did not know that was possible. I would like to know what you promised.\"*",
+      "Special element: Every time the sigil heals someone, one of Ser Aldous's four death-wounds closes. A tally is scratched into the iron on the back — four marks, one per death. No one scratched them. Each time the healing property is used, the next mark smooths away, as though it was never cut. When all four are gone, Ser Aldous finds the party within 1d4 days. He is alive. He is mostly himself. He wants the oath observed — and the bearer has been accumulating it, tenet by tenet, every time they called on the sigil. Decide before play whether Aldous arrives grateful, hollowed, or wearing gratitude like a coat over something worse."
+    ],
+    "tier": "4",
+    "rarity": "very-rare",
+    "type": "wondrous-item",
+    "biome": "ruins",
+    "drawbacks": [
+      "**The oath accumulates.** Each use of the healing property binds the bearer to one tenet of Aldous's broken oath, in order: *protect the innocent where you find them; do not leave the dying; answer sworn duty above personal gain; let no evil go unnamed where you have the power to name it.* Each tenet is whispered in the bearer's ear at the moment of healing. They are not offered. They are delivered.",
+      "**Breaking a tenet.** If the bearer knowingly violates an accepted tenet, the crack in the sigil widens. After four violations it splits fully through and all properties end permanently.",
+      "**The weight.** The sigil is always slightly heavier than it was the last time the bearer picked it up. After the fourth healing use it must be held deliberately — it will not sit forgotten in a pocket."
+    ],
+    "tags": [
+      "holy-symbol",
+      "healing",
+      "oath",
+      "paladin",
+      "undead",
+      "ruins"
+    ],
+    "related": [
+      "ser-aldous-the-unfallen",
+      "the-unfallens-fifth-death",
+      "the-fifth-return",
+      "the-oath-you-inherited",
+      "the-unfallen-order"
+    ],
+    "created": "2026-06-25",
+    "updated": "2026-06-25"
   }
 ]
