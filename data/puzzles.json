@@ -90,5 +90,42 @@
     ],
     "created": "2026-06-10",
     "updated": "2026-06-10"
+  },
+  {
+    "id": "the-drowning-stair",
+    "title": "The Drowning Stair",
+    "special_element": "The ward is not listening to the words. It is listening to the pitch. Speak the right answer in the wrong register and the water still rises a step. Sing the *wrong* answer on the right note and the party earns a pause — one round in which the water holds and the ward's tone repeats, as if offering another chance. The puzzle is half riddle, half performance: knowing the answer is not enough. You have to be willing to sing it back.",
+    "summary": "Category: Puzzle · Tier: 2 · Difficulty: hard · Biome: underwater · Mood: grim",
+    "body": [
+      "Category: Puzzle · Tier: 2 · Difficulty: hard · Biome: underwater · Mood: grim",
+      "The stairwell drops in a straight column through black water, twelve steps just visible below the surface. Each one glows faintly — not with light but with the absence of silt, scrubbed clean by something old and patient. And from below, rising through the water and into your chest rather than your ears, comes a low repeating note. Not a sound. A pressure. A question, waiting to be asked.",
+      "The Drowning Stair links two submerged chambers across a vertical drop of roughly thirty feet. Whoever held this place sealed it not with a lock but with a voice-ward — a riddle sung into the stone at the building, set to play on repeat until it is answered.",
+      "The stair is half-dry at first. The bottom six steps are underwater; the top six are not. Every wrong answer — spoken, signed, or held up on a slate against the water — raises the level by one step. A right answer clears nothing on its own; the ward is not done with the party until it hears what it wants, the way it wants to hear it.",
+      "The riddle concerns carrying something without holding it: grief, knowledge, a name. The wording drifts each time it cycles; the logic does not. The answer is not unique — the ward accepts anything that fits.",
+      "When all twelve steps go under, the stair locks. The door at the column's base seals with a sound like an exhaled breath and will not reopen from this side. The water holds, still and permanent. The only way out is back up through the entry chamber — if anyone can still reach it.",
+      "**Before play, decide:** is there a strict correct answer, or does any sincere sung response on the right pitch count? The first rewards lateral thinking; the second rewards roleplay nerve, and plays better for groups who find riddles punishing.",
+      "**The ward's pitch** is a low chest note, near the bottom of a human singing range. Matching it is a DC 13 Charisma (Performance) check. On a natural 1 the attempt is far enough off that the water rises an extra step — the ward takes it for mockery.",
+      "**Reveal timing:** don't announce the singing mechanic. Let one or two wrong spoken answers raise the water first. When a player hums the answer, or sings it half as a joke, hold the water still a beat longer than it should be — and let them notice.",
+      "**If the party is drowning:** a previous visitor hangs in the water near the foot of the stair. They did not make it. A scrap of vellum is stiff in one hand. If retrieved, it shows the riddle, a possible answer, and one line crammed at the bottom in a hurried hand — *sing it.*",
+      "**At the table:** hum the note yourself. One sustained low note from the DM, held for two seconds before you describe the ward, changes the whole room. The players will not forget the session.",
+      "Special element: The ward is not listening to the words. It is listening to the pitch. Speak the right answer in the wrong register and the water still rises a step. Sing the *wrong* answer on the right note and the party earns a pause — one round in which the water holds and the ward's tone repeats, as if offering another chance. The puzzle is half riddle, half performance: knowing the answer is not enough. You have to be willing to sing it back."
+    ],
+    "tier": "2",
+    "difficulty": "hard",
+    "biome": "underwater",
+    "mood": "grim",
+    "tags": [
+      "underwater",
+      "puzzle",
+      "riddle",
+      "flooding",
+      "performance"
+    ],
+    "related": [
+      "salt-sheet-riddle",
+      "the-drowned-vault"
+    ],
+    "created": "2026-06-26",
+    "updated": "2026-06-26"
   }
 ]
