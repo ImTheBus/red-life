@@ -127,5 +127,55 @@
     ],
     "created": "2026-06-26",
     "updated": "2026-06-26"
+  },
+  {
+    "id": "salt-sheet-riddle",
+    "title": "Salt-Sheet Riddle",
+    "special_element": "The solution is not a cipher. It is silence. The party must read with their eyes only — no dictation, no reading aloud to share. The lock is habit, and the discipline is social: can this group agree to stay quiet long enough to recover what they came for? It lands harder once they know the lore: the salt *is* the scholars. To speak their words aloud is to take those words from them for good. Silence is not a workaround. It is the correct way to treat the dead.",
+    "summary": "Category: Puzzle · Tier: 3 · Difficulty: medium · Biome: ruins · Mood: melancholy",
+    "body": [
+      "Category: Puzzle · Tier: 3 · Difficulty: medium · Biome: ruins · Mood: melancholy",
+      "The page is the size of a large hand, pale as old bone, and it catches the lantern-light like something still wet. There is no ink — the words are pressed into the salt itself, raised letters fine as veins. Lean close and it smells of iron, and under that, something older than paper: a library-smell, in a place where no library has stood for a very long time.",
+      "Salt-sheet riddles arise whenever the party tries to read the surviving fragments of the Library of Salt. The sheets are not ciphered. They are not warded. A scholar could read one in minutes — if scholars worked in silence.",
+      "The letter-surface is crystalline, and vibration shatters the raised matrix. A shouted word destroys a sheet in seconds; a careful recitation strips three or four minutes off its legible life. Most parties learn this by accident: someone reads the first line aloud and watches a row of letters soften, hiss, and fall away as fine powder.",
+      "The puzzle is recognising what just happened before the page is gone.",
+      "Decide before play: **which sheet carries the critical information**, and whether partial recovery still moves the plot or creates a genuine dead end. If a wall would be too punishing, let a half-destroyed sheet hold the key piece with enough gaps to make it ambiguous rather than a hard block.",
+      "The texture is grief, not danger. When letters are lost, describe what they were: a name, a number, a sentence that was nearly a conclusion. Players who carry \"The Salt That Was Words\" lore into this scene already know what they are destroying — and the silence will feel like respect, not a mechanic.",
+      "If they come in ignorant, this is where it lands. Let them ask, afterwards, what the salt was. Then tell them.",
+      "Special element: The solution is not a cipher. It is silence. The party must read with their eyes only — no dictation, no reading aloud to share. The lock is habit, and the discipline is social: can this group agree to stay quiet long enough to recover what they came for? It lands harder once they know the lore: the salt *is* the scholars. To speak their words aloud is to take those words from them for good. Silence is not a workaround. It is the correct way to treat the dead."
+    ],
+    "tier": "3",
+    "difficulty": "medium",
+    "biome": "ruins",
+    "mood": "melancholy",
+    "clues": [
+      "**Cause and effect:** The first letter lost is always the first letter spoken. Observable, if anyone is watching.",
+      "**Margin note:** One fragment carries barely-legible salt-text along its lower edge — *\"breath unmakes us.\"* A character reading silently who passes DC 13 Investigation finds it.",
+      "**The shape of the damage:** On worn fragments, the letters at the far edges are crisper than those at the centre — as if someone once leaned over and whispered onto the page. The edges survived because no one breathed on them.",
+      "**The sound:** In total silence, dissolving letters make a noise like fine sand dragged across glass. It is not a warning. It is the sound of loss, and it is small."
+    ],
+    "solution": [
+      "Read without speaking. Characters who communicate by writing, gesture, or sign while in the Library — and who pass DC 14 Intelligence (History or Arcana) reading silently — recover a sheet's full contents intact.",
+      "Magical methods that move no air (telepathy, *Sending*, *Message* whispered below the threshold of resonance) are DM's call. Baseline: if it doesn't move air across the page, it doesn't shatter the surface."
+    ],
+    "consequences": [
+      "**Success:** The sheet yields its contents whole. A disciplined party can recover several fragments in a session. Each intact reading leaves them holding someone's last thoughts — a fact that may matter to NPCs of salt-lineage or to threads rooted in the Library.",
+      "**Partial:** The DM chooses which section survives — the beginning, the end, or the crucial middle. A crumbling sheet gives enough to raise questions, not enough to answer them cleanly.",
+      "**Failure:** The page is gone. The hiss is brief. Whatever it held is held by no one now. No undo, no reconstruction — nothing left but the weight of it."
+    ],
+    "tags": [
+      "ruins",
+      "puzzle",
+      "silence",
+      "library-of-salt",
+      "investigation"
+    ],
+    "related": [
+      "library-of-salt",
+      "the-salt-that-was-words",
+      "the-salt-archives-debt"
+    ],
+    "created": "2026-06-28",
+    "updated": "2026-06-28"
   }
 ]
