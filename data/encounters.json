@@ -99,5 +99,63 @@
     ],
     "created": "2026-06-09",
     "updated": "2026-06-09"
+  },
+  {
+    "id": "the-drowned-vault",
+    "title": "The Drowned Vault",
+    "special_element": "**The vault was designed to punish a single thief. It was not designed for a party.** Taking one item triggers the flood. Taking five triggers the same flood. The only winning move is to gather everything worth carrying and cross the threshold simultaneously — all in agreement, all at once — or leave empty-handed. A party that doesn't understand this until someone pockets a coin and turns for the door is a party with four rounds to decide what matters and who carries it. There is no hidden drain. No reset lever. No second chance to read the room.",
+    "summary": "Category: Encounter · Tier: 2 · Difficulty: hard · Time-to-run: 1-hour · Biome: underwater · Mood: grim",
+    "body": [
+      "Category: Encounter · Tier: 2 · Difficulty: hard · Time-to-run: 1-hour · Biome: underwater · Mood: grim",
+      "The door is iron, chest-height, set into a limestone wall furred with black weed — and it is standing open. Beyond it, the water simply stops. A pocket of stale, cold air holds inside, lit by pale mats of growth that glow faintly from the ceiling. The vault is dry. It smells of copper and old wood and something fainter underneath: tallow, as though candles burned here once and went out long ago.",
+      "Special element: **The vault was designed to punish a single thief. It was not designed for a party.** Taking one item triggers the flood. Taking five triggers the same flood. The only winning move is to gather everything worth carrying and cross the threshold simultaneously — all in agreement, all at once — or leave empty-handed. A party that doesn't understand this until someone pockets a coin and turns for the door is a party with four rounds to decide what matters and who carries it. There is no hidden drain. No reset lever. No second chance to read the room."
+    ],
+    "tier": "2",
+    "difficulty": "hard",
+    "time": "1-hour",
+    "biome": "underwater",
+    "mood": "grim",
+    "setup": [
+      "A merchant guild's strongroom, lowered into the harbour bed by design three hundred years ago — the theory being that only a fool would rob a vault you had to drown to reach. The theory held. The vault was last opened during a war no one in the region now remembers, its contents sealed inside when the final keyholder chose not to resurface.",
+      "The ward that keeps the water at the threshold is still active. It is not a trap — it was an engineering solution. A binding on the door frame holds the air pocket so long as the vault is in balance. That balance has exactly one condition: **nothing may cross the threshold outward**.",
+      "The moment any item — or a creature carrying one — exits the vault, the ward reads the chamber as compromised and collapses. Water floods in at a rate that gives the party roughly four rounds before the chamber is fully submerged. The loot is real. The exit is the same door the water comes through."
+    ],
+    "escalation": [
+      "**Opening.** The party enters. The air is breathable and, for now, unlimited — do not make it a resource unless they linger past all reason. Three areas: broken crates of water-ruined coin (mundane, worthless); a locked iron chest (the real loot); a sealed alcove holding a figure still chained to the wall, its empty eye sockets turned toward the door. Let them explore. Nothing reacts to their presence. The ward appears inert.",
+      "The chest requires lockpicking (DC 18 Thieves' Tools) or force. Inside: rolled documents in wax-sealed tubes, a heavy gold signet ring, a linen bag of platinum trade coins, and a sealed black glass bottle with something that moves very slightly inside. The party will want to take things.",
+      "**Complication.** The first character to pocket something and step through the door triggers it. Water rushes in. Four rounds. The door is still open.",
+      "The chained figure begins pulling at its anchor as the water rises; the eye-bolt is tearing loose from the mortar, and the sound is horrible. It does not free itself unless the DM wants a fight — but the clock and the noise arrive together, and the party has to think through both.",
+      "**Climax.** Rounds are tactical and social. Who drops what. Who carries the chest (Strength DC 15 to move it at normal speed). Whether they cut losses or coordinate. A party that acts as one — every character crossing the threshold in the same round, each carrying something — satisfies the ward's original trigger by inversion: it was built for one thief, and one thief leaving is the signal. A group exiting together reads as *entry*, not *theft*, and the ward pauses for one round before recognising the collapse. That is enough for a clean exit. Whether the party figures this out is the encounter."
+    ],
+    "resolution": [
+      "**They coordinate (win).** The party surfaces with the full take: documents, ring, coins, bottle. The vault fills behind them. The documents are the real prize — letters of guild debt, seals still legally binding, owed by a shipping concern that is very much still operating and will not be pleased.",
+      "**Someone panics (partial).** One character exits early. The flood comes. Those still inside swim for it; most of what's loose makes it out. The chest does not.",
+      "**They don't understand the mechanic (hard lesson).** They grab and run individually. Everyone surfaces — the vault is not lethal to tier-2 swimmers — but the chest has settled into the silt, the documents are ruined, and they leave with coins and a ring. The vault is now permanently flooded. The air pocket is gone.",
+      "**What each exit leaves behind.** The debt documents, in any win, seed the next problem: one seal is owed by a still-extant house that would prefer its debt stayed at the bottom of the harbour. The chained figure is not a hook for this encounter — it is a question. It was chained in, not chained by guards. Whoever went into the vault at the end stayed by choice."
+    ],
+    "scaling": [
+      "**Easier:** extend to six rounds; make the ward's trigger visible — runes on the door frame light as the water rises, giving players a legible clock.",
+      "**Harder:** a rival diver entered through a submerged window on the far wall and is also looting. Their exit triggers the ward too, and the party does not control them.",
+      "**Combat (optional):** if the DM wants a fight, the chained figure animates on round 2 of flooding. Use **Wight** stats; it is restrained (attacks against it have advantage, it cannot move). Treat it as a distraction from the clock, not the main event."
+    ],
+    "rewards": [
+      "Platinum trade coins — 300 gp face value; heavy",
+      "Gold signet ring — 150 gp; the seal is the real value, it identifies the guild",
+      "Wax-sealed debt documents — no immediate gp value; a letter of debt for 2,000 gp, owed by a living shipping concern",
+      "Black glass bottle — sealed, opaque, something moves slightly inside; assign or link as the DM sees fit"
+    ],
+    "tags": [
+      "underwater",
+      "vault",
+      "flooding",
+      "heist",
+      "coordination",
+      "timed"
+    ],
+    "related": [
+      "the-drowning-stair"
+    ],
+    "created": "2026-06-29",
+    "updated": "2026-06-29"
   }
 ]
