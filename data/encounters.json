@@ -157,5 +157,114 @@
     ],
     "created": "2026-06-29",
     "updated": "2026-06-29"
+  },
+  {
+    "id": "the-night-market-heist",
+    "title": "The Night Market Heist",
+    "special_element": "The item's price tag is blank until a thief lays a hand on it. Then it fills in, in small neat handwriting, with **the truest secret that person is currently keeping** — not a generic threat, but the specific one, plainly stated. Taking the item without paying that price doesn't trip a bell or summon a guard. It makes the market itself say the secret aloud, once, in every voice speaking within the square at that moment — vendors mid-haggle, patrons mid-gossip — until the whole market has heard it before the thief has taken three steps.",
+    "summary": "Category: Encounter · Tier: 2 · Difficulty: medium · Time-to-run: 1-hour · Biome: urban · Mood: mysterious",
+    "body": [
+      "Category: Encounter · Tier: 2 · Difficulty: medium · Time-to-run: 1-hour · Biome: urban · Mood: mysterious",
+      "The Market of Quiet Coins never opens before dusk, and it never quite closes. Paper lanterns swing between stalls that smell of tallow, ink, and river mud, and every voice drops to a hush the moment you step past the first post. Coins change hands here, but so does something quieter — and you feel it in the held breath before every sale.",
+      "Special element: The item's price tag is blank until a thief lays a hand on it. Then it fills in, in small neat handwriting, with **the truest secret that person is currently keeping** — not a generic threat, but the specific one, plainly stated. Taking the item without paying that price doesn't trip a bell or summon a guard. It makes the market itself say the secret aloud, once, in every voice speaking within the square at that moment — vendors mid-haggle, patrons mid-gossip — until the whole market has heard it before the thief has taken three steps."
+    ],
+    "tier": "2",
+    "difficulty": "medium",
+    "time": "1-hour",
+    "biome": "urban",
+    "mood": "mysterious",
+    "setup": [
+      "Someone the party trusts — a patron, a fence, a desperate stranger — needs an item that sits behind a vendor's stall in the Market of Quiet Coins: a locked coin-box, a sealed ledger, a single ring on a velvet cushion. It isn't for sale. Everything in this market has a price, but this item's price is a secret, and the vendor has already refused to name one the party can pay.",
+      "The job has to happen before dawn. At sunrise the market folds itself away — stalls, lanterns, and vendor alike — and does not reopen for a tenday."
+    ],
+    "escalation": [
+      "**Opening.** The party cases the stall after dark. Two obvious approaches: distract the vendor and lift the item, or offer something valuable enough to change the vendor's mind about selling. One hidden approach: a rival buyer, already circling the same item, who can be turned into an unwitting distraction or a reluctant ally.",
+      "**Complication.** Whoever touches the item sees their own secret appear on the tag — read it to them privately, DM to player, never to the table. They now know exactly what they stand to lose. If they hesitate, the vendor notices the hesitation and grows suspicious.",
+      "**Climax.** The item is taken without payment. The tag flares gold, and the secret is spoken — by every mouth in the market at once, a chorus that carries the words clean across the square. Heads turn toward the thief. Whether that's merely humiliating or actively dangerous depends on who's listening (see Scaling) — someone here may have been paying to keep that exact secret buried."
+    ],
+    "resolution": [
+      "**Clean theft (pay the price):** the party finds a way to satisfy the tag's demand without",
+      "**Loud theft (trigger the outing):** the secret is spoken to the whole market. The item is",
+      "**Walk away:** the party leaves empty-handed. The vendor remembers the attempt fondly — the"
+    ],
+    "scaling": [
+      "**Party size:** more hands touching the item means more secrets on the table — for a large",
+      "**Difficulty up (hard):** someone in the market square is the exact person the exposed secret",
+      "**Difficulty down (easy):** the market is thin that night, few ears to carry the secret, and"
+    ],
+    "rewards": [
+      "The item itself, whatever the patron needed it for.",
+      "A story hook: the vendor now knows the party keeps secrets worth taking — and may come to",
+      "If resolved cleanly, a standing favor with the vendor for future business at the market."
+    ],
+    "tags": [
+      "side-quest",
+      "heist",
+      "urban",
+      "market",
+      "secrets",
+      "stealth"
+    ],
+    "related": [
+      "market-of-quiet-coins",
+      "the-quiet-coin",
+      "the-quiet-coin-mint",
+      "night-market-wares",
+      "the-mint-is-a-person"
+    ],
+    "created": "2026-07-03",
+    "updated": "2026-07-03"
+  },
+  {
+    "id": "the-cantors-last-verse",
+    "title": "The Cantor's Last Verse",
+    "special_element": "This is not a fight to silence the Cantor. **The song cannot be stopped, only finished — and finishing it takes a second living voice to carry the harmony he can no longer hold alone.** Sing the closing verse with him and the rite completes, saving every soul still waiting in the dark — but the song takes its payment from the singer: not damage, but a permanent surrender of voice, breath, or silence, freely given. Combat can slow the unraveling. Only a duet ends it.",
+    "summary": "Category: Encounter · Region: state3 · Tier: 3 · Difficulty: hard · Time-to-run: full-session",
+    "body": [
+      "Category: Encounter · Region: state3 · Tier: 3 · Difficulty: hard · Time-to-run: full-session",
+      "The cavern smells of wet limestone and candle tallow, and somewhere below the ledge a single voice is singing — not loud, but it fills every hollow of the rock the way water finds its level. Your torchlight throws no shadow past the first bend; the dark beyond swallows the flame whole. As you climb down, the song shifts key, and for one bar your own throat aches, as though it means to hum along without asking you first.",
+      "Special element: This is not a fight to silence the Cantor. **The song cannot be stopped, only finished — and finishing it takes a second living voice to carry the harmony he can no longer hold alone.** Sing the closing verse with him and the rite completes, saving every soul still waiting in the dark — but the song takes its payment from the singer: not damage, but a permanent surrender of voice, breath, or silence, freely given. Combat can slow the unraveling. Only a duet ends it."
+    ],
+    "tier": "3",
+    "difficulty": "hard",
+    "time": "full-session",
+    "biome": "cavern",
+    "mood": "melancholy",
+    "setup": [
+      "The Hollow Cantor is dying, and he knows it. For years he has sung the restless dead of this cavern to rest, one at a time, a night each. Tonight he has begun the Last Verse — the song meant to close every grave at once, so nothing is left half-buried when his own voice finally gives out. But the Last Verse needs more breath than one failing throat can hold, and the song is a machine that does not care where the breath comes from. It has started drawing it from the nearest living lungs: the party's.",
+      "Whoever brought the party here — a grieving relative, a scholar of dirges, a debt owed to the Cantor himself — wants the song stopped, finished, or survived. Decide which before play; it changes who the NPCs blame afterward."
+    ],
+    "escalation": [
+      "**Opening.** The party finds the Cantor mid-verse in a chamber ringed with grave-cairns,",
+      "**Complication.** Two obvious approaches present themselves: force him to stop (the song",
+      "**Climax.** As the Cantor's voice breaks entirely, the graves begin closing back up"
+    ],
+    "resolution": [
+      "**A PC sings the duet.** The cairns seal, the dead settle, and the Cantor finishes",
+      "**No one sings; the party waits it out.** The Last Verse fails unfinished. Half the",
+      "**The party fights instead.** The animated defenders can be destroyed, but doing so does"
+    ],
+    "scaling": [
+      "**Lower tiers:** reduce the exhaustion cost per dropped bar, and let a single Wisdom-",
+      "**Higher tiers / larger parties:** more cairns, more grasping hands, and a harmony part",
+      "**Solo or small party:** the Cantor can be nudged to accept an instrument in place of a"
+    ],
+    "rewards": [
+      "The sealed cairns yield the small grave-goods left with each body — nothing rich, but",
+      "Whoever sings the duet gains standing with anything in this cavern that remembers the",
+      "If the Cantor survives, he owes the party a favor he will actually honor."
+    ],
+    "tags": [
+      "cavern",
+      "dirge",
+      "undead",
+      "sacrifice",
+      "moral-choice"
+    ],
+    "related": [
+      "the-hollow-cantor"
+    ],
+    "created": "2026-07-04",
+    "updated": "2026-07-04"
   }
 ]
