@@ -266,5 +266,63 @@
     ],
     "created": "2026-07-04",
     "updated": "2026-07-04"
+  },
+  {
+    "id": "the-unfallens-fifth-death",
+    "title": "The Unfallen's Fifth Death",
+    "special_element": "**Damage does not end this fight.** Aldous can be dropped to 0 HP normally, but the altar restarts him at the top of the next round — wounds gone, the memory of dying gone. The only way to end it for good is to get him to *speak the fifth oath* — a renunciation of the vow the Chapter twisted — while he is at 0 HP and the altar is actively trying to raise him. That is a roleplay/skill contest running in parallel with the mechanical fight, not a bigger number to hit. A DM running this as a damage race will watch the players win the fight three times and lose the war every time.",
+    "summary": "Category: Encounter · Region: state4 · Tier: 4 · Difficulty: hard · Time-to-run: full-session",
+    "body": [
+      "Category: Encounter · Region: state4 · Tier: 4 · Difficulty: hard · Time-to-run: full-session",
+      "Rain finds every gap in the collapsed chapter house, and there are a great many gaps. Water runs down the split face of a granite saint and pools black around the altar stone, where something is already kneeling. It rises when it hears you. Armor that should be rust is bright as the day it was forged — bright in patches, rotted through in others, as if only parts of this man agreed to come back. When he speaks, his voice arrives a half-second before his mouth moves.",
+      "\"Again,\" Ser Aldous says. Not to you. To the altar.",
+      "Special element: **Damage does not end this fight.** Aldous can be dropped to 0 HP normally, but the altar restarts him at the top of the next round — wounds gone, the memory of dying gone. The only way to end it for good is to get him to *speak the fifth oath* — a renunciation of the vow the Chapter twisted — while he is at 0 HP and the altar is actively trying to raise him. That is a roleplay/skill contest running in parallel with the mechanical fight, not a bigger number to hit. A DM running this as a damage race will watch the players win the fight three times and lose the war every time."
+    ],
+    "tier": "4",
+    "difficulty": "hard",
+    "time": "full-session",
+    "biome": "ruins",
+    "mood": "heroic",
+    "setup": [
+      "Aldous has died here four times. Each time, something at this altar puts him back together and sends him out to fight — a little less himself, a little more borrowed. He no longer knows who is doing it or why, only that he wakes here, always here, always kneeling, and he has started to beg strangers to make sure the fifth time takes.",
+      "The truth: the White Chapter, the paladin order that raised him, found they could keep a champion in the field forever by anchoring his oath to this altar instead of to his soul. He is a proof of concept. A courier from the Chapter is en route to collect the results of death five — the order does not want him free, it wants to know how many more times this can be done, to other knights, on purpose.",
+      "Play it as: the party arrives — by rumor, by the sigil in [[The Unfallen's Sigil]] tugging toward this place, or by Aldous's own summons — to find him mid-vigil, dreading a fight he has already lost four times."
+    ],
+    "escalation": [
+      "**Opening:** Aldous asks the party to kill him, and means it. He fights beside them at first — something is coming for the altar (Chapter enforcers, or a summoned guardian, DM's choice) and he would rather die clean than be dragged back for study. Let the party like him before the complication hits.",
+      "**Complication:** Partway through, Aldous drops to 0 HP and gets back up mid-combat, disoriented, calling the nearest ally by a dead comrade's name. Now the party sees that the fight they are in is not the fight that matters — the altar is. Obvious approaches: smash the altar (it is warded, and takes sustained effort under fire), or kill Aldous a fourth time and hope. Hidden approach: someone can talk to him *between* the death and the reset — a two- or three-round window when his memory is clearest — and walk him toward the fifth oath instead of fighting through him.",
+      "**Climax:** The Chapter courier arrives (or a bound guardian answers the altar's call) exactly when Aldous is down and vulnerable, forcing the party to defend a corpse that might still be a person. This is the moment to spend the oath-renunciation contest: whoever holds the line at the altar gets the real conversation with Aldous — not whoever is doing the most damage."
+    ],
+    "resolution": [
+      "**He dies for good:** the party protects the window, someone reaches him, he speaks the fifth oath, and the altar goes dark. His body stays down this time. [[The Unfallen's Sigil]] cracks fully through and goes inert — safe to carry, no longer binding.",
+      "**He fails to renounce, but the party survives:** Aldous gets back up one more time, hollower, and the Chapter's result is confirmed. He begs the party to try again somewhere else, someday — an open thread, not a loss.",
+      "**The party smashes the altar instead of talking:** it works, but violently — Aldous dies screaming something unrenounced, and the sigil comes off him warped rather than clean, carrying a sliver of whatever the altar was.",
+      "**The party walks away:** the Chapter gets its champion back, restored and reset, and knows the party interfered. Expect consequences later, not now."
+    ],
+    "scaling": [
+      "Tier 4 assumes a real boss fight — build the courier/guardian to roughly CR 8–10 and expect 2–3 combat rounds per death cycle. For a lower tier, drop the reinforcement entirely and let the altar's ward be the whole obstacle; the oath-renunciation contest works at any tier, since it is a roleplay/skill beat, not a damage scale. For a larger party, give the altar a second simultaneous demand — two hands busy holding it closed while a third talks to Aldous — so the table divides naturally."
+    ],
+    "rewards": [
+      "[[The Unfallen's Sigil]], cracked or clean depending on resolution",
+      "A name, finally: Aldous's given name before the Chapter renamed him, useful as a hook into their records",
+      "The Chapter's attention — a complication that can seed a later entry"
+    ],
+    "tags": [
+      "boss-fight",
+      "undead-ally",
+      "ritual",
+      "altar",
+      "high-tier",
+      "roleplay-climax"
+    ],
+    "related": [
+      "ser-aldous-the-unfallen",
+      "the-unfallens-sigil",
+      "the-unfallen-order",
+      "the-fifth-return",
+      "the-oath-you-inherited"
+    ],
+    "created": "2026-07-05",
+    "updated": "2026-07-05"
   }
 ]
