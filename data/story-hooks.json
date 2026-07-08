@@ -27,5 +27,106 @@
     "related": [],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "ropeless-anchorage",
+    "title": "Ropeless Anchorage",
+    "special_element": "Every crew that anchors in the bay loses its rope by morning — not cut, not rotted, but consumed thread by thread, as if something under the water is being paid in fiber. The *Sable Debt*'s captain has done the arithmetic no one else bothered with: the more rope she brings, the calmer the crossing. She wants to know what she is feeding — and whether she can feed it more.",
+    "summary": "Ropeless Anchorage Category: Story Hook · Tier: 3 · Biome: coast · Mood: unsettling",
+    "body": [
+      "Ropeless Anchorage Category: Story Hook · Tier: 3 · Biome: coast · Mood: unsettling",
+      "They racked the anchor rope new last night — fresh hemp, stiff and yellow, stinking of tar. By dawn it lies in a grey heap on the deck of the *Sable Debt*, unwound to a dust so fine the wind lifts it one strand at a time. And still the ship holds at anchor in Black Lantern Bay, riding steady, moored to nothing at all.",
+      "Special element: Every crew that anchors in the bay loses its rope by morning — not cut, not rotted, but consumed thread by thread, as if something under the water is being paid in fiber. The *Sable Debt*'s captain has done the arithmetic no one else bothered with: the more rope she brings, the calmer the crossing. She wants to know what she is feeding — and whether she can feed it more."
+    ],
+    "tier": "3",
+    "biome": "coast",
+    "mood": "unsettling",
+    "next_steps": [
+      "**Stakes:** in a fortnight the *Sable Debt* is due to carry a noble's household across open water — no bay to soften the crossing, and nothing left to anchor with if the rope habit fails her.",
+      "**Next steps:** the captain hires the party to stand a night-watch over a test coil and see what actually takes it, or to dive the anchorage floor before dawn, while whatever fed there has gone quiet.",
+      "**Twists:** the rope is not destroyed. It is being spent — reappearing rewoven as the very lines other ships swear they never brought aboard."
+    ],
+    "tags": [
+      "story-hook",
+      "coast",
+      "high-level",
+      "mystery",
+      "ships",
+      "unsettling"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "the-cold-light-drownings",
+      "cold-light-rising"
+    ],
+    "created": "2026-07-06",
+    "updated": "2026-07-06"
+  },
+  {
+    "id": "the-pardon-that-wasnt",
+    "title": "The Pardon That Wasn't",
+    "special_element": "Every forgery Vance Quill sells carries the same seal — he traced it off an old document without knowing what it was. It isn't a magistrate's mark. It's the oath-sigil of the Coin-Hand, the guild that owns every loan, marker, and broken knee in this district, and to them a pardon stamped with it doesn't read *cleared*. It reads *vouched in*. The party didn't slip the law. They've been signed into a debt they never took out, and the first of three payments comes due whether they understand the arrangement or not.",
+    "summary": "Category: Story Hook · Tier: 2 · Biome: urban · Mood: grim",
+    "body": [
+      "Category: Story Hook · Tier: 2 · Biome: urban · Mood: grim",
+      "A runner catches you outside the tavern, chest heaving, and presses a folded chit into your palm before you can wave him off. It's stamped in the same red wax as the pardon you bought, and under the seal a clerk's hand has written: *DEBT SETTLED, FIRST OF THREE.* He won't say who sent him. He won't meet your eyes.",
+      "Special element: Every forgery Vance Quill sells carries the same seal — he traced it off an old document without knowing what it was. It isn't a magistrate's mark. It's the oath-sigil of the Coin-Hand, the guild that owns every loan, marker, and broken knee in this district, and to them a pardon stamped with it doesn't read *cleared*. It reads *vouched in*. The party didn't slip the law. They've been signed into a debt they never took out, and the first of three payments comes due whether they understand the arrangement or not."
+    ],
+    "tier": "2",
+    "biome": "urban",
+    "mood": "grim",
+    "next_steps": [
+      "Stakes: refuse the debt and the Coin-Hand collects the old way — property, favors, or fingers. Pay it and the party stands recognized as members, owing two more installments.",
+      "Next steps: follow the runner to a counting-house where a ledger keeper is already inking the party's names into the guild rolls — in ink, not pencil.",
+      "Twists: Quill has no idea his seal means anything. Corner him and his confusion is real, which makes the Coin-Hand's belief in the pardon scarier, not less."
+    ],
+    "tags": [
+      "forgery",
+      "guild",
+      "debt",
+      "urban",
+      "mid-level"
+    ],
+    "related": [
+      "vance-quill-pardon-broker",
+      "the-salt-archives-debt"
+    ],
+    "created": "2026-07-07",
+    "updated": "2026-07-07"
+  },
+  {
+    "id": "the-salt-archives-debt",
+    "title": "The Salt Archive's Debt",
+    "special_element": "The debt is already part-paid. Sometime in the last year, one PC lost a person from memory — a face, a name, the weight of a voice — and never felt the gap, because the archive took that memory as a down payment before the page was ever found. Settling what's owed means first uncovering what was already taken, and from whom.",
+    "summary": "Category: Story Hook · Region: none · Tier: 3 · Biome: ruins · Mood: melancholy",
+    "body": [
+      "Category: Story Hook · Region: none · Tier: 3 · Biome: ruins · Mood: melancholy",
+      "A page in the Library of Salt bears one of your names, in a hand none of you recognise. Touch it and fine white grain sifts free onto your fingers — dry, cold, faintly bitter on the air — and the page is thinner than it was a breath ago.",
+      "Special element: The debt is already part-paid. Sometime in the last year, one PC lost a person from memory — a face, a name, the weight of a voice — and never felt the gap, because the archive took that memory as a down payment before the page was ever found. Settling what's owed means first uncovering what was already taken, and from whom."
+    ],
+    "tier": "3",
+    "biome": "ruins",
+    "mood": "melancholy",
+    "next_steps": [
+      "Stakes: every day the debt goes unanswered, the named page thins further; when the last grain sifts away, so does whatever the archive is still owed in full — a life, a promise, or the final trace of that missing memory.",
+      "Next steps: the ledger names a creditor by title, not name — \"the one who lent the winter.\" Tracking down who or what that is becomes the party's real quest.",
+      "Twists: the debt was never the party's to begin with. It was inherited, sold, or lost in a wager by someone they trusted — and the archive doesn't care whose signature is on it, only whose name is on the page."
+    ],
+    "tags": [
+      "story-hook",
+      "ruins",
+      "memory-loss",
+      "debt",
+      "mystery",
+      "high-tier"
+    ],
+    "related": [
+      "library-of-salt",
+      "the-salt-that-was-words",
+      "the-memory-the-saltwidow-took",
+      "the-saltwidows-one-memory"
+    ],
+    "created": "2026-07-08",
+    "updated": "2026-07-08"
   }
 ]
