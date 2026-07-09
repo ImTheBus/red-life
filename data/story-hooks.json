@@ -128,5 +128,38 @@
     ],
     "created": "2026-07-08",
     "updated": "2026-07-08"
+  },
+  {
+    "id": "cold-light-rising",
+    "title": "Cold Light Rising",
+    "special_element": "The cold light doesn't spread like weather — it spreads like an invitation, one harbour a night, always to the town nearest the last one taken. Something has to say yes first. Every stricken harbourmaster's logbook ends the same way: a bargain struck at low tide, a price the town could not refuse, and a signature. The party isn't racing a plague up the coast. They're racing to reach the next harbour before its harbourmaster signs.",
+    "summary": "Cold Light Rising Category: Story Hook · Tier: 4 · Biome: coast · Mood: grim · Difficulty: hard",
+    "body": [
+      "Cold Light Rising Category: Story Hook · Tier: 4 · Biome: coast · Mood: grim · Difficulty: hard",
+      "Three nights ago the harbour at Sallow Reach went dark, then wrong. Every lantern on every mast now burns a cold blue that throws no heat and no shadow, and this morning the whole fishing fleet sat riding at anchor with not one rope over the side. The tide brought back no wreckage and no bodies. It brought a letter, addressed to whoever is in charge, in the harbourmaster's own hand: *\"We let it in. You will too.\"*",
+      "Special element: The cold light doesn't spread like weather — it spreads like an invitation, one harbour a night, always to the town nearest the last one taken. Something has to say yes first. Every stricken harbourmaster's logbook ends the same way: a bargain struck at low tide, a price the town could not refuse, and a signature. The party isn't racing a plague up the coast. They're racing to reach the next harbour before its harbourmaster signs."
+    ],
+    "tier": "4",
+    "biome": "coast",
+    "mood": "grim",
+    "next_steps": [
+      "Stakes: at one harbour a night, the port the party actually cares about — home, patron, base of operations — is four nights from the light reaching its door.",
+      "Next steps: reach the next threatened harbour ahead of the tide; find out what is being offered, and to whom, before the ink dries.",
+      "Twists: the bargain isn't coercion. Every harbourmaster who signed was drowning — in debt, in plague, in ruin — and the cold light *fixed it*. What's on offer is a living town, in exchange for its harbour becoming the next Black Lantern Bay."
+    ],
+    "tags": [
+      "coast",
+      "harbinger",
+      "chain-event",
+      "high-level",
+      "grim-bargain"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "the-cold-light-drownings",
+      "ropeless-anchorage"
+    ],
+    "created": "2026-07-09",
+    "updated": "2026-07-09"
   }
 ]
