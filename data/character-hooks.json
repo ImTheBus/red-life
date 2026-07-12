@@ -66,5 +66,102 @@
     ],
     "created": "2026-06-13",
     "updated": "2026-06-13"
+  },
+  {
+    "id": "the-memory-the-saltwidow-took",
+    "title": "The Memory the Saltwidow Took",
+    "special_element": "The stolen year isn't sitting frozen in the Saltwidow's locket — it's still *living* inside it, one remembered hour at a time, unfolding exactly as it would have. The child in there is growing up without the party. Every month the PC delays, the person they were drifts further from who they'd have become. By the time the locket finally opens, it may not give back the child who was taken. It may give back a stranger the PC can't recognize as themselves.",
+    "summary": "Category: Character Hook · Tier: 3 · Mood: melancholy",
+    "body": [
+      "Category: Character Hook · Tier: 3 · Mood: melancholy",
+      "Somewhere between your ninth and tenth birthdays, a whole year is missing. Ask anyone who knew you then and they go quiet, or they call you \"different that year\" and won't say how. You don't remember it either — not one day of it. Only a smell of cold coast-salt that catches you off guard sometimes, on a dry street, miles from any water, for no reason you can name.",
+      "Special element: The stolen year isn't sitting frozen in the Saltwidow's locket — it's still *living* inside it, one remembered hour at a time, unfolding exactly as it would have. The child in there is growing up without the party. Every month the PC delays, the person they were drifts further from who they'd have become. By the time the locket finally opens, it may not give back the child who was taken. It may give back a stranger the PC can't recognize as themselves."
+    ],
+    "tier": "3",
+    "mood": "melancholy",
+    "next_steps": [
+      "Stakes: the longer the PC waits, the further the memory-self diverges — the year they get back is not the year that was taken.",
+      "Next steps: word reaches the party that the Saltwidow trades favours for memories; finding her, and finding her price for this one, becomes the thread.",
+      "Twists: the price isn't gold or a quest — it's a *current* memory, freely given, of equal weight to the one she'd return; and she already knows exactly which one she wants."
+    ],
+    "tags": [
+      "character-hook",
+      "memory",
+      "saltwidow",
+      "grief",
+      "backstory",
+      "coastal"
+    ],
+    "related": [
+      "the-saltwidow",
+      "saltwidows-locket",
+      "the-saltwidows-one-memory"
+    ],
+    "created": "2026-07-10",
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "the-oath-you-inherited",
+    "title": "The Oath You Inherited",
+    "special_element": "The scar is the last living thread of Ser Aldous the Unfallen's first oath — the one he swore whole, generations before his first death, before it all started going wrong — carried down through blood he never knew he left behind. It has slept four lifetimes. The first time this character is dying and would not last the hour, the oath finishes what Aldous never could: it speaks once, in his exact final vow, through the character's own mouth, and it saves them — and from that moment binds them to end what Aldous became.",
+    "summary": "Category: Character Hook · Tier: 4 · Mood: heroic",
+    "body": [
+      "Category: Character Hook · Tier: 4 · Mood: heroic",
+      "There is a hairline scar along your sword hand that no blade ever made — pale as old wax, running *with* the vein instead of across it. On the nights you can't sleep, you taste iron and candle smoke, and hear, very faint, a vow being spoken in a voice that is almost your own.",
+      "Special element: The scar is the last living thread of Ser Aldous the Unfallen's first oath — the one he swore whole, generations before his first death, before it all started going wrong — carried down through blood he never knew he left behind. It has slept four lifetimes. The first time this character is dying and would not last the hour, the oath finishes what Aldous never could: it speaks once, in his exact final vow, through the character's own mouth, and it saves them — and from that moment binds them to end what Aldous became."
+    ],
+    "tier": "4",
+    "mood": "heroic",
+    "next_steps": [
+      "Stakes: the oath fires without consent — not a power the character spends, a debt collecting itself. Once spent, the bloodline's last unbroken vow is gone. There is no second miracle.",
+      "Next steps: seed the scar and the taste of iron early, at low tiers, as flavour with no explanation. Pay it off here, at tier 4, the first time the character is truly at death's door. Ser Aldous — or word of him — should already be in the campaign before this fires, so the vow lands as recognition, not exposition.",
+      "Twists: before the debt ever collects, the character can seek out Ser Aldous, learn the oath's original wording, and speak it themselves — awake and willing — severing the inherited thread before it can bind them to his fate. Choosing *not* to go looking is itself a choice the table will feel later."
+    ],
+    "tags": [
+      "bloodline",
+      "oath",
+      "paladin",
+      "heroic-sacrifice",
+      "legacy",
+      "high-level"
+    ],
+    "related": [
+      "ser-aldous-the-unfallen",
+      "the-unfallens-fifth-death",
+      "the-fifth-return",
+      "the-unfallen-order"
+    ],
+    "created": "2026-07-11",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "drowned-kin",
+    "title": "Drowned Kin",
+    "special_element": "The nearest drowned thing has always been the same thing: your sibling, lost at sea three years ago. The compass isn't broken — it found them the day they went under, and it has never had reason to point anywhere else since.",
+    "summary": "Category: Character Hook · Tier: 2 · Mood: grim",
+    "body": [
+      "Category: Character Hook · Tier: 2 · Mood: grim",
+      "The needle on the Tidelace Compass never points north. Hold it and the brass is cold as bilgewater, the case ticking faintly against your palm — and for three years it has held one bearing, toward the nearest drowned thing, never once wavering however far you sail.",
+      "Special element: The nearest drowned thing has always been the same thing: your sibling, lost at sea three years ago. The compass isn't broken — it found them the day they went under, and it has never had reason to point anywhere else since."
+    ],
+    "tier": "2",
+    "mood": "grim",
+    "next_steps": [
+      "Stakes: Following the bearing means finally finding the body — or finding out it isn't a body anymore.",
+      "Next steps: The needle drifts for the first time this session, swinging a few degrees off true; something closer, and still moving, is now competing for \"nearest drowned thing.\"",
+      "Twists: The bearing never moved because your sibling drowned once — it moved because they have gone on drowning, over and over, somewhere the party hasn't looked yet."
+    ],
+    "tags": [
+      "character-hook",
+      "grief",
+      "family",
+      "compass",
+      "cursed-item"
+    ],
+    "related": [
+      "the-tidelace-compass"
+    ],
+    "created": "2026-07-12",
+    "updated": "2026-07-12"
   }
 ]
