@@ -33,5 +33,117 @@
     ],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "the-cold-light-drownings",
+    "title": "The Cold-Light Drownings",
+    "special_element": "Vane never filled the lanterns with oil. Each is lit from a name — one drowned sailor's, spoken into the flame once and never repeated — and it burns without fuel for exactly as long as that name goes unsaid again. And every hull in the bay is moored not to rope but to the man whose name feeds its lantern: he stands on the seafloor beneath it, arms still raised, still gripping the line he died holding. Speak a lit lantern's name aloud a second time and it gutters — and within the hour, the ship above that sailor drifts free.",
+    "summary": "Category: Lore · Region: none · Biome: coast · Mood: grim",
+    "body": [
+      "Category: Lore · Region: none · Biome: coast · Mood: grim",
+      "At low tide in Black Lantern Bay, the pilings show. Not wood — pale, waterlogged, upright shapes, packed shoulder to shoulder along the harbor floor, wrapped in barnacle and old rope. The water never quite clears there, even on a still day, and it carries a smell like a snuffed candle: hot wax gone cold too fast. Stand on the dock at dusk and you can watch the lanterns catch along the seawall, one by one, with no hand near any of them — each flame blue-white, and giving off no heat at all.",
+      "Forty years back, a merchant fleet ran for the bay to ride out a squall instead of taking open water — a captain's gamble that should have worked. It didn't. The harbor pilot meant to guide them through the shoals was drunk, or paid to be elsewhere; no one agrees which. Six ships found the rocks instead of the channel. The town pulled bodies out of that water for a week.",
+      "What the town did next is the part nobody says plainly. The harbor master then was a woman named Aldith Vane, who had lost a husband and both sons to the wreck, and she would not let the sea keep them. She had the drowned sailors weighted and sunk upright along the harbor floor in place of proper pilings, and told the town it was so the families would always have a place to stand near their own. The lanterns, she said, would burn from the same oil the ships had carried, so the men would never again go dark on the water.",
+      "That was the story she told. It is not the whole one.",
+      "Special element: Vane never filled the lanterns with oil. Each is lit from a name — one drowned sailor's, spoken into the flame once and never repeated — and it burns without fuel for exactly as long as that name goes unsaid again. And every hull in the bay is moored not to rope but to the man whose name feeds its lantern: he stands on the seafloor beneath it, arms still raised, still gripping the line he died holding. Speak a lit lantern's name aloud a second time and it gutters — and within the hour, the ship above that sailor drifts free."
+    ],
+    "biome": "coast",
+    "mood": "grim",
+    "rumours": [
+      "**Truth:** The pilings are the six crews, sunk upright and never recovered. The lanterns are named-and-sealed, not fueled; speaking a sealed name a second time snuffs that lantern and frees its ship.",
+      "**Rumours:** Sailors swap three stories — that the bay is cursed and eats rope, that Vane made a pact with something offshore, or that the harbor master still walks the seawall relighting lanterns that gutter on their own. All three are wrong in the specifics and right that something in the harbor remembers names.",
+      "**How to reveal:** Feed it in pieces — a diver who won't go under the pilings, an old harbor ledger with names crossed out where the ships should be, a lantern that gutters the instant someone reads a name off a plaque aloud. Save the full truth for the moment a PC holds a lit lantern and is about to say a name twice."
+    ],
+    "tags": [
+      "coast",
+      "drowned",
+      "harbor",
+      "shipwreck",
+      "curse",
+      "black-lantern-bay"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "ropeless-anchorage",
+      "cold-light-rising"
+    ],
+    "created": "2026-07-13",
+    "updated": "2026-07-13"
+  },
+  {
+    "id": "the-salt-that-was-words",
+    "title": "The Salt That Was Words",
+    "special_element": "A pinch of the salt, dissolved in water and drunk, surfaces one fragment of whatever the person it once was knew — a name, a route, a spell's missing word, a face. It is not a spellbook and it is not reliable: the memory arrives sideways, out of context, and is gone by morning. But for one night, a stranger's whole life of learning is briefly, partially, yours.",
+    "summary": "Category: Lore · Region: none · Biome: ruins · Mood: melancholy",
+    "body": [
+      "Category: Lore · Region: none · Biome: ruins · Mood: melancholy",
+      "Every grain of salt in the Library has a faint aftertaste of ink. Pinch it between your fingers and it dissolves slower than salt should, leaving a residue like wet paper on the skin. Walk the stacks long enough and you notice the drifts are not level — they slope toward the reading tables, as though something once crawled there to die facing its work.",
+      "The Library of Salt was not built to hold books. It was built to hold *readers* — a handful of archivists who swore, at its founding, to remember everything so that nothing true would ever need to be written down twice.",
+      "The working they used to bind their memories to the building outlived them. It did not stop when the last archivist finished reading. It kept drawing knowledge out of whoever sat longest at the tables, and it paid for that knowledge in the only currency the building understood: it turned the reader, slowly, into salt.",
+      "The drifts are not spilled cargo or a trick of the weather. They are the archivists, and after them the trespassers, and after them the merely curious — every one still holding, somewhere in the grain, whatever they knew when the process finished with them.",
+      "The books on the shelves are real, and mostly wrong. They were never the point. They were bait to keep a reader sitting still long enough for the building to finish its work.",
+      "Special element: A pinch of the salt, dissolved in water and drunk, surfaces one fragment of whatever the person it once was knew — a name, a route, a spell's missing word, a face. It is not a spellbook and it is not reliable: the memory arrives sideways, out of context, and is gone by morning. But for one night, a stranger's whole life of learning is briefly, partially, yours."
+    ],
+    "biome": "ruins",
+    "mood": "melancholy",
+    "rumours": [
+      "**Truth:** the archivists' binding still runs. Anyone who reads at the tables too long risks joining the salt; the \"books\" are a lure, not a library. The current Library of Salt entry's warning about the readers is this same fact seen from the outside.",
+      "**Rumours:** travellers say the Library \"answers\" if you ask it the right question aloud — in truth this is someone recognising a borrowed memory surfacing from a dissolved pinch, not the building speaking. Others insist the missing scholars only got lost and will wander out one day; none ever have.",
+      "**How to reveal:** let the party learn it backward — someone drinks salt-water on a dare or out of need, blurts a stranger's memory, and only later finds out what the salt actually is. Don't front-load the truth in narration."
+    ],
+    "tags": [
+      "lore",
+      "ruins",
+      "salt",
+      "memory",
+      "ritual"
+    ],
+    "related": [
+      "library-of-salt",
+      "the-memory-the-saltwidow-took",
+      "salt-sheet-riddle",
+      "the-salt-archives-debt"
+    ],
+    "created": "2026-07-14",
+    "updated": "2026-07-14"
+  },
+  {
+    "id": "the-unfallen-order",
+    "title": "The Unfallen Order",
+    "special_element": "The Unfalling Oath was never countermanded, because the one office with authority to release the order — the Lord Marshal of Greymarch — died on the causeway in the same battle that ended the siege. No living person has ever had the standing to tell the Unfallen Order it already won. Every knight who rises does so believing the line still needs holding.",
+    "summary": "Category: Lore · Region: none · Biome: ruins · Mood: heroic",
+    "body": [
+      "Category: Lore · Region: none · Biome: ruins · Mood: heroic",
+      "Sunlight falls through a broken vault onto rows of empty armor stands, and every one of them still gleams. No dust settles here, though the roof has been open to the weather for three hundred years. Somewhere above, wind moves through a bell that has not been struck since the chapter house fell — and yet it hums, faint and constant, like a note held just under hearing.",
+      "The Unfallen Order was raised to hold one line: the causeway at Greymarch, the only crossing during the Long Siege. Five hundred knights swore the Unfalling Oath before the fighting began — that so long as the line needed holding, death would not be accepted as a release from duty. It was meant as poetry. The order's chaplains wrote it to stiffen resolve, not to work.",
+      "It worked.",
+      "The causeway held. The siege broke. And the knights who fell defending it did not go quiet — they rose from the mud still in their stances, still facing the ford, and took up their posts again as though the horn had only just sounded. The survivors called it a miracle for exactly as long as it took to realize none of the miracle knights could tell you the siege was over.",
+      "Three centuries on, the chapter house is ruins and the causeway has long since silted into ordinary farmland. The order still turns out a knight every few years — pulled from a grave, a battlefield, a deathbed anywhere in the region — always armored, always oriented toward a ford that has not existed in living memory.",
+      "Special element: The Unfalling Oath was never countermanded, because the one office with authority to release the order — the Lord Marshal of Greymarch — died on the causeway in the same battle that ended the siege. No living person has ever had the standing to tell the Unfallen Order it already won. Every knight who rises does so believing the line still needs holding."
+    ],
+    "biome": "ruins",
+    "mood": "heroic",
+    "rumours": [
+      "**Truth:** The siege ended in victory. The oath has no expiry clause and no surviving authority who can invoke one. The order returns in perfect faith, not confusion — from inside the oath, the war is still happening.",
+      "**Rumours:** Villages near old Greymarch believe the returning knights are cursed for some private sin, or that they're searching for absolution, or that the ford is still haunted by something the siege never actually killed. None of this is true, but it is what gets told at firesides, and it's the version most NPCs will offer first.",
+      "**How to reveal:** The written text of the Unfalling Oath (or a record of the Lord Marshal's death) is the concrete artifact that unlocks the truth — a scholar, a ruined archive, or an old muster roll can carry it. Once a party understands the mechanism, Ser Aldous the Unfallen stops reading as a curse and starts reading as a soldier still waiting for an order that will never come. Do not have any NPC connect this to *why* Aldous specifically keeps coming back wrong — that belongs to [[the-fifth-return]] and should surface separately."
+    ],
+    "tags": [
+      "lore",
+      "history",
+      "oath",
+      "ruins",
+      "undead",
+      "knights"
+    ],
+    "related": [
+      "ser-aldous-the-unfallen",
+      "the-fifth-return",
+      "the-unfallens-sigil",
+      "the-unfallens-fifth-death",
+      "the-oath-you-inherited"
+    ],
+    "created": "2026-07-15",
+    "updated": "2026-07-15"
   }
 ]
