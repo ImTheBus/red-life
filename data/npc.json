@@ -169,5 +169,84 @@
     ],
     "created": "2026-06-19",
     "updated": "2026-06-19"
+  },
+  {
+    "id": "vance-quill-pardon-broker",
+    "title": "Vance Quill, Pardon-Broker",
+    "statblock": "Uses the Commoner statblock. No combat expected — Quill talks or flees, never fights. Skills: Deception +7, Persuasion +5. If cornered, his one move is to threaten to \"un-write\" the party's own pardon with a word to his clerk.",
+    "special_element": "Quill's pardons aren't forged documents — they're forged *dates*. Genuine magistrate's stock, a real seal, a real entry in the real record — because he pays a clerk to insert it after the fact, dated to the day before the crime. Hold one up to any test of authenticity and it passes. Every part of it is authentic except *when* it was written.",
+    "summary": "Category: NPC · Tier: 2 · Biome: urban · Role: informant · Faction: — · Difficulty: medium",
+    "body": [
+      "Category: NPC · Tier: 2 · Biome: urban · Role: informant · Faction: — · Difficulty: medium",
+      "A back room behind a curtain of hanging keys, warm with candle-tallow and the smell of drying ink. Vance Quill sits at a desk too neat for the street outside — waistcoat a shade too fine, fingernails stained permanent blue-black. He is already writing your name in his ledger before you have told it to him.",
+      "Quill works a back room off the Market of Quiet Coins, though he is careful never to leave it by the same door twice. He sells pardons — real parchment, real wax, a real magistrate's seal — and he will tell you so himself, smiling, before you think to ask whether it's legitimate.",
+      "He isn't a criminal, by his own accounting. He's a paperwork problem solved early. He talks like a man doing you a favour, because in his mind he always is: the crime was going to happen or already had, and all he's done is make the ledger agree with a kinder timeline.",
+      "What he wants is never stated outright: leverage. Every pardon is a thread he can pull later, and he never sells one without keeping a copy of exactly what it was written to forgive.",
+      "Special element: Quill's pardons aren't forged documents — they're forged *dates*. Genuine magistrate's stock, a real seal, a real entry in the real record — because he pays a clerk to insert it after the fact, dated to the day before the crime. Hold one up to any test of authenticity and it passes. Every part of it is authentic except *when* it was written."
+    ],
+    "tier": "2",
+    "mood": "mysterious",
+    "role": "informant",
+    "difficulty": "medium",
+    "dm_tips": [
+      "Introduce: he already knows the party's names and has started writing before they've said why they've come.",
+      "Voice/play: unhurried, warm, faintly amused — never raises his voice or drops the smile, even when threatened.",
+      "Wants: leverage. He remembers every pardon he's written and what it covers, and he will call it in later.",
+      "Reveal: the pardon isn't fake paper — it's a real record with a lying date, inserted by a clerk on his payroll. Spring it when someone official checks the ledger and finds the entry sitting there, undeniably genuine, dated wrong.",
+      "Dialogue seeds: \"I don't forge pardons. I just help the paperwork catch up to where it should've been.\""
+    ],
+    "tags": [
+      "pardon-broker",
+      "forgery",
+      "urban",
+      "informant",
+      "bureaucracy",
+      "secrets"
+    ],
+    "related": [
+      "the-pardon-that-wasnt",
+      "market-of-quiet-coins",
+      "the-quiet-coin"
+    ],
+    "created": "2026-07-20",
+    "updated": "2026-07-20"
+  },
+  {
+    "id": "brindle-copperpot",
+    "title": "Brindle Copperpot",
+    "statblock": "No combat expected — use commoner stat reference (5e-compatible); +5 Persuasion, +4 Deception (though he believes every word).",
+    "special_element": "Every item Brindle sells works flawlessly — but it fulfils the letter of what the buyer asked for, never the spirit, and Brindle has no idea there's a difference. Ask for \"something to keep intruders out\" and you get a bell that rings only for people who were never going to break in.",
+    "summary": "Category: NPC · Region: state1 · Role: merchant · Faction: none · Difficulty: easy",
+    "body": [
+      "Category: NPC · Region: state1 · Role: merchant · Faction: none · Difficulty: easy",
+      "A short, round man behind a cart that clinks like a wind chime even when nothing on it is moving. He smells of tallow and hot solder, and he is already holding out whatever you almost looked at. \"Ah,\" he says, before you have spoken a word, \"you'll be wanting *exactly* this.\" He is never wrong about what you were looking at.",
+      "Brindle Copperpot has been fixing, forging, and flogging odds and ends out of the same dented cart for as long as anyone at the crossroads can remember, and he genuinely believes every single item he sells works perfectly. He is not lying. He is not even exaggerating. He built each one to do precisely what its owner asked for — he is simply constitutionally incapable of building anything that does what they *meant*.",
+      "He is warm, chatty, and utterly unbothered by complaints, mostly because complaints confuse him: the lock he sold that only opens for enemies did, after all, open for an enemy, exactly as requested. He wants to be liked, wants his stall to matter to the road, and genuinely can't understand why the last three customers came back shouting.",
+      "Special element: Every item Brindle sells works flawlessly — but it fulfils the letter of what the buyer asked for, never the spirit, and Brindle has no idea there's a difference. Ask for \"something to keep intruders out\" and you get a bell that rings only for people who were never going to break in."
+    ],
+    "tier": "1",
+    "mood": "comic",
+    "role": "merchant",
+    "difficulty": "easy",
+    "dm_tips": [
+      "Introduce: he's already got the item out and priced before the party finishes browsing — he answers the question they were about to ask, not the one they asked.",
+      "Voice/play: chipper, fast, faintly proud; never apologises, only clarifies (\"it does work, you were just imprecise\").",
+      "Wants: a satisfied repeat customer — he keeps trying to fix the misunderstanding by selling them a *second*, equally literal item to patch the first.",
+      "Reveal: let a purchased item malfunction mid-session, then have Brindle show up later utterly baffled that it \"worked as sold\" — the joke lands when the DM plays his confusion completely straight.",
+      "Dialogue seeds: \"Guaranteed to work exactly as described — I should know, I wrote the description.\" / \"You wanted it *quiet*, sir. It is extremely quiet. Everywhere except in your dreams.\""
+    ],
+    "tags": [
+      "merchant",
+      "comic",
+      "tinker",
+      "frontier",
+      "low-level",
+      "trinkets"
+    ],
+    "related": [
+      "comic-brindles-best-customer"
+    ],
+    "created": "2026-07-22",
+    "updated": "2026-07-22"
   }
 ]
