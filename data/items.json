@@ -189,5 +189,46 @@
     ],
     "created": "2026-06-25",
     "updated": "2026-06-25"
+  },
+  {
+    "id": "ancient-woods-hoard",
+    "title": "Ancient-Woods Hoard",
+    "special_element": "Any gold taken from the hollow turns to plain acorns at the next sunrise — unless it is spent, given away, or gifted to someone outside the party before dawn light reaches the oak's own shadow. The coin never vanishes and never warns anyone. It is gold in your hand at midnight and a fistful of acorns in your pocket by breakfast.",
+    "summary": "Category: Item · Tier: 2 · Rarity: rare · Type: hoard · Biome: forest · Mood: wondrous",
+    "body": [
+      "Category: Item · Tier: 2 · Rarity: rare · Type: hoard · Biome: forest · Mood: wondrous",
+      "The old oak split down its heart generations ago, and lightning hollowed out a room where the trunk used to be. Duck through the gap and the smell changes — wet bark gives way to something sweeter, like fruit left too long in the sun. Coins lie heaped across the floor, tangled in a drift of acorn shells so thick you cannot tell coin from shell until you crouch and dig your hands in.",
+      "This is a small fey cache, left as tribute or toll by something that no longer visits. The gold is real, the hollow is dry, and nothing guards it — the danger here is not combat, it's timing.",
+      "Treat it as a standard tier-2 haul: coin, a few small valuables, and one object that plays by different rules (see below). Nothing about the oak is hostile. It wants to be found, spent, and forgotten before sunrise.",
+      "Special element: Any gold taken from the hollow turns to plain acorns at the next sunrise — unless it is spent, given away, or gifted to someone outside the party before dawn light reaches the oak's own shadow. The coin never vanishes and never warns anyone. It is gold in your hand at midnight and a fistful of acorns in your pocket by breakfast."
+    ],
+    "tier": "2",
+    "rarity": "rare",
+    "type": "hoard",
+    "biome": "forest",
+    "drawbacks": [
+      "The coin rings and weighs true right up to the moment it changes — a merchant biting a fey coin at dusk finds nothing wrong with it. Anyone who tries to hoard, bank, or sit on it past dawn loses it outright: no save, no warning beyond the acorn-and-bark smell that clings to it the whole time.",
+      "The oak is off-limits to greed. Cutting it down, burning it, or forcing a second haul empties the hollow for good and — at the DM's discretion — marks the party as owing a favor to whatever left the tribute."
+    ],
+    "loot": [
+      "340 gp in mixed coin, tangled through the acorn litter (subject to the dawn curse above)",
+      "a double handful of river-cold freshwater pearls, unaffected by the curse",
+      "a hunting horn cut from a single antler and banded in oak-dark iron — the one item with a story. It sounds low and hollow, more a stag's bell than a war horn. It carries no curse and turns nothing to acorns; whatever it is, it was never part of the tribute."
+    ],
+    "tags": [
+      "treasure",
+      "cursed",
+      "fey",
+      "forest",
+      "ancient-woods",
+      "hoard"
+    ],
+    "related": [
+      "red-stag-trail",
+      "the-fey-bargain-of-the-stag",
+      "what-the-stag-wants"
+    ],
+    "created": "2026-07-23",
+    "updated": "2026-07-23"
   }
 ]
