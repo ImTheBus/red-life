@@ -177,5 +177,68 @@
     ],
     "created": "2026-06-28",
     "updated": "2026-06-28"
+  },
+  {
+    "id": "the-mirror-vote",
+    "title": "The Mirror Vote",
+    "special_element": "The mirror is not a lie detector — but the room is built to make everyone assume it is, and that assumption is the trap. What it actually measures is whether every reflection moves in *perfect unison* as the sentence is spoken, which happens only when everyone believes the same thing at the moment they say it. A rehearsed lie the whole party has come to believe passes cleanly. A technically true statement, spoken by five voices where even one privately doubts it, splinters the reflections out of sync — and the mirror reads that flicker as failure.",
+    "summary": "Category: Puzzle · Region: none · Tier: 2 · Difficulty: hard · Biome: planar · Mood: mysterious",
+    "body": [
+      "Category: Puzzle · Region: none · Tier: 2 · Difficulty: hard · Biome: planar · Mood: mysterious",
+      "The chamber is round and walled floor to ceiling in black glass, polished so bright that every torch becomes six. It is silent in a way that swallows footsteps — no echo, no draft, not even the scrape of a boot sounds twice. And the reflections are a half-beat slow: raise a hand, and the mirrored hand rises after you, as if the room is thinking it over first.",
+      "At the chamber's center stands a plinth of the same black glass, and set into it, a single unblinking eye of mirror the size of a shield. It asks one question, once, of the whole party at once: *\"Speak, together, the true value of the thing you seek.\"*",
+      "It will not repeat itself. It will not clarify. The party has one attempt to answer as a group — a single sentence, spoken in unison — and the mirror judges the instant the last word lands.",
+      "Accept, and the plinth splits open and the way forward is clear. Reject, and every mirrored surface flexes inward at once, and the six-fold reflections stop moving like people: they step out of the glass to make the party's failure permanent.",
+      "**Trigger:** the party reads the question aloud, or a scout steps within arm's reach of the plinth. Either way the whole party present is bound to answer — there is no opting out once it has spoken. **Clues:** earlier rooms (or an NPC who faced the mirror and lived) should plant the idea that this is a truth test — that's the intended misdirect. The subtler tell, easy to miss on a first pass: the reflections only lag when one person watches, and fall into lockstep when the whole party looks at once. The mirror cares about the group, not the individual. **Solution:** the party agrees out loud before answering — one sentence, one shared conviction, spoken together. A true statement works if everyone believes it; a false one works if everyone has talked themselves into it. What fails is disagreement dressed as agreement — five people saying the same words while believing five different things. **Consequences:** success splits the plinth and opens the way on. Failure sends the reflections out of the glass — treat as a swarm of Mirror-forms (use a shadow's stat block, minus the Strength-drain trait; swap in a **Discord Lash**: on a hit, the target must repeat its last spoken sentence before it may act) that fight until the party retreats from the chamber, at which point the mirror resets and may be tried again.",
+      "Special element: The mirror is not a lie detector — but the room is built to make everyone assume it is, and that assumption is the trap. What it actually measures is whether every reflection moves in *perfect unison* as the sentence is spoken, which happens only when everyone believes the same thing at the moment they say it. A rehearsed lie the whole party has come to believe passes cleanly. A technically true statement, spoken by five voices where even one privately doubts it, splinters the reflections out of sync — and the mirror reads that flicker as failure."
+    ],
+    "tier": "2",
+    "difficulty": "hard",
+    "biome": "planar",
+    "mood": "mysterious",
+    "tags": [
+      "puzzle",
+      "mirror",
+      "planar",
+      "consensus",
+      "misdirect",
+      "mind-trap"
+    ],
+    "created": "2026-07-24",
+    "updated": "2026-07-24"
+  },
+  {
+    "id": "frostbite-cipher",
+    "title": "Frostbite Cipher",
+    "special_element": "The cipher yields only to living breath, only a few symbols at a time, and only once per patch before the ice refreezes clean — no lantern, spell, or flame reads it faster. Solving it is an act of memory and patience, not clever tools.",
+    "summary": "Category: Puzzle · Tier: 3 · Difficulty: medium · Biome: frozen · Mood: mysterious",
+    "body": [
+      "Category: Puzzle · Tier: 3 · Difficulty: medium · Biome: frozen · Mood: mysterious",
+      "A vault door of black iron, sealed under a skin of clear ice thick as a fist. Beneath the ice, scratched into the metal, run rows of marks — yet the surface above them is smooth, blank, unreadable. The cold pouring off it bites at any bare skin, and it smells faintly of old smoke, as though a fire burned here long before the ice ever came.",
+      "The smith who warded this door distrusted eyes as much as thieves. The cipher is cut so shallow that it hides from both sight and fingertip — the only thing that draws it out is a thin fog of condensation.",
+      "Breathe on the metal and hold it a few seconds: the fog beads, then fades, and in the half-second before it vanishes the etched lines darken against the frost — one word or symbol at a time, never the whole cipher at once. Bring a torch close and the opposite happens: the surface ice melts and erases whatever mark was about to surface.",
+      "Anyone working the door has to keep returning to breathe on fresh patches, piece by piece, memory carrying what the ice refuses to hold still long enough to show twice.",
+      "Special element: The cipher yields only to living breath, only a few symbols at a time, and only once per patch before the ice refreezes clean — no lantern, spell, or flame reads it faster. Solving it is an act of memory and patience, not clever tools."
+    ],
+    "tier": "3",
+    "difficulty": "medium",
+    "biome": "frozen",
+    "mood": "mysterious",
+    "consequences": [
+      "**Trigger:** any character breathes on the door, or is told to by another who's read this text.",
+      "**Clues:** each breath reveals 3–5 symbols in one spot; the full cipher runs roughly thirty symbols, scattered across the door's face, and never repeats a location twice in a session unless the party rests and returns.",
+      "**Solution:** the party must reconstruct the full phrase from partial reveals — encourage note-taking, a sketched map of the door, or an Intelligence check (DC 15) to recall a missed section instead of re-breathing it.",
+      "**Consequences:** a correct phrase spoken aloud (not written) unseals the door. A wrong phrase drops the temperature around it low enough to threaten frostbite — treat as a failed Constitution save or a level of exhaustion, DM's call. Decide before play whether repeated failures eventually shatter the ice and destroy the cipher for good, locking the vault permanently."
+    ],
+    "tags": [
+      "frozen-lock",
+      "puzzle",
+      "ice",
+      "memory-challenge",
+      "vault",
+      "cipher"
+    ],
+    "created": "2026-07-25",
+    "updated": "2026-07-25"
   }
 ]
