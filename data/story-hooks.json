@@ -161,5 +161,38 @@
     ],
     "created": "2026-07-09",
     "updated": "2026-07-09"
+  },
+  {
+    "id": "what-the-stag-wants",
+    "title": "What the Stag Wants",
+    "special_element": "The Red Stag Trail leads travelers toward what they most want. This time it has pointed a rival hunting party at the characters themselves — not their gold, not their gear, but *them*, as people. The hunters can't say why the pull is so strong, only that it won't loosen. The trail has read a want in them they haven't yet admitted to.",
+    "summary": "Category: Story Hook · Tier: 2 · Biome: forest · Mood: mysterious · Difficulty: medium",
+    "body": [
+      "Category: Story Hook · Tier: 2 · Biome: forest · Mood: mysterious · Difficulty: medium",
+      "Three days out from the Red Stag Trail, a hunting party rides into your firelight at dusk — horses lathered, hands still dark with a kill's blood. They ask after \"the ones the woods keep showing us.\" Then their leader describes you: your faces, your gear, a scar or a sigil not one of you has spoken aloud since you made camp.",
+      "Special element: The Red Stag Trail leads travelers toward what they most want. This time it has pointed a rival hunting party at the characters themselves — not their gold, not their gear, but *them*, as people. The hunters can't say why the pull is so strong, only that it won't loosen. The trail has read a want in them they haven't yet admitted to."
+    ],
+    "tier": "2",
+    "biome": "forest",
+    "mood": "mysterious",
+    "next_steps": [
+      "**Stakes:** The rival party closes distance daily, and their leader grows surer the characters are keeping something that belongs to him — an old debt, a stolen kinship, a face from a dream.",
+      "**Next steps:** Corner the hunters and learn what the pull actually wants; double back to the trail itself to test whether it will reroute the pursuit; or turn and meet them before the fixation curdles into blades.",
+      "**Twists:** The obsession isn't jealousy or vengeance — one of the hunters is blood kin to a character, told years ago that they were dead, and the trail found the truth before either of them could say it aloud."
+    ],
+    "tags": [
+      "story-hook",
+      "red-stag-trail",
+      "pursuit",
+      "rival-party",
+      "mystery",
+      "forest"
+    ],
+    "related": [
+      "red-stag-trail",
+      "the-fey-bargain-of-the-stag"
+    ],
+    "created": "2026-07-26",
+    "updated": "2026-07-26"
   }
 ]
