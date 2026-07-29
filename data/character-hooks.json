@@ -163,5 +163,38 @@
     ],
     "created": "2026-07-12",
     "updated": "2026-07-12"
+  },
+  {
+    "id": "brindles-best-customer",
+    "title": "Brindle's Best Customer",
+    "special_element": "Blow it and it works exactly as sold: Brindle Copperpot appears mid-sentence, mid-pitch, still finishing the sale he was making the day he handed the whistle over — utterly convinced no time has passed. To him it has been a minute or two. He'll close the deal he started before he notices the beard, the scars, the fallen kingdom, or the fact that his customer is a decade older.",
+    "summary": "Category: Character Hook · Tier: 1 · Mood: Comic",
+    "body": [
+      "Category: Character Hook · Tier: 1 · Mood: Comic",
+      "The tin whistle has hung on your cord since before you can properly remember — dented, green at the mouthpiece, and in all those years it has never once made a sound. Tonight it is warm against your collarbone. Warm like it has been sitting in sun that isn't out. And somewhere under your shirt, very faintly, it is humming a note nobody is playing.",
+      "You bought it, or won it, or were handed it as a joke off a tinker's cart, back when you still half-believed it might do something. You stopped wondering years ago.",
+      "Play the whistle as background texture for a session or two — warm, faint hum, no explanation — before anyone thinks to blow it. Let the players theorize wrong. On activation he doesn't teleport in dramatically; he simply *is there*, cart and all if there's room, wrapping \"—and that's a lifetime guarantee, so you'll never need to—\" before he clocks the room. He is genuinely delighted and genuinely has no idea it's been years. Play the gap for comedy, not exposition: he asks after people who may be dead, floats a \"loyalty discount\" on a deal from a vanished era. Once he catches up he's useful — an ally who owes the party a finished sale, and now very unsure what he actually sold them.",
+      "Special element: Blow it and it works exactly as sold: Brindle Copperpot appears mid-sentence, mid-pitch, still finishing the sale he was making the day he handed the whistle over — utterly convinced no time has passed. To him it has been a minute or two. He'll close the deal he started before he notices the beard, the scars, the fallen kingdom, or the fact that his customer is a decade older."
+    ],
+    "tier": "1",
+    "mood": "comic",
+    "next_steps": [
+      "Stakes: the whistle only fires once its hum finishes building. The PC doesn't pick the moment — the DM does, ideally the worst possible one.",
+      "Next steps: caught up, Brindle wants to know what became of \"the rest of the set\" — other customers got a matching trinket, and at least one of theirs is humming too.",
+      "Twists: the whistle isn't calling him to help. It's calling him to *finish the sale*, and he won't leave until the PC accepts, declines, or haggles the original deal to a close."
+    ],
+    "tags": [
+      "comic",
+      "brindle-copperpot",
+      "magic-item",
+      "npc-callback",
+      "low-level",
+      "summoning"
+    ],
+    "related": [
+      "brindle-copperpot"
+    ],
+    "created": "2026-07-27",
+    "updated": "2026-07-27"
   }
 ]
