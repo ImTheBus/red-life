@@ -145,5 +145,74 @@
     ],
     "created": "2026-07-15",
     "updated": "2026-07-15"
+  },
+  {
+    "id": "the-fey-bargain-of-the-stag",
+    "title": "The Fey Bargain of the Stag",
+    "special_element": "Once a year, at the same dusk the bargain was struck, the trail speaks a name — a name that appears in no ledger, headstone, or family line anywhere in the frontier, as though it was cut out of the world along with the man who owned it. It waits the length of one held breath. Then the wind returns, and the trail goes back to doing what it has always done: leading travellers toward the thing they want most.",
+    "summary": "Category: Lore · Region: none · Biome: forest · Mood: mysterious",
+    "body": [
+      "Category: Lore · Region: none · Biome: forest · Mood: mysterious",
+      "The old foresters swear the air changes half a mile before the Red Stag Trail. The wind drops to nothing. Sound flattens, the way it does under new snow, though the ground is bare and dry. And somewhere back in the pines, always just out of sight, something moves once — a red shape, gone before you can name it.",
+      "Two hundred years ago, before the road had a name, a lord of this frontier lost his household to famine while a hunting path he knew by heart kept turning him wrong — a false crossing here, a doubled-back gully there — until the food he'd meant to carry home rotted in his packs. He walked into the pines and did not come out for three days. When he did, the path behind him had straightened into a thing he swore he'd never lose again.",
+      "He never told anyone the terms. What's known is only what was seen: within the year he stopped answering to his own name, turning his head only at \"traveller,\" and he walked the trail every dusk until he was too old to walk it at all — and the trail, people noticed, never misled a soul again.",
+      "Locals call it a bargain and leave it there, the way you'd leave a debt that isn't yours to pay. Woodcutters still cross themselves at the tree line at dusk. Nobody has gone looking for what he actually said to make the road behave.",
+      "Special element: Once a year, at the same dusk the bargain was struck, the trail speaks a name — a name that appears in no ledger, headstone, or family line anywhere in the frontier, as though it was cut out of the world along with the man who owned it. It waits the length of one held breath. Then the wind returns, and the trail goes back to doing what it has always done: leading travellers toward the thing they want most."
+    ],
+    "biome": "forest",
+    "mood": "mysterious",
+    "rumours": [
+      "**Truth:** The lord traded his name to whatever moves in the pines — not for a season, not for a lifetime, but with no term set at all, because he never thought to ask for one. The road still holds up its end. The debt was never marked closed, so nothing has come to collect it, and nothing has released it either.",
+      "**Rumours:** Most who know the story think it's a ghost tale about a man who \"gave himself to the fey.\" A smaller number — usually hunters who've heard the dusk-call themselves — believe the name is a warning, not a memorial, and that answering it is how you volunteer to replace him.",
+      "**How to reveal:** Best surfaced through an NPC who has heard the yearly call and never told a soul, or as something a party pieces together while investigating why the Red Stag Trail behaves the way it does. Leave open whether answering the call is possible, and what happens if someone tries — that's a live question to build a future hook around."
+    ],
+    "tags": [
+      "forest",
+      "fey-pact",
+      "curse",
+      "red-stag-trail",
+      "origin-story",
+      "lore"
+    ],
+    "related": [
+      "red-stag-trail"
+    ],
+    "created": "2026-07-28",
+    "updated": "2026-07-28"
+  },
+  {
+    "id": "the-quiet-coin-mint",
+    "title": "The Quiet Coin Mint",
+    "special_element": "The Mint has moved eleven times in the city's written history, and every move falls in the same week as the death of that era's first Quiet Coin buyer — the one name every ledger agrees is the oldest debt on the books. Cross-reference the dates once and the pattern holds without a single exception. No one has found a twelfth cause.",
+    "summary": "Category: Lore · Region: none",
+    "body": [
+      "Category: Lore · Region: none",
+      "No sign hangs over the door. No forge glow leaks under it. But stand outside the counting-house on the night the ledgers close and you can hear it anyway — the click and slide of coins being weighed, one at a time, behind a door that has not opened in living memory. The air near the step smells of hot solder, though nothing here has ever been seen to burn.",
+      "Every city the Quiet Coin has passed through claims to know where the Mint stands, and every city is right — for exactly as long as it lasts. The building changes. The street changes. The coin does not.",
+      "Merchants who have traded the coin for three generations will tell you their grandparents traded it too, in a different quarter, from a different address, struck with a slightly different face. Ask what became of the old Mint and you get a shrug: it simply wasn't there one morning, and the new one already was, mid-ledger, as though it had never stopped counting.",
+      "Nobody applies to be Master of the Mint. Nobody has seen the post change hands. And nobody who has spent a Quiet Coin has ever won their secret back — the ledger only grows.",
+      "Special element: The Mint has moved eleven times in the city's written history, and every move falls in the same week as the death of that era's first Quiet Coin buyer — the one name every ledger agrees is the oldest debt on the books. Cross-reference the dates once and the pattern holds without a single exception. No one has found a twelfth cause."
+    ],
+    "biome": "urban",
+    "mood": "mysterious",
+    "rumours": [
+      "**Truth:** the correlation is real and exact — every recorded move lines up with that era's oldest coin-holder's death, down to the week. What the Mint actually is, and why the pattern holds, is not settled by the historical record alone (see `related`).",
+      "**Rumours:** a guild of accountants who never age; a debt-collector who wears a new face each generation; a curse that follows the coin like a shadow; a family business that fakes its own succession to dodge old debts.",
+      "**How to reveal:** let the party find the pattern first through mundane research — old ledgers, tax rolls, a historian's aside — before any supernatural explanation is on the table. If they push further, the full truth belongs to the Mint's own secret, not to this lore."
+    ],
+    "tags": [
+      "lore",
+      "secret",
+      "mystery",
+      "urban",
+      "coins",
+      "faction"
+    ],
+    "related": [
+      "the-quiet-coin",
+      "the-mint-is-a-person"
+    ],
+    "created": "2026-07-29",
+    "updated": "2026-07-29"
   }
 ]
