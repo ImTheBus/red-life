@@ -197,41 +197,41 @@
   {
     "id": "tideworn-chapel",
     "title": "Tideworn Chapel",
-    "summary": "A coastal chapel flooded at high tide, dry at low tide, and never the same twice.",
-    "tags": [
-      "coast",
-      "temple",
-      "shifting",
-      "exploration",
-      "tide"
+    "special_element": "The chapel rebuilds its interior — altar, icon, offerings, and the blank face of the statue — to answer whatever the person walking through the door most needs, and it has never once guessed wrong. Nobody has worked out how it knows.",
+    "summary": "Category: Location · Tier: 1 · Biome: coast · Difficulty: easy · Mood: wondrous",
+    "body": [
+      "Category: Location · Tier: 1 · Biome: coast · Difficulty: easy · Mood: wondrous",
+      "A small stone chapel sits above the tideline, its driftwood pews bleached grey, salt crusting every sill. Inside, you can hear the sea — a slow wash and pull, in and out — though the water is fifty feet below and the door has been shut all winter. The air smells of wax and brine. Over the altar stands a carved figure whose face was never finished: smooth stone where the features should be.",
+      "Fishing families up and down the coast use the chapel, and none of them agree on which god it belongs to. Ask three worshippers and you get three answers, each delivered with total confidence.",
+      "They are not lying. No one enters the chapel the same way twice. Between visits the building keeps its walls, its pews, and the sound of the sea — everything else moves.",
+      "A sailor finds carved fish heaped for a sea-mother. A widow finds a shrine hung with mourning cloth cut for her exact loss. A child looking for courage finds a painted knight above the altar. No one has ever caught it changing. The door opens and it is already different.",
+      "The chapel is not the Red Stag Trail. The Trail moves you toward the thing you want and charges you for the walk; the chapel gives nothing, takes nothing, and only says the thing out loud.",
+      "Decide before play what the chapel shows each visiting character, and why — it must reflect something true about them, not a random image. The chapel grants insight, never mechanical benefit; resist turning it into a vending machine for buffs and answers. The pressure here is social, not tactical: the cost of entering is that your party sees what you needed. Variant: if you want the place hungrier, let the statue's face finish itself a little more with every visitor it reads correctly.",
+      "Special element: The chapel rebuilds its interior — altar, icon, offerings, and the blank face of the statue — to answer whatever the person walking through the door most needs, and it has never once guessed wrong. Nobody has worked out how it knows."
     ],
-    "region": "state6",
-    "difficulty": "easy",
     "tier": "1",
     "biome": "coast",
     "mood": "wondrous",
-    "body": [
-      "A coastal chapel flooded at high tide, dry at low tide, and never the same twice. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "easy",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a grieving villager insists the party visit \"their\" chapel and see what it shows them; a scholar pays good coin to anyone who can catch the interior changing.",
+      "Complications: two characters enter together and each sees a different room; argue about it in front of the statue and the doors seal until the arguing stops.",
+      "Rewards: the room a character walks into names a truth they had never said aloud — and it names it in front of whoever came in with them. The party leaves knowing something about each other they were not told: a rumour, a place, or a piece of a companion's past."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "coast",
+      "chapel",
+      "shrine",
+      "mystery",
+      "roleplay",
+      "low-level"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "red-stag-trail",
+      "what-the-stag-wants"
+    ],
+    "created": "2026-08-01",
+    "updated": "2026-08-01"
   },
   {
     "id": "red-stag-trail",
