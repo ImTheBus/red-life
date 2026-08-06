@@ -119,41 +119,41 @@
   {
     "id": "emberglass-cavern",
     "title": "Emberglass Cavern",
-    "summary": "A cave of soot-black crystal that holds warmth like a hearth.",
-    "tags": [
-      "cavern",
-      "crystal",
-      "firelight",
-      "resource",
-      "warmth"
+    "special_element": "**The cavern runs hotter with depth, and the heat is stored, not made.** No fire burns down there, no mineral vein explains it. The glass holds warmth the way a hearth does after the flame has gone out — and the deeper you go, the older and stronger that borrowed warmth gets. Whatever banked it did so a very long time ago, and it has not cooled.",
+    "summary": "Category: Location · Tier: 2 · Difficulty: hard · Biome: cavern · Mood: wondrous",
+    "body": [
+      "Category: Location · Tier: 2 · Difficulty: hard · Biome: cavern · Mood: wondrous",
+      "The tunnel narrows, then opens into a cave built of black glass. Every wall is soot-dark crystal, faceted like a thousand mirrors turned away from the light, and the air is warm — not damp cave-warm, but *hearth*-warm, the way a room feels after the fire's been going all afternoon. Torchlight comes back off the facets gold instead of white.",
+      "Walk deeper and the warmth climbs. A cave should get colder the further you go from the sky. This one doesn't.",
+      "Emberglass Cavern is a vein of glassy black stone that formed, by all evidence, around something that burned for a very long time. Prospectors who mapped the outer chambers found the crystal cool to the touch at the mouth and close to skin-scalding two hundred feet in — a gradient that runs backwards from every cave anyone has surveyed.",
+      "The glass fractures into curved, obsidian-sharp shards. Miners working the outer seams describe a low, resiny warmth coming off a freshly-broken face, like standing too close to banked coals. Nobody has mapped the deep chambers and come back with a full account of what is down there.",
+      "Decide before play what banked the heat at the bottom of the gradient — a dormant elemental, a buried forge from an age nobody remembers, or nothing at all, just glass that remembers fire the way old wood remembers the axe. None of it needs revealing on this visit. The gradient is the hook; the answer is the second visit.",
+      "Push the heat as a real cost past two hundred feet: exhaustion, water skins gone hot and foul, glass too hot to grip bare-handed. Rule the deep chambers as difficult terrain for anyone in metal armour. This is a hard site because the environment is the antagonist — there is no monster waiting in the dark unless you put one there.",
+      "Special element: **The cavern runs hotter with depth, and the heat is stored, not made.** No fire burns down there, no mineral vein explains it. The glass holds warmth the way a hearth does after the flame has gone out — and the deeper you go, the older and stronger that borrowed warmth gets. Whatever banked it did so a very long time ago, and it has not cooled."
     ],
-    "region": "state4",
-    "difficulty": "hard",
     "tier": "2",
     "biome": "cavern",
     "mood": "wondrous",
-    "body": [
-      "A cave of soot-black crystal that holds warmth like a hearth. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "hard",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a mining concern wants a survey team to find how deep the warm seam runs; a scholar insists the reversed gradient breaks a law of nature and wants first-hand notes; the prospector who went furthest in came back and will not say what the heat sounded like.",
+      "Complications: shards fracture underfoot and open thin cuts that cauterise as they open; the thickened air slows any spell needing a clear breath; torches sweat and gutter near the hottest walls.",
+      "Rewards: raw emberglass sells well to jewellers and alchemists for its colour; a fist-sized shard cut from the deep chambers stays warm in the hand for days."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "cavern",
+      "heat-hazard",
+      "crystal",
+      "exploration",
+      "hazardous-terrain",
+      "survey"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "hearthstone-of-emberglass",
+      "cavern-hazards"
+    ],
+    "created": "2026-08-05",
+    "updated": "2026-08-05"
   },
   {
     "id": "market-of-quiet-coins",
@@ -235,81 +235,81 @@
   },
   {
     "id": "red-stag-trail",
-    "title": "The Red Stag Trail",
-    "summary": "A game path that rearranges itself to lead hunters toward what they most want.",
-    "tags": [
-      "forest",
-      "fey",
-      "temptation",
-      "tracking",
-      "ancient-woods"
+    "title": "Red Stag Trail",
+    "special_element": "The trail leads each walker, separately, toward the thing they most want — and it splits the party without any of them noticing. Five people set off shoulder to shoulder, certain they never lost sight of each other, and arrive at five different places hours apart. Only afterward, comparing the walk, does anyone realise they were never on the same path at all.",
+    "summary": "Category: Location · Tier: 2 · Biome: forest · Difficulty: medium · Mood: mysterious",
+    "body": [
+      "Category: Location · Tier: 2 · Biome: forest · Difficulty: medium · Mood: mysterious",
+      "The trail is barely a trail — a deer-track of packed leaf-mould, silent underfoot, smelling of wet bark and something sweeter beneath it, like fruit left too long in the sun. Sunlight comes down in coin-sized patches. And somewhere behind you, without anyone ever deciding to stop talking, your companions have gone quiet.",
+      "The Red Stag Trail runs through a stretch of ancient forest that no two maps agree on. Locals know not to walk it alone, and know better than to walk it in a hurry. It is not lost — it simply does not go where you think it goes.",
+      "Travellers describe walking single file for an afternoon and arriving somewhere none of them meant to. A hunter chasing a stag comes out at the edge of a lake he swears was never in this wood. A merchant taking a shortcut to market steps out an hour later at his own front door.",
+      "Nothing on the trail attacks. Whatever tends it wants people walking, not running.",
+      "Decide before play what each PC's \"want\" resolves to — keep it small and personal (a person, a place, an answer), not campaign-ending. Use the split to peel one PC away for a private scene, or to quietly reunite the party if their wants align. Never announce the split; let the players find it when someone says \"wait — when did we get here?\" Variant: run the trail as a single shared path that leads only to the party's loudest want, if you'd rather not break the group up.",
+      "Special element: The trail leads each walker, separately, toward the thing they most want — and it splits the party without any of them noticing. Five people set off shoulder to shoulder, certain they never lost sight of each other, and arrive at five different places hours apart. Only afterward, comparing the walk, does anyone realise they were never on the same path at all."
     ],
-    "region": "state7",
-    "difficulty": "medium",
     "tier": "2",
     "biome": "forest",
     "mood": "mysterious",
-    "body": [
-      "A game path that rearranges itself to lead hunters toward what they most want. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "medium",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a search party insists their missing hunter \"just walked into the trees and never came out the other side\"; a merchant caravan hires an escort through the wood and doesn't know to warn anyone.",
+      "Complications: a PC's own want pulls them off course mid-scene, with no moment where the group actually separated; whatever the party is chasing may have left the same way.",
+      "Rewards: a walker who reaches what they wanted sometimes finds it waiting, faintly changed — a lost person, a lost coin, a lost certainty — and the wood asks nothing for it. Yet."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "forest",
+      "fey",
+      "ancient-woods",
+      "travel-encounter",
+      "temptation"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "what-the-stag-wants",
+      "the-fey-bargain-of-the-stag",
+      "ancient-woods-hoard",
+      "forest-rumours"
+    ],
+    "created": "2026-08-04",
+    "updated": "2026-08-04"
   },
   {
     "id": "library-of-salt",
     "title": "Library of Salt",
-    "summary": "A collapsed archive where pages have turned to brittle salt-sheets.",
-    "tags": [
-      "lore",
-      "ruins",
-      "archive",
-      "hazard",
-      "salt"
+    "special_element": "Every shape in the salt drifts was once a person who read too long. The library preserves its readers the way it preserves its pages — slowly, from the fingertips inward — and every hour spent absorbed in a text is an hour spent becoming one more curve in the floor. There is no ritual and no curse to break. It is simply patient, and it is still hungry.",
+    "summary": "Category: Location · Tier: 3 · Difficulty: hard · Biome: ruins · Mood: melancholy",
+    "body": [
+      "Category: Location · Tier: 3 · Difficulty: hard · Biome: ruins · Mood: melancholy",
+      "Salt has swallowed the Library of Salt. The shelves are sagging white ridges now, crusted thick as bone, sloping down into drifts that reach the knee. The air tastes of brine before it tastes of anything else — dry, mineral, catching at the back of the throat with every breath. The drifts underfoot do not shift like sand. They hold their shape: a curve here like a bent shoulder, a hollow there like a cupped hand, pressed into the salt and never disturbed. No wind moves through the broken roof, and yet, somewhere below the floor, the salt sighs.",
+      "Before the collapse this was a great reading hall — vaulted stone, shelving from floor to ceiling, a place scholars travelled seasons to reach. What toppled it wasn't fire or war. The salt came from within, seeping up through the floor stones over decades: first a fine crust on the lowest shelves, then drifts that buried whole aisles. Most of the books are gone, dissolved or entombed. What's left are salt-white pages, brittle as old bone, scattered loose across the ridgelines.",
+      "The hall is treacherous. Ceiling sections groan and shed dust at a raised voice, and a drift-bank can slump and swallow a careless step. Torch flame leans and gutters in the salt-damp air for no reason the DM needs to explain.",
+      "Anyone who stays and reads — really reads, page after page, hour after hour — starts to notice their own knuckles drying, their voice roughening like a throat full of dust. The library does not want visitors. It wants readers who don't leave.",
+      "Decide before play how long a character can read before the salt starts taking them — a clean, visible countdown (one mark per hour of in-fiction reading) works better than a hidden save. Let the players watch a companion's hand pale and stiffen well before it matters mechanically; the horror is in seeing it happen, not in the moment it's confirmed. This is the site the *Salt That Was Words* and the *Salt-Sheet Riddle* were dug out of, not a retelling of either: the lore is where the salt came from, the riddle is one page read closely, and this place is what the reading costs by the hour. Run it cold — neither is required at the table.",
+      "Special element: Every shape in the salt drifts was once a person who read too long. The library preserves its readers the way it preserves its pages — slowly, from the fingertips inward — and every hour spent absorbed in a text is an hour spent becoming one more curve in the floor. There is no ritual and no curse to break. It is simply patient, and it is still hungry."
     ],
-    "region": "state8",
-    "difficulty": "hard",
     "tier": "3",
     "biome": "ruins",
     "mood": "melancholy",
-    "body": [
-      "A collapsed archive where pages have turned to brittle salt-sheets. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "hard",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a scholar's family hires the party to retrieve someone who went in three weeks ago and never came out · a fragment of salt-page turns up in a market stall, still faintly legible.",
+      "Complications: a character becomes absorbed in a text and loses track of time — track it openly, in hours, not narrative beats · the ceiling sheds a section if anyone shouts or fights inside.",
+      "Rewards: intact salt-pages hold genuinely lost knowledge, worth real coin to the right buyer · one drift, excavated carefully, yields a reader's untouched satchel — their tools, their notes, their name."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "ruins",
+      "hazard",
+      "salt",
+      "library",
+      "curse",
+      "high-level"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "the-salt-that-was-words",
+      "salt-sheet-riddle",
+      "the-salt-archives-debt"
+    ],
+    "created": "2026-08-06",
+    "updated": "2026-08-06"
   },
   {
     "id": "hollow-ward-post",
