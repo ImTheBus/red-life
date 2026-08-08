@@ -355,40 +355,44 @@
   {
     "id": "black-lantern-bay",
     "title": "Black Lantern Bay",
-    "summary": "A sheltered bay where lanterns burn with cold light and ships anchor without ropes.",
-    "tags": [
-      "harbor",
-      "ghosts",
-      "navigation",
-      "secrets",
-      "pirate"
+    "statblock": "AC 15 (natural armor) · HP 82 (11d10+22) · Speed 0 ft, swim 40 ft\nSTR 18  DEX 12  CON 14  INT 10  WIS 16  CHA 13\nSkills: Perception +7, Stealth +5 (in water)\nKey action: Anchoring Grasp — as a reaction, the Warden holds a Large or smaller vessel or creature in place; moving it at all that turn requires a Strength saving throw.\nCR 5  (scale: easy = CR2, hard = CR7 — see Difficulty)",
+    "special_element": "No ship in Black Lantern Bay is ever tied down, and no ship has ever drifted. A barrel dropped over the side rides off with the tide like anything else on ordinary water. A hull with its ropes coiled uselessly on deck stays exactly where it was set, through the same storms that have splintered piers up and down the coast. Something under the bay is holding the ships — deliberately, and gently. It wants them kept, not sunk. Which means every departure from this harbour is granted, and can be refused.",
+    "summary": "Black Lantern Bay Category: Location · Region: state10 · Difficulty: hard · Mood: unsettling",
+    "body": [
+      "Black Lantern Bay Category: Location · Region: state10 · Difficulty: hard · Mood: unsettling",
+      "The bay is quiet in a way harbours never are. Lanterns hang from the mooring posts and the bows of every ship, burning pale blue-white, and the air around them is colder than the air around them has any right to be. Frost feathers the mooring posts. It does not feather the ropes, because there are no ropes — every hull sits motionless at its berth, untied, unanchored, held still by nothing you can see.",
+      "Black Lantern Bay is the deepest natural harbour on this coast: sheltered water, easy soundings, room for forty hulls. It should be the busiest port for sixty miles. It is half-empty.",
+      "The lanterns are lit at dusk, and nobody has seen a hand do it. Touch one and the glass stings bare skin like packed snow, though the flame inside gutters and leans the way any ordinary fire does. Walk the pier from shore to end and the cold deepens with every plank, until the last twenty feet are winter regardless of the season.",
+      "Fish still school under the piers. Gulls still wheel and squabble over the shallows. Sailors who berth here speak of the place in short sentences and never sleep below deck two nights running — and they all know the harbourmaster's rule, which is that a ship leaves when the bay is finished with it and not before.",
+      "Decide before play what is anchoring the ships — a bound spirit, a pact the harbour town made generations ago and has forgotten the terms of, or something colder and less explicable. The answer never has to be spoken at the table. Play the bay as something making a decision about the party, and let them feel it decide whether they may leave.",
+      "If your table has met ships riding ropeless elsewhere on this coast, keep the distinction sharp: out there it is an incident and a mystery, here it is the standing condition of the harbour and the reason the berths are half-empty.",
+      "*Variant:* if you want the bay hostile rather than possessive, the presence is not keeping ships — it is collecting them, and the half-empty berths are the ones it has already finished with.",
+      "Special element: No ship in Black Lantern Bay is ever tied down, and no ship has ever drifted. A barrel dropped over the side rides off with the tide like anything else on ordinary water. A hull with its ropes coiled uselessly on deck stays exactly where it was set, through the same storms that have splintered piers up and down the coast. Something under the bay is holding the ships — deliberately, and gently. It wants them kept, not sunk. Which means every departure from this harbour is granted, and can be refused."
     ],
-    "region": "state10",
-    "difficulty": "hard",
     "tier": "3",
     "biome": "coast",
     "mood": "unsettling",
-    "body": [
-      "A sheltered bay where lanterns burn with cold light and ships anchor without ropes. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "hard",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a captain pays well to learn why their ship will not leave its berth on their word alone; a body washes up in high summer with frost damage to the hands and face.",
+      "Complications: cutting a ship free by force draws the bay's attention — the cold deepens and the lanterns nearest that vessel gutter out, one by one, roughly one a minute. When the last of them dies the bay stops keeping that hull: it goes where the tide takes it, crew aboard or not, and it will never hold at this berth again. Anything thrown overboard after dark does not always sink.",
+      "Rewards: guaranteed harbour against any storm, for those the bay accepts — a hull it is holding cannot be driven aground, boarded off its moorings, or swept out; a salvager's fortune still in the holds of ships nobody has been brave enough to fully unload."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "harbor",
+      "coast",
+      "haunting",
+      "salvage",
+      "cold",
+      "ships"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "ropeless-anchorage",
+      "the-cold-light-drownings",
+      "cold-light-rising",
+      "coast-tide-weather"
+    ],
+    "created": "2026-08-08",
+    "updated": "2026-08-08"
   }
 ]
