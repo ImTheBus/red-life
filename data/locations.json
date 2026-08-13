@@ -158,41 +158,45 @@
   {
     "id": "market-of-quiet-coins",
     "title": "Market of Quiet Coins",
-    "summary": "A night market where sellers speak only in gestures and prices change with secrets.",
-    "tags": [
-      "market",
-      "social",
-      "secrets",
-      "bargains",
-      "night"
+    "special_element": "Price here is set by the secret a buyer is carrying, not by their coin. A vendor can tell by looking whether you hold something worth knowing, and the price drops the nearer you come to saying it aloud. Pay in coin alone and everything costs full, or more. Let something slip — even sideways, even by accident — and the vendor's ledger has already written it down before you finish the sentence.",
+    "summary": "Category: Location · Region: state5 · Difficulty: medium · Mood: mysterious",
+    "body": [
+      "Category: Location · Region: state5 · Difficulty: medium · Mood: mysterious",
+      "The Market of Quiet Coins opens after dark, in a square that carries no name on any daylight map. The stalls light one at a time, each under a single low lantern, and the air runs hot oil, then brine, then — underneath both — ink. Nobody calls out their wares. The vendors wait for you to come to them, and they are already turning toward you before you move.",
+      "By day the square is nothing: cracked flagstones, a dry fountain, three shuttered fronts. After dusk the merchants do not arrive so much as become present, laying out dried fish and good rope and plain daggers beside a bottled storm and a key that opens locks it has never touched.",
+      "Buyers drift between the stalls without speaking. The silence is the market's working condition, not its atmosphere — haggling here is not done with words, and a vendor who hears too much talk simply folds the cloth over their goods.",
+      "Ask the price of anything and the vendor names a number, holds your face a beat too long, and quietly names a smaller one.",
+      "Decide before play what the market is fishing for — a named NPC's whereabouts, a player character's hidden guilt, one piece of world-shaking lore — and give one vendor that exact target. Play the silence straight: no vendor explains the rule, no vendor asks a question, and none of them ever say the word \"secret.\" The players should work it out from the second discount.",
+      "This page is the market as a place to *buy* — the pressure is on what the party is willing to say out loud; run **The Night Market Heist** instead when they mean to take something off the stalls rather than pay for it. *Variant: if you want the market hostile rather than eerie, let a vendor read a secret off a character who never speaks at all — purchase by proximity.*",
+      "Special element: Price here is set by the secret a buyer is carrying, not by their coin. A vendor can tell by looking whether you hold something worth knowing, and the price drops the nearer you come to saying it aloud. Pay in coin alone and everything costs full, or more. Let something slip — even sideways, even by accident — and the vendor's ledger has already written it down before you finish the sentence."
     ],
-    "region": "state5",
-    "difficulty": "medium",
     "tier": "2",
     "biome": "urban",
     "mood": "mysterious",
-    "body": [
-      "A night market where sellers speak only in gestures and prices change with secrets. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "medium",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a party member's belonging is laid out for sale here four days before it is stolen; a vendor offers a discount steep enough to be an accusation, because they have named the exact secret they want.",
+      "Complications: a sold secret belongs to the stall, and the stall sells it on to whoever comes next; the market is gone at first light, and so is any bargain left half-struck.",
+      "Rewards: goods that exist nowhere else; information bought the same way it was sold — one secret out for one secret in."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "night-market",
+      "secrets",
+      "urban",
+      "social",
+      "bargain",
+      "city"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "the-night-market-heist",
+      "the-quiet-coin",
+      "the-quiet-coin-mint",
+      "the-mint-is-a-person",
+      "night-market-wares",
+      "vance-quill-pardon-broker"
+    ],
+    "created": "2026-08-11",
+    "updated": "2026-08-11"
   },
   {
     "id": "tideworn-chapel",
