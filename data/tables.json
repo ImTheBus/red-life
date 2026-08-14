@@ -37,5 +37,141 @@
     "related": [],
     "created": "2026-06-07",
     "updated": "2026-06-07"
+  },
+  {
+    "id": "coast-tide-weather",
+    "title": "Coast & Tide Weather (d12)",
+    "special_element": "Roll a 12 and the coast takes everything spoken for sixty seconds and hands it back at full volume. That makes the Hush a decision rather than a mood: hold your tongue for a minute, or let the sea repeat you to whoever is standing on the shingle. Warnings, plans, names, the price someone agreed to pay, the thing one player has been carefully not saying — the sea is not choosy and it does not paraphrase.",
+    "summary": "Category: Random Table · Biome: coast",
+    "body": [
+      "Category: Random Table · Biome: coast",
+      "Salt on the lips, gulls arguing overhead, the suck and slap of water working at the rock. The sea sets the mood of a shoreline scene before anyone at the table opens their mouth.",
+      "1. Flat calm. Glassy water, no wind. Sound carries too well — a conversation two hundred feet off comes across word for word.",
+      "2. Onshore breeze, cold. Salt spray stings any skin left bare.",
+      "3. Fog bank rolls in off the water. Visibility down to 30 feet inside ten minutes.",
+      "4. Warm rain, straight down, no wind. The sea stays glassy under it.",
+      "5. Squall line on the horizon, closing. Thirty minutes until it lands.",
+      "6. Low tide, further out than the oldest local has seen it. Wet sand stretching on and on.",
+      "7. Bioluminescent bloom. After dark, every wave breaks in cold blue light.",
+      "8. Dead low pressure. Ears pop. The gulls go quiet and settle on the water instead of flying.",
+      "9. Riptide — a flat, oddly smooth channel cutting out through the surf.",
+      "10. Heavy swell with no wind behind it. Boats roll at anchor with nothing pushing them.",
+      "11. Storm surge. Water climbs past the usual line, shoving wrack and driftwood inland.",
+      "12. **The Hush.** Every sound of the sea stops at once — wave, gull, current, above the surface and below it — for one full minute. Nothing said aloud in that minute makes any sound at all. Then the sea starts again, and the first wave to break gives the words back in the speaker's own voice, loud enough to carry the length of the shore.",
+      "Rows 1–11 are dressing. Use them to colour travel, set visibility, or tilt a scene's mood; none needs a ruling of its own. Row 12 is the one that bites. Run the minute close to real time: stop narrating, let the silence sit, and let the players choose whether to talk. Then read back what they said, verbatim, and let the shore hear it. Cost, when it lands: anything within earshot of the water learns what was said. Pursuers get a bearing, an NPC in the scene gets the secret, a negotiation gets the party's actual number. Verbal spell components fail inside the Hush and do not go off late — the words come back without the magic. The Hush needs no explanation and offers none. If you want one, decide privately what it is and hold that answer every time you roll it; the cost above works either way. Row 7 is ordinary sea-fire, not the cold light of the drownings further up the coast — say so at the table, unless you want it to be. Re-roll or reskin any row already contradicted by the scene; don't roll fog into weather you've described as clear.",
+      "Special element: Roll a 12 and the coast takes everything spoken for sixty seconds and hands it back at full volume. That makes the Hush a decision rather than a mood: hold your tongue for a minute, or let the sea repeat you to whoever is standing on the shingle. Warnings, plans, names, the price someone agreed to pay, the thing one player has been carefully not saying — the sea is not choosy and it does not paraphrase."
+    ],
+    "biome": "coast",
+    "tags": [
+      "coast",
+      "weather",
+      "fog",
+      "tide",
+      "sound",
+      "random-table",
+      "travel-encounter"
+    ],
+    "related": [
+      "the-cold-light-drownings",
+      "cold-light-rising",
+      "the-quiet-coin",
+      "the-salt-that-was-words",
+      "under-the-bridge",
+      "black-lantern-bay",
+      "tideworn-chapel"
+    ],
+    "created": "2026-08-12",
+    "updated": "2026-08-12"
+  },
+  {
+    "id": "forest-rumours",
+    "title": "Forest Rumours (d10)",
+    "summary": "Category: Table · Region: — · Biome: forest · Mood: mysterious",
+    "body": [
+      "Category: Table · Region: — · Biome: forest · Mood: mysterious",
+      "The camp cook stirs the pot without looking at it, listening instead to whoever just came in off the Red Stag Trail. Woodsmoke, wet wool, the fire popping. Half of what gets said around this fire turns out to be true, and nobody agrees on which half.",
+      "**d10 — roll or pick one:**",
+      "**The one special element:** before the session, roll d10 twice in secret. Those two rumours are the *same true thing*, seen from two sides — everything else on this table is wrong. Both truths sit in plain sight among eight lies, and the party has to spend to find out which. Chasing a false rumour costs a day in the woods (a night camped rough, one exhaustion check or one wandering-encounter roll, DM's call). Pressing the same local twice about the same false lead costs more than time: word gets round that strangers are asking, and whatever the true pair is about starts asking back. When the party finally chases one of the two real ones, tell them plainly that this one holds — and let them work out for themselves which other line on the list has been describing it all along.",
+      "**DM notes (do not read aloud):** the pair is the whole trick, so pick it deliberately if the dice give you a dull one — 5 and 9 make a circle that hunts by name; 2 and 4 make a table set for someone who came back; 1 and 7 make a wood quietly reorienting itself around one oak. Write the truth of the pair down in one sentence before play so you can't be talked out of it mid-scene. Recommended anchor is entry 10, which links to the Red Stag Trail's self-rearranging pull (`related: red-stag-trail`); entry 8 pays into the Stag's older bargain (`related: the-fey-bargain-of-the-stag`) if you want the fey reading. This table is *talk*, not events — nothing here happens to the party until they go looking for it, which is what separates it from a road-events table. Run it as a rumour-mill social scene, and let the eight lies stay lies; a wood where everything whispered turns out to be true isn't mysterious, it's just a quest board.",
+      "1. A woodcutter swears his axe keeps drifting toward one particular oak, no matter where he starts the swing.",
+      "2. Someone left a full dinner setting at the fork in the old trail — plates, cups, no chairs. Still warm this morning.",
+      "3. The trappers won't say why they stopped running lines past the third creek crossing. They just won't.",
+      "4. A girl walked out of the tree line three days ago in clothes two generations out of fashion. She hasn't aged a day since, by her own account.",
+      "5. Birdsong stops dead in a perfect circle somewhere past the ridge. The circle moves. It's always the same size.",
+      "6. A hunter found his own boot prints leading him back to his own camp — freshly made, before he'd walked that way at all.",
+      "7. The old shrine stones past the tree line have started facing a new direction. Nobody moved them.",
+      "8. A merchant paid in coin that turned to leaves by the time he got it home — and he swears he'd take it again.",
+      "9. Something out there answers to names it hasn't been told yet.",
+      "10. The Red Stag Trail took a farmhand somewhere he won't name, and he won't go near the trees again. Not fear, exactly. More like he's afraid of what he'd get if he asked twice."
+    ],
+    "biome": "forest",
+    "tags": [
+      "rumor-table",
+      "forest",
+      "ancient-woods",
+      "travel-encounter",
+      "fey",
+      "mystery"
+    ],
+    "related": [
+      "red-stag-trail",
+      "the-fey-bargain-of-the-stag",
+      "what-the-stag-wants",
+      "ancient-woods-hoard",
+      "frontier-travel-events"
+    ],
+    "created": "2026-08-13",
+    "updated": "2026-08-13"
+  },
+  {
+    "id": "night-market-wares",
+    "title": "Night-Market Wares (d20)",
+    "special_element": "The stalls remember rolls, not faces. Roll the same result twice for the same character across visits and that stallholder opens with the secret paid last time — said back word for word, unprompted, before naming a price for anything else.",
+    "summary": "Category: Random Table · Biome: urban · Tags below",
+    "body": [
+      "Category: Random Table · Biome: urban · Tags below",
+      "Lantern-glass in a dozen colours, brine and hot wax on the air, and coins that vanish into a palm without ever being counted. Ask a stallholder for a price and they tilt their head, like they're listening for one instead.",
+      "Roll once per customer, or once per stall if the party is browsing together.",
+      "1. A compass that points at the thing you're most afraid of losing — costs the name of who you'd protect first.",
+      "2. A jar of bottled fog from a fight you survived — costs the detail of how you nearly didn't.",
+      "3. A single boot, worn through at the heel — costs the name of whoever's still looking for its owner.",
+      "4. A folding knife that never needs sharpening — costs a scar's true story.",
+      "5. Dried fish that tastes of somewhere you've never been — costs the place you're actually from.",
+      "6. A tin whistle that plays one note wrong — costs the tune you can't stop humming.",
+      "7. A rope that always coils clockwise — costs a promise you broke and never admitted.",
+      "8. A candle that burns silver-blue — costs the name of someone you'd rather forget.",
+      "9. A pair of dice, always warm — costs your worst bet, told in full.",
+      "10. A cracked mirror shard — costs what you saw in it once and never repeated.",
+      "11. A child's drawing, no child claims it — costs who you think drew it.",
+      "12. A key to a door that doesn't exist yet — costs what you hope is behind it.",
+      "13. A love letter, unsent, unsigned — costs the name it was meant for.",
+      "14. A vial of tears, sealed with wax — costs whose they were.",
+      "15. A map with one street missing — costs why you avoid that street.",
+      "16. A wedding ring, plain, still warm — costs whether you'd take it off if it were yours.",
+      "17. A deck of cards missing the ace of hearts — costs who has it now.",
+      "18. A bell that only rings for you — costs why you'd need warning.",
+      "19. A flask that's never empty, never full — costs the last thing you drank to forget.",
+      "20. Nothing on the table. The stallholder just watches, and asks what you're really here for.",
+      "Stock a Market of Quiet Coins scene from this table instead of inventing prices on the fly. Track rolled results per character across sessions if you want the callback; result 20 is the market testing whether a repeat customer will pay again. The cost is always information the character says out loud. Let the player decide how much they reveal, and let the stallholder lean in when they're specific. Never let a stall take coin instead. If a player insists, the item simply isn't for sale to them tonight.",
+      "Special element: The stalls remember rolls, not faces. Roll the same result twice for the same character across visits and that stallholder opens with the secret paid last time — said back word for word, unprompted, before naming a price for anything else."
+    ],
+    "biome": "urban",
+    "tags": [
+      "night-market",
+      "urban",
+      "social",
+      "secrets",
+      "bargains",
+      "random-table"
+    ],
+    "related": [
+      "market-of-quiet-coins",
+      "the-quiet-coin",
+      "the-night-market-heist",
+      "the-quiet-coin-mint",
+      "the-mint-is-a-person"
+    ],
+    "created": "2026-08-14",
+    "updated": "2026-08-14"
   }
 ]
