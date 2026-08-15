@@ -173,5 +173,40 @@
     ],
     "created": "2026-08-14",
     "updated": "2026-08-14"
+  },
+  {
+    "id": "cavern-hazards",
+    "title": "Cavern Hazards (d8)",
+    "special_element": "The cave answers noise. Keep a running tally of loud acts — combat, shouting, a forced door, a torch struck against stone. At three marks the next roll on this table lands one step worse than written. At five, results 6 and 8 stop being flavour: the echo is following them, and the breathing has a body — it takes the party's only clear exit and holds it, and they buy their way past with silence, with light, or with blood.",
+    "summary": "Category: Random Table · Biome: cavern · Tier: 1–2",
+    "body": [
+      "Category: Random Table · Biome: cavern · Tier: 1–2",
+      "Water ticks somewhere unseen. Stone-cold air pushes past in a slow draft, smelling of wet rock and old iron. Every footstep comes back a half-beat late — as if the dark listens before it answers.",
+      "1. A ceiling seam lets go — scree and fist-sized rock rattle down over a ten-foot spread.",
+      "2. A crevice underfoot is already flooding; cold water climbs past the ankles in seconds.",
+      "3. Bruise-blue fungus carpets the next passage; brushing it puffs numbing spores into the air.",
+      "4. A flowstone shelf, slick as glass, splits underfoot at the lip of a drop.",
+      "5. The air goes stale — torches gutter low, breath comes short, thinking comes slow.",
+      "6. Footsteps return wrong: two beats where there should be one, out of an empty passage.",
+      "7. A crystal vein hums at the pitch of a struck weapon, then shears into choking, glittering dust.",
+      "8. The draft dies. In the sudden quiet, something breathes that isn't the party.",
+      "Decide before play what the breathing thing in result 8 is, and what it wants: passage, quiet, or one of them. Pick one of the three and hold to it — the escalation only pays if the answer is already fixed when the fifth mark lands. Whatever you choose, it must be beatable without a fight. Dousing every light, splitting the party's noise between two passages, or surrendering the loudest thing they carry all count as paying the toll. Clear the tally only after a full turn of true silence — no torches struck, no arguing, no doors. Stopping the talking is not enough. On a repeat, vary the detail rather than reading the same line twice. The cave should not repeat itself. Mark noise openly at the table if you want the pressure felt; keep it hidden if you want the fifth mark to land cold.",
+      "Special element: The cave answers noise. Keep a running tally of loud acts — combat, shouting, a forced door, a torch struck against stone. At three marks the next roll on this table lands one step worse than written. At five, results 6 and 8 stop being flavour: the echo is following them, and the breathing has a body — it takes the party's only clear exit and holds it, and they buy their way past with silence, with light, or with blood."
+    ],
+    "biome": "cavern",
+    "tags": [
+      "cavern",
+      "hazard",
+      "random-table",
+      "underground",
+      "low-level"
+    ],
+    "related": [
+      "emberglass-cavern",
+      "the-hollow-cantor",
+      "hearthstone-of-emberglass"
+    ],
+    "created": "2026-08-15",
+    "updated": "2026-08-15"
   }
 ]
