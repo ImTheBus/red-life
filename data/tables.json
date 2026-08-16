@@ -208,5 +208,47 @@
     ],
     "created": "2026-08-15",
     "updated": "2026-08-15"
+  },
+  {
+    "id": "frontier-travel-events",
+    "title": "Frontier Travel Events (d12)",
+    "special_element": "Rows 3 and 11 are the same mark, re-cut closer each time the party passes. Three marks is the whole clock: the first claims a stretch of road, the second claims the road ahead of them, and the third is cut wherever the party finally stops — the gatepost of the town they were making for, the tree they tied the horses to. The night after the third notch, something takes one thing left outside the firelight and leaves three fresh cuts where it stood.",
+    "summary": "Category: Random Table · Biome: frontier",
+    "body": [
+      "Category: Random Table · Biome: frontier",
+      "The road between settlements is long, empty, and never quite as empty as it looks. Cold ash where no fire should be. A bell somewhere with no tower under it. Tracks that turn to face you, then stop. Roll when a session needs a beat on the road.",
+      "1. An overturned cart blocks the track, one wheel still spinning. The horse is gone; the kettle on the cook-fire is still steaming.",
+      "2. A piper practices badly on a hilltop, out of tune and out of time. The moment anyone looks up, the sound stops.",
+      "3. A fence post is cut with three deep notches, the sap still wet — though no axe has touched this stretch in years.",
+      "4. A line of dogs crosses the road nose-to-tail, tails low, and will not set a paw past the mile-marker ahead.",
+      "5. A merchant caravan has camped early, guards doubled at midday. None of them will say why once the sun goes down.",
+      "6. A trail of coins runs off the road into the trees, one every twenty paces, newest-minted first.",
+      "7. An old woman sells water from a well that appears on no map. She won't take coin — only a name, given freely.",
+      "8. A standing stone lies freshly toppled. The grass crushed beneath it is bone-pale, as though it had lain there a hundred years by morning.",
+      "9. Birdsong cuts out along a quarter-mile stretch, then picks up again exactly where it stopped, mid-note.",
+      "10. A cairn of stacked stones sits warm to the touch on a morning cold enough to see your breath.",
+      "11. Another fence post bears three notches, cut fresh — the same hand, the same shape, a full day's travel nearer to wherever the party is going.",
+      "12. Riders pass the other way in total silence. Every one of them nods once, like they already know you.",
+      "Treat rows 3 and 11 as one motif, not two results, and keep a tally across trips: first notch, second notch, third. A second roll after the party has already seen the first means the mark has moved closer — it never resets, and it never appears further back. The third notch is the payoff, and it costs something specific. Pick the loss before it lands: a horse, a hireling's pack, the hireling. It goes cleanly and quietly, and the notches are cut where it was standing. Nothing is hurt on the road itself; the road is only where the counting happens. The party's out is the wet sap. While it's still running — half a day, no more — the cut can be backtracked off the road, and they get the meeting on their terms instead of at three. Leaving the road costs them the day's travel and whatever the day's travel was for. That's the choice: pay a day now, or pay the third notch later. Decide before play what cuts the marks — a scout, a fey, something that hasn't shown itself — but never answer it while the party is walking. The road doesn't explain; only the hunt does. The other ten rows are disposable colour and can repeat across trips without consequence. Row 1 in particular is nobody's story — the cart is abandoned, the kettle just hasn't cooled, and no one is coming back for either. Only the notches recur with meaning.",
+      "Special element: Rows 3 and 11 are the same mark, re-cut closer each time the party passes. Three marks is the whole clock: the first claims a stretch of road, the second claims the road ahead of them, and the third is cut wherever the party finally stops — the gatepost of the town they were making for, the tree they tied the horses to. The night after the third notch, something takes one thing left outside the firelight and leaves three fresh cuts where it stood."
+    ],
+    "biome": "frontier",
+    "tags": [
+      "frontier",
+      "travel-encounter",
+      "road",
+      "random-table",
+      "stalking"
+    ],
+    "related": [
+      "ambush-at-the-tithe-bridge",
+      "the-quiet-coin",
+      "what-the-stag-wants",
+      "red-stag-trail",
+      "coast-tide-weather",
+      "cavern-hazards"
+    ],
+    "created": "2026-08-16",
+    "updated": "2026-08-16"
   }
 ]
