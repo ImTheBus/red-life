@@ -398,5 +398,92 @@
     ],
     "created": "2026-08-08",
     "updated": "2026-08-08"
+  },
+  {
+    "id": "the-causeway-at-greymarch",
+    "title": "The Causeway at Greymarch",
+    "special_element": "The ground hasn't forgotten it was a riverbed. Anything set down inside the old ford line — a dropped coin, an arrowhead, a boot heel pressed too long — sinks straight through the topsoil and is gone, swallowed the way a real current would take it, while the field above stays bone dry and the wheat never shows a mark. The Order isn't the haunting. The water is still there, underneath, exactly where it used to run.",
+    "summary": "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+    "body": [
+      "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+      "Wheat runs waist-high and gold to the horizon — except along one line, where it doesn't. There the stalks bend and part the way a current bends around a boot, though no water has run here in three hundred years. Stand at the field's edge at dusk and you'll hear boots strike stone. Then you'll see them: a dozen men in old plate, formed up in a rank with no living officer, guarding a crossing that isn't there.",
+      "Three centuries ago the Greymarch was a river, and this was its only ford. The Unfallen Order mustered here to hold the crossing against something the chronicles never name, and by every account they held it. The river silted out a generation later. Farmers ploughed the bed under.",
+      "What's left is ordinary wheat and an old rank of the Order, still turning out to guard a line of water that dried up before their own graves did.",
+      "The soldiers don't attack, don't speak first, and don't leave the exact width of the old ford — forty paces, no more. Approach from the field and they part like sentries used to a supply wagon. Try to cross that forty-pace strip on foot and they close it, polite and immovable, until you go around.",
+      "Decide before play whether this rank is the Unfallen Order still mustering, or a detachment left behind and forgotten by the Order proper — that changes whether word of trouble at the causeway ever reaches anyone who could answer it.",
+      "The buried river is mechanical, not dressing: treat the forty-pace strip as submerging terrain any time something is deliberately pushed into it, whatever the topsoil looks like.",
+      "If your table has already walked the Skull Marsh Causeway, name the difference out loud: there the water is visible and the road is sinking into it, and the danger is what you can see. Here the road is gone, the water is invisible, and the danger is ground that behaves like a current when nothing about it looks wet.",
+      "Special element: The ground hasn't forgotten it was a riverbed. Anything set down inside the old ford line — a dropped coin, an arrowhead, a boot heel pressed too long — sinks straight through the topsoil and is gone, swallowed the way a real current would take it, while the field above stays bone dry and the wheat never shows a mark. The Order isn't the haunting. The water is still there, underneath, exactly where it used to run."
+    ],
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "mysterious",
+    "difficulty": "easy",
+    "complications": [
+      "Hooks: A farmer's son waded into the wheat on a dare and hasn't come out; a merchant lost a strongbox \"into the ground\" at the ford line and wants it back.",
+      "Complications: Digging along the ford line collapses the soil into open, genuinely wet channel for a few minutes before it seals — anyone standing on the line when it opens goes under with the strongbox.",
+      "Rewards: Three centuries of lost goods sit in the buried channel — coin, a rusted standard of the Order, and, deeper down, a name-etched pauldron matching no soldier standing guard above."
+    ],
+    "tags": [
+      "haunted-ford",
+      "ghost-soldiers",
+      "farmland",
+      "buried-river",
+      "travel-encounter",
+      "low-level"
+    ],
+    "related": [
+      "skull-marsh-causeway",
+      "the-unfallen-order",
+      "ser-aldous-the-unfallen",
+      "ashwell-chapel",
+      "the-water-came-later",
+      "old-stone-bridge"
+    ],
+    "created": "2026-08-17",
+    "updated": "2026-08-17"
+  },
+  {
+    "id": "ashwell-chapel",
+    "title": "Ashwell Chapel",
+    "special_element": "The fifth mold is empty and uncast, and it is warm — blood-warm at rest, and hot enough to sting when the person it is waiting for comes within arm's reach of it. It is a plain offer, and the clerics will make it plainly: press a palm into the wax and let it take the cast. A fifth candle is lit that hour, and the Order holds vigil for you as it holds vigil for Aldous — die once, and the ground gives you back within a mile of wherever you fell. The price is the candle. It must burn, tended, for as long as you want the return. The Order tends it at no charge only while the Order trusts you. Let it gutter — by their choice or your enemies' — and the return is spent without ever being used.",
+    "summary": "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+    "body": [
+      "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+      "The chapel of the Unfallen Order sits low against the frontier hedgerow, grey stone furred with lichen, its door never locked. Inside, the air smells of tallow and old rain. Four candle-stubs burn behind iron bars in a wall niche — flames that stand dead straight, though the door is open to the wind.",
+      "The Order keeps this chapel for one purpose: to hold vigil over a knight named Ser Aldous, who has died four times — each death entered in the parish ledger in a different hand — and each time risen from unmarked ground within a mile of the door.",
+      "Set into the east wall is an iron reliquary the size of a coffin. Inside sit four wax casts of a human hand, palm up, taken from Ser Aldous while the body was still cold. Each has a candle beside it. Behind them is a fifth mold. It has never been filled.",
+      "The four casts are Aldous's, and they are cold wax; his deaths are counted, kept, and paid for. The fifth mold is not his. It is waiting on a hand that has not died yet.",
+      "Clerics tend the four candles in rotation, day and night, and never leave one burning alone. They will tell you what a guttered candle costs, because it is the whole of their work: a cast whose candle goes out goes cold, that death stops counting, and the man loses a return.",
+      "Decide before play which PC the mold is warm for — pick the one with the most to lose, and let the warmth single them out in front of the table. The offer should be cheap to accept now and expensive to keep: a lit candle is a leash as much as a life. Name the cleric who would tend it; the Order withdrawing that service, or an enemy learning where the candle burns, is a consequence you can spend later. If nobody accepts, nothing is wasted — the mold keeps warming, and the party leaves carrying a standing offer rather than a locked box.",
+      "Special element: The fifth mold is empty and uncast, and it is warm — blood-warm at rest, and hot enough to sting when the person it is waiting for comes within arm's reach of it. It is a plain offer, and the clerics will make it plainly: press a palm into the wax and let it take the cast. A fifth candle is lit that hour, and the Order holds vigil for you as it holds vigil for Aldous — die once, and the ground gives you back within a mile of wherever you fell. The price is the candle. It must burn, tended, for as long as you want the return. The Order tends it at no charge only while the Order trusts you. Let it gutter — by their choice or your enemies' — and the return is spent without ever being used."
+    ],
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "mysterious",
+    "difficulty": "easy",
+    "complications": [
+      "Hooks: the party is hired to keep the vigil for one night; a cleric goes missing and the rotation breaks, so a cast is cooling and must be re-lit before dawn or Aldous loses a return; a stranger asks to be left alone with the reliquary and is found later with wax under their fingernails.",
+      "Complications: a candle gutters while the party is present and the clerics ask one of them to fill the fifth mold to keep the vigil unbroken; the mold scalds exactly one PC and stays cool for the others, in front of witnesses who now know it; Ser Aldous rides in himself and asks who has been handling his reliquary.",
+      "Rewards: a cast in the fifth mold — one death undone, so long as the candle burns; the Order's trust and safe harbour on the frontier; a copied page from the parish ledger; a spare wax hand-cast as a keepsake, still faintly warm days later."
+    ],
+    "tags": [
+      "chapel",
+      "frontier",
+      "resurrection",
+      "reliquary",
+      "mystery",
+      "unfallen-order",
+      "choice"
+    ],
+    "related": [
+      "ser-aldous-the-unfallen",
+      "the-unfallen-order",
+      "the-fifth-return",
+      "the-unfallens-fifth-death",
+      "the-oath-you-inherited"
+    ],
+    "created": "2026-08-18",
+    "updated": "2026-08-18"
   }
 ]
