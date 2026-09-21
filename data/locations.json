@@ -41,80 +41,79 @@
   {
     "id": "mistwatch-tower",
     "title": "Mistwatch Tower",
-    "summary": "A ruined watchtower that only appears on foggy mornings.",
-    "tags": [
-      "watchtower",
-      "fog",
-      "ruins",
-      "landmark",
-      "travel-encounter"
+    "special_element": "When the sun breaks through, the tower goes, and it takes whatever is inside with it. Its residents and anyone still within its walls are not killed. They are taken, and they don't reappear anywhere on the ridge. They are gone as completely as the stone, until someone comes up on another foggy morning to fetch them.",
+    "summary": "Category: Location · Region: state2 · Difficulty: medium · Mood: mysterious",
+    "body": [
+      "Category: Location · Region: state2 · Difficulty: medium · Mood: mysterious",
+      "On clear days the ridge is bare. But come a grey, wet dawn and the Mistwatch Tower is simply *there*: black stone streaked with damp, its door hanging open, and a smell of cold ash drifting down the slope as though someone left a fire an hour ago. Somewhere above, a bell no one has rung creaks once on its chain.",
+      "The tower exists only while the fog holds. In full sun the ridge is heather and a few flattened stones. There is no foundation, no rubble, nothing to dig for. At dawn, in fog thick enough to blind a hawk, the tower stands exactly where it always stands, with its door open and the hearth still grey with ash.",
+      "Locals do their ridge business on clear mornings only. The few who have gone up in fog say the watch-room is ordinary: a table, sleeping pallets, a cold hearth. But everything looks as if someone stepped out a moment ago. A cup sits half full, and the surface of the water is still rippling. The stair is another matter. It climbs higher than the tower is tall, and people who go up there don't stay past the first turn. The tower isn't an abandoned post. Nobody walked out of it. The building and everyone in it were taken together, and the weather decides when it happens next.",
+      "Nobody knows when the fog will burn off. It can hold for an hour, or it can lift in the time it takes to climb the stair.",
+      "Decide before play how much warning the party gets before the fog lifts: the birdsong going quiet, the grey paling to white, or nothing at all. That choice is where the tension of this location comes from. The truth behind the vanishing is simple. The taken are not dead. They stand unaged on the stair, and none of them can find the way down alone. Anyone who climbs up on a foggy morning and leads them down by the hand can bring them out, but only one or two at a time, and slowly. Every trip back up is another chance for the sun to break through and take the rescuer as well.",
+      "Special element: When the sun breaks through, the tower goes, and it takes whatever is inside with it. Its residents and anyone still within its walls are not killed. They are taken, and they don't reappear anywhere on the ridge. They are gone as completely as the stone, until someone comes up on another foggy morning to fetch them."
     ],
-    "region": "state2",
-    "difficulty": "medium",
     "tier": "1",
     "biome": "ruins",
     "mood": "mysterious",
-    "body": [
-      "A ruined watchtower that only appears on foggy mornings. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "medium",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a shepherd went up in fog after a dog lost three winters ago and came back down with it, not a day older. He swears there were people standing on the stair above it, and one of them asked him the date. A mother pays well for anyone willing to search the tower at dawn for her son, who went up years ago and never came down.",
+      "Complications: from inside, nobody can tell when the fog will lift. Only someone outside can judge it, and shouts from outside don't carry through the tower's walls. The party will need a signal they have agreed in advance: a lantern in a window, or a rope tied to the door-ring.",
+      "Rewards: decades of untouched supplies fill the watch-room. There is also a logbook of travellers who sheltered here, and each name ends mid-entry on a foggy date. One of the names belongs to the mother's son, and his last line says he was going up the stair."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "watchtower",
+      "fog",
+      "missing-persons",
+      "vanishing-building",
+      "rescue",
+      "frontier"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "what-the-fog-keeps"
+    ],
+    "created": "2026-09-19",
+    "updated": "2026-09-19"
   },
   {
     "id": "skull-marsh-causeway",
     "title": "Skull Marsh Causeway",
-    "summary": "A half-sunken road of stone markers leading through a dead marsh.",
-    "tags": [
-      "marsh",
-      "navigation",
-      "undead-signs",
-      "survival",
-      "causeway"
+    "special_element": "The skulls are a compass that has always been honest, and someone has begun quietly turning them. No fog, no ambush, nothing in the water — just a few inches of rotation on a dead man's head, done overnight, and the safest road on the crossing becomes the fastest way to drown.",
+    "summary": "Category: Location · Region: state2 · Biome: marsh · Difficulty: medium · Mood: grim",
+    "body": [
+      "Category: Location · Region: state2 · Biome: marsh · Difficulty: medium · Mood: grim",
+      "A causeway of fitted grey stone runs dead straight through the marsh, sunk to the ankle in black water on either side. Every twenty paces a post rises from the muck, topped with a skull — real bone, weathered to the colour of driftwood. The air tastes of standing water and rot. Every skull you pass is facing the causeway. Not the marsh. The road.",
+      "The causeway is the only dry crossing through six miles of drowned marsh, laid down by marsh-folk generations back over ground too soft to trust. The skulls are their own drowned dead, set to face the firm footing so the departed could go on showing the living the way home.",
+      "Keep to the line the skulls face and the far side comes up dry-booted in under an hour. Step off it and the road stops being a road: the stone shelves crumble underfoot, and the marsh takes a boot, then a leg, before it lets go.",
+      "In the northern third, a handful of skulls have been turned — some a few degrees, one nearly backward — so the line they mark now runs off the stone and straight into the mire.",
+      "Decide before play who is turning the skulls and how much surfaces here. The causeway stands alone as a hazard the party beats by careful observation, or it opens straight into a pursuit as the first scene of a longer investigation. If your table has already made the crossing at Greymarch, keep the two distinct: that causeway is a road that must be read, this one is a road that has been edited, and the danger is entirely in the hand that moved the bone. *Variant:* if you want the marsh itself culpable, let the turned skulls face the deepest water and leave no footprints — but pick one and commit; a vandal and a haunting at once dulls both. Either way, name no culprit in read-aloud text. Let them walk the line and notice the wrongness themselves.",
+      "Special element: The skulls are a compass that has always been honest, and someone has begun quietly turning them. No fog, no ambush, nothing in the water — just a few inches of rotation on a dead man's head, done overnight, and the safest road on the crossing becomes the fastest way to drown."
     ],
-    "region": "state3",
-    "difficulty": "medium",
     "tier": "2",
     "biome": "marsh",
     "mood": "grim",
-    "body": [
-      "A half-sunken road of stone markers leading through a dead marsh. It has become a known landmark for those who travel the back roads.",
-      "Present two obvious approaches and one hidden approach. Each should have a clear risk and a clear reward.",
-      "Add one sensory detail that players will remember, plus a small, repeatable interaction that makes this place feel alive."
-    ],
-    "hooks": [
-      "A local offers payment for proof you reached the site.",
-      "A message arrives that mentions this place by name, but uses an outdated description.",
-      "Someone you meet insists they were here yesterday and saw something impossible."
-    ],
+    "difficulty": "medium",
     "complications": [
-      "The safest route is blocked by a mundane obstacle that still costs time.",
-      "The true danger is not the site itself, but who else is watching it.",
-      "A simple choice here causes a change you can notice on the return journey."
+      "Hooks: a courier is three days overdue on a one-day route; a marsh-folk elder asks outsiders to walk the line and report which skulls have moved; a merchant offers coin to anyone who'll \"fix\" the markers, no questions asked.",
+      "Complications: night or fog, when a turned skull is near-impossible to catch by eye; the causeway's warden insists nothing is wrong and turns evasive when pressed.",
+      "Rewards: safe passage and the marsh-folk's goodwill for resetting the markers; a name, a footprint, or a dropped tool at the base of a turned post — a thread toward whoever is turning them."
     ],
-    "rewards": [
-      "A practical advantage for travel in this region.",
-      "A clue that points to another state or category.",
-      "A small treasure that is valuable because of its story, not its price."
+    "tags": [
+      "marsh",
+      "causeway",
+      "navigation",
+      "hazard",
+      "medium"
     ],
-    "created": "2025-12-12",
-    "updated": "2025-12-12"
+    "related": [
+      "the-causeway-at-greymarch",
+      "why-the-skulls-face-the-road",
+      "the-turned-markers",
+      "marsh-wayfinding-mishaps",
+      "black-lantern-bay"
+    ],
+    "created": "2026-09-20",
+    "updated": "2026-09-20"
   },
   {
     "id": "emberglass-cavern",
@@ -485,5 +484,47 @@
     ],
     "created": "2026-08-18",
     "updated": "2026-08-18"
+  },
+  {
+    "id": "callows-ford",
+    "title": "Callow's Ford",
+    "special_element": "The ruin still keeps its schedule. Every dusk Callow's Ford runs its last evening again, from the first lamp to the hour the fire started. When the lamps light, the town stands again: doors, stairs and the bell tower whole, just for the evening. At midnight the bell stops ringing three notes and starts ringing the alarm. That is when the evening ends. Anyone still inside a lit building at the alarm wakes at the next dusk, lying in the ash where that building stood, with a full day gone and the smell of smoke in their hair. Most ghosts repeat a moment. Callow's Ford keeps a timetable, and the party can be late for it.",
+    "summary": "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+    "body": [
+      "Category: Location · Region: state1 · Difficulty: easy · Mood: mysterious",
+      "Ash-grey foundations line the ford road: stone footings and black stubs of timber, none of it higher than your knee. The air still smells of char, fifty years after a fire should have taken the smell with it. Downstream a red-painted waterwheel turns slowly and creaks over a streambed that has been dry for a generation. Halfway down the ruined street one building stands whole, with its roof on and a lamp burning gold in the front window.",
+      "Callow's Ford was a garrison town at the river crossing until the fire took it. Foundations, a well and the stone stub of a bell tower are all that's left. People in the nearest village won't cross the ford after dark. They won't say why, only that \"the Ford keeps its own hours.\"",
+      "The bell tower still has its bell. It rings three clean notes on the hour. The rope rotted through long ago, and no one has climbed to the platform in living memory. The waterwheel turns in time with the bell and drives nothing.",
+      "The one whole building is an inn. Its lamp is always lit and its door is never locked. Anyone who steps inside finds a fire in the grate, supper on the table, and a woman who calls them by a name that isn't theirs.",
+      "Before play, decide one thing: when the party tells her the truth, does the Widow go out with the lamps, or is she left standing in the ash, alive and fifty years late? Either works; the choice sets the tone. Don't explain the mechanism. Let the players hear the bell before they see the lamp, and let the lamp be what makes them go and look. Count the bells out loud once the lamps are lit.",
+      "Special element: The ruin still keeps its schedule. Every dusk Callow's Ford runs its last evening again, from the first lamp to the hour the fire started. When the lamps light, the town stands again: doors, stairs and the bell tower whole, just for the evening. At midnight the bell stops ringing three notes and starts ringing the alarm. That is when the evening ends. Anyone still inside a lit building at the alarm wakes at the next dusk, lying in the ash where that building stood, with a full day gone and the smell of smoke in their hair. Most ghosts repeat a moment. Callow's Ford keeps a timetable, and the party can be late for it."
+    ],
+    "tier": "1",
+    "biome": "frontier",
+    "mood": "mysterious",
+    "difficulty": "easy",
+    "complications": [
+      "Hooks: a letter reaches someone in the party, ink still wet and dated the evening before the fire, written by the keeper of the Callow's Ford inn and asking for them by a name that isn't theirs. Rumour says the garrison payroll, missing since the fire, is still in the strongroom under the bell tower.",
+      "Complications: by day the strongroom is buried under fallen stone. It can only be reached after dusk, through the tower door the evening puts back, and the clock is running from the moment the lamps light. The Widow Sarn, the woman in the inn, believes it is still the evening before the fire. She holds the strongroom key for the garrison, and she will only hand it to the person she thinks the party member is.",
+      "Rewards: the garrison's last payroll lies untouched in the strongroom. There are two ways to get the key, and each costs something. Answer to the wrong name and she gives the key gladly, but she sets that PC a place at supper and holds them to it, which makes leaving before the alarm a matter of social skill or plain rudeness. Tell her what year it is and she believes it by the third bell. She gives the key freely, and when the party leaves, the lamps go out behind them and never light again: no second visit, no second try at the strongroom."
+    ],
+    "tags": [
+      "ghost-town",
+      "haunting",
+      "time-slip",
+      "ruins",
+      "frontier",
+      "low-level"
+    ],
+    "related": [
+      "the-outdated-message",
+      "the-widow-sarn",
+      "the-red-waterwheel",
+      "the-night-callows-ford-burned",
+      "the-guest-sarn-is-expecting",
+      "the-unburnt-key"
+    ],
+    "created": "2026-09-21",
+    "updated": "2026-09-21"
   }
 ]
