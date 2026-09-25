@@ -248,5 +248,50 @@
     ],
     "created": "2026-07-22",
     "updated": "2026-07-22"
+  },
+  {
+    "id": "the-widow-sarn",
+    "title": "The Widow Sarn",
+    "statblock": "No combat expected. Uses Commoner (5e-compatible) if forced. Insight +5 on matters of \"today\"; Deception +2 only insofar as she deceives herself — never the party.",
+    "special_element": "Widow Sarn is still waiting for the letter's recipient — and when someone carrying that person's blood walks through her door, she will greet them by their ancestor's name, certain they have simply aged a great deal since breakfast.",
+    "summary": "Category: NPC · Region: state1 · Role: Informant · Faction: none · Difficulty: Easy",
+    "body": [
+      "Category: NPC · Region: state1 · Role: Informant · Faction: none · Difficulty: Easy",
+      "The common room smells of woodsmoke and stew that never quite finishes cooking. A woman in a soot-grey apron wipes the same tankard with the same rag, over and over, and when she looks up her smile arrives a half-second before her eyes do. \"Sit, sit,\" she says. \"He'll be back before the ash cools.\" Bread is proving by the hearth. A second bowl is already set at the table, and the lamp beside it is trimmed and lit for someone who is late.",
+      "Widow Sarn keeps the one inn in Callow's Ford that never burned, and she keeps it as it was the evening before the fire — down to the lamp, the bread, and the empty chair. She is warm, brisk, and utterly certain of what day it is. She is wrong by fifty years.",
+      "The garrison bell rings hours she doesn't hear as strange. The red waterwheel grinding over dry rubble is, to her, turning in a river that's simply low this season. Ask her the road conditions and she'll give you a route that has been ash since before you were born.",
+      "She wrote the letter — the one sealed yesterday that describes the town as it stood half a century ago. She remembers writing it. She does not remember why no one has answered.",
+      "She is not addled. She is patient. She has all the time in the world, because for her none of it has passed.",
+      "Special element: Widow Sarn is still waiting for the letter's recipient — and when someone carrying that person's blood walks through her door, she will greet them by their ancestor's name, certain they have simply aged a great deal since breakfast."
+    ],
+    "tier": "1",
+    "mood": "melancholy",
+    "role": "informant",
+    "difficulty": "easy",
+    "dm_tips": [
+      "Introduce: she's already mid-task when the party enters — wiping the same tankard, humming a tune that stopped being popular fifty years ago — and greets them like regulars before anyone has spoken.",
+      "Voice/play: brisk, motherly, faintly distracted. Answer questions about \"current events\" with news fifty years stale, delivered as if it happened this morning.",
+      "Wants: her guest to finally arrive, so she can serve the second bowl and stop waiting.",
+      "Reveal: if a player shares blood with the letter's addressee, she fixes on them, uses the ancestor's name, and asks why they took so long. Decide before play whether she is a haunting, a time-slip, or something gentler — but don't let her learn the truth mid-scene. Let the players carry it instead.",
+      "Dialogue seeds: \"You're taller than you were this morning.\" / \"Sit — the bread's not even cool yet.\" / \"Tell him I kept his seat.\"",
+      "Variant: if you'd rather not use the bloodline, have her hand the letter to whoever most resembles the addressee and ask them to deliver it themselves."
+    ],
+    "tags": [
+      "callows-ford",
+      "innkeeper",
+      "time-loop",
+      "informant",
+      "frontier"
+    ],
+    "related": [
+      "the-outdated-message",
+      "callows-ford",
+      "the-red-waterwheel",
+      "the-night-callows-ford-burned",
+      "the-guest-sarn-is-expecting",
+      "the-unburnt-key"
+    ],
+    "created": "2026-09-23",
+    "updated": "2026-09-23"
   }
 ]
