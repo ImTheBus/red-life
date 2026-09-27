@@ -196,5 +196,41 @@
     ],
     "created": "2026-07-27",
     "updated": "2026-07-27"
+  },
+  {
+    "id": "the-guest-sarn-is-expecting",
+    "title": "The Guest Sarn Is Expecting",
+    "special_element": "The scorch pattern on the hinge isn't campfire soot. It matches, line for line, the burn scar still on the inside of the doorframe at the Sarn inn at Callow's Ford. The box never lit a cookfire on the road. It lit the fire that took the town. The PC's grandparent struck it while standing in that doorway.",
+    "summary": "Category: Character Hook · Tier: 1 · Mood: melancholy",
+    "body": [
+      "Category: Character Hook · Tier: 1 · Mood: melancholy",
+      "The tinderbox has been in your family since before you were born. It's brass and dented, and it's warm from your pocket rather than from any fire. It has always smelled faintly of smoke, even freshly polished, even after your grandparent swore never to light it again. Stamped inside the lid, half worn away, is a company number and a place-name you don't recognise: *Callow's Ford.*",
+      "Special element: The scorch pattern on the hinge isn't campfire soot. It matches, line for line, the burn scar still on the inside of the doorframe at the Sarn inn at Callow's Ford. The box never lit a cookfire on the road. It lit the fire that took the town. The PC's grandparent struck it while standing in that doorway."
+    ],
+    "tier": "1",
+    "mood": "melancholy",
+    "next_steps": [
+      "Stakes: the family story says the grandparent guarded the ford and mourned its loss. The tinderbox says they lit the blaze themselves, on someone's order, with people still inside.",
+      "Next steps: the Widow Sarn still keeps the inn, with one room made up for a guest who never came back. The PC walks in wearing the family face, and she will notice.",
+      "Twists: the grandparent may not have known the townsfolk were inside, or may have known and struck the flame anyway. The tinderbox gives no answer, only the scorch."
+    ],
+    "tags": [
+      "backstory",
+      "family-secret",
+      "inheritance",
+      "guilt",
+      "garrison",
+      "callows-ford"
+    ],
+    "related": [
+      "callows-ford",
+      "the-widow-sarn",
+      "the-night-callows-ford-burned",
+      "the-unburnt-key",
+      "the-red-waterwheel",
+      "the-oath-you-inherited"
+    ],
+    "created": "2026-09-25",
+    "updated": "2026-09-25"
   }
 ]
