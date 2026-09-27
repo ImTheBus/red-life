@@ -240,5 +240,53 @@
     ],
     "created": "2026-07-25",
     "updated": "2026-07-25"
+  },
+  {
+    "id": "the-red-waterwheel",
+    "title": "The Red Waterwheel",
+    "special_element": "Brake the wheel while the black spoke sits at the top of its turn and the burned town comes back for up to an hour. Wedge it, rope it or hold it by hand. The ash thins, the foundations rise into timber and thatch, and the town's last night plays out around the party, clear as breath on glass. Its people go about their business with no idea anyone is watching. The party can see what happened: the fire was no accident. Soldiers carrying torches bar the doors from the outside, house by house. Only one door is left unbarred, the inn's. Let go of the wheel, or let the hour run out, and everything snaps back to ash, rubble and silence. Then the wheel goes on ticking as if nothing happened.",
+    "summary": "Category: Puzzle · Region: Callow's Ford · Tier: 1 · Difficulty: medium · Biome: frontier · Mood: mysterious",
+    "body": [
+      "Category: Puzzle · Region: Callow's Ford · Tier: 1 · Difficulty: medium · Biome: frontier · Mood: mysterious",
+      "At the river's dead bend stands a mill wheel painted the red of old barns, and it turns. There is no water under it, only ash and the broken teeth of a foundation. Still the wheel groans forward a hand's width at a time, slow and steady, like something counting. Lay your palm flat on a spoke and you feel it: no push of a current, just a tick, a tick, a tick, patient as a clock that has never once stopped.",
+      "The wheel drove Callow's Ford's mill before the fire. It is one of the few pieces of the old town still standing above the ash line, and it has not touched water in fifty years. It turns anyway: twelve spokes, one spoke every hour, each step landing on the chime of the garrison bell that still rings across the rubble. The few locals who have noticed call it bad luck and walk wide around it.",
+      "One spoke is darker than weather can explain. The black is not soot on the surface. It is a scorch burned deep into the grain.",
+      "Decide before play how much more the vision shows beyond the barred doors. A gentle version keeps the party at a distance, with smoke and torchlight. A sharp version puts them close enough to the fire to hear the voices of the people inside. Either way the party leaves knowing the town was burned on purpose. They don't know why, or why one door was spared. That knowledge pays off on its own: it changes how they look at the garrison bell, the innkeeper who \"never could say\", and anyone in town who is old enough to remember. The puzzle stands alone and rewards curiosity, careful timing and a hard choice about who stays behind at the wheel, whether or not the party ever chases the question.",
+      "Special element: Brake the wheel while the black spoke sits at the top of its turn and the burned town comes back for up to an hour. Wedge it, rope it or hold it by hand. The ash thins, the foundations rise into timber and thatch, and the town's last night plays out around the party, clear as breath on glass. Its people go about their business with no idea anyone is watching. The party can see what happened: the fire was no accident. Soldiers carrying torches bar the doors from the outside, house by house. Only one door is left unbarred, the inn's. Let go of the wheel, or let the hour run out, and everything snaps back to ash, rubble and silence. Then the wheel goes on ticking as if nothing happened."
+    ],
+    "tier": "1",
+    "difficulty": "medium",
+    "biome": "frontier",
+    "mood": "mysterious",
+    "trigger": [
+      "**Trigger:** anyone who keeps a hand on the wheel for a full minute notices the ticking rhythm. They can try to match it to the garrison bell.",
+      "**Clue 1:** the wheel has twelve spokes, and the bell rings the hours. Let an observant PC connect the count without a roll.",
+      "**Clue 2:** the black spoke doesn't match the weathering on the other eleven. It reads as burned, not aged.",
+      "**Clue 3:** the one unburned inn in Callow's Ford keeps its lamp lit all night. Asked why, the innkeeper says they \"never could say.\" The lamp faces the wheel, and it is the only light that also burns in the vision."
+    ],
+    "solution": [
+      "Stop the wheel with the black spoke at the top. A crowbar, a spear haft or two strong backs pushing against the turn all work. No roll is needed to set the brake. The wheel keeps pushing against it, though, and one PC has to stay at the wheel to hold it. That PC sees the vision only from the dead bend, as a glow on the ash. Every ten minutes the holder makes a Strength check (DC 12, swappable). On a failure the brake slips and the vision ends at once. A second PC can help (advantage), but that means another person who doesn't go into the town."
+    ],
+    "consequences": [
+      "While the vision holds, the party can walk through the town, but nothing in it can see or hear them. The barred doors, the soldiers and the unbarred inn are always there. Add anything else they witness yourself: a bell rung out of turn, an officer's shout, faces at a shuttered window. Each sight should raise the question of why, never answer it. The town is laid out as it was, not as it is now. Anyone standing on a vision floor that doesn't exist anymore when the vision collapses drops into the burned cellar beneath (1d6 bludgeoning, DC 12 Dexterity save for half) and has to climb out of the rubble. The deeper the party goes, the more they see, and the more solid ground they give up. The black spoke comes back to the top every twelve hours, but the wheel won't take a brake again until it has ticked a full day."
+    ],
+    "tags": [
+      "puzzle",
+      "vision",
+      "ghost-town",
+      "frontier",
+      "low-level",
+      "investigation"
+    ],
+    "related": [
+      "callows-ford",
+      "the-widow-sarn",
+      "old-stone-bridge",
+      "the-night-callows-ford-burned",
+      "the-guest-sarn-is-expecting",
+      "the-unburnt-key"
+    ],
+    "created": "2026-09-25",
+    "updated": "2026-09-25"
   }
 ]
