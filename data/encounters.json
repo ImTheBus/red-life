@@ -324,5 +324,61 @@
     ],
     "created": "2026-07-05",
     "updated": "2026-07-05"
+  },
+  {
+    "id": "the-turned-markers",
+    "title": "The Turned Markers",
+    "special_element": "Corvin is turning the markers himself. He isn't malicious, and nobody is paying him. He is dying and alone, and for thirty years he has talked to the carved faces as if they were company. He turned the first skull to see whether anyone still watching would notice and fix it, as proof that the causeway mattered to somebody besides him. It worked too well. He came to live for the travellers who stop to \"help,\" and now he can't stop, even as it costs lives. The tell is in his behaviour: Corvin is always close to the damage and always first to \"discover\" it, yet the turned skulls are never the ones nearest his own hut.",
+    "summary": "Category: Encounter · Region: state2 · Tier: 2 · Difficulty: medium · Time-to-run: 1-hour · Biome: marsh · Mood: melancholy",
+    "body": [
+      "Category: Encounter · Region: state2 · Tier: 2 · Difficulty: medium · Time-to-run: 1-hour · Biome: marsh · Mood: melancholy",
+      "The marsh swallows sound the way it swallows footing. Your splashes come back muffled and half a second late, as though the water is answering for someone else. The air smells of rot and cold iron. Ahead, the causeway runs as a line of stone markers, each capped with a carved skull, and each skull turned to face the safe ground. Tonight three of them face the other way. Black water laps at the stone where the path should be.",
+      "Special element: Corvin is turning the markers himself. He isn't malicious, and nobody is paying him. He is dying and alone, and for thirty years he has talked to the carved faces as if they were company. He turned the first skull to see whether anyone still watching would notice and fix it, as proof that the causeway mattered to somebody besides him. It worked too well. He came to live for the travellers who stop to \"help,\" and now he can't stop, even as it costs lives. The tell is in his behaviour: Corvin is always close to the damage and always first to \"discover\" it, yet the turned skulls are never the ones nearest his own hut."
+    ],
+    "tier": "2",
+    "difficulty": "medium",
+    "time": "1-hour",
+    "biome": "marsh",
+    "mood": "grim",
+    "setup": [
+      "Skull Marsh Causeway is the only dry crossing through this stretch of dead marsh. Everyone who travels it learns one rule fast: the carved skulls always face firm ground. In fog or dark, a traveller just follows the faces home. That rule is why the causeway has never needed more than one old keeper and his lantern.",
+      "Now someone is turning the skulls to face the mire. Travellers who trust the old rule step off the stone into bog that pulls off boots, and then pulls under whoever is wearing them. In the last month two porters and a tax collector's mule have gone into the marsh. The keeper, an old man named Corvin Ashe, has reported the \"vandalism\" to every passing patrol. He is loud and helpful about it, and he is always a few markers away from wherever the last turned skull was found."
+    ],
+    "escalation": [
+      "**Opening:** The party reaches the three turned markers at dusk or in fog. There is a hidden approach: generations of boots have scuffed the moss pale along the true path, even where the skulls now lie. A sharp-eyed or marsh-wise character can walk it without trusting the faces at all.",
+      "**Complication:** Corvin appears with his lantern, already \"investigating.\" He is chatty and helpful, and quick to blame marsh-folk, bandits, or bored children from the last village. Press him on details and his story falls apart. He knows which markers were turned before anyone tells him.",
+      "**Climax:** A fourth marker turns *while the party is still on the causeway*, either after dark or the moment they turn their backs on Corvin. If they're watching him, they catch him at it. If not, someone (a porter, a hireling, or a careless PC) trusts the wrong skull and goes into the bog. The marsh does not give things back quickly."
+    ],
+    "resolution": [
+      "**Win (catch him / talk him down):** Confronted, Corvin breaks. He dreads losing the only post he has held in thirty years, and he dreads even more dying on it with no one noticing. If the party reports him, he is quietly relieved. The patrol takes him off the post, and a young apprentice keeper arrives for Corvin to train, grudgingly, before he goes.",
+      "**Fail (someone drowns, Corvin evades blame):** A hireling or porter is lost to the bog. Corvin deflects and stays on post, and the markers keep turning. That leaves a thread the DM can bring back later with a new death on the causeway and fresh reports of \"vandals.\"",
+      "**Walk away:** The party crosses by following the moss-wear and never deals with Corvin. The causeway stays dangerous for the next travellers, and the DM can bring that back later as a consequence."
+    ],
+    "scaling": [
+      "**Lower tier / easier:** Corvin turns only one marker at a time and folds under light social pressure; a failed Deception check ends it. The bog is shallow enough that a simple Athletics check pulls a sinking PC free.",
+      "**Higher tier / harder (variant):** The faces Corvin talks to have started answering. A drowned spirit is working through his loneliness and turning markers by his hand. The confrontation becomes a two-front problem: the man, and the thing wearing his grief.",
+      "**Party size:** Put a second traveller on the causeway whose life is at risk during the climax. This raises the stakes without adding a fight."
+    ],
+    "rewards": [
+      "The tax collector's lost strongbox, which can be dragged from the bog with real effort. Its ledger of unpaid levies makes an optional seed for the DM's own plot.",
+      "Corvin's trust, and his knowledge of the marsh's safe routes, which helps with any future crossing.",
+      "Optional quiet-horror beat: local lore says each skull was carved for someone the marsh took, set facing firm ground so the drowned could keep showing the living the way home. Turning them means turning the dead away from home. If the DM uses it, Corvin's lonely game becomes a small cruelty to the only company he had."
+    ],
+    "tags": [
+      "side-quest",
+      "marsh",
+      "social-mystery",
+      "investigation",
+      "travel-encounter",
+      "mid-level"
+    ],
+    "related": [
+      "skull-marsh-causeway",
+      "why-the-skulls-face-the-road",
+      "marsh-wayfinding-mishaps",
+      "orrin-slake-bellows-warden"
+    ],
+    "created": "2026-09-29",
+    "updated": "2026-09-29"
   }
 ]
