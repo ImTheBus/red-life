@@ -214,5 +214,41 @@
     ],
     "created": "2026-07-29",
     "updated": "2026-07-29"
+  },
+  {
+    "id": "why-the-skulls-face-the-road",
+    "title": "Why the Skulls Face the Road",
+    "special_element": "The turning was never meant to be sudden. Marsh-folk lore holds that the skulls creep on their own, a hair's width a year and no faster, following the safe footing as the mire redraws it, the way a plant turns toward light. No one has ever caught one moving. Everyone agrees they are never quite where they were carved. That slowness is what makes them trustworthy. A skull that has crept shows it: a thin crescent of torn moss at its base, the old chisel-lines weathered soft. A skull that has been wrenched shows raw mud, bright stone and a fresh scar. The dead move slowly. Anything that moved fast was moved by someone living. A traveller who knows the difference can decide, at the edge of the reeds, whether to follow the gaze or ignore it.",
+    "summary": "Category: Lore · Region: none (tied to Skull Marsh Causeway)",
+    "body": [
+      "Category: Lore · Region: none (tied to Skull Marsh Causeway)",
+      "The marsh smells of standing water and old iron. Where the causeway crosses it, a line of stone skulls rises from the reeds at knee height. Each one is worn smooth by rain, and each one faces the same way: toward firm ground, never toward the water. Touch one on a cold morning and it is colder than the stone around it, as if the frost found it first.",
+      "The marsh-folk who built the causeway did not carve strangers' faces into the marker stones. They carved their own dead: mothers, fathers and children the water took before there was a road to save anyone. Each skull is a likeness, cut by a surviving relative, of someone the mire swallowed.",
+      "They were set to face the safe footing on purpose. The marsh-folk believed the drowned could still see from stone, and that the kindest work left to the dead was turning the living away from the place that killed them. In the old telling, a traveller who follows the skulls' gaze is being walked home by someone who drowned looking for that same path in the dark.",
+      "The causeway has shifted twice in living memory, as the mire swallowed old footing and gave up new. Both times, families went out at dusk with mallets and chisels and turned the markers to match. The work was slow and reverent, and nobody rushed it.",
+      "Special element: The turning was never meant to be sudden. Marsh-folk lore holds that the skulls creep on their own, a hair's width a year and no faster, following the safe footing as the mire redraws it, the way a plant turns toward light. No one has ever caught one moving. Everyone agrees they are never quite where they were carved. That slowness is what makes them trustworthy. A skull that has crept shows it: a thin crescent of torn moss at its base, the old chisel-lines weathered soft. A skull that has been wrenched shows raw mud, bright stone and a fresh scar. The dead move slowly. Anything that moved fast was moved by someone living. A traveller who knows the difference can decide, at the edge of the reeds, whether to follow the gaze or ignore it."
+    ],
+    "biome": "marsh",
+    "mood": "melancholy",
+    "rumours": [
+      "**Truth:** The stones are carved likenesses of real, named marsh-folk who drowned. Each was angled at carving toward that generation's safe path. The causeway's warden families have re-cut the angles by hand whenever the mire shifts. It is a slow ritual passed down the generations, never a single dramatic act. Honest re-cutting leaves weathered, moss-healed marks within a season. A fresh scar on a marker means it was moved recently, and not by the wardens' ritual.",
+      "**Rumours:** Travellers who don't know the history read the skulls as a warning (\"the faces of those the marsh already took, so you don't join them\") rather than a guide. Some marsh-folk insist the stones really do creep unaided, and that hand-turning only ever finishes what the dead were already trying to do.",
+      "**How to reveal:** Have a marsh-folk elder or warden tell it, as the reason why moving a marker counts as close to grave robbery. Make sure they mention the tell: the dead move slowly, so look at the base. Then pay it off. If the party ever finds a skull swung round with fresh mud at its foot, whoever did it is not keeping up the old ritual. They are overriding the dead to lead the living onto mire that looks firm and isn't, and the first cart, pony or companion to trust the gaze goes in to the chest before anyone thinks to look down. A character who remembers the elder's words and checks the base gets the choice before the ground makes it for them. This entry explains why the skulls face the road. If you want a crossing where the markers can't be trusted, The Turned Markers encounter is built for that night."
+    ],
+    "tags": [
+      "lore",
+      "marsh",
+      "drowned",
+      "skulls",
+      "ancestors",
+      "skull-marsh-causeway"
+    ],
+    "related": [
+      "skull-marsh-causeway",
+      "the-turned-markers",
+      "marsh-wayfinding-mishaps"
+    ],
+    "created": "2026-09-30",
+    "updated": "2026-09-30"
   }
 ]
