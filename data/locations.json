@@ -526,5 +526,48 @@
     ],
     "created": "2026-09-21",
     "updated": "2026-09-21"
+  },
+  {
+    "id": "the-bellows-pass",
+    "title": "The Bellows Pass",
+    "special_element": "The in-breath does more than push travellers back. It returns them to the last place they slept. A party caught on the in-breath comes to at their previous camp, sometimes that same night, with the embers still glowing and their packs exactly where they left them. The pass remembers where everyone lay down. That makes every attempt a wager. Camp at the foot of the col and a failed crossing costs an hour. Push through from the valley inn without resting and a failed crossing puts you back at the inn, a full day's march and a day's rations gone. Resting close to the pass is safe but slow, because the breaths keep shortening while you wait. Pushing hard is fast, but each failure costs more.",
+    "summary": "Category: Location · Region: none · Tier: 2 · Difficulty: medium · Mood: wondrous",
+    "body": [
+      "Category: Location · Region: none · Tier: 2 · Difficulty: medium · Mood: wondrous",
+      "The path over the col is bare grey rock, scoured clean by the wind. The air moves in long, deep pulls. First a rising hush lifts grit off the stones and streams it uphill. Then a slow exhale flattens every cloak and bends the pines on the far slope. You feel each breath on your face before you hear it. The cold smells of snow, and of something faintly warm, like a forge door just swung open.",
+      "The Bellows Pass is a high col between two peaks. It is the only dry crossing for a day's march in either direction. The wind keeps a rhythm here: a long out-breath that rolls down the far side, a pause, then an in-breath that draws back up toward the pass.",
+      "Travellers cross on the out-breath, when the path belongs to them. Anyone caught on the in-breath is hauled back the way they came. Shepherds and carters learn the cadence by ear and time their crossings to it.",
+      "Lately the breaths have grown shorter. The pause that once gave a careful party a full stride now passes in a heartbeat. Carters report mules lifted off their feet, and a cart axle lies snapped at the second bend.",
+      "Decide before play why the breaths are shortening. The wind may be sick, with a warm draft rising from old workings beneath the pass. Someone may be miscalling the cadence on purpose, to keep one particular traveller from crossing. It may be both. Keep the return-to-camp rule fixed and consistent, and hold back the cause until the party has been returned at least once. The summit cairn is the clever answer: a party that climbs partway, sleeps at the cairn, and crosses from there risks only the descent. If a toll-warden or guide is in play, they know the cadence better than anyone, and their advice should cost something.",
+      "Related: emberglass-cavern",
+      "Special element: The in-breath does more than push travellers back. It returns them to the last place they slept. A party caught on the in-breath comes to at their previous camp, sometimes that same night, with the embers still glowing and their packs exactly where they left them. The pass remembers where everyone lay down. That makes every attempt a wager. Camp at the foot of the col and a failed crossing costs an hour. Push through from the valley inn without resting and a failed crossing puts you back at the inn, a full day's march and a day's rations gone. Resting close to the pass is safe but slow, because the breaths keep shortening while you wait. Pushing hard is fast, but each failure costs more."
+    ],
+    "tier": "2",
+    "biome": "mountain",
+    "mood": "wondrous",
+    "difficulty": "medium",
+    "complications": [
+      "Hooks: A returned party finds a second campfire beside their own, still warm, with bedrolls laid out and nobody in them. The owners were returned here, set out again before dawn, and their cart is the one with the snapped axle at the second bend. The breaths are now too short to cross in one push, and somebody has to find a shorter way or a better time.",
+      "Complications: Pack animals bolt on the in-breath. A cart wheel jams in the scree. A crossing that begins on the out-breath is caught halfway over.",
+      "Rewards: A run of long breaths gives a clear window to cross. A shepherd's cairn at the summit hides a dry cache of food and rope, and anyone who sleeps beside it is returned to the summit, not the valley."
+    ],
+    "tags": [
+      "mountain-pass",
+      "travel-encounter",
+      "wind",
+      "weather-hazard",
+      "mid-level"
+    ],
+    "related": [
+      "emberglass-cavern",
+      "the-banked-forge",
+      "orrin-slake-bellows-warden",
+      "the-buried-caravan",
+      "the-avalanche-lock",
+      "high-pass-weather",
+      "the-snowblind-veil"
+    ],
+    "created": "2026-10-04",
+    "updated": "2026-10-04"
   }
 ]
