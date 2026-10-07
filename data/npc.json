@@ -293,5 +293,51 @@
     ],
     "created": "2026-09-23",
     "updated": "2026-09-23"
+  },
+  {
+    "id": "orrin-slake-bellows-warden",
+    "title": "Orrin Slake, Bellows-Warden",
+    "statblock": "Use the Commoner stat block for ordinary dealings. If a fight breaks out, use the block below. All numbers are swappable.\n\n- **STAT BLOCK — Orrin Slake, Bellows-Warden** (5e-compatible)\n- AC 12 · HP 22 (4d8+4) · Speed 30 ft\n- STR 10 · DEX 11 · CON 12 · INT 10 · WIS 15 · CHA 13\n- Skills: Insight +4, Persuasion +3\n- Key action: **Call the Breath** (1/day). Each creature in a 30-foot line must succeed on a DC 13 Strength saving throw or be pushed 15 feet back along the path.\n- CR 1 (scale: easy = CR 1/2, hard = CR 2)",
+    "special_element": "**The wind keeps Orrin's word, even when his word is a lie.** For a higher price, usually silver and a name, he will call a false breath. He tells the named traveller to cross on the out-breath, but the wind brings the in-breath instead. It pulls them off the path and down into the gorge. No body is found on the mountain. They never reach the far side, and no one there hears that they set out.",
+    "summary": "Category: NPC · Tier: 2 · Biome: mountain · Mood: grim · Role: authority · Difficulty: medium",
+    "body": [
+      "Category: NPC · Tier: 2 · Biome: mountain · Mood: grim · Role: authority · Difficulty: medium",
+      "A squat man in a sheepskin coat stands at the stone toll-gate with one hand raised, palm flat, as if feeling for rain. The wind comes up the pass in a long, cold breath that smells of snow and wet iron. He drops his hand. The breath goes out, and the gate creaks open. \"Out,\" he says, in a voice like a split bellows. \"Go on, then.\"",
+      "Orrin has kept the toll on the Bellows Pass for longer than the gate has had a lock. The wind on the pass moves in breaths. A traveller must cross on the out-breath, or the in-breath drags them back down the gorge. Orrin hears each breath before it comes and calls it. For a copper a crossing, he calls you a clean out-breath and a fair walk.",
+      "The breaths are getting shorter, and Orrin knows it. He hasn't told travellers, and he sleeps badly now. He is not cruel. He wants the pass kept open, the toll paid, and the mountain left alone.",
+      "Special element: **The wind keeps Orrin's word, even when his word is a lie.** For a higher price, usually silver and a name, he will call a false breath. He tells the named traveller to cross on the out-breath, but the wind brings the in-breath instead. It pulls them off the path and down into the gorge. No body is found on the mountain. They never reach the far side, and no one there hears that they set out."
+    ],
+    "tier": "2",
+    "mood": "grim",
+    "role": "authority",
+    "difficulty": "medium",
+    "dm_tips": [
+      "**Introduce:** Let the party hear the wind before they see him. His hand rises a beat before the breath arrives.",
+      "**Voice/play:** He speaks in short commands and never asks questions. He says \"out\" and \"in\" the way other men count coins.",
+      "**Wants:** Silver and a quiet pass. He haggles freely over the toll but never over a name.",
+      "**What sets him apart:** Most toll-keepers sell you your own crossing. Orrin's real price buys someone else's failure to cross.",
+      "**Reveal:** On a second crossing, let one character notice that the breath Orrin called was not the breath that came. Spring the false call when someone asks him to hold another traveller back.",
+      "**Decide before play:** Whose name he was last paid to call false (a rival, a creditor, or someone the party loves), and what the gorge did with them.",
+      "**Dialogue seeds:** \"Out, then. Mind the stones.\" / \"The wind doesn't care who you are. I do, for a price.\" / \"Your friend's breath is coming in. I'd not wait for it.\""
+    ],
+    "tags": [
+      "mountain-pass",
+      "toll-keeper",
+      "wind",
+      "bargain",
+      "social",
+      "mid-level"
+    ],
+    "related": [
+      "the-bellows-pass",
+      "the-banked-forge",
+      "the-buried-caravan",
+      "high-pass-weather",
+      "old-marrow-the-ferryman",
+      "marrows-toll",
+      "the-tithe-bridge"
+    ],
+    "created": "2026-10-05",
+    "updated": "2026-10-05"
   }
 ]
