@@ -250,5 +250,53 @@
     ],
     "created": "2026-09-30",
     "updated": "2026-09-30"
+  },
+  {
+    "id": "the-banked-forge",
+    "title": "The Banked Forge",
+    "special_element": "**The forge is being worked again, and the pace of the breath is the pace of the work.** Each shortened breath in the pass is a stroke of the bellows. The shorter the breath, the closer the smith is to finishing. The party can read the countdown with their own lungs. When the breath stops, the work is done: the finished piece is drawn from the hearth, the cavern's glow gutters out, and the warm air that held the col open stops for good. The pass is snowbound within a season. That leaves the party three ways to act, and each one costs something:",
+    "summary": "Category: Lore · Region: none",
+    "body": [
+      "Category: Lore · Region: none",
+      "Stand in the Bellows Pass long enough and you feel it: a slow pull of air past your ears, cold on the in-breath, faintly *warm* on the out. Far below, in the soot-black crystal of Emberglass Cavern, the stone ticks and hums like an anvil between hammer-strokes. The two places are a day's hard walk apart, and both smell of old iron.",
+      "Before the roads, and before the kingdoms the roads now connect, something was made here. It was not a city or a temple. It was a forge, built the size of the land.",
+      "The pass was its bellows. The mountain's long, slow breaths were never weather. They fed air down through the rock to the hearth. The cavern was that hearth, banked low and left to hold its heat for an age. The crystal doesn't glow because it is magic. It glows because it is coals. The thumb-sized hearthstones miners prise from the cavern walls are single embers raked loose from this fire, still holding a little of its heat.",
+      "Nobody remembers what the forge was for, or who stopped working it. The breaths grew so slow that travellers took them for wind. People who crossed the pass learned the rhythm and called it a quirk of the col. Without knowing it, they also came to rely on it. The warm out-breath is what keeps the high col clear of snow long after every other pass has closed.",
+      "Now the breaths are shortening. A bellows quickens when the smith leans on it. Somewhere beneath the mountain, someone is feeding the fire.",
+      "**Use it as a clock.** Shorten the pass's breath each session. Mention the count (\"nine breaths to cross, last time it was seven\") without explaining why. Players will do the maths themselves. **Keep the two sites linked.** What happens at one echoes at the other. Quench the cavern and the pass goes still. Choke a vent in the pass and the cavern dims, which buys time but chills the col early. **Don't answer \"what is it making\" early.** The dread is in the open question. Settle it privately so you can foreshadow with the right details. **Make the cost of the col concrete.** Before the end, put people on the far side of the pass who need it open for the winter. Then the choice between the crown and the road is a real one. **Mind the read-aloud line.** Players should feel the rhythm before they hear the word \"forge.\"",
+      "Special element: **The forge is being worked again, and the pace of the breath is the pace of the work.** Each shortened breath in the pass is a stroke of the bellows. The shorter the breath, the closer the smith is to finishing. The party can read the countdown with their own lungs. When the breath stops, the work is done: the finished piece is drawn from the hearth, the cavern's glow gutters out, and the warm air that held the col open stops for good. The pass is snowbound within a season. That leaves the party three ways to act, and each one costs something:"
+    ],
+    "biome": "mountain",
+    "mood": "wondrous",
+    "rumours": [
+      "**Truth:** The forge is a single ancient work that spans the pass and the cavern, joined by flues inside the mountain. Something is stoking it toward one finished piece. **Default if you don't invent your own:** the smith is a mortal who found the forge's old firing-key, and the piece is the Mountain's Crown. Whoever wears it can command the slope, letting snow stand or bringing it down. Otherwise, before play, decide who or what the smith is: a returned maker, a bound spirit, a mortal with a stolen key, or the forge itself waking. Also decide what it is making. The most memorable answer is a single object, not an army.",
+      "**Rumours:**",
+      "\"The pass is a living thing. It's breathing faster because it's frightened.\"",
+      "\"Emberglass is a dragon's bed. It's warm because the dragon's coming back.\"",
+      "\"Count your steps. If you're still on the col when the wind turns, it takes the *breath* out of you.\"",
+      "**How to reveal:**",
+      "*Early:* a party crossing the pass notices the breath keeps time with a heartbeat, and later with a hammer-stroke.",
+      "*Middle:* in the cavern, a crystal seam that was cold on the last visit is now too hot to touch, and it pulses in time with the pass.",
+      "*Late:* the party finds a flue or a bellows-vent, with scorched tool marks on the stone far too large for any human hand."
+    ],
+    "tags": [
+      "forge",
+      "mountain-pass",
+      "cavern",
+      "countdown",
+      "ancient-ruin",
+      "mystery"
+    ],
+    "related": [
+      "the-bellows-pass",
+      "emberglass-cavern",
+      "hearthstone-of-emberglass",
+      "orrin-slake-bellows-warden",
+      "the-buried-caravan",
+      "the-avalanche-lock",
+      "high-pass-weather"
+    ],
+    "created": "2026-10-08",
+    "updated": "2026-10-08"
   }
 ]
