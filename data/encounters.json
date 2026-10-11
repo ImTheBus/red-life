@@ -380,5 +380,72 @@
     ],
     "created": "2026-09-29",
     "updated": "2026-09-29"
+  },
+  {
+    "id": "the-buried-caravan",
+    "title": "The Buried Caravan",
+    "statblock": "```\nSTAT BLOCK — Winter Wolf             (5e-compatible)\nAC 13 · HP 75 (10d10+20) · Speed 50 ft\nSTR 18  DEX 13  CON 14  INT 7  WIS 12  CHA 8\nSkills: Perception +5, Stealth +3\nKey action: Snow Breath (Recharge 5–6) — 15-ft cone, DC 12 Dex save, 4d8 cold (half on a success).\nCR 3  (scale: easy = ordinary wolf, hard = add a third winter wolf)\n```\n\nThe wolves' Snow Breath is a long, hissing exhale with no crack to it, so it never triggers the slope. That is why they hunt here.",
+    "special_element": "**The slope listens.** The loose snow only moves when it hears something sudden: a shout, a steel blow, a spell with a crack to it. The buried survivors know this. Their knocking is a code, and it is a warning. Three raps and a pause means *quiet, we're alive*. Three and then two means *the slope is about to move*. This creates the central choice. Fast digging is loud, and quiet digging is slow. Every survivor saved costs time that someone else may not have. The table decides who lives by how much noise it is willing to risk. The slope gets touchier as the night goes on. Each watch, the three-and-two warning comes sooner.",
+    "summary": "Category: Encounter · Tier: 3 · Difficulty: hard · Time-to-run: full-session · Biome: frozen · Mood: heroic · Party: standard",
+    "body": [
+      "Category: Encounter · Tier: 3 · Difficulty: hard · Time-to-run: full-session · Biome: frozen · Mood: heroic · Party: standard",
+      "The roar has stopped, and the quiet it leaves is worse. Powder snow hangs in the air and glitters as it settles. The air smells of cold iron and, faintly, of spilled lamp oil.",
+      "Where the road should be, there is a smooth white slope. A single wagon wheel juts out of it, still turning. Under your boots, muffled and very close, someone is knocking. Three raps, a pause, three raps.",
+      "Above you, the mountain ticks like a cooling stove.",
+      "**Play the quiet.** Lower your voice while the party digs. Ask for whispered table talk during quiet actions. **Make the code physical.** Knock on the table: three, pause, three. Later, three and two. Players will remember the sound. **Do not rescue the party from the choice.** No pocket comes free. Don't invent a clever shortcut that saves everyone. **Name the survivors.** Give the first three pockets one name and one detail each, such as a girl called Wren who counts the raps aloud. The rest can stay faces. **Pace the dark.** Open each watch with one line: the temperature, the sky, the last knock heard.",
+      "Special element: **The slope listens.** The loose snow only moves when it hears something sudden: a shout, a steel blow, a spell with a crack to it. The buried survivors know this. Their knocking is a code, and it is a warning. Three raps and a pause means *quiet, we're alive*. Three and then two means *the slope is about to move*. This creates the central choice. Fast digging is loud, and quiet digging is slow. Every survivor saved costs time that someone else may not have. The table decides who lives by how much noise it is willing to risk. The slope gets touchier as the night goes on. Each watch, the three-and-two warning comes sooner."
+    ],
+    "tier": "3",
+    "difficulty": "hard",
+    "time": "full-session",
+    "biome": "frozen",
+    "mood": "heroic",
+    "setup": [
+      "**Probe and locate:** find the air pockets and the voices.",
+      "**Dig:** reach a pocket.",
+      "**Treat:** stabilise a freed survivor. An untreated survivor dies within a watch.",
+      "**Shore:** brace the dig against the slope."
+    ],
+    "escalation": [
+      "**The slide.** Any loud action triggers a *tremor*: fine snow runs down, and one pocket partly collapses. If the noise continues, a *slab* follows. Slab: 6d10 bludgeoning damage, Dexterity save (DC 15) for half. Anyone caught in it is buried and needs a rescuer within 3 rounds.",
+      "**The cold.** Each watch, a PC without shelter or fire makes a Constitution save (DC 14) or gains a level of exhaustion. Wagon wood will burn, but firelight carries and the smoke draws the things that hunt at night.",
+      "**The wounded caravan-master.** She knows how every wagon was loaded and where the oil and rope are stored. She insists on being dug out last, and she will argue about it through the snow.",
+      "**The pull of the choice.** Two pockets sit close together. One holds the children, and the other holds the priest and four drovers. Digging either one loudly puts the other at risk. Put this choice in front of the party in watch 3.",
+      "**Night visitors.** In the fourth watch, two **winter wolves** follow the smell of blood and circle the dig. The party can drive them off or fight them, but steel and spells are loud. Make the party work out how to fight quietly."
+    ],
+    "resolution": [
+      "**Win (most saved):** At dawn the survivors walk out in a line, roped together, in the pale light. The village will tell this story for years. The caravan-master gives the party the caravan's best remaining wagon.",
+      "**Costly win (some lost):** Every pocket the party didn't reach is a name. The salt-traders carve those names into the road-stone at the pass, and the party carries them too.",
+      "**Fail (slab takes the dig):** The slope settles and the knocking stops. The survivors already freed live, but they stay silent for weeks.",
+      "**Walk-away:** The party leaves at midnight. The knocking can be heard from the road for another hour. This is a valid choice, but name it for what it is."
+    ],
+    "scaling": [
+      "**Tier and difficulty:** Built for tier 3, hard. For medium, cut each pocket to 4–5 actions.",
+      "**Party size:** With fewer than 4 PCs, give each character one extra action per watch and drop the winter wolves. With 6 or more, take away one action per character per watch, add a third wolf, and add a second tremor.",
+      "**Lower tier:** Reduce slab damage to 4d10 and replace the winter wolves with ordinary wolves.",
+      "**Pacing:** To shorten, run only watches 1, 3, and 5. To lengthen, add a rival rescue party drawn by the noise, who dig loudly and carelessly."
+    ],
+    "rewards": [
+      "**The caravan's gratitude:** A favour from a trading house with routes through the mountains.",
+      "**Salvage:** Guild-marked trade goods worth about 1,500 gp, plus a *potion of climbing* and a *cloak of the mountebank* from the caravan-master's strongbox.",
+      "**A clue:** The caravan-master swears the slope didn't fall by itself. Someone had been at the old snow-wedges in the valley above."
+    ],
+    "tags": [
+      "side-quest",
+      "avalanche",
+      "rescue",
+      "mountain",
+      "moral-choice",
+      "high-level"
+    ],
+    "related": [
+      "the-bellows-pass",
+      "the-avalanche-lock",
+      "orrin-slake-bellows-warden",
+      "high-pass-weather",
+      "the-snowblind-veil"
+    ],
+    "created": "2026-10-09",
+    "updated": "2026-10-09"
   }
 ]
