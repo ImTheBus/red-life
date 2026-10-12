@@ -288,5 +288,58 @@
     ],
     "created": "2026-09-25",
     "updated": "2026-09-25"
+  },
+  {
+    "id": "the-avalanche-lock",
+    "title": "The Avalanche Lock",
+    "special_element": "**The lock is read by the load, not by the carvings.** The notches look like a numbered order, and they lie. They record the order in which the builders would pull the wedges to *release* the dam on purpose. That is exactly the wrong order for freeing a single cart. The true order is found by ear and by hand: pull the quietest wedge first and the loudest last. Every pull changes which wedges are singing. The reveal: if the party follows the carved order faithfully, the whole slope comes down. The founders left it as a last resort, a way to drop the drift on the valley if it was ever overrun.",
+    "summary": "Category: Puzzle · Tier: 2 · Difficulty: medium · Biome: frozen · Mood: grim",
+    "body": [
+      "Category: Puzzle · Tier: 2 · Difficulty: medium · Biome: frozen · Mood: grim",
+      "Above the village roofs, a wall of snow as tall as a barn hangs in the gully, and it creaks. Rows of black timber wedges, each as thick as a man's thigh, are driven into the packed drift. Every wedge is rimed with frost and carved with worn notches. A laden cart is jammed against the dam's upper lip, its canvas frozen stiff as board, one wheel turning slowly over nothing. The air bites the back of your throat. Far below, chimney smoke rises straight and thin, and a dog barks at the slope as though it can hear it breathing.",
+      "Generations ago, the villagers built the Avalanche Lock into the snow-choked throat of the gully above their homes. The wedges pin a hanging drift in place so it can never slide as one mass.",
+      "Someone drove a cart onto the dam in the dark, and it is stuck fast on the upper lip. The wedges are all that stands between the slope and the roofs. Freeing the cart means touching them. Nothing has fallen yet. This is the hour before the slide, while it can still be stopped, not the dig afterward.",
+      "There are nine wedges in three rows of three. Each carries one, two, or three cuts plus a small sign: a hearth, a fir, or a crow. The wedges don't share the load evenly. Pull the wrong one and its weight shifts onto the neighbours, which groan and spit ice.",
+      "Let the party learn this by looking and listening rather than through explanation. A straining wedge sounds higher and drips meltwater. A slack wedge rocks under a hand.",
+      "Use a clock of **6 Strain**. Each wrong pull adds 1 Strain. A tense, noisy delay adds 1 on a failed check. At 3 Strain, a crack runs across the drift and snow hisses down onto the lower rooftops. At 6, the slope goes.",
+      "**Observe (Wisdom (Survival), DC 13):** shows which wedge carries the least load. After three correct pulls in a row, the party gets the next read free. **Pull a wedge:** a Strength check (DC 12), or a rope-and-team effort that needs no check. Brute force works but adds 1 Strain. **Read the carvings (Intelligence (Investigation), DC 14):** shows that the notches follow a release pattern and are a warning, not a guide. A party that works this out before pulling avoids the trap entirely. **Brace the load:** a character who wedges a spar or shield against a loud wedge buys one pull without Strain, but stands in the drift's path while doing it. **Villagers:** fetching help from below costs time (+1 Strain), but the villagers bring ropes and the lock's history. A local can offer: *\"The quiet ones first, the old ones always said.\"*",
+      "**Introduce:** let the party hear the dam before they see it: a low groan under the wind, then a wedge cracking like a knuckle. **Voice it:** give each wedge its own note, such as a tin whine, a wet creak, or a dead silence. Use your voice to make the players listen. **The lever:** the cart is not the stakes; the roofs are. Keep the village in sight and in earshot. **The reveal:** spring the carved-order trap the moment a player says \"just follow the numbers.\" **Pairing:** The Buried Caravan is the rescue after the snow has fallen. This is the hour before, when careful hands can still keep it up. **Dialogue seed:** *\"My gran said the lock was made to hold the mountain, and made to drop it. Nobody ever told her which was the joke.\"*",
+      "Special element: **The lock is read by the load, not by the carvings.** The notches look like a numbered order, and they lie. They record the order in which the builders would pull the wedges to *release* the dam on purpose. That is exactly the wrong order for freeing a single cart. The true order is found by ear and by hand: pull the quietest wedge first and the loudest last. Every pull changes which wedges are singing. The reveal: if the party follows the carved order faithfully, the whole slope comes down. The founders left it as a last resort, a way to drop the drift on the valley if it was ever overrun."
+    ],
+    "tier": "2",
+    "difficulty": "medium",
+    "biome": "frozen",
+    "mood": "grim",
+    "resolution": [
+      "**Clean:** the cart rolls free and every wedge is driven back home. The village keeps its lock and its founders' secret.",
+      "**Partial:** the cart comes free, but a slab breaks away and buries outbuildings or the top road. No one dies, and the village remembers who was on the dam.",
+      "**Failure:** the slide hits the lower roofs. Decide before play whether anyone is caught in it, and make sure the party hears it happen."
+    ],
+    "scaling": [
+      "**Tier 2 baseline** as written. For a party of 2–3, drop the clock to 5 Strain and let a single Strength check pull any wedge. For 6 or more, add a smaller second lock of four wedges above the first, with its own 3-Strain clock. Both locks must be worked. If the upper clock fills, its slab slides onto the main dam and adds 2 Strain there.",
+      "**Lower tier:** remove the false carvings and keep only the listening puzzle.",
+      "**Higher tier:** put a living creature in the cart. Its cries make the wedges ring and drown out their notes."
+    ],
+    "rewards": [
+      "**The cart's cargo:** an iron-bound crate of winter stores bound for the village, plus a few coins.",
+      "**The village's trust:** a hearth, a bed, and a favour to call in later.",
+      "**The founders' secret:** the release order, now understood. With it, the party could drop this drift on purpose if the valley is ever overrun."
+    ],
+    "tags": [
+      "avalanche",
+      "snow",
+      "puzzle",
+      "trap",
+      "timed",
+      "village"
+    ],
+    "related": [
+      "the-buried-caravan",
+      "frostbite-cipher",
+      "high-pass-weather",
+      "the-snowblind-veil"
+    ],
+    "created": "2026-10-10",
+    "updated": "2026-10-10"
   }
 ]
