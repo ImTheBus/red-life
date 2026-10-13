@@ -230,5 +230,45 @@
     ],
     "created": "2026-07-23",
     "updated": "2026-07-23"
+  },
+  {
+    "id": "the-snowblind-veil",
+    "title": "The Snowblind Veil",
+    "special_element": "The veil also shows the wearer everyone who has ever died in the snow on the ground they are crossing. They are pale and unhurried, and they walk alongside the wearer. Each one is still heading where they were going when they fell: a village, a pass, a hearth, a door that is no longer there. They do not speak, and they do not notice the living. They keep walking, and each walks in a straight, true line to where they were bound. A wearer who follows one will arrive where that traveller meant to go. Often that is a place the living never reached: the shelter a lost party almost found, the safe ford, the cairn, the buried road. Unlike a compass, the veil never points where *you* want to go. It only shows where the dead wanted to go, and the party has to choose whose journey to borrow.",
+    "summary": "Category: Item · Rarity: uncommon · Type: wondrous-item · Tier: 2 · Biome: frozen · Mood: melancholy",
+    "body": [
+      "Category: Item · Rarity: uncommon · Type: wondrous-item · Tier: 2 · Biome: frozen · Mood: melancholy",
+      "A veil no heavier than a held breath, woven from hoarfrost on threads too fine to see. It is cold against your palm, and it does not melt. Lift it, and the wind drops to a whisper, as though the storm is listening. Tiny ice crystals line its edge, and every one points the same way, like a compass needle that has found something.",
+      "Worn over the face, the veil lets the wearer see clearly through whiteout, blizzard and snow-glare. The wearer sees to normal distance and cannot be snow-blinded. It does not warm the wearer or shield them from cold. Indoors or under a clear sky it is just cold lace. It only wakes when the snow is thick enough to hide the world.",
+      "Mechanically: no disadvantage on sight-based checks from snow or whiteout, and advantage on checks to navigate or track in blizzard conditions (swap to your system's equivalent). Putting it on or taking it off takes an action. No attunement.",
+      "**Decide before play:** the veil shows everyone who ever died in snow on this ground, not only the victims of the current storm. That ruling is what makes crowd size a measure of danger and makes the buried caravan below possible. If a player asks, tell them plainly. **Use the walkers as a map.** Most walkers head for the same few places. Let the party read the crowd: where it bunches, where it thins, where everyone turns aside at once. A lone walker striding onto open ice is a warning, not a guide. **Let one walker matter.** Give one dead traveller a name, a direction and a reason. Let the party decide whether to follow and finish that journey, knowing the line they take may cross ground that cannot bear a living weight. **Do not play the dead as scary.** They are tired and purposeful, not hostile. The mood is grief and company, not horror. **Voice it quietly.** When the veil goes on, lower your voice and slow down. Describe each walker in one short sentence. **Let direction tell the story.** On a slope where a caravan was buried, show its dead walking *upslope*, away from the road they died beside, toward the pass. Describe only the direction and let the party draw the conclusion.",
+      "Special element: The veil also shows the wearer everyone who has ever died in the snow on the ground they are crossing. They are pale and unhurried, and they walk alongside the wearer. Each one is still heading where they were going when they fell: a village, a pass, a hearth, a door that is no longer there. They do not speak, and they do not notice the living. They keep walking, and each walks in a straight, true line to where they were bound. A wearer who follows one will arrive where that traveller meant to go. Often that is a place the living never reached: the shelter a lost party almost found, the safe ford, the cairn, the buried road. Unlike a compass, the veil never points where *you* want to go. It only shows where the dead wanted to go, and the party has to choose whose journey to borrow."
+    ],
+    "tier": "2",
+    "rarity": "uncommon",
+    "type": "wondrous-item",
+    "biome": "frozen",
+    "drawbacks": [
+      "The dead are always there. Every blizzard brings a crowd, and its size matches how deadly the ground is. A pass that has killed a hundred travellers shows a hundred walkers.",
+      "A true heading is not a safe route. The dead weigh nothing now, so they walk straight across thin ice, snow cornices and drops that would kill the living. Some were also bound for the wrong valley, or for a hut that burned long ago. The veil never says which kind of walker you are following.",
+      "Taking the veil off mid-storm leaves the wearer blind and alone in the white. The walkers vanish, and the silence afterwards feels like being left behind.",
+      "A wearer who has lost someone to the snow may see them walking. The veil never says whether that is a comfort or a wound."
+    ],
+    "tags": [
+      "magic-item",
+      "blizzard",
+      "ghosts",
+      "navigation",
+      "tundra",
+      "travel-aid"
+    ],
+    "related": [
+      "the-tidelace-compass",
+      "old-stone-bridge",
+      "the-bellows-pass",
+      "high-pass-weather"
+    ],
+    "created": "2026-10-11",
+    "updated": "2026-10-11"
   }
 ]
