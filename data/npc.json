@@ -339,5 +339,58 @@
     ],
     "created": "2026-10-05",
     "updated": "2026-10-05"
+  },
+  {
+    "id": "aldith-vane-harbour-master",
+    "title": "Aldith Vane, Harbour Master",
+    "statblock": "```\nSTAT BLOCK — Aldith Vane               (5e-compatible)\nAC 17 (oilcloth coat, ward-stitched) · HP 135 (18d8+54) · Speed 30 ft\nSTR 11  DEX 14  CON 16  INT 17  WIS 20  CHA 15\nSaves: Wis +9, Con +7\nSkills: Insight +9, Perception +9, Persuasion +6, Intimidation +6\nSenses: passive Perception 19 · Languages: Common + any heard in the bay\nKey action: Unsaid (reaction). When a creature within 60 ft speaks a\nname Aldith has already heard spoken aloud, she silences the speaker\n(Wis save DC 17 or unable to speak until the end of its next turn).\nLanternlight (bonus action): the nearest cold lantern casts a 10-ft\nradius in which creatures have disadvantage on Stealth checks.\nCR 11 as written. Listed Difficulty (hard): CR 13, +40 HP, Unsaid DC 19.\nEasy: CR 7, -50 HP, Unsaid DC 15.\n```",
+    "special_element": "**A name spoken aloud twice in Black Lantern Bay lights a cold lantern, and a lit lantern wakes the ship beneath it.** For forty years Aldith has made sure no name in the bay is ever said twice. She hears each name once, writes it once in her own hand and never repeats it. She addresses people only by role (\"Captain\", \"Passenger\", \"Next\"). To stop a name being repeated in her hearing she will lie, bribe, forge papers, and in the end kill. This pays off at the table. A player who gives their name, or learns an NPC's, becomes a risk the party has to manage. When a second voice repeats a name, a new cold lantern kindles on the water, closer to shore than the last, and the knocking under the office changes its rhythm. At the next low tide the ship under that lantern wakes. Its drowned crew walk up the quay to take whoever said the name twice down to an empty station. Only Aldith can turn them back, by striking the speaker from her ledger, and she will ask what the party is offering in return.",
+    "summary": "Category: NPC · Region: state10 · Role: authority · Faction: Harbour Office of Black Lantern Bay · Difficulty: hard Tier: 3 · Biome: coast · Mood: grim",
+    "body": [
+      "Category: NPC · Region: state10 · Role: authority · Faction: Harbour Office of Black Lantern Bay · Difficulty: hard Tier: 3 · Biome: coast · Mood: grim",
+      "The harbour office door is salt-white and swollen in its frame. Behind it, a woman sits very straight at a ledger desk, writing. Her oilcloth coat is stiff as a plank. The air smells of cold lamp-glass and wet rope, though there is no rope anywhere on the quay. You hear the slow scratch of her nib. Under it comes a faint knocking from the water, as if something below were tapping on the building to be let in.",
+      "She does not look up until you are three steps from the desk. When she does, her eyes are dry. The lantern at her elbow burns without a flicker, its light thin and blue-white.",
+      "Aldith Vane has been harbour master for forty years and looks fifty. She keeps the office exactly as it was on the night the fleet went down: tide tables pinned, berths numbered, a lamp trimmed in the window for ships that will not come in. She is courteous and exact, and tired in a way that sleep doesn't fix. She treats every visitor as a vessel to be logged and expects to be given a name, a cargo and an intended berth.",
+      "She is not a villain, and she is right that something must be held down. She sank the drowned fleet upright, hulls whole and crews at their stations, because that was the only way to bind what the fleet had become. The ships stand on the seabed below the bay like a congregation. She has kept the binding in place ever since.",
+      "Her duty is the register. Every cold lantern in the bay was lit by a name, and every name is written in her ledger. The ledger only records, though. Here the danger is in the voice, not the ink: a name written a thousand times is safe, and a name said twice is not. Nobody on the quay says her own name. To everyone she is only the Harbour Master. She will answer almost any question about the harbour, the tides, the old trade and the night the fleet sank. She will answer none about the names.",
+      "Special element: **A name spoken aloud twice in Black Lantern Bay lights a cold lantern, and a lit lantern wakes the ship beneath it.** For forty years Aldith has made sure no name in the bay is ever said twice. She hears each name once, writes it once in her own hand and never repeats it. She addresses people only by role (\"Captain\", \"Passenger\", \"Next\"). To stop a name being repeated in her hearing she will lie, bribe, forge papers, and in the end kill. This pays off at the table. A player who gives their name, or learns an NPC's, becomes a risk the party has to manage. When a second voice repeats a name, a new cold lantern kindles on the water, closer to shore than the last, and the knocking under the office changes its rhythm. At the next low tide the ship under that lantern wakes. Its drowned crew walk up the quay to take whoever said the name twice down to an empty station. Only Aldith can turn them back, by striking the speaker from her ledger, and she will ask what the party is offering in return."
+    ],
+    "tier": "3",
+    "mood": "grim",
+    "role": "authority",
+    "difficulty": "hard",
+    "dm_tips": [
+      "**Introduce:** The party finds her mid-entry, writing. She finishes her line before she looks up. Then she asks each of them for a name, writes it once and never says it back. Within a few minutes players usually notice that she never uses anyone's name.",
+      "**Voice/play:** Level and unhurried. Dry, formal, a little archaic. Her tell is the nib: it stops whenever someone says a name a second time. Let the scratching cut off mid-word and the room go still.",
+      "**Wants:** To keep the register closed and the party out of the lower docks. She will trade harbour access, berths and old charts for discretion. Her real request is that the party speak no names while they are in the bay. Make it sound like a customs rule.",
+      "**Reveal:** Spring it when a player repeats a name or when a new lantern appears on the water. At first she does not explain. If pressed, and if the party has earned some trust, she shows them the first page of the ledger. The single name at the top is her own. She gave it to the bay the night the fleet went down, and it is the knot that holds the binding. If it is said twice, every lantern lights at once and the whole fleet rises. Once the party knows it, they hold the one word that could end her watch, and the quay with it.",
+      "**Escalation:** If the party keeps naming things, she goes from helpful to frightening. First she warns them. Then the quay watch confiscates their papers. Finally she moves to silence the speaker for good, and she is hard to stop. If she learns the party knows her name, she will not let them leave the bay until she is sure of them.",
+      "**Dialogue seeds:**",
+      "\"Name, cargo, berth. Once. Not again.\"",
+      "\"You will find the bay quiet if you keep it so.\"",
+      "\"I did not say it. Do not say it for me.\"",
+      "\"Forty years. Ask me whether I am tired, and I will tell you the tide.\""
+    ],
+    "tags": [
+      "harbour-master",
+      "coast",
+      "undead",
+      "social",
+      "secrets",
+      "high-level"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "the-second-saying",
+      "vanes-countersignature",
+      "captain-wenna-coyle-of-the-sable-debt",
+      "a-hand-of-line-from-the-pilings",
+      "the-cold-light-drownings",
+      "cold-light-rising",
+      "ropeless-anchorage",
+      "the-ledger-writes-the-living"
+    ],
+    "created": "2026-10-18",
+    "updated": "2026-10-18"
   }
 ]
