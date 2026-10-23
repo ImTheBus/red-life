@@ -447,5 +447,75 @@
     ],
     "created": "2026-10-09",
     "updated": "2026-10-09"
+  },
+  {
+    "id": "the-second-saying",
+    "title": "The Second Saying",
+    "special_element": "**The line of light is Edric's grip,** a dead man's hand closed on the ship. The second saying does not break a curse. It asks him to let go, and letting go ends him. Whatever he holds is released, and the lantern goes out for good. He hears everything said on the dock. Ask him a question honestly, in person, and the flame answers: it leans toward the speaker for yes and away for no. Edric wants to be released. He has held on for years only because nobody came to say the words, and nobody, captain or kin, has ever thought to ask him.",
+    "summary": "Category: Encounter · Tier: 3 · Difficulty: hard · Time-to-run: 1 hour · Biome: coast · Mood: grim · Party: standard",
+    "body": [
+      "Category: Encounter · Tier: 3 · Difficulty: hard · Time-to-run: 1 hour · Biome: coast · Mood: grim · Party: standard",
+      "The dock stinks of tar and cold brine, and under that is something cleaner, like a snuffed candle. Out on the black water a single lantern burns with a white light that gives no warmth. A thin pale line runs from its flame straight down into the bay, pulled tight. It hums the way a rope hums under load.",
+      "Beyond it a merchant cog rides dead level, with no anchor out and no mooring line. Its timbers groan against nothing. On the boards beside you, two teenagers stand soaked to the knees and shaking. They stare at the lantern as if it might be listening.",
+      "``` STAT BLOCK — Cold-Light Warden        (5e-compatible, swappable) AC 14 · HP 52 (8d8+16) · Speed 30 ft, swim 40 ft STR 15  DEX 12  CON 14  INT 8  WIS 12  CHA 6 Resist: cold, necrotic · Immune: poison, exhaustion Key action — Name-Hold: the warden grips a creature that has begun to speak a name aloud; the target is restrained until it ends a turn without speaking. Attacks: Boarding Hook +5 (1d10+3 piercing) CR 4  (scale: easy = CR2 · hard = CR6 — see Scaling) ```",
+      "Decide before play whether Edric truly wants to be released. The default is yes. If he wants to hold on instead, the flame answers the other way and the party's choice becomes a moral trap, not a mercy. What sets this apart from the bay's other drowned grips: Edric is one named dead man who can be asked, and the encounter turns on consent, not on cutting him loose or feeding the bay. Do not make Maren a villain or Nessa and Corin obstacles. The weight of this encounter comes from all three requests being fair. Playing Aldith: short sentences. She never raises her voice. She has given this speech before. Playing Maren: practical, never begs. Her crew is her only argument. Playing the grandchildren: Nessa is the loud one. Corin barely speaks until someone asks him something directly. Dialogue seed (Corin, quietly): *\"He hums when it's cold. Gran says it's the same tune he used to.\"* If the party asks for more time, tell them the tide gives it back an inch at a time. That is the clock.",
+      "Special element: **The line of light is Edric's grip,** a dead man's hand closed on the ship. The second saying does not break a curse. It asks him to let go, and letting go ends him. Whatever he holds is released, and the lantern goes out for good. He hears everything said on the dock. Ask him a question honestly, in person, and the flame answers: it leans toward the speaker for yes and away for no. Edric wants to be released. He has held on for years only because nobody came to say the words, and nobody, captain or kin, has ever thought to ask him."
+    ],
+    "tier": "3",
+    "difficulty": "hard",
+    "time": "1-hour",
+    "biome": "coast",
+    "mood": "grim",
+    "setup": [
+      "Captain Maren Osk's cog, the *Gull's Patience*, is held fast in Black Lantern Bay. She has thirty crew aboard and a hold of winter grain for a port that will starve without it. Ships in this bay anchor without ropes, and hers cannot leave. Maren knows why. The lantern off her bow belongs to a drowned sailor, **Edric Tolley**, and his grip is what holds her hull.",
+      "The grip lets go only if his name is spoken a second time. The first saying lit his lantern; the second puts it out. The bay cannot hear anyone who makes a living from its water, so Maren, her crew and the harbour master all speak to it unheard. Kin and strangers can be heard. She wants the party to say it.",
+      "The deadline is slack tide before dawn, about an hour of table time. Miss it and the hull stays held for another month.",
+      "Edric's grandchildren, **Nessa and Corin Tolley**, have come to stop it. While the lantern burns their grandfather is not entirely gone. The hum they hear at night is all they have left of him. They want the party to walk away.",
+      "**Aldith Vane**, the harbour master, knows what a second saying does and will come to prevent it. She is not cruel. She has kept a rule for forty years and explains it badly. Play her as tired and immovable, not villainous."
+    ],
+    "escalation": [
+      "**Opening (10 min).** The party meets Maren, then Nessa and Corin. Both sides argue plainly and neither is wrong. Maren has her crew's lives and the grain. The grandchildren have a grandfather they can still half-hear. Let the party question them. Nobody lies.",
+      "**Complication (20 min).** Aldith arrives with two **cold-light wardens**: drowned sailors in harbour livery who rise dripping from the bay. They do not attack at first. They stand between the party and the water's edge while Aldith asks the party to leave. If anyone moves to the end of the dock to speak the name, she has the wardens stop them by force. The wardens fight only to keep the name from being said twice, and break off once it is. Run this as a standoff that can tip into combat. If the party talks to Aldith, she tells them a name spoken twice \"lets go of what it was holding,\" and says nothing more.",
+      "**Climax (20 min).** Someone reaches the end of the dock, within reach of the lantern. The grandchildren can still choose. If the party has asked the flame, it leans toward whoever speaks, and Nessa and Corin see it. This is the moment to let them, or the party, say the name with kin standing beside it."
+    ],
+    "resolution": [
+      "**Say it, with the kin's blessing.** The line goes slack, the lantern dies without a flicker, and the *Gull's Patience* slides free. Nessa and Corin weep, but they stay on the dock. The party leaves with a grateful captain and crew, and a harbour master who stops fighting them.",
+      "**Say it against the kin's wishes.** The ship slides free just the same, but Nessa and Corin never forgive the party, and they tell the whole harbour. Aldith sends the wardens back into the water and writes the party's names in her ledger of people to watch. Maren's gratitude is real, and a little ashamed.",
+      "**Walk away.** Dawn comes and the hull stays held. Maren's crew turn on each other or sell the grain over the side at a loss, and the starving port goes without. Edric holds on. The party can come back in a month to the same choice, but by then the grandchildren are older and the town knows what was asked.",
+      "**Fail the fight.** If the wardens drive the party off the dock, treat it as walking away. Edric is unharmed, and the party ends up soaked, bruised and known to Aldith."
+    ],
+    "scaling": [
+      "**Tier 3, standard party (4–5).** Two wardens. Aldith is present and directs them, but makes no attacks herself.",
+      "**Smaller or weaker party.** One warden. Aldith only commands it to grapple and restrain, never to strike.",
+      "**Stronger party.** Four wardens. Give Aldith a reaction that pulls a warden out of the water at a square she chooses.",
+      "**To reduce difficulty,** let the wardens break off after one round once someone clearly asks the flame a question. **To raise it,** make the wardens aggressive from the start and put the tide on a 6-round clock."
+    ],
+    "rewards": [
+      "**Maren's gratitude.** Passage on the *Gull's Patience*, and a favour owed by the grain port.",
+      "**Edric's last gift.** If the party asked Edric before his name was said a second time, one pane of white lantern-glass is left on the dock after the line goes slack. On command it burns cold for one night and works as a *lantern of revealing* until dawn (5e-compatible, swappable).",
+      "**A clue.** Aldith's warning, \"a name spoken twice lets go of what it was holding.\" The party will recognise the rule if they ever see another white lantern on the bay."
+    ],
+    "tags": [
+      "side-quest",
+      "harbor",
+      "ghosts",
+      "moral-choice",
+      "social",
+      "naval"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "aldith-vane-harbour-master",
+      "ropeless-anchorage",
+      "the-cold-light-drownings",
+      "cold-light-rising",
+      "drowned-kin",
+      "vanes-countersignature",
+      "a-hand-of-line-from-the-pilings",
+      "captain-wenna-coyle-of-the-sable-debt",
+      "the-dusk-call"
+    ],
+    "created": "2026-10-21",
+    "updated": "2026-10-21"
   }
 ]
