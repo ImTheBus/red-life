@@ -392,5 +392,56 @@
     ],
     "created": "2026-10-18",
     "updated": "2026-10-18"
+  },
+  {
+    "id": "captain-wenna-coyle-of-the-sable-debt",
+    "title": "Captain Wenna Coyle of the Sable Debt",
+    "statblock": "```\nSTAT BLOCK — Wenna Coyle              (5e-compatible)\nAC 15 (studded leather) · HP 82 (11d8+33) · Speed 30 ft\nSTR 13  DEX 16  CON 16  INT 14  WIS 15  CHA 15\nSaves: Wis +5, Cha +5\nSkills: Insight +5, Persuasion +5, Athletics +4, Sleight of Hand +6\nKey action: Bind the Slack. Bonus action: Wenna throws a coil at a creature within\n30 ft. Target makes a DC 14 Dexterity save or is restrained until it uses an action to escape.\nMultiattack: two cutlass attacks (+6 to hit, 1d6+3 slashing).\nCR 5  (scale: easy = CR3, hard = CR7)\n```\n\nHer crew use bandit or thug stats, and her first mate uses the bandit captain. Keep the crew to six unless the party is large.",
+    "special_element": "**Black Lantern Bay grows calmer the more rope it is fed, and Wenna is the only one who has worked this out.** Every fathom she sinks flattens the swell, quiets the tide-race, and steadies the cold lanterns' flicker. She believes something in the bay was bound with cordage long ago and is now slowly working loose. So she is binding it again, one coil at a time, and buying up the coast's rope before anyone else can use it. She is right about the calm and wrong about what it means. The bay is not being bound. It is taking hold. Ships here anchor without ropes because the water already holds them. That hold is old and belongs to the bay. What is new is Wenna, because every coil she feeds it tightens the grip. The calmer the bay gets, the fewer ships can leave. Her own crew has noticed that the *Sable Debt* has not left her berth in a month. Wenna hasn't.",
+    "summary": "Category: NPC · Role: rival · Faction: the *Sable Debt* (crew) · Tier: 3 · Difficulty: medium · Biome: coast · Mood: mysterious",
+    "body": [
+      "Category: NPC · Role: rival · Faction: the *Sable Debt* (crew) · Tier: 3 · Difficulty: medium · Biome: coast · Mood: mysterious",
+      "A broad woman in a salt-stiffened coat stands on the quay with a coil of hemp rope over each shoulder. She holds a third coil and keeps turning it in her hands, fibre by fibre, as if reading it. Behind her the harbour lies dead flat under the black lanterns, flatter than water should be. She smells of tar and cold lamp-oil.",
+      "Her voice is dry and unhurried, and she never once looks at your faces. She looks at your belts, your packs, the lines coiled on your boat.",
+      "\"Rope,\" she says. \"How much are you carrying?\"",
+      "Wenna Coyle captains the *Sable Debt*, a lean three-master whose hold sits too low in the water. She traded rope and worked salvage before she ever captained a ship, and she still counts things the way a trader does. She is not cruel. She is patient and exact, and she is certain she is right.",
+      "For two years she has paid double the going rate for every coil, cable, and cord-end on the coast, in coin or in favours, and she has sold none of it. Harbourmasters call her a hoarder. Rival crews call her a wrecker, because the crews who sold her their line have not sailed since. She doesn't argue with either of them.",
+      "She wants the party's rope, and she wants it without a fight. She pays well and asks few questions. Anyone who refuses gets a polite warning that saying no will cost them more than she is offering.",
+      "Special element: **Black Lantern Bay grows calmer the more rope it is fed, and Wenna is the only one who has worked this out.** Every fathom she sinks flattens the swell, quiets the tide-race, and steadies the cold lanterns' flicker. She believes something in the bay was bound with cordage long ago and is now slowly working loose. So she is binding it again, one coil at a time, and buying up the coast's rope before anyone else can use it. She is right about the calm and wrong about what it means. The bay is not being bound. It is taking hold. Ships here anchor without ropes because the water already holds them. That hold is old and belongs to the bay. What is new is Wenna, because every coil she feeds it tightens the grip. The calmer the bay gets, the fewer ships can leave. Her own crew has noticed that the *Sable Debt* has not left her berth in a month. Wenna hasn't."
+    ],
+    "tier": "3",
+    "mood": "mysterious",
+    "role": "rival",
+    "difficulty": "medium",
+    "dm_tips": [
+      "**Introduce:** Have her already there and buying when the party arrives. They watch a dockhand sell her a coil, watch her drop it off the quay without ceremony, and watch the water go quieter. Describe the stillness before she speaks.",
+      "**Voice/play:** Flat, courteous, and full of numbers. She quotes prices and lengths, never feelings. She tests rope with her thumbnail while she talks and stops whenever she lies. She never raises her voice.",
+      "**Wants:** Every coil the party owns, anchor line included. For rope she will trade information about the bay, a safe berth, or a favour from her crew.",
+      "**Reveal:** Give the truth in three stages. First, the calm follows the rope (she will gladly show them, because she wants converts). Second, her ship cannot leave. Third, the calm is a grip, and it tightens with every coil. Land all three before the party agrees to give her anything, so their choice is a real one.",
+      "**Complication:** If the party refuses, she doesn't threaten them. She buys the rope from their chandler, from their allies, and from the next harbour along, and lets the party find out for themselves that they can't resupply.",
+      "**Dialogue seeds:**",
+      "\"It isn't hoarding if it's all going somewhere.\"",
+      "\"Count your anchor line. Now count what the bay has left you.\"",
+      "\"I've never lost a ship to this water. That's the whole of my argument.\""
+    ],
+    "tags": [
+      "rival",
+      "sea-captain",
+      "harbour",
+      "social",
+      "mystery",
+      "mid-level"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "ropeless-anchorage",
+      "aldith-vane-harbour-master",
+      "cold-light-rising",
+      "the-cold-light-drownings",
+      "a-hand-of-line-from-the-pilings",
+      "vanes-countersignature"
+    ],
+    "created": "2026-10-24",
+    "updated": "2026-10-24"
   }
 ]
