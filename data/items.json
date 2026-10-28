@@ -270,5 +270,52 @@
     ],
     "created": "2026-10-11",
     "updated": "2026-10-11"
+  },
+  {
+    "id": "a-hand-of-line-from-the-pilings",
+    "title": "A Hand of Line from the Pilings",
+    "special_element": "**It holds on the way he did, and it will not let go of you.** The rope was cut from the closed fist of a drowned sailor, and his grip is still in it. Tying a quick knot is safe. A creature that holds the rope, or is tied to it, for longer than a breath (about a round) must make a Wisdom saving throw (DC 15, swappable). On a failure, the rope closes on them. A holder's hand clenches around it and they can't open the hand, drop the rope, or untie the knot. A creature tied by the waist can't loosen the knot, and nobody else can untie it for them. No blade or flame frees either one. Time doesn't weaken the grip. Only one thing breaks it. A willing creature takes hold of the rope beside the held one's hand (or at the knot), takes the weight, and says aloud that they have it. The rope lets go of the first and closes on the new one. Someone has to choose to be held in another's place.",
+    "summary": "Category: Item · Region: none · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: coast · Mood: grim",
+    "body": [
+      "Category: Item · Region: none · Tier: 3 · Rarity: rare · Type: wondrous-item · Biome: coast · Mood: grim",
+      "A forearm's length of grey rope, stiff with salt, black and cleanly cut at one end. It is colder than the night air, and it never dries. It leaves a wet print on your palm. Halfway along, the fibres are bunched into the shape of knuckles, as if a fist closed on it and never opened. Hold it to your ear and you hear a slow creak, like a hull straining at a mooring that isn't there.",
+      "The rope is about a foot and a half long. One end is frayed. The other is cut clean and blackened. Tie it to any object, vessel, or creature and the knot holds against current, tide, wind, and swell. Whatever is tied stays exactly where it was, even in open water with nothing to anchor to. A rowboat tied off to nothing at all sits dead still in a gale.",
+      "Dragging a tied thing out of place takes a sustained Strength check (DC 20, swappable for your system's equivalent). Mundane means can't burn, sever, or pick apart the rope. Whoever tied a knot can untie it again with ease, unless the rope has closed on them (see the special element below).",
+      "It makes a superb rescue tool. Tie a drowning ally to it and the sea can't take them. It makes a worse one the moment that ally wants to go.",
+      "**Introduce it as treasure first.** Describe the stillness long before the grip. Let the party use it twice, and let it work both times, before it asks for anything. The cost lands harder after a trick that works. **Offer the hard choice early.** The release rule is the whole point of the item. Set a scene where the held character is the only one who can save someone, then let another PC volunteer to take the line. If nobody does, the table has learned something about itself. **Voice it through small signs.** It creaks when the holder tries to open their hand. It tightens when they think about leaving. Never say it is \"alive\". Describe the knot getting tighter. **Don't punish the one who ties it to a boat.** Anchoring a ship or barring a gate with a quick knot is the intended, harmless use. Save the grip for whoever holds on. **Let the table argue.** Handing the rope to a willing NPC, a captured enemy, or a dying volunteer makes a good ten-minute scene. Don't resolve it for them. **Keep it separate from the bay's other drownings.** This rope's hold belongs to one drowned man and passes from hand to hand only by choice. It is not the bay's curse at work, and nothing about it needs the bay's other mysteries to make sense.",
+      "Special element: **It holds on the way he did, and it will not let go of you.** The rope was cut from the closed fist of a drowned sailor, and his grip is still in it. Tying a quick knot is safe. A creature that holds the rope, or is tied to it, for longer than a breath (about a round) must make a Wisdom saving throw (DC 15, swappable). On a failure, the rope closes on them. A holder's hand clenches around it and they can't open the hand, drop the rope, or untie the knot. A creature tied by the waist can't loosen the knot, and nobody else can untie it for them. No blade or flame frees either one. Time doesn't weaken the grip. Only one thing breaks it. A willing creature takes hold of the rope beside the held one's hand (or at the knot), takes the weight, and says aloud that they have it. The rope lets go of the first and closes on the new one. Someone has to choose to be held in another's place."
+    ],
+    "tier": "3",
+    "rarity": "rare",
+    "type": "wondrous-item",
+    "biome": "coast",
+    "drawbacks": [
+      "**The held one is tethered.** If the rope is tied to something, the held creature can go only as far as the rope reaches, which is about a foot and a half. If it is tied to nothing, they can carry it anywhere but can't set it down.",
+      "**It pulls toward the pilings.** The rope strains, faintly and always, toward Black Lantern Bay. Far inland, the held creature feels it as a tug under the ribs. Within sight of the bay, the pull imposes disadvantage on any attempt to walk away from the shore.",
+      "**It takes warmth.** The held creature's hand (or waist) stays numb and too cold. After a full night held, they gain one level of exhaustion (or your system's equivalent).",
+      "**The water can't keep it.** While nobody is held by it, drop it, throw it, or cast it overboard and it drifts to the nearest dock piling and knots itself there, waiting for the next hand that reaches in."
+    ],
+    "loot": [
+      "The rope, as above · the one item with a story",
+      "A sodden leather wrist-wrap, black with age, with a few copper rings still sewn into it",
+      "A tangle of fine fishing line wound round a bent bone hook"
+    ],
+    "tags": [
+      "cursed-item",
+      "rope",
+      "coast",
+      "drowned",
+      "sacrifice",
+      "black-lantern-bay"
+    ],
+    "related": [
+      "black-lantern-bay",
+      "the-cold-light-drownings",
+      "cold-light-rising",
+      "drowned-kin",
+      "aldith-vane-harbour-master"
+    ],
+    "created": "2026-10-26",
+    "updated": "2026-10-26"
   }
 ]
