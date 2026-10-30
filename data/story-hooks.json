@@ -194,5 +194,94 @@
     ],
     "created": "2026-07-26",
     "updated": "2026-07-26"
+  },
+  {
+    "id": "the-clerks-audit",
+    "title": "The Clerk's Audit",
+    "special_element": "**The audit runs one letter a day, and the letter is posted in public.** The party gets a countdown they can read but can't stop. Every morning the notice tells them exactly how many days are left before the auditors reach their names. Whatever they try (bribe, burgle, flee, frame, confess) has to fit inside a clock the whole city can see.",
+    "summary": "Category: Story Hook · Region: none · Tier: 2 · Difficulty: medium · Biome: urban · Mood: mysterious",
+    "body": [
+      "Category: Story Hook · Region: none · Tier: 2 · Difficulty: medium · Biome: urban · Mood: mysterious",
+      "A fresh notice is nailed beside the door of the magistrates' hall. The ink is still wet and smells of lamp-oil and gall. It reads *Audit of the Pardon Rolls, by order of the bench, one letter of the alphabet per day.* Beneath it, in a smaller hand, is a name you know: *Tobin Hesk, clerk, found in the canal Tuesday, ink to the elbows.* Today's letter is already crossed out.",
+      "Tobin Hesk kept Vance Quill's records. Every pardon Quill sold went into the city rolls in Hesk's neat hand, back-dated to look old. Hesk was the only one who knew which pardons were forgeries and which were just irregular.",
+      "Now he's dead, and the bench has ordered two bored, thorough auditors to read the rolls line by line. The audit has no suspect and no deadline except the alphabet. A new letter goes up each morning. The party's pardon is filed under their own surnames, so they can count the days until the auditors reach it.",
+      "If the party has never dealt with Quill, set this up before play. One PC (or a parent, whose pardon passed down with the family name) bought a pardon from Quill years ago. Hesk entered it in the rolls in front of them, which is why they know his name.",
+      "**Run it as a countdown.** Open each in-game day with the posted letter. Skip quiet days. When the party wastes one, have the letter crossed out in front of them. **Decide before play:** who killed Hesk, and whether the party's entry is clean. Everything else follows from those two answers. **Pacing:** if the party stalls, jump the clock forward a letter and have an auditor stop one of them in the street for \"a routine question\". **Connections:** this hook pairs with *Vance Quill, Pardon-Broker* and *The Pardon That Wasn't*, and can supply the pressure that makes either one urgent. Those entries are about how a pardon is bought or goes wrong. This one is about the public clock counting down to its exposure. It works without them. **Scaling:** for a harder game, start the audit one letter before the party's earliest surname. For a gentler one, give them a week.",
+      "Special element: **The audit runs one letter a day, and the letter is posted in public.** The party gets a countdown they can read but can't stop. Every morning the notice tells them exactly how many days are left before the auditors reach their names. Whatever they try (bribe, burgle, flee, frame, confess) has to fit inside a clock the whole city can see."
+    ],
+    "tier": "2",
+    "biome": "urban",
+    "mood": "mysterious",
+    "next_steps": [
+      "**Stakes:** holding a forged pardon is a hanging matter, and knowing about one earns a prison term. Quill won't go down alone. Everyone who bought from him is a witness he can trade away.",
+      "**Next steps:**",
+      "Find out how Hesk died. Follow the canal, his ink-stained arms and his missing key.",
+      "Get to the bound rolls before the party's letter comes up.",
+      "Seek out Quill, who is suddenly cooperative and very generous.",
+      "Learn what each auditor can be bought with. One wants coin. The other wants to be seen catching someone.",
+      "**Twists:**",
+      "Hesk wasn't killed to stop the audit. He had started a private list of Quill's forgeries, and his killer wants it.",
+      "Quill quietly arranged the audit himself, so he learns who is exposed before the bench does.",
+      "The party's entry is not a forgery. Hesk quietly made it genuine, and now nobody can explain it."
+    ],
+    "tags": [
+      "story-hook",
+      "forgery",
+      "murder-mystery",
+      "countdown",
+      "urban",
+      "mid-level"
+    ],
+    "related": [
+      "vance-quill-pardon-broker",
+      "the-pardon-that-wasnt",
+      "the-ledger-writes-the-living",
+      "the-twelfth-move"
+    ],
+    "created": "2026-10-28",
+    "updated": "2026-10-28"
+  },
+  {
+    "id": "the-twelfth-move",
+    "title": "The Twelfth Move",
+    "special_element": "Ostrander Vale is the oldest name on the Quiet Coin Mint's books. For centuries he has paid his debt one secret at a time, and each payment was a \"move\" in the Mint's old game. He has made eleven. The twelfth secret he owes is his own death. The merchants have learned that the Mint relocates whenever its oldest account closes. While Ostrander still owes, the Mint's attention stays fixed on him, and the merchants can empty their vaults unseen. They need him breathing for one more week. Healing him doesn't push the debt back. Each night he survives, the unpaid move is worth more, and the Mint wants it more.",
+    "summary": "Category: Story Hook · Tier: 3 · Difficulty: hard · Biome: urban · Mood: mysterious",
+    "body": [
+      "Category: Story Hook · Tier: 3 · Difficulty: hard · Biome: urban · Mood: mysterious",
+      "The counting-house smells of hot wax and damp ledger-paper. Somewhere behind the panelling, a clock ticks one beat too slow. Five merchants in good coats sit at the table, each careful not to look at the others. Their spokeswoman slides a purse across to you. It lands without a sound, and the coins inside are warm. \"There is an old man in the Tallow Row almshouse,\" she says, \"and he must not die before the week is out.\"",
+      "Run the week as a clock. Mark each dusk, and with every night he survives, make the coins in the merchants' purses feel heavier. Let Ostrander's prices carry the hook. He answers questions with costs: \"That's two good memories, and I'll take the smaller one first.\" Decide before play whether the party can win outright. The cleanest ending lets Ostrander pay his twelfth move on his own terms on the sixth night, face to face with the Mint, one night short of the week, with the merchants' vaults only half-emptied. Keep the Mint offstage until the sixth night, then bring it in quietly.",
+      "Special element: Ostrander Vale is the oldest name on the Quiet Coin Mint's books. For centuries he has paid his debt one secret at a time, and each payment was a \"move\" in the Mint's old game. He has made eleven. The twelfth secret he owes is his own death. The merchants have learned that the Mint relocates whenever its oldest account closes. While Ostrander still owes, the Mint's attention stays fixed on him, and the merchants can empty their vaults unseen. They need him breathing for one more week. Healing him doesn't push the debt back. Each night he survives, the unpaid move is worth more, and the Mint wants it more."
+    ],
+    "tier": "3",
+    "biome": "urban",
+    "mood": "mysterious",
+    "next_steps": [
+      "**Stakes:** Vault coin priced in secrets can't be moved without being spent unless the Mint is looking elsewhere. If the Mint relocates first, every vault turns to plain lead. If the party fails, the merchants are ruined and the Mint collects its oldest debt.",
+      "**Next steps:**",
+      "Question Ostrander at the almshouse. He is lucid for one hour each dusk and speaks only in prices.",
+      "Trail the merchants' porters, who move coin by night through a drained cistern.",
+      "Track down the eleven moves he has already paid. Each is a person who forgot one thing and never noticed it was gone.",
+      "**Twists:**",
+      "Ostrander wants to die. Every extra night is a price he pays so the merchants can profit.",
+      "One council merchant has already been priced out and quietly hopes the party fails.",
+      "Keeping him alive forces the Mint to come in person. On the sixth night, something shaped like a coin walks into the almshouse."
+    ],
+    "tags": [
+      "story-hook",
+      "urban",
+      "mystery",
+      "bodyguard",
+      "merchants",
+      "high-level"
+    ],
+    "related": [
+      "the-quiet-coin-mint",
+      "the-mint-is-a-person",
+      "the-quiet-coin",
+      "market-of-quiet-coins",
+      "the-memory-the-saltwidow-took"
+    ],
+    "created": "2026-10-29",
+    "updated": "2026-10-29"
   }
 ]
